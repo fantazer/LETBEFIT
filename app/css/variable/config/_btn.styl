@@ -1,0 +1,113 @@
+// ============================ Buttons ============================
+.btn
+	br(32px)
+	tr(all)
+	display inline-block
+	background none
+	border 0
+	text-align: center
+	position relative
+	&:before
+		content ''
+		position absolute
+		width calc(100% + 10px)
+		height calc(100% + 10px)
+		left -5px
+		top -5px
+		br(34px)
+		opacity: 0
+	&:hover
+		cursor pointer
+	&:before
+		content ''
+		opacity: 1
+.btn--sm
+	@extend .btn
+	@extend .type--main
+	padding 10px 40px
+
+.btn--md
+	@extend .btn
+	@extend .type--md
+	padding 18px 50px
+
+.btn--lg
+	@extend .btn
+	font-size 20px
+	padding 10px 30px
+
+.btn--mobile
+	@extend .btn
+	+below(768px)
+		width 100%
+		text-align center
+
+.btn--mark
+	@extend .btn
+	color white
+	background $mark
+	.nav-icon
+		fill white
+	&:hover
+		background-color $greenDark
+		color white!important
+	&:active
+		&:before
+			content ''
+			border 2px solid $green
+	input[type="submit"]
+		border 0
+	.nav-icon
+		fill white
+
+.btn--disable
+	@extend .disabled
+	border 1px solid $border-color
+	background-color $grayLight
+
+.btn--light
+	@extend .btn
+	border 1px solid $border-color
+	background-color #ffffff
+	color $mark
+	.nav-icon
+		fill $mark
+	&:hover
+		background: $fieldBackground
+		border 1px solid $fieldBackground
+	&:active
+		&:before
+			content ''
+			border 2px solid $greenLight
+
+.btn--white
+	@extend .btn
+	border 1px solid rgba(255, 255, 255, 0.9)
+	color rgba(255, 255, 255, 0.9)
+	.nav-icon
+		fill rgba(255, 255, 255, 0.9)
+
+.btn--icon
+	flex(mid)
+	.nav-icon
+		margin-left: 10px
+
+.nav-icon
+	size 20px
+	display inline-block
+
+.btn--icon-left
+	.nav-icon
+		margin-left: 0
+		margin-right: 10px
+
+.btn-row-mid
+	flex(mid)
+	margin: 30px 0
+
+.btn-row-mid--clear
+	margin: 0
+
+.btn--full
+	width: 100%
+	display block
