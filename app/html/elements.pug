@@ -107,6 +107,23 @@ link(rel="stylesheet", href="./css/style-guide.css")
 			li пункт 3
 		p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate delectus fuga impedit, omnis velit voluptate. Ab ad adipisci beatae consectetur consequuntur cum cumque delectus dolor doloremque ducimus earum error eveniet hic illum incidunt iste labore laborum molestiae nemo non, pariatur, possimus qui quia quisquam rem sit, suscipit tempore unde.
 
+
+	h2.title Grid
+	.note
+		p <b>NOTE!</b> &nbsp; Doc: https://github.com/Inshou/bootstrap-4-grid-styl
+	.row
+		- for (var i=0;i<2;i++)
+			.col-sm
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores aspernatur delectus error harum inventore ipsum molestias totam vel!
+	.row
+		- for (var i=0;i<3;i++)
+			.col-sm
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores aspernatur delectus error harum inventore ipsum molestias totam vel!
+	.row
+		- for (var i=0;i<4;i++)
+			.col-sm
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores aspernatur delectus error harum inventore ipsum molestias totam vel!
+
 	h2.title Buttons
 
 	h3 Size
@@ -130,65 +147,70 @@ link(rel="stylesheet", href="./css/style-guide.css")
 				span C  иконкой
 				+icon("arrow-right","nav-icon")
 
-
-
-
 	//a(href="#").link--mark Цветная ссылка
 	//a(href="#").link--main Новая ссылка
 	//a(href="#").link--text Ссылка в тексте
 
 	h2.title Inputs
-	.forms
-
-		.input-row.input-row--error
-			input(type="text" data-placeholder="Ваше имя" class="input")
-			.error-msg Введённые данные не должны содержать цифры
-		.input-cont.input-cont--two
-			.input-row
-				input(type="text" data-placeholder="Ваше имя" class="input input--disable")
-			.input-row
-				input(type="text" data-placeholder="Ваше имя" class="input input--disable")
-		.input-cont.input-cont--three
-			.input-row
-				input(type="text" data-placeholder="Ваше имя" class="input" value="1000")
-			.input-row
-				input(type="text" data-placeholder="Ваше имя" class="input")
-			.input-row
-				input(type="text" data-placeholder="Ваше имя" class="input")
-		//.input-get
-			input(type="text" data-placeholder="Ваше имя" class="input")
-			.input-get__btn
-				input(type="submit" value="" class="input input-get__btn-el")
-				+icon("arrow-right","icon")
-
+	.note
+		p <b>NOTE!</b>&nbsp; Use data-placeholder="Ваше имя"
+	.input-row.input-row--error
+		input(type="text" data-placeholder="Ваше имя" class="input")
+		.error-msg Введённые данные не должны содержать цифры
+	.input-cont.input-cont--two
 		.input-row
-			textarea(name="text", cols="30", rows="10" class="input" data-placeholder="Ваш текст")
+			input(type="text" data-placeholder="Ваше имя" class="input input--disable")
+		.input-row
+			input(type="text" data-placeholder="Ваше имя" class="input input--disable")
+	.input-cont.input-cont--three
+		.input-row
+			input(type="text" data-placeholder="Ваше имя" class="input" value="1000")
+		.input-row
+			input(type="text" data-placeholder="Ваше имя" class="input")
+		.input-row
+			input(type="text" data-placeholder="Ваше имя" class="input")
+	//.input-get
+		input(type="text" data-placeholder="Ваше имя" class="input")
+		.input-get__btn
+			input(type="submit" value="" class="input input-get__btn-el")
+			+icon("arrow-right","icon")
 
-		//checkbox remember
-		.login-remember
-			.check-el
-				label.style-label.style-label--checkbox
-					input(type="checkbox").style-input
-					.style-input-element
-						+icon("checked","icon")
-					.style-input-text Я ознакомился с #[a(href="#") политикой конфиденциальности], #[a(href="#") публичной офертой] и даю согласие на обработку моих персональных данных
-		//upload
-		.upload-wrap
-			.upload-img
-			label.upload
-				.upload__icon
-					+icon("arrow-left","icon")
-				.upload__text Прикрепить фото
-				input(type="file").upload-btn
-		input(type="submit" value="Отправить" class="btn--md btn--mark")
+	.input-row
+		textarea(name="text", cols="30", rows="10" class="input" data-placeholder="Ваш текст")
 
+	//checkbox remember
+	.login-remember
+		.check-el
+			label.style-label.style-label--checkbox
+				input(type="checkbox").style-input
+				.style-input-element
+					+icon("checked","icon")
+				.style-input-text Я ознакомился с #[a(href="#") политикой конфиденциальности], #[a(href="#") публичной офертой] и даю согласие на обработку моих персональных данных
 
-	.elements-hr
+	h3 Checkbox + Radio
+	.buttons-list
+		+checkbox('Выбрать пункт 1')
+		+checkbox('Выбрать пункт 2',"checked")
+		+checkbox('Выбрать пункт 2',"false",'disable')
+
+	.buttons-list
+		+radio('Выбрать пункт 1',"list","true")
+		+radio('Выбрать пункт 2',"list")
+		+radio('Выбрать пункт 3',"list",false,'disable')
+
+	h3 Switch
+	.buttons-list
+		.switch.js-toggle
+		.switch.active.js-toggle
+		.switch.disabled
+
+	h3 Dropdown
+
 	.dropdown
 		input(type="hidden" name="name" value="0")
 		.dropdown-current
 			.dropdown-current__val Начальное значение
-			+icon("arrow-down-fat","icon")
+			+icon("arrow-down","icon")
 		.dropdown-menu
 			.dropdown-menu__el(data-value="#") Значение 1
 			.dropdown-menu__el(data-value="#") Значение 2

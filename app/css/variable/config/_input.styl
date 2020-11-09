@@ -37,7 +37,7 @@
 
 .style-input-text
 	color black
-	width: calc(100% - 80px)
+	width: calc(100% - 60px)
 	line-height: 1.6
 	a
 		color $mark
@@ -45,35 +45,38 @@
 // checkbox
 .style-label--checkbox
 	.style-input-element
-		br(5px)
+		br(4px)
 		cp()
 		tr(all)
-		size 26px
+		size 32px
 		position relative
 		display inline-block
 		margin-right 10px
 		background white
 		border 1px solid $border-color
 		&:hover
-			border 1px solid $mark
+			border 2px solid $borderHover
+	&.style-label--disable
+		.style-input-element
+			background: $fieldBackground!important
 	.icon
 		display none
 	.style-input
 		&:checked ~ .style-input-element
 			flex(mid)
 			color white
-			background: $mark
-			border 1px solid $mark
+			background: $stateSuccess
+			border 1px solid $stateSuccess
 			.icon
 				display block
 				fill white
-				size 14px
+				size 24px
 // checkbox === end
 
 // radio
 .style-label--radio
 	.style-input-element
-		size 26px
+		size 32px
 		position relative
 		display inline-block
 		margin-right 10px
@@ -81,18 +84,22 @@
 		border 2px solid $border-color
 		round()
 		cp()
+		tr()
 		&:hover
 			border 2px solid $mark
+	&.style-label--disable
+		.style-input-element
+			background: $fieldBackground!important
 	.style-input
 		&:checked ~ .style-input-element
 			flex(mid)
 			color white
-			border 2px solid $mark
-			background: white
+			border 1px solid $stateSuccess
+			background: $stateSuccess
 			.icon-radio
 				round()
-				size 14px
-				background $mark
+				size 16px
+				background white
 // radio === end
 
 // checkbox + radio style === end
@@ -100,6 +107,7 @@
 
 //form
 .input-row
+	position relative
 	margin-bottom: 20px
 	.input
 		width: 100%
@@ -151,7 +159,7 @@
 	.style-input-text
 		font-size: 14px
 		color black
-		width: calc(100% - 80px)
+		width: calc(100% - 60px)
 		line-height: 1.6
 		margin-top: 3px
 		a
@@ -293,10 +301,7 @@
 
 // incr === end
 
-//===== Style =====
 //animate input
-.input-row
-	position: relative
 .input-placeholder-val
 	position: absolute
 	left 20px
@@ -309,3 +314,86 @@
 	font-size: 10px
 	color $typeSecondary!important
 //animate input-end
+
+
+// switch
+.switch
+	position relative
+	background: $grayPrimary
+	height: 34px
+	width: 62px
+	br(18px)
+	cp()
+	&:before
+		content ''
+		tr()
+		size 24px
+		round()
+		background: white
+		position absolute
+		left 6px
+		top 4.5px
+.switch.active
+	background: $stateSuccess
+	&:before
+		content ''
+		size 24px
+		round()
+		background: white
+		position absolute
+		left calc(100% - 30px)
+// switch === end
+
+
+// drop
+.dropdown
+	width: 100%
+	display inline-block
+	br(4px)
+	tr()
+	position relative
+	border 1px solid $border-color
+	outline none!important
+	background: $fieldBackground
+.dropdown-current
+	cursor pointer
+	display block
+	padding 20px 46px 20px 20px
+	.icon
+		position absolute
+		top calc(50% - 12px)
+		right 20px
+		size 24px
+		tr()
+		fill $grayLight
+
+.dropdown.active
+	border-radius 4px 4px 0 0
+	.icon
+		transform rotate(180deg)
+
+.dropdown-menu
+	position absolute
+	background-color #fff
+	width calc(100% + 2px)
+	left -1px
+	margin-top -1px
+	border-radius 0 0 4px 4px
+	overflow hidden
+	display none
+	max-height 200px
+	overflow-y auto
+	z-index 10
+	border 1px solid $border-color
+.dropdown-menu__el
+	padding 10px
+	cp()
+	tr()
+	border-bottom 1px solid $border-color
+	//background: #f9f9f9
+	&:last-child
+		border 0
+	&:hover
+		background: white
+		color black
+// drop === end
