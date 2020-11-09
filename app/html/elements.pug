@@ -205,16 +205,19 @@ link(rel="stylesheet", href="./css/style-guide.css")
 		.switch.disabled
 
 	h3 Dropdown
-
-	.dropdown
-		input(type="hidden" name="name" value="0")
-		.dropdown-current
-			.dropdown-current__val Начальное значение
-			+icon("arrow-down","icon")
-		.dropdown-menu
-			.dropdown-menu__el(data-value="#") Значение 1
-			.dropdown-menu__el(data-value="#") Значение 2
-			.dropdown-menu__el(data-value="#") Значение 3
+	.row
+		- for (var i=0;i<3;i++)
+			.col-md-4
+				.dropdown
+					input(type="hidden" name="name" value="0")
+					.dropdown-current
+						.dropdown-title Выберите цвет
+						.dropdown-current__val Оранжевый
+						+icon("arrow-down","icon")
+					.dropdown-menu
+						.dropdown-menu__el(data-value="1") Красный
+						.dropdown-menu__el(data-value="2") Синий
+						.dropdown-menu__el(data-value="3") Желтный
 
 	.elements-hr
 	.element-list-svg
