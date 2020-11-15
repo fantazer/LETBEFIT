@@ -9,7 +9,6 @@ font('Ubuntu','Ubuntu-Regular',400)
 font('Ubuntu','Ubuntu-Medium',500)
 font('Ubuntu','Ubuntu-Bold',700)
 
-
 $v-font = 'Ubuntu', sans-serif
 
 typeSize(fontSm,font)
@@ -96,18 +95,21 @@ p
 
 .link--mark
 	color $mark
+	cp()
+	transition color .4s
 	&:hover
-		color darken($mark,20)
+		color $greenDark
 	&:visiter
-		color darken($mark,30)
+		color $greenDark
 
-.link--main
+.link
+	cp()
+	transition color .4s
 	color $link-color
-	hover-underline($link-color)
 	&:hover
-		color darken($link-color,20)
+		color $mark
 	&:visiter
-		color darken($link-color,30)
+		color $mark
 
 .link--text
 	color $link-color
@@ -134,11 +136,17 @@ p
 	fw()
 	align-items center
 
-.icon--sm
-	size 16px
+.icon
+	size 24px
 
 .icon--md
-	size 24px
+	size 32px
+
+.icon--lg
+	size 48px
+
+.icon--xl
+	size 80px
 
 .icon--left
 	margin-left: 10px
@@ -151,4 +159,5 @@ p
 
 .icon--gray
 	fill $gray
+
 // icons === end

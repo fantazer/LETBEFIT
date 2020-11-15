@@ -25,11 +25,13 @@
 	@extend .btn
 	@extend .type--main
 	padding 10px 40px
+	font-weight: 500
 
 .btn--md
 	@extend .btn
 	@extend .type--md
 	padding 18px 50px
+	font-weight: 700
 
 .btn--lg
 	@extend .btn
@@ -82,8 +84,11 @@
 
 .btn--white
 	@extend .btn
-	border 1px solid rgba(255, 255, 255, 0.9)
-	color rgba(255, 255, 255, 0.9)
+	color black
+	background: white
+	font-weight: 700
+	&:hover
+		background: rgba(255, 255, 255, 0.8);
 	.nav-icon
 		fill rgba(255, 255, 255, 0.9)
 

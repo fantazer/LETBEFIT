@@ -18,7 +18,7 @@ body
 	letter-spacing 0.01em
 
 .main-cont
-	center(1200px,10px)
+	center(1312px,10px)
 
 .page
 	f()
@@ -27,7 +27,7 @@ body
 
 .content
 	flex-grow 1
-
+	padding: 100px 0
 .content--mid
 	flex(mid)
 
@@ -203,15 +203,11 @@ body
 	//width: 80%
 	line-height: 1.6
 
-
 .modal-send
 	@extend .btn--md
 	@extend .btn--mark
 	width: 100%
 // modal === end
-
-
-
 
 // cookie
 .cookie
@@ -248,8 +244,508 @@ body
 	font-size: 12px
 // cookie === end
 
-.box
-	display: grid
-	grid-gap 20px
-	grid-template-columns: repeat(auto-fill, minmax(calc(100rem / 12 - 60px),1fr))
+// header
+.header
+	background: white
+.header-top-wrap
+	border-bottom 1px solid $border-color
+//.main-cont
+.header-top
+	height: 72px
+	f()
+	align-items center
+//.header-logo
+.header-location
+	flex(mid)
+	color black
+	margin-left: 5%
+	tr()
+	.icon
+		tr()
+		margin-right: 16px
+	&:hover
+		cp()
+		color $mark
+		.icon
+			fill $mark
+//.header-location__val
+.header-contact
+	margin-left: 5%
+	f()
+	align-items center
+.header-phone
+	@extend .type--md
+	font-weight 700
+.header-phone-link
+	margin-left: 24px
 
+.header-soc
+	margin-left auto
+	f()
+.header-soc__el
+	size 72px
+	flex(mid)
+	border-left 1px solid $border-color
+	tr()
+	background: white
+	&:last-child
+		border-right 1px solid $border-color
+	&:hover
+		.icon
+			fill white
+.soc-el--instagram
+	position relative
+	.icon
+		z-index 2
+	&:before
+		content ''
+		tr()
+		position absolute
+		top 0
+		left 0
+		width: 100%
+		height: 100%
+		background: linear-gradient(43.94deg, #EEA054 16.16%, #D64763 50.11%, #B62A99 83.68%);
+		opacity: 0
+	&:hover
+		&:before
+			content ''
+			opacity: 1
+.soc-el--telegram
+	&:hover
+		background: #2F89CE
+.soc-el--wp
+	&:hover
+		background: #48C95F
+.nav-wrap
+	box-shadow: 0 4px 8px rgba(102, 130, 185, 0.12);
+	position relative
+	.main-cont
+		position: static
+.nav
+	f()
+	height: 72px
+	align-items: stretch
+.nav-list
+	flex(between)
+	width: 73%
+	margin 0 auto 0 0
+	padding: 0
+.nav-list__el
+	tr()
+	font-weight: 500
+	height: 100%
+	flex-grow 1
+	list-style none
+	&:hover
+		& > a
+			color $mark
+	& > a
+		f()
+		align-items center
+		height: 100%
+		width: 100%
+	&:hover
+		& > span
+			color $mark
+.nav-list__el
+	&:hover
+		.drop-menu-wrap
+			left 0
+			opacity: 1
+			transform translateY(0)
+			transition opacity .6s, transform .6s
+.drop-menu-wrap
+	position absolute
+	top 100%
+	width: 100%
+	background: white
+	z-index 20
+	padding: 32px 0 48px 0
+	border-top 1px solid $border-color
+	box-shadow: 0 4px 8px rgba(102, 130, 185, 0.12);
+	left -9999px
+	opacity: 0
+	transform translateY(-10px)
+.drop-menu
+	f()
+	justify-content space-between
+.drop-menu-list
+	width: 63%
+	f()
+	justify-content space-between
+.drop-menu-list__col
+	width: 23%
+.drop-menu__el
+	display block
+	&:last-child
+		margin-bottom: 0
+		.drop-menu__list
+				&:last-child
+					margin-bottom: 0
+.drop-menu__el-title
+	color $typeSecondary
+	@extend .type--sm
+	margin-bottom: 20px
+.drop-menu__list
+	margin-bottom: 32px
+.drop-menu__list__el
+	margin-bottom: 15px
+	@extend .type--md
+	font-weight 700
+	@extend .link
+	display block
+	&:last-child
+		margin-bottom: 0
+.drop-menu-card
+	width: 34%
+	display: grid
+	grid-gap 28px
+	grid-template-columns: 1fr 1fr
+.drop-menu-card__title
+	margin-bottom: 8px
+.drop-menu-card__text
+	@extend .type--sm
+	color $typePrimary
+	line-height: 1.6
+.drop-menu-card__el
+	br(12px)
+	padding: 26px 24px
+	background: white
+	position relative
+	display block
+	tr()
+	.icon
+		margin-bottom: 24px
+	&:hover
+		background: transparent
+	&:before
+		content ''
+		position absolute
+		top -4px
+		right -4px
+		left -4px
+		bottom -4px
+		background: linear-gradient(98.95deg, #E3EEFF 0%, #E4F6E4 52.6%, #FFEEE4 100%)
+		br(14px)
+		z-index -1
+.auth-wrap
+	f()
+	align-items center
+	font-weight: 500
+	color black
+	.auth-state--true
+		display none
+.auth-wrap.auth-wrap--true
+	.auth-state--false
+		display none
+	.auth-state--true
+		display flex
+.auth-state
+	f()
+	align-items center
+	.icon
+		margin-right: 18px
+		fill $mark
+
+//.auth-state--false
+//.auth-state--true
+// header === end
+
+
+// slick
+.slick-slide
+	&:hover
+		outline none!important
+	&:active
+		outline none!important
+	&:focus
+		outline none!important
+
+.slider-wrap
+	position relative
+
+//Навигация снаружи
+.slider-wrap--simple
+	.slider-control
+		round()
+		flex(mid)
+		tr(all)
+		size 80px
+		background: white
+		position: absolute
+		top 50%
+		margin-top: -40px
+		z-index 10
+		cp()
+		&:hover
+			background: $red
+			.icon
+				fill white
+		.icon
+			size 14px
+	.slider-control--left
+		left -20px
+	.slider-control--right
+		right -20px
+//Навигация снаружи end
+
+//Навигация внутри
+.slider-wrap--inarrow
+	.slider-control
+		flex(mid)
+		tr(all)
+		position: absolute
+		top 50%
+		margin-top: -40px
+		z-index 10
+		size 80px
+		cp()
+		round()
+		border 2px solid #ffffff2e
+		&:hover
+			background: white
+			border 1px solid white
+			.icon
+				fill black
+		.icon
+			fill white
+	.slider-control--left
+		left 80px
+	.slider-control--right
+		right 80px
+//Навигация внутри
+// === for custom navigation ===
+// slick === end
+
+// main slider
+.slider-main__el--sea
+	background: $sea
+.slider-main__el--pink
+	background: $pink
+.slider-main__el--violet
+	background: $violet
+
+.number-slide-wrap
+	position absolute
+	top 15%
+	width: 100%
+	z-index 10
+
+.number-slide
+	display: inline-flex
+	align-items center
+	color white
+	padding: 8px 28px
+	br(18px)
+	background: #ffffff2e
+
+.slider-main__el-wrap
+	padding: 12% 0 8% 0
+	position relative
+
+.slider-main__title
+	@extend .type--xl
+	font-weight 700
+	color white
+	margin-bottom: 10%
+.slider-main__content
+	width: 50%
+.slider-main__img
+	position absolute
+	padding: 20% 24%
+	bg-full()
+	right: 0
+	bottom 0
+// main slider === end
+
+
+// advant-section
+.advant
+	display: grid
+	grid-gap 28px
+	grid-template-columns: repeat(4, 1fr)
+	margin-bottom: 100px
+	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+.advant__el
+	border-radius 12px
+	border 1px solid $border-color
+	padding: 28px 20px 20px 20px
+	tr()
+	&:hover
+		border 1px solid white
+		box-shadow 0 12px 32px rgba(41, 42, 53, 0.16)
+.advant__el-icon
+	margin: 0 0 46px 10px
+	img
+		width: 80px
+// advant-section === end
+
+
+// invite
+.invite
+	f()
+	align-items center
+	justify-content space-between
+.invite-img
+	width: 49%
+	position relative
+.invite-msg
+	position absolute
+	width: 160px
+	padding: 5.7% 3%
+	round()
+	flex(mid)
+	fl()
+	background: linear-gradient(98.95deg, #E3EEFF 0%, #E4F6E4 52.6%, #FFEEE4 100%);
+	color black
+	top 0
+	right: 0
+	img
+		size 32px
+		margin-bottom: 6px
+	span
+		@extend .type--sm
+		text-align center
+.invite-info
+	width: 40%
+.invite-info-wrap
+	width: 70%
+.invite-title
+	@extend .type--lgx
+	font-weight 700
+	color black
+	margin-bottom: 24px
+.invite-text
+	margin-bottom: 56px
+// invite === end
+
+// soc-row
+.soc-row
+	f()
+.soc-row__el
+	round()
+	flex(mid)
+	tr(all)
+	margin-right: 16px
+	size 48px
+	background: #787775
+	&:last-child
+		margin-right: 0
+	.icon
+		fill white
+.soc-row--monochrome
+	.soc-row__el
+		background: rgba(255,255,255,0.1)
+		&:hover
+			background: rgba(255,255,255,0.2)
+		.icon
+			fill white
+// soc-row === end
+
+// footer
+.footer
+	background: #383941
+	color #fff6
+	a
+		&:hover
+			color $mark
+
+//.main-cont
+.footer-top
+	f()
+	padding: 48px 0
+.footer-contact
+	width: 50%
+.footer-phone
+	@extend .type--lg
+	font-weight 700
+	color white
+	display inline-block
+	margin-bottom: 12px
+.footer-work
+	margin-bottom: 40px
+//.soc-row
+//.soc-row__el
+.soc-row__el--wp
+	background: #48C95F
+	&:hover
+		background: darken(#48C95F,10)
+
+//.icon
+.soc-row__el--telegram
+	background: #2F89CE
+	&:hover
+		background: darken(#2F89CE,10)
+
+
+.soc-row__el--viber
+	background: #7C509A
+	&:hover
+		background: darken(#7C509A,10)
+
+.footer-address
+	margin-left auto
+.footer-scroll
+	size 82px
+	round()
+	flex(mid)
+	background: #ffffff1a
+	cp()
+	tr()
+	margin-left: 10%
+	&:hover
+		background: #ffffff26
+		.icon
+			transform translateY(-3px)
+	.icon
+		transform translateY(0)
+		tr()
+		fill white
+.footer-address__mail
+	display inline-block
+	margin: 20px 0 24px 0
+.footer-address__info
+	line-height: 1.6
+.footer-menu-wrap
+	padding: 48px 0
+	border-top 1px solid #ffffff1a
+	border-bottom 1px solid #ffffff1a
+.footer-menu
+	f()
+	justify-content space-between
+.footer-menu__col
+	width: 22%
+.footer-menu__title
+	@extend .type--md
+	font-weight 700
+	color white
+	margin-bottom: 36px
+.footer-menu__list-el
+	display block
+	color #fff6
+	margin-bottom: 24px
+	&:last-child
+		margin-bottom: 0
+//.app-list
+.app-list__el
+	display inline-block
+	margin-bottom: 20px
+//.footer-bottom-wrap
+.footer-bottom
+	padding: 48px 0
+	f()
+	justify-content space-between
+.footer-bottom__info
+	f()
+	align-items center
+.footer-bottom__info-text
+	margin-right: 42px
+.footer-payment
+	f()
+	align-items center
+	img
+		margin-right: 24px
+		&:last-child
+			margin-right: 0
+// footer === end

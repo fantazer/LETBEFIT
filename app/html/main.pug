@@ -3,15 +3,70 @@ include block_html/_include.pug
 
 .page
 	+header()
+	.main-slider
+		.slider-wrap.slider-wrap--inarrow
+			.number-slide-wrap
+				.main-cont
+					.number-slide
+			.slider-control.slider-control--left
+				+icon("arrow-left","icon")
+			.slider-control.slider-control--right
+				+icon("arrow-right","icon")
+			.slider-item.slider-main.js-slider-pagination
+				.slider-el-wrap
+					.slider-main__el.slider-main__el--sea
+						.main-cont
+							.slider-main__el-wrap
+								.slider-main__content
+									.slider-main__title Худей легко. Худей со вкусом
+									a(href="#program").js-scroll-to.btn--md.btn--white Выбрать программу
+								.slider-main__img(style="background-image:url('img/slide-person-1.png')")
+				.slider-el-wrap
+					.slider-main__el.slider-main__el--pink
+						.main-cont
+							.slider-main__el-wrap
+								.slider-main__content
+									.slider-main__title Здоровая еда для здоровой жизни
+									a(href="#program").js-scroll-to.btn--md.btn--white Выбрать программу
+								.slider-main__img(style="background-image:url('img/slide-person-2.png')")
+				.slider-el-wrap
+					.slider-main__el.slider-main__el--violet
+						.main-cont
+							.slider-main__el-wrap
+								.slider-main__content
+									.slider-main__title Ешь вкусно, экономь время
+									a(href="#program").js-scroll-to.btn--md.btn--white Выбрать программу
+								.slider-main__img(style="background-image:url('img/slide-person-3.png')")
 	.content
 		.main-cont
-			.grid
-				.row.text
-					.col.col--lg-2
-						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam doloribus esse est in itaque libero minima, qui ratione tempora temporibus.
-					.col.col--lg-6
-						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam architecto autem commodi cumque dolorem, eius error esse et eveniet ex excepturi fuga, id impedit libero modi nam nesciunt nisi nulla quae quaerat quia repudiandae temporibus unde voluptates. Eius, fugit.
-					.col.col--lg-6
-						p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam architecto autem commodi cumque dolorem, eius error esse et eveniet ex excepturi fuga, id impedit libero modi nam nesciunt nisi nulla quae quaerat quia repudiandae temporibus unde voluptates. Eius, fugit.
+			.advant
+				a(href="#").advant__el
+					.advant__el-icon
+						img(src="img/icon/menu-list.svg", alt="")
+					.advant__el-text Более 600 видов блюд, без трансжиров, сахара и консервантов?
+				a(href="#").advant__el
+					.advant__el-icon
+						img(src="img/icon/packaging.svg", alt="")
+					.advant__el-text Курьер может забрать нашу упаковку на переработку пластика
+				a(href="#").advant__el
+					.advant__el-icon
+						img(src="img/icon/schedule.svg", alt="")
+					.advant__el-text Умная доставка. Доставляем утром, вечером в часовой интервал
+				a(href="#").advant__el
+					.advant__el-icon
+						img(src="img/icon/product.svg", alt="")
+					.advant__el-text Приготовили и сразу доставляем. Используем технологию Smart-Frost.
+			.invite
+				.invite-img
+					.invite-msg
+						img(src="img/smile/smile-lazy.png", alt="")
+						span Вот так выглядит наш набор готового питания на сутки
+					img(src="img/circle-food-1.png", alt="")
+				.invite-info
+					.invite-info-wrap
+						.invite-title Настройте свой рацион
+						.invite-text Вы можете исключить любой ингредиент, блюдо или тип блюда по желанию
+						a(href="#program").js-scroll-to.btn--md.btn--mark Выбрать программу
+
 	+footer()
 include ./block_html/_script.pug

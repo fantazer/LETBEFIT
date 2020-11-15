@@ -36,7 +36,7 @@
 }
 .drop {
   transform: scaleY(0);
-  transition: all 0.4s;
+  transition: all 0.6s;
   transform-origin: top;
   opacity: 0;
 }
@@ -263,7 +263,7 @@ h1 {
 a {
   color: #111;
   text-decoration: none;
-  transition: all 0.4s;
+  transition: all 0.6s;
 }
 a:hover {
   color: #000;
@@ -273,25 +273,29 @@ a:visiter {
 }
 .link--mark {
   color: #7eca1d;
+  transition: color 0.4s;
 }
 .link--mark:hover {
-  color: #467110;
+  cursor: pointer;
+}
+.link--mark:hover {
+  color: #65a217;
 }
 .link--mark:visiter {
-  color: #2b440a;
+  color: #65a217;
 }
-.link--main {
+.link {
+  transition: color 0.4s;
   color: #111;
-  border-bottom: #111 solid transparent;
 }
-.link--main:hover {
-  border-bottom: #111 solid;
+.link:hover {
+  cursor: pointer;
 }
-.link--main:hover {
-  color: #000;
+.link:hover {
+  color: #7eca1d;
 }
-.link--main:visiter {
-  color: #000;
+.link:visiter {
+  color: #7eca1d;
 }
 .link--text {
   color: #111;
@@ -319,13 +323,21 @@ a:visiter {
   flex-wrap: wrap;
   align-items: center;
 }
-.icon--sm {
-  width: 16px;
-  height: 16px;
-}
-.icon--md {
+.icon {
   width: 24px;
   height: 24px;
+}
+.icon--md {
+  width: 32px;
+  height: 32px;
+}
+.icon--lg {
+  width: 48px;
+  height: 48px;
+}
+.icon--xl {
+  width: 80px;
+  height: 80px;
 }
 .icon--left {
   margin-left: 10px;
@@ -337,7 +349,7 @@ a:visiter {
   fill: #7eca1d;
 }
 .icon--gray {
-  fill: $gray;
+  fill: #adaeb9;
 }
 .btn,
 .btn--sm,
@@ -348,7 +360,7 @@ a:visiter {
 .btn--light,
 .btn--white {
   border-radius: 32px;
-  transition: all 0.4s;
+  transition: all 0.6s;
   display: inline-block;
   background: none;
   border: 0;
@@ -395,9 +407,11 @@ a:visiter {
 }
 .btn--sm {
   padding: 10px 40px;
+  font-weight: 500;
 }
 .btn--md {
   padding: 18px 50px;
+  font-weight: 700;
 }
 .btn--lg {
   font-size: 20px;
@@ -451,8 +465,12 @@ a:visiter {
   border: 2px solid #e6f2d6;
 }
 .btn--white {
-  border: 1px solid rgba(255,255,255,0.9);
-  color: rgba(255,255,255,0.9);
+  color: #111;
+  background: #fff;
+  font-weight: 700;
+}
+.btn--white:hover {
+  background: rgba(255,255,255,0.8);
 }
 .btn--white .nav-icon {
   fill: rgba(255,255,255,0.9);
@@ -498,7 +516,7 @@ a:visiter {
   font-family: 'Ubuntu', sans-serif;
   display: block !important;
   background: #f1f2f6;
-  transition: all 0.4s;
+  transition: all 0.6s;
   line-height: 1.6;
 }
 .input input::-webkit-input-placeholder,
@@ -551,7 +569,7 @@ a:visiter {
 }
 .style-label--checkbox .style-input-element {
   border-radius: 4px;
-  transition: all 0.4s;
+  transition: all 0.6s;
   width: 32px;
   height: 32px;
   position: relative;
@@ -595,7 +613,7 @@ a:visiter {
   background: #fff;
   border: 2px solid #dcdfe8;
   border-radius: 50%;
-  transition: all 0.4s;
+  transition: all 0.6s;
 }
 .style-label--radio .style-input-element:hover {
   cursor: pointer;
@@ -744,7 +762,7 @@ a:visiter {
   justify-content: center;
   border: 1px solid #dcdfe8;
   box-shadow: 0px 3px 14px #fff;
-  transition: all 0.4s;
+  transition: all 0.6s;
   margin-bottom: 10px;
 }
 .upload:hover {
@@ -812,7 +830,7 @@ a:visiter {
   align-items: center;
   color: #fff;
   opacity: 0;
-  transition: all 0.4s;
+  transition: all 0.6s;
 }
 .upload-btn {
   position: absolute;
@@ -826,7 +844,7 @@ a:visiter {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.4s;
+  transition: all 0.6s;
   width: 40px;
   height: 40px;
   border: 1px solid #ddd;
@@ -836,8 +854,8 @@ a:visiter {
 .incr__nav .icon {
   width: 14px;
   height: 14px;
-  fill: $gray;
-  transition: all 0.4s;
+  fill: #adaeb9;
+  transition: all 0.6s;
 }
 .incr__nav:hover {
   border: 1px solid #7eca1d;
@@ -857,7 +875,7 @@ a:visiter {
   align-items: center;
   background: #fff;
   position: relative;
-  transition: all 0.4s;
+  transition: all 0.6s;
   padding: 0 15px;
 }
 .incr__val span {
@@ -876,8 +894,8 @@ a:visiter {
 .input-placeholder-val {
   position: absolute;
   left: 20px;
-  top: 22px;
-  transition: all 0.4s;
+  top: 18px;
+  transition: all 0.6s;
 }
 .input:focus+span,
 .input[data-empty="false"] + span {
@@ -897,7 +915,7 @@ a:visiter {
 }
 .switch:before {
   content: '';
-  transition: all 0.4s;
+  transition: all 0.6s;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -921,13 +939,13 @@ a:visiter {
 .dropdown {
   width: 100%;
   display: inline-block;
-  transition: all 0.4s;
+  transition: all 0.6s;
   position: relative;
   outline: none !important;
 }
 .dropdown-current {
   border-radius: 4px;
-  transition: all 0.4s;
+  transition: all 0.6s;
   background: #f1f2f6;
   border: 1px solid #dcdfe8;
   cursor: pointer;
@@ -947,7 +965,7 @@ a:visiter {
   right: 20px;
   width: 24px;
   height: 24px;
-  transition: all 0.4s;
+  transition: all 0.6s;
   fill: #c4c5cc;
 }
 .dropdown-title {
@@ -976,7 +994,7 @@ a:visiter {
 }
 .dropdown-menu__el {
   padding: 18px 20px;
-  transition: all 0.4s;
+  transition: all 0.6s;
 }
 .dropdown-menu__el:hover {
   cursor: pointer;

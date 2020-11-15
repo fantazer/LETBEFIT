@@ -1,3 +1,92 @@
 mixin header()
 	//block header
+	.header#header
+		.header-top-wrap
+			.main-cont
+				.header-top
+					a(href="/").header-logo
+						img(src="img/logo.svg", alt="")
+					.header-location
+						+icon("navigation","icon")
+						.header-location__val Санкт-Петербург
+					.header-contact
+						a(href="tel:8 (499) 110-12-15").header-phone.link 8 (499) 110-12-15
+						.header-phone-link.link--mark Перезвоните мне
+					.header-soc
+						a(href="#").header-soc__el.soc-el--instagram
+							+icon("soc-inst-light","icon")
+						a(href="#").header-soc__el.soc-el--telegram
+							+icon("soc-telegram-light","icon")
+						a(href="#").header-soc__el.soc-el--wp
+							+icon("soc-wp-light","icon")
+		.nav-wrap
+			.main-cont
+				.nav
+					ul.nav-list
+						li.nav-list__el.nav-list__el--sub
+							a(href="#") Программы
+							.drop-menu-wrap
+								.main-cont
+									.drop-menu
+										.drop-menu-list
+											.drop-menu-list__col
+												.drop-menu__el
+													.drop-menu__el-title Сбросить вес
+													.drop-menu__list
+															a(href="#").drop-menu__list__el ExtraLight
+															a(href="#").drop-menu__list__el Light
+												.drop-menu__el
+													.drop-menu__el-title Поддерживать форму
+													.drop-menu__list
+														a(href="#").drop-menu__list__el Normal
+														a(href="#").drop-menu__list__el Balance
+											.drop-menu-list__col
+												.drop-menu__el
+													.drop-menu__el-title Набрать массу
+													.drop-menu__list
+														a(href="#").drop-menu__list__el Strong
+												.drop-menu__el
+													.drop-menu__el-title Питание без мяса
+													.drop-menu__list
+														a(href="#").drop-menu__list__el Veggi
+														a(href="#").drop-menu__list__el Vegetarian
+														a(href="#").drop-menu__list__el Pesco
+											.drop-menu-list__col
+												.drop-menu__el
+													.drop-menu__el-title Питание в офисе
+													.drop-menu__list
+														a(href="#").drop-menu__list__el Daily
+														a(href="#").drop-menu__list__el Every Daily
+														a(href="#").drop-menu__list__el Breakfast
+												.drop-menu__el
+													.drop-menu__el-title Защита здоровья
+													.drop-menu__list
+														a(href="#").drop-menu__list__el Antivirus
+											.drop-menu-list__col
+												.drop-menu__el
+													.drop-menu__el-title Очищение организма
+													.drop-menu__list
+														a(href="#").drop-menu__list__el Detox
+														a(href="#").drop-menu__list__el Post
+										.drop-menu-card
+											a(href="#").drop-menu-card__el
+												+icon("check-wave","icon icon--md icon--mark")
+												.drop-menu-card__title Подбор программы
+												.drop-menu-card__text Не можете определиться? Мы Вам поможем
+											a(href="#").drop-menu-card__el
+												+icon("surprise","icon icon--md icon--mark")
+												.drop-menu-card__title Подарочный сертификат
+												.drop-menu-card__text Подарите здоровье с доставкой на дом!
+						each navEl in nav
+							if(navEl!='Программы')
+								.nav-list__el
+									a(href="#") #{navEl}
+					//toggle class .auth-wrap + .auth-wrap--true
+					.auth-wrap.link.auth-wrap--true
+						.auth-state.auth-state--false
+							+icon("lock","icon")
+							span Личный кабинет
+						a(href="#").auth-state.link.auth-state--true
+							+icon("profile-round","icon")
+							span Анастасия
 	//block header end
