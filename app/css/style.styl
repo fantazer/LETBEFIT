@@ -516,6 +516,11 @@ body
 		right 80px
 //Навигация внутри
 // === for custom navigation ===
+.slider-extend
+	.slick-slide
+		margin: 0 14px
+	.slick-list
+		margin: 0 -14px
 // slick === end
 
 // main slider
@@ -576,7 +581,7 @@ body
 		border 1px solid white
 		box-shadow 0 12px 32px rgba(41, 42, 53, 0.16)
 .advant__el-icon
-	margin: 0 0 46px 10px
+	margin: 0 0 46px 0
 	img
 		width: 80px
 // advant-section === end
@@ -587,6 +592,7 @@ body
 	f()
 	align-items center
 	justify-content space-between
+	margin-bottom: 100px
 .invite-img
 	width: 49%
 	position relative
@@ -618,6 +624,24 @@ body
 	margin-bottom: 24px
 .invite-text
 	margin-bottom: 56px
+.invite-subs
+	f()
+	align-items center
+	margin-bottom: 100px
+.invite-subs-img
+	width: 40%
+	margin-right: 10%
+.invite-subs-info
+	width: 40%
+.invite-subs-title
+	@extend .type--lgx
+	font-weight 700
+	color black
+	margin-bottom: 24px
+.invite-subs-text
+	margin-bottom: 56px
+	@extend .type--md
+	color $typePrimary
 // invite === end
 
 // soc-row
@@ -749,3 +773,436 @@ body
 		&:last-child
 			margin-right: 0
 // footer === end
+
+// program constructor
+.program-main-wrap
+	margin-bottom: 100px
+.program-type
+	display: grid
+	grid-gap 28px
+	grid-template-columns: repeat(6, 1fr)
+	margin-bottom: 48px
+	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+.program-type__el
+	@extend .type--smx
+	tr()
+	cp()
+	height: 192px
+	border-radius 8px
+	padding: 22px
+	f()
+	fl()
+	font-weight: 700
+	.icon
+		tr()
+		size 48px
+
+program-type(bg,textColor,iconColor)
+	background-color bg
+	color textColor
+	.icon
+		fill iconColor
+	&:hover,&.active
+		.icon
+			fill white
+		background: iconColor
+		color white
+
+.program-type__el--seaLight
+	program-type($seaLight,$sea,$sea)
+	&:hover
+		box-shadow: 0px 8px 24px rgba(29, 208, 199, 0.32);
+	&.active
+		box-shadow: 0px 8px 24px rgba(29, 208, 199, 0.32);
+
+.program-type__el--blueLight
+	program-type($blueLight,$blue,$blue)
+	&:hover
+		box-shadow: 0px 8px 24px rgba(0, 101, 189, 0.32);
+	&.active
+		box-shadow: 0px 8px 24px rgba(0, 101, 189, 0.32);
+
+.program-type__el--pinkLight
+	program-type($pinkLight,$pink,$pink)
+	&:hover
+		box-shadow: 0px 8px 24px rgba(255, 104, 137, 0.32);
+	&.active
+		box-shadow: 0px 8px 24px rgba(255, 104, 137, 0.32);
+
+.program-type__el--swampLight
+	program-type($swapmLight,$swapm,$swapm)
+	&:hover
+		box-shadow: 0px 8px 24px rgba(118, 134, 104, 0.32);
+	&.active
+		box-shadow: 0px 8px 24px rgba(118, 134, 104, 0.32);
+
+.program-type__el--orangeLight
+	program-type($orangeLight,$orange,$orange)
+	&:hover
+		box-shadow: 0px 8px 24px rgba(255, 123, 39, 0.32);
+	&.active
+		box-shadow: 0px 8px 24px rgba(255, 123, 39, 0.32);
+
+.program-type__el--violetLight
+	program-type($violetLight,$violet,$violet)
+	&:hover
+		box-shadow: 0px 8px 24px rgba(107, 51, 178, 0.32);
+	&.active
+		box-shadow: 0px 8px 24px rgba(107, 51, 178, 0.32);
+
+.program-type__el-name
+	margin-top: auto
+
+.program-group-wrap
+	border-bottom 1px solid $border-color
+	margin-bottom: 34px
+.program-group
+	f()
+	opacity: 0
+	left -9999px
+	visibility: hidden
+	position absolute
+	transform translateX(10px)
+	transition opacity 1.2s, transform .8s
+	&.active
+		transform translateX(0px)
+		visibility: visible
+		opacity: 1
+		left initial
+		position: static
+.program-group__el
+	padding: 20px
+	width: 192px
+	border-bottom 3px solid transparent
+	cp()
+	tr()
+	&.active
+		border-bottom 3px solid $mark
+.program-group__el-name
+	@extend .type--mdx
+	font-weight 700
+	color black
+.program-group__el-val
+	color $typeSecondary
+// program constructor === end
+
+// program list
+//.program-list-wrap
+.program-list-header
+	flex(between)
+	margin-bottom: 40px
+.program-days
+	f()
+.program-days__el
+	flex(mid)
+	round()
+	size 44px
+	margin-right: 12px
+	cp()
+	tr()
+	@extend .type--smx
+	font-weight 700
+	color black
+	border 1px solid transparent
+	&:hover
+		border 1px solid $mark
+	&.active
+		border 1px solid $mark
+		background: $mark
+		color white
+.program-consist
+	+below(640px)
+		min-width auto
+	f()
+	width: 25%
+	min-width 340px
+.program-consist__el
+	flex-grow 1
+	flex(mid)
+	fl()
+	text-align center
+	border-right 1px solid $border-color
+	&:last-child
+		border 0
+.program-consist__el-val
+	font-weight 700
+	margin-bottom: 5px
+	color black
+.program-consist__el-type
+	@extend .type--sm
+.program-list
+	display: grid
+	grid-gap 28px
+	grid-template-columns: repeat(4, 1fr)
+	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+.program-el
+	br(12px)
+	overflow hidden
+	tr()
+	&:hover
+		box-shadow 0 12px 32px rgba(41, 42, 53, 0.16)
+		.program-el-wrap
+			border 1px solid transparent
+.program-el__img
+	bg-full()
+	padding: 38% 10%
+.program-el-wrap
+	f()
+	fl()
+	tr()
+	border 1px solid $border-color
+	border-top 0!important
+	border-radius 0 0 12px 12px
+.program-el__content
+	flex-grow 1
+	padding: 20px
+.program-el__head
+	flex(between)
+	color $typeSecondary
+	@extend .type--sm
+	margin-bottom: 10px
+.program-el__title
+	line-height: 1.4
+	color black
+	margin-bottom: 8px
+.program-el__text
+	@extend .type--sm
+	color $typePrimary
+.program-el__footer
+	padding: 12px 20px
+	border-top 1px solid $border-color
+	cp()
+	&:hover
+		.icon
+			fill $mark
+		span
+			color $mark
+	.icon
+		tr()
+		fill $grayLight
+	span
+		tr()
+		@extend .type--smx
+		font-weight 700
+		color $typeSecondary
+.program-banner
+	background: linear-gradient(98.95deg, #E3EEFF 0%, #E4F6E4 52.6%, #FFEEE4 100%)
+	br(12px)
+	padding: 12px
+.program-banner-inner
+	background: white
+	height: 100%
+	f()
+	fl()
+	align-items center
+	justify-content center
+	padding: 20px
+	.btn--md
+		width: 100%
+		margin-bottom: 30px
+.program-banner__img
+	margin-bottom: 20px
+.program-banner__cost
+	@extend .type--xl
+	font-weight 700
+	color black
+.program-banner__text
+	@extend .type--md
+	font-weight 700
+	color black
+	margin-bottom: 40px
+// program list === end
+
+// work-step
+.work-step
+	display: grid
+	grid-gap 28px
+	grid-template-columns: repeat(3, 1fr)
+	margin-bottom: 100px
+	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+.work-step__el
+	border-radius 12px
+	border 1px solid $border-color
+	padding: 32px
+	tr()
+.work-step__el-icon
+	margin: 0 0 46px 0
+	img
+		width: 80px
+.work-step__el-title
+	color black
+	@extend .type--md
+	font-weight 700
+	margin-bottom: 12px
+.work-step__el-text
+	color $typeSecondary
+// work-step === end
+
+// sale-list
+.sale-list
+	display: grid
+	grid-gap 28px
+	grid-template-columns: repeat(3, 1fr)
+	margin-bottom: 100px
+.sale-el
+	br(12px)
+	overflow hidden
+	f()
+	fl()
+	tr()
+	&:hover
+		.sale-el__content
+			border 1px solid transparent
+		box-shadow 0 12px 32px rgba(41, 42, 53, 0.16)
+.sale-el__img
+	bg-full()
+	padding: 29% 10%
+.sale-el__content
+	padding: 24px
+	border 1px solid $border-color
+	border-top 0!important
+	overflow hidden
+	border-radius 0 0 12px 12px
+	f()
+	tr()
+	fl()
+	flex-grow 1
+.sale-el__text
+	@extend .type--md
+	margin-bottom: 24px
+	flex-grow 1
+.sale-el__get
+	margin-top: auto
+// sale-list === end
+
+// review slider
+.slider-review__el
+	bg-full()
+	padding: 100% 10%
+// review slider === end
+
+.section-extend
+	padding: 100px 0
+	margin-bottom: 100px
+
+.section--gradient
+	background: $gradient
+
+// accordion
+.accordion
+	+below(640px)
+		width 100%
+		margin-bottom: 30px
+	background: white
+.accordion__el
+	border 1px solid #e5e5e5
+	margin-top: -1px
+	cp()
+	&:hover
+		.accordion__el-head-icon
+			&:before
+				content ''
+				background: $green
+			&:after
+				content ''
+				background: $green
+
+.accordion__el-head
+	+below(640px)
+		padding: 20px
+	padding: 30px 40px
+	flex(between)
+	color black
+
+.accordion__el-head-text
+	+below(640px)
+		font-weight: 400
+		line-height: 1.6
+		font-size: 14px
+	@extend .type--md
+	width: 80%
+	font-size: 18px
+	font-weight: 700
+
+
+
+.accordion__el-head-icon
+	+below(640px)
+		size 16px
+	position: relative
+	size 24px
+	&:before
+		content ''
+		tr(all)
+		height: 2px
+		width: 100%
+		background: gray
+		position: absolute
+		top calc(50% - 1px)
+	&:after
+		content ''
+		tr(all)
+		height: 100%
+		width: 2px
+		background: gray
+		position: absolute
+		left calc(50% - 1px)
+
+.accordion__el-content
+	+below(640px)
+		padding:20px
+	padding: 40px
+	display: none
+	p
+		&:first-child
+			margin-top: 0
+		&:last-child
+			margin-bottom: 0
+
+.accordion__el--active
+	border-bottom 1px solid $border-color
+	.accordion__el-head-text
+		color $green
+	.accordion__el-head-icon
+		&:after
+			content ''
+			transform rotate(45deg)
+		&:before
+			content ''
+			transform rotate(45deg)
+// accordion === end
+
+// FAQ
+.faq-type
+	display: grid
+	grid-gap 28px
+	grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+	margin-bottom: 48px
+.faq-type__el
+	padding: 22px
+	br(12px)
+	f()
+	fl()
+	background $greenLight
+	color $greenDark
+	@extend .type--smx
+	font-weight 700
+	tr()
+	cp()
+	.icon
+		tr()
+		margin-bottom: 50px
+		fill $greenDark
+	&.active
+		color white
+		background: $mark
+		box-shadow 0 8px 24px rgba(126, 202, 29, 0.32)
+		.icon
+			fill white
+	&:hover
+		box-shadow 0 8px 24px rgba(126, 202, 29, 0.32)
+		background: $mark
+		color white
+		.icon
+			fill white
+// FAQ === end

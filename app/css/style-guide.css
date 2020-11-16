@@ -36,7 +36,7 @@
 }
 .drop {
   transform: scaleY(0);
-  transition: all 0.6s;
+  transition: all 0.4s;
   transform-origin: top;
   opacity: 0;
 }
@@ -160,6 +160,14 @@ body > svg {
     font-size: 10px;
   }
 }
+.type--smx {
+  font-size: 14px;
+}
+@media only screen and (max-width: 768px) {
+  .type--smx {
+    font-size: 12px;
+  }
+}
 .type--main,
 .title--main,
 p,
@@ -177,6 +185,7 @@ p,
 .type--md,
 .title--md,
 h5,
+.btn--smx,
 .btn--md {
   font-size: 20px;
 }
@@ -184,6 +193,7 @@ h5,
   .type--md,
   .title--md,
   h5,
+  .btn--smx,
   .btn--md {
     font-size: 18px;
   }
@@ -211,11 +221,13 @@ h3 {
   }
 }
 .type--lgx,
+.title--lgx,
 h2 {
   font-size: 44px;
 }
 @media only screen and (max-width: 768px) {
   .type--lgx,
+  .title--lgx,
   h2 {
     font-size: 32px;
   }
@@ -242,8 +254,9 @@ h1 {
   text-align: center;
 }
 .title {
-  margin-bottom: 30px;
+  margin-bottom: 48px;
   font-weight: 700;
+  color: #111;
 }
 h5 {
   color: #111;
@@ -263,7 +276,7 @@ h1 {
 a {
   color: #111;
   text-decoration: none;
-  transition: all 0.6s;
+  transition: all 0.4s;
 }
 a:hover {
   color: #000;
@@ -353,6 +366,7 @@ a:visiter {
 }
 .btn,
 .btn--sm,
+.btn--smx,
 .btn--md,
 .btn--lg,
 .btn--mobile,
@@ -360,7 +374,7 @@ a:visiter {
 .btn--light,
 .btn--white {
   border-radius: 32px;
-  transition: all 0.6s;
+  transition: all 0.4s;
   display: inline-block;
   background: none;
   border: 0;
@@ -369,6 +383,7 @@ a:visiter {
 }
 .btn:before,
 .btn--sm:before,
+.btn--smx:before,
 .btn--md:before,
 .btn--lg:before,
 .btn--mobile:before,
@@ -386,6 +401,7 @@ a:visiter {
 }
 .btn:hover,
 .btn--sm:hover,
+.btn--smx:hover,
 .btn--md:hover,
 .btn--lg:hover,
 .btn--mobile:hover,
@@ -396,6 +412,7 @@ a:visiter {
 }
 .btn:before,
 .btn--sm:before,
+.btn--smx:before,
 .btn--md:before,
 .btn--lg:before,
 .btn--mobile:before,
@@ -407,6 +424,10 @@ a:visiter {
 }
 .btn--sm {
   padding: 10px 40px;
+  font-weight: 500;
+}
+.btn--smx {
+  padding: 18px 42px;
   font-weight: 500;
 }
 .btn--md {
@@ -516,7 +537,7 @@ a:visiter {
   font-family: 'Ubuntu', sans-serif;
   display: block !important;
   background: #f1f2f6;
-  transition: all 0.6s;
+  transition: all 0.4s;
   line-height: 1.6;
 }
 .input input::-webkit-input-placeholder,
@@ -569,7 +590,7 @@ a:visiter {
 }
 .style-label--checkbox .style-input-element {
   border-radius: 4px;
-  transition: all 0.6s;
+  transition: all 0.4s;
   width: 32px;
   height: 32px;
   position: relative;
@@ -613,7 +634,7 @@ a:visiter {
   background: #fff;
   border: 2px solid #dcdfe8;
   border-radius: 50%;
-  transition: all 0.6s;
+  transition: all 0.4s;
 }
 .style-label--radio .style-input-element:hover {
   cursor: pointer;
@@ -644,6 +665,14 @@ a:visiter {
 }
 .input-row .input {
   width: 100%;
+}
+.input-btn-cont {
+  display: flex;
+  align-items: flex-start;
+}
+.input-btn-cont .input-row {
+  margin-right: 28px;
+  min-width: 300px;
 }
 .input-row__title {
   margin-bottom: 10px;
@@ -762,7 +791,7 @@ a:visiter {
   justify-content: center;
   border: 1px solid #dcdfe8;
   box-shadow: 0px 3px 14px #fff;
-  transition: all 0.6s;
+  transition: all 0.4s;
   margin-bottom: 10px;
 }
 .upload:hover {
@@ -830,7 +859,7 @@ a:visiter {
   align-items: center;
   color: #fff;
   opacity: 0;
-  transition: all 0.6s;
+  transition: all 0.4s;
 }
 .upload-btn {
   position: absolute;
@@ -844,7 +873,7 @@ a:visiter {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.6s;
+  transition: all 0.4s;
   width: 40px;
   height: 40px;
   border: 1px solid #ddd;
@@ -855,7 +884,7 @@ a:visiter {
   width: 14px;
   height: 14px;
   fill: #adaeb9;
-  transition: all 0.6s;
+  transition: all 0.4s;
 }
 .incr__nav:hover {
   border: 1px solid #7eca1d;
@@ -875,7 +904,7 @@ a:visiter {
   align-items: center;
   background: #fff;
   position: relative;
-  transition: all 0.6s;
+  transition: all 0.4s;
   padding: 0 15px;
 }
 .incr__val span {
@@ -894,8 +923,8 @@ a:visiter {
 .input-placeholder-val {
   position: absolute;
   left: 20px;
-  top: 18px;
-  transition: all 0.6s;
+  top: 20px;
+  transition: all 0.4s;
 }
 .input:focus+span,
 .input[data-empty="false"] + span {
@@ -915,7 +944,7 @@ a:visiter {
 }
 .switch:before {
   content: '';
-  transition: all 0.6s;
+  transition: all 0.4s;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -939,13 +968,13 @@ a:visiter {
 .dropdown {
   width: 100%;
   display: inline-block;
-  transition: all 0.6s;
+  transition: all 0.4s;
   position: relative;
   outline: none !important;
 }
 .dropdown-current {
   border-radius: 4px;
-  transition: all 0.6s;
+  transition: all 0.4s;
   background: #f1f2f6;
   border: 1px solid #dcdfe8;
   cursor: pointer;
@@ -965,7 +994,7 @@ a:visiter {
   right: 20px;
   width: 24px;
   height: 24px;
-  transition: all 0.6s;
+  transition: all 0.4s;
   fill: #c4c5cc;
 }
 .dropdown-title {
@@ -994,7 +1023,7 @@ a:visiter {
 }
 .dropdown-menu__el {
   padding: 18px 20px;
-  transition: all 0.6s;
+  transition: all 0.4s;
 }
 .dropdown-menu__el:hover {
   cursor: pointer;

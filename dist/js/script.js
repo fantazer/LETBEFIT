@@ -92,6 +92,16 @@ $(document).ready(function () {
 	})
 	// toggle single === end
 
+	// toggle class one from list
+	$('.js-tick').click(function(){
+		var parent = $(this).closest('.js-tick-cont');
+		parent.find('.js-tick').removeClass('active');
+		$(this).addClass('active')
+	});
+	// toggle class one from list === end
+
+	
+
 	//toggle class + neighbor
 	$('.js-commutator-el').click(function(){
 		var thisItem = $(this).data("item");
@@ -247,6 +257,17 @@ $(document).ready(function () {
 	});
 	// main slider === end
 
+	// main slider
+	$('.slider-review').slick({
+		slidesToShow: 4,
+		speed: 800,
+		dots:false,
+		arrows:false,
+		rows:0,
+		//fade:true
+	});
+	// main slider === end
+
 	// === custom arrow el ===
 	$('.slider-control--right').click(function(){
 		$(this).closest(".slider-wrap").find(".slider-item").slick('slickNext');
@@ -261,9 +282,24 @@ $(document).ready(function () {
 
 	// animate scroll to id
 	$(".js-scroll-to").mPageScroll2id({
-		offset:200,
+		offset:100,
 	});
 	// animate scroll to id === end
+	
+	// toggle program types list 
+	$('.js-program-type').click(function(){
+		var current = $(this).index();
+		$('.js-program-group').removeClass('active')
+		$('.js-program-group').eq(current).addClass('active')
+	});
+	// toggle program types list  === end
+
+	// accordion row toggle
+	$('.accordion__el-head').click(function () {
+		$(this).toggleClass('accordion__el--active');
+		$(this).closest('.accordion__el').find('.accordion__el-content').slideToggle();
+	});
+	// accordion row toggle === end
 
 	//window.condition = {};
 	//window.condition.info = info;
