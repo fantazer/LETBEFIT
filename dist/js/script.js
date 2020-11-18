@@ -194,8 +194,7 @@ $(document).ready(function () {
 	//bubble
 	var limit = 2400 * 3600 * 1000; // 24 часа
 	var localStorageInitTime = localStorage.getItem('localStorageInitTime');
-	//console.log(localStorageInitTime);
-	//console.log(+new Date() - localStorageInitTime);
+
 	if (localStorageInitTime === null) {
 			localStorage.setItem('localStorageInitTime', +new Date());
 	} else if(+new Date() - localStorageInitTime > limit){
@@ -269,12 +268,12 @@ $(document).ready(function () {
 	// main slider === end
 
 	// === custom arrow el ===
-	$('.slider-control--right').click(function(){
-		$(this).closest(".slider-wrap").find(".slider-item").slick('slickNext');
+	$('.js-control-right').click(function(){
+		$(this).closest(".js-slider-wrap").find(".js-slider").slick('slickNext');
 	});
 
-	$('.slider-control--left').click(function(){
-		$(this).closest(".slider-wrap").find(".slider-item").slick('slickPrev');
+	$('.js-control-left').click(function(){
+		$(this).closest(".js-slider-wrap").find(".js-slider").slick('slickPrev');
 	});
 	// custom arrow el === end
 
@@ -287,20 +286,28 @@ $(document).ready(function () {
 	// animate scroll to id === end
 	
 	// toggle program types list 
-	$('.js-program-type').click(function(){
+	$('.js-tab').click(function(){
 		var current = $(this).index();
-		$('.js-program-group').removeClass('active')
-		$('.js-program-group').eq(current).addClass('active')
+		var parent = $(this).closest('.js-tab-wrap')
+		parent.find('.js-tab-cont').removeClass('active')
+		parent.find('.js-tab-cont').eq(current).addClass('active')
 	});
 	// toggle program types list  === end
 
 	// accordion row toggle
-	$('.accordion__el-head').click(function () {
-		$(this).toggleClass('accordion__el--active');
-		$(this).closest('.accordion__el').find('.accordion__el-content').slideToggle();
+	$('.js-accordion-head').click(function () {
+		$(this).toggleClass('active');
+		$(this).closest('.js-accordion').find('.js-accordion-content').slideToggle();
 	});
 	// accordion row toggle === end
-
+	
+	// drop click on contract
+	$('.js-contract-el').click(function(){
+		$(this).find('input[type="radio"]').prop('checked', true);
+	});
+	// drop click on contract === end
+	
+	
 	//window.condition = {};
 	//window.condition.info = info;
 });

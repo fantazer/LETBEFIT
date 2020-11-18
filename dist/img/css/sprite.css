@@ -134,7 +134,7 @@
 
 
 
-  .icon.cheched:before {
+  .icon.check-wave:before {
       background-position: 0em -31.2em;
       width: 2.4em;
       height: 2.4em;
@@ -143,7 +143,7 @@
 
 
 
-  .icon.check-wave:before {
+  .icon.checked:before {
       background-position: 0em -33.6em;
       width: 2.4em;
       height: 2.4em;

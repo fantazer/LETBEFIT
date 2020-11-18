@@ -465,51 +465,43 @@ body
 .slider-wrap
 	position relative
 
-//Навигация снаружи
-.slider-wrap--simple
+.slider-control-row
+	f()
 	.slider-control
-		round()
-		flex(mid)
-		tr(all)
-		size 80px
+		&:first-child
+			margin-right: 24px
+.slider-control
+	flex(mid)
+	tr(all)
+	z-index 10
+	size 80px
+	cp()
+	round()
+	border 1px solid $border-color
+	&:hover
 		background: white
-		position: absolute
-		top 50%
-		margin-top: -40px
-		z-index 10
-		cp()
-		&:hover
-			background: $red
-			.icon
-				fill white
+		border 1px solid white
+		box-shadow: 0px 12px 32px rgba(41, 42, 53, 0.16);
 		.icon
-			size 14px
-	.slider-control--left
-		left -20px
-	.slider-control--right
-		right -20px
-//Навигация снаружи end
+			fill black
+	.icon
+		fill black
 
+.slider-control--light
+	border 2px solid #ffffff2e
+	&:hover
+		background: white
+		border 1px solid white
+		.icon
+			fill black
+	.icon
+		fill white
 //Навигация внутри
 .slider-wrap--inarrow
 	.slider-control
-		flex(mid)
-		tr(all)
 		position: absolute
 		top 50%
 		margin-top: -40px
-		z-index 10
-		size 80px
-		cp()
-		round()
-		border 2px solid #ffffff2e
-		&:hover
-			background: white
-			border 1px solid white
-			.icon
-				fill black
-		.icon
-			fill white
 	.slider-control--left
 		left 80px
 	.slider-control--right
@@ -1079,8 +1071,14 @@ program-type(bg,textColor,iconColor)
 .slider-review__el
 	bg-full()
 	padding: 100% 10%
+.review-head
+	flex(between)
+	margin: -48px 0 40px 0
+	.review-head__text
+		width: 50%
 // review slider === end
-
+.section
+	padding-bottom: 100px
 .section-extend
 	padding: 100px 0
 	margin-bottom: 100px
@@ -1094,6 +1092,18 @@ program-type(bg,textColor,iconColor)
 		width 100%
 		margin-bottom: 30px
 	background: white
+	opacity: 0
+	left -9999px
+	visibility: hidden
+	position absolute
+	transform translateX(10px)
+	transition opacity 1.2s, transform .8s
+	&.active
+		transform translateX(0px)
+		visibility: visible
+		opacity: 1
+		left initial
+		position: static
 .accordion__el
 	border 1px solid #e5e5e5
 	margin-top: -1px
@@ -1113,7 +1123,16 @@ program-type(bg,textColor,iconColor)
 	padding: 30px 40px
 	flex(between)
 	color black
-
+	&.active
+		.accordion__el-head-text
+			color $green
+		.accordion__el-head-icon
+			&:after
+				content ''
+				transform rotate(45deg)
+			&:before
+				content ''
+				transform rotate(45deg)
 .accordion__el-head-text
 	+below(640px)
 		font-weight: 400
@@ -1121,7 +1140,6 @@ program-type(bg,textColor,iconColor)
 		font-size: 14px
 	@extend .type--md
 	width: 80%
-	font-size: 18px
 	font-weight: 700
 
 
@@ -1151,7 +1169,7 @@ program-type(bg,textColor,iconColor)
 .accordion__el-content
 	+below(640px)
 		padding:20px
-	padding: 40px
+	padding: 0 40px 40px 40px
 	display: none
 	p
 		&:first-child
@@ -1159,17 +1177,7 @@ program-type(bg,textColor,iconColor)
 		&:last-child
 			margin-bottom: 0
 
-.accordion__el--active
-	border-bottom 1px solid $border-color
-	.accordion__el-head-text
-		color $green
-	.accordion__el-head-icon
-		&:after
-			content ''
-			transform rotate(45deg)
-		&:before
-			content ''
-			transform rotate(45deg)
+
 // accordion === end
 
 // FAQ
@@ -1206,3 +1214,120 @@ program-type(bg,textColor,iconColor)
 		.icon
 			fill white
 // FAQ === end
+
+
+// deliver
+.deliver-wrap
+	f()
+	justify-content space-between
+.deliver-info
+	width: 28%
+.deliver-info__text
+	margin-bottom: 42px
+	color $typeSecondary
+//.deliver-pick
+.deliver-pick__el
+	f()
+	align-items center
+	margin-bottom: 22px
+	&:last-child
+		margin-bottom: 0
+.deliver-pick__el-color
+	round()
+	size 24px
+	margin-right: 16px
+.deliver-pick__el-text
+	font-weight 700
+	color black
+.deliver-map
+	width: 66%
+	padding: 15% 10%
+.map-wrap
+	position relative
+	background: $grayLight
+.map
+	position absolute
+	top 0
+	left 0
+	width: 100%
+	height: 100%
+// deliver === end
+
+// contract
+.contract
+	center(852px,0)
+	br(12px)
+	overflow hidden
+	background: white
+.contract-head
+	padding: 36px 48px
+	color white
+	position relative
+//.contract-head-info
+.contract-head-title
+	@extend .type--lgx
+	font-weight 700
+	margin-bottom: 16px
+.contract-advant
+	border-radius 28px
+	background-color rgba(255, 255, 255, 0.2)
+	display: inline-flex
+	align-items center
+	padding: 10px 18px
+	img
+		size 32px
+		margin-right: 8px
+.contract-head-img
+	bg-full()
+	padding: 5% 16%
+	position absolute
+	top 0
+	bottom 0
+	right 5%
+.contract-content
+	padding: 48px
+.contract-config-wrap
+	margin-bottom: 32px
+.contract-config
+	display: grid
+	grid-gap 16px
+	grid-template-columns: repeat(auto-fill, minmax(16rem,1fr))
+.contract-config__el
+	padding: 16px
+	border 1px solid $border-color
+	br(4px)
+	f()
+	justify-content space-between
+	align-items center
+	tr()
+	cp()
+	&.active
+		border 1px solid $mark
+		background-color $greenLight
+	&:hover
+		border 1px solid $mark
+	.check-el
+		width 70%
+.contract-config__el-val
+	font-weight: 700
+	color $mark
+
+//.contract-total-wrap
+.contract-total
+	flex(between)
+	margin-bottom: 12px
+	&:last-child
+		padding-top: 12px
+		margin: 0
+		border-top 1px dashed $border-color
+.contract-footer
+	border-top 1px dashed $border-color
+	padding: 48px 48px 56px 48px
+	flex(between)
+.contract-footer__text
+	width: 55%
+	color black
+//.link--mark
+//.contract-footer__get
+//.btn--mark
+// contract === end

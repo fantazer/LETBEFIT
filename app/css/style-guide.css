@@ -130,6 +130,9 @@ table tbody tr:hover th {
 body > svg {
   display: none;
 }
+.bg-sea {
+  background: #1dd0c7;
+}
 @font-face {
   font-family: 'Ubuntu';
   src: url("../fonts/Ubuntu-Regular.woff2") format('woff2'), url("../fonts/Ubuntu-Regular.woff") format('woff');
@@ -431,7 +434,7 @@ a:visiter {
   font-weight: 500;
 }
 .btn--md {
-  padding: 18px 50px;
+  padding: 18px 54px;
   font-weight: 700;
 }
 .btn--lg {
@@ -575,6 +578,9 @@ a:visiter {
   position: relative;
   align-items: center;
 }
+.style-label:hover {
+  cursor: pointer;
+}
 .check-el input {
   position: absolute;
   top: 0;
@@ -595,7 +601,7 @@ a:visiter {
   height: 32px;
   position: relative;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 16px;
   background: #fff;
   border: 1px solid #dcdfe8;
 }
@@ -630,7 +636,7 @@ a:visiter {
   height: 32px;
   position: relative;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 16px;
   background: #fff;
   border: 2px solid #dcdfe8;
   border-radius: 50%;
@@ -661,7 +667,7 @@ a:visiter {
 }
 .input-row {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 .input-row .input {
   width: 100%;
