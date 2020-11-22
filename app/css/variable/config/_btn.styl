@@ -24,19 +24,14 @@
 .btn--sm
 	@extend .btn
 	@extend .type--main
-	padding 10px 40px
+	padding 10px 29px
 	font-weight: 500
 
-.btn--smx
-	@extend .btn
-	@extend .type--md
-	padding 18px 42px
-	font-weight: 500
 
 .btn--md
 	@extend .btn
 	@extend .type--md
-	padding 18px 54px
+	padding 18px 48px
 	font-weight: 700
 
 .btn--lg
@@ -68,6 +63,11 @@
 	.nav-icon
 		fill white
 
+.btn--mark.disable
+	background: none
+	color $typeDisable
+	pointer-events none
+
 .btn--disable
 	@extend .disabled
 	border 1px solid $border-color
@@ -81,12 +81,36 @@
 	.nav-icon
 		fill $mark
 	&:hover
-		background: $fieldBackground
-		border 1px solid $fieldBackground
+		background: $greenLight
+		border 1px solid $mark
+		color $mark
 	&:active
 		&:before
 			content ''
 			border 2px solid $greenLight
+
+.btn--light.disable
+	pointer-events none
+	color $typeDisable
+
+.btn--text
+	@extend .btn
+	border 0
+	background-color none
+	color $mark
+	.nav-icon
+		fill $mark
+	&:hover
+		background: $greenLight
+		color $mark
+	&:active
+		&:before
+			content ''
+			border 2px solid $greenLight
+
+.btn--text.disable
+	pointer-events none
+	color $typeDisable
 
 .btn--white
 	@extend .btn

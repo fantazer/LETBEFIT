@@ -23,7 +23,7 @@ typeSize(fontSm,font)
 	typeSize(14,12)
 
 .type--main
-	typeSize(16,14)
+	typeSize(16,16)
 
 .type--md
 	typeSize(20,18)
@@ -43,6 +43,9 @@ typeSize(fontSm,font)
 .type--mark
 	color $mark
 
+.type--white
+	color white
+
 .type--bold
 	font-weight bold
 
@@ -50,6 +53,8 @@ typeSize(fontSm,font)
 	text-align center
 
 .title
+	+below(1024px)
+		margin-bottom: 32px
 	margin-bottom: 48px
 	font-weight: 700
 	color black
@@ -143,6 +148,9 @@ p
 	fw()
 	align-items center
 
+.icon-row--extend
+	margin-bottom: 32px
+
 .icon
 	size 24px
 
@@ -166,5 +174,11 @@ p
 
 .icon--gray
 	fill $gray
+
+.icon--orange
+	fill $orange
+
+.icon--white
+	fill white
 
 // icons === end

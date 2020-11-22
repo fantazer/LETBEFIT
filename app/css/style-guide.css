@@ -182,13 +182,12 @@ p,
   .title--main,
   p,
   .btn--sm {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 .type--md,
 .title--md,
 h5,
-.btn--smx,
 .btn--md {
   font-size: 20px;
 }
@@ -196,7 +195,6 @@ h5,
   .type--md,
   .title--md,
   h5,
-  .btn--smx,
   .btn--md {
     font-size: 18px;
   }
@@ -250,6 +248,9 @@ h1 {
 .type--mark {
   color: #7eca1d;
 }
+.type--white {
+  color: #fff;
+}
 .type--bold {
   font-weight: bold;
 }
@@ -260,6 +261,11 @@ h1 {
   margin-bottom: 48px;
   font-weight: 700;
   color: #111;
+}
+@media only screen and (max-width: 1024px) {
+  .title {
+    margin-bottom: 32px;
+  }
 }
 h5 {
   color: #111;
@@ -339,6 +345,9 @@ a:visiter {
   flex-wrap: wrap;
   align-items: center;
 }
+.icon-row--extend {
+  margin-bottom: 32px;
+}
 .icon {
   width: 24px;
   height: 24px;
@@ -367,14 +376,20 @@ a:visiter {
 .icon--gray {
   fill: #adaeb9;
 }
+.icon--orange {
+  fill: #ff7b27;
+}
+.icon--white {
+  fill: #fff;
+}
 .btn,
 .btn--sm,
-.btn--smx,
 .btn--md,
 .btn--lg,
 .btn--mobile,
 .btn--mark,
 .btn--light,
+.btn--text,
 .btn--white {
   border-radius: 32px;
   transition: all 0.4s;
@@ -386,12 +401,12 @@ a:visiter {
 }
 .btn:before,
 .btn--sm:before,
-.btn--smx:before,
 .btn--md:before,
 .btn--lg:before,
 .btn--mobile:before,
 .btn--mark:before,
 .btn--light:before,
+.btn--text:before,
 .btn--white:before {
   content: '';
   position: absolute;
@@ -404,37 +419,33 @@ a:visiter {
 }
 .btn:hover,
 .btn--sm:hover,
-.btn--smx:hover,
 .btn--md:hover,
 .btn--lg:hover,
 .btn--mobile:hover,
 .btn--mark:hover,
 .btn--light:hover,
+.btn--text:hover,
 .btn--white:hover {
   cursor: pointer;
 }
 .btn:before,
 .btn--sm:before,
-.btn--smx:before,
 .btn--md:before,
 .btn--lg:before,
 .btn--mobile:before,
 .btn--mark:before,
 .btn--light:before,
+.btn--text:before,
 .btn--white:before {
   content: '';
   opacity: 1;
 }
 .btn--sm {
-  padding: 10px 40px;
-  font-weight: 500;
-}
-.btn--smx {
-  padding: 18px 42px;
+  padding: 10px 29px;
   font-weight: 500;
 }
 .btn--md {
-  padding: 18px 54px;
+  padding: 18px 48px;
   font-weight: 700;
 }
 .btn--lg {
@@ -468,6 +479,11 @@ a:visiter {
 .btn--mark .nav-icon {
   fill: #fff;
 }
+.btn--mark.disable {
+  background: none;
+  color: #c8cad4;
+  pointer-events: none;
+}
 .btn--disable {
   border: 1px solid #dcdfe8;
   background-color: #c4c5cc;
@@ -481,12 +497,37 @@ a:visiter {
   fill: #7eca1d;
 }
 .btn--light:hover {
-  background: #f1f2f6;
-  border: 1px solid #f1f2f6;
+  background: #e6f2d6;
+  border: 1px solid #7eca1d;
+  color: #7eca1d;
 }
 .btn--light:active:before {
   content: '';
   border: 2px solid #e6f2d6;
+}
+.btn--light.disable {
+  pointer-events: none;
+  color: #c8cad4;
+}
+.btn--text {
+  border: 0;
+  background-color: none;
+  color: #7eca1d;
+}
+.btn--text .nav-icon {
+  fill: #7eca1d;
+}
+.btn--text:hover {
+  background: #e6f2d6;
+  color: #7eca1d;
+}
+.btn--text:active:before {
+  content: '';
+  border: 2px solid #e6f2d6;
+}
+.btn--text.disable {
+  pointer-events: none;
+  color: #c8cad4;
 }
 .btn--white {
   color: #111;
@@ -700,6 +741,26 @@ a:visiter {
   color: #d00025;
   margin: 10px 0;
   display: none;
+}
+.input-row--validate {
+  position: relative;
+}
+.input-row--validate .input {
+  padding-right: 50px;
+}
+.input-row--validate .icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: none;
+}
+.input-row--validate.input-row--error .icon-validate-false {
+  display: block !important;
+  fill: #d00025;
+}
+.input-row--validate.input-row--success .icon-validate-true {
+  display: block !important;
+  fill: #5da600;
 }
 .input-cont {
   display: grid;

@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+	// watch window resize
+	var currentSize = $(window).width()
+	$(window).resize(function(){
+		currentSize = $(window).width();
+		programListSlider()
+		return currentSize;
+	});
+	// watch window resize === end
+
 	//modals
 	var modalState = {
 		"isModalShow": false, //state show modal
@@ -124,21 +133,36 @@ $(document).ready(function () {
 	})
 	//toggle class + neighbor === end
 
-	//toggle class + parent
-	$('.js-switch').click(function(){
-		var thisItem = $(this).data("item");
-		var isEach = $(this).data("each") || false;
-		var parrent = $(this).closest(".js-switch-parrent");
-		$(this).toggleClass("active")
-		var selector;
-		selector = $(".js-switch[data-item=" + thisItem + "")
-		if(isEach){
-			selector.not(this).removeClass('active')
-			selector.not(this).closest(".js-switch-parrent").find(".js-switch-cont").removeClass('active')
+	$('.check-el').click(function(e){
+		//e.stopPropagation()
+	});
+	// switch
+	$('.js-switch').click(function (e) {
+		if(e.target.className!='style-input'){
+				var typeItem = $(this).data("item");
+				var groupItem = $(this).data("group");
+				var selector = $('.js-switch[data-group=' + groupItem +']');
+				var size = selector.size()
+				selector.each(function () {
+					$(this).removeClass("active");
+				});
+				$('.js-switch-cont').each(function () {
+					if ($(this).data("group") === groupItem) {
+						if ($(this).data("item") === typeItem) {
+							if (size === 0) {
+								$(this).toggleClass("hidden")
+							} else {
+								$(this).removeClass("hidden")
+							}
+						} else {
+							$(this).addClass("hidden");
+						}
+					}
+				});
+				$(this).addClass("active");
 		}
-		parrent.find(".js-switch-cont[data-item=" + thisItem + "]").toggleClass('active')
-	})
-	//toggle class + parent === end
+	});
+	// switch === end
 
 	// incr
 	var incrEl= {}
@@ -256,7 +280,7 @@ $(document).ready(function () {
 	});
 	// main slider === end
 
-	// main slider
+	// review slider
 	$('.slider-review').slick({
 		slidesToShow: 4,
 		speed: 800,
@@ -265,7 +289,37 @@ $(document).ready(function () {
 		rows:0,
 		//fade:true
 	});
-	// main slider === end
+	// review slider === end
+
+	// mobile program list slider
+		var programListSlider = function(){
+		if( currentSize < 1024){
+			$('.program-list').not('.slick-initialized').slick({
+				rows:0,
+				responsive: [
+					{
+						breakpoint: 9999,
+						settings: "unslick"
+					},
+					{
+						breakpoint: 1025,
+							settings: {
+								slidesToShow: 3.2,
+								slidesToScroll: 1,
+								infinite: false,
+								arrows:false,
+								dots: false,
+
+						}
+					}
+				]
+			});
+		}
+	};
+
+	programListSlider();
+	// mobile program list slider === end
+
 
 	// === custom arrow el ===
 	$('.js-control-right').click(function(){
@@ -278,6 +332,9 @@ $(document).ready(function () {
 	// custom arrow el === end
 
 	// === slick === end
+
+
+
 
 	// animate scroll to id
 	$(".js-scroll-to").mPageScroll2id({
@@ -296,8 +353,16 @@ $(document).ready(function () {
 
 	// accordion row toggle
 	$('.js-accordion-head').click(function () {
-		$(this).toggleClass('active');
-		$(this).closest('.js-accordion').find('.js-accordion-content').slideToggle();
+		var current = $(this).closest('.js-accordion-el').index()
+		$(this).closest('.js-accordion').find('.js-accordion-el').each(function(){
+			if($(this).index()!=current){
+				 $(this).find('.js-accordion-head').removeClass('active')
+				 $(this).find('.js-accordion-content').slideUp('active')
+			}else{
+				 $(this).find('.js-accordion-content').slideToggle('active')
+				 $(this).find('.js-accordion-head').toggleClass('active')
+			}
+		})
 	});
 	// accordion row toggle === end
 	
@@ -305,9 +370,24 @@ $(document).ready(function () {
 	$('.js-contract-el').click(function(){
 		$(this).find('input[type="radio"]').prop('checked', true);
 	});
-	// drop click on contract === end
+	// drop click on contract === end*/
 	
-	
+
+	// slide menu
+	$('.js-slide-block-toggle').click(function (event) {
+		$(".js-slide-block-toggle").not(this).removeClass('slide-block-toggle--open');
+		var current = $(this).data("menu");
+		$(".slide-block").each(function () {
+			if ($(this).data("menu") === current) {
+				$(this).toggleClass("slide-block--open")
+			} else {
+				$(this).removeClass("slide-block--open")
+			}
+		})
+		$(this).toggleClass('slide-block-toggle--open');
+	});
+	// slide menu === end
+
 	//window.condition = {};
 	//window.condition.info = info;
 });

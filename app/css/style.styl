@@ -18,6 +18,10 @@ body
 	letter-spacing 0.01em
 
 .main-cont
+	+below(1024px)
+		padding: 0 42px
+	+below(640px)
+		padding: 0 10px
 	center(1312px,10px)
 
 .page
@@ -26,10 +30,21 @@ body
 	min-height 100vh
 
 .content
+	+below(1024px)
+		padding: 60px 0
 	flex-grow 1
 	padding: 100px 0
 .content--mid
 	flex(mid)
+
+.hidden-on-mobile
+	+below(640px)
+		display none
+
+.visible-on-mobile
+	+above(641px)
+		display none
+
 
 // animate top menu
 @keyframes slideInDown
@@ -248,14 +263,25 @@ body
 .header
 	background: white
 .header-top-wrap
+	+below(1024px)
+		.main-cont
+			padding: 0 0 0 20px
 	border-bottom 1px solid $border-color
 //.main-cont
 .header-top
+	+below(1024px)
+		height: 60px
 	height: 72px
 	f()
 	align-items center
-//.header-logo
+.header-logo
+	+below(1024px)
+		width: 80px
 .header-location
+	+below(1024px)
+		margin-left: 26px
+	+below(960px)
+		display none
 	flex(mid)
 	color black
 	margin-left: 5%
@@ -263,13 +289,25 @@ body
 	.icon
 		tr()
 		margin-right: 16px
+		fill $gray
 	&:hover
 		cp()
 		color $mark
 		.icon
 			fill $mark
 //.header-location__val
+
+
+.header-location__val--lg
+	+below(1024px)
+		display none
+.header-location__val--sm
+	+above(1025px)
+		display none
+
 .header-contact
+	+below(740px)
+		display none
 	margin-left: 5%
 	f()
 	align-items center
@@ -280,9 +318,13 @@ body
 	margin-left: 24px
 
 .header-soc
+	+below(740px)
+		display none
 	margin-left auto
 	f()
 .header-soc__el
+	+below(1024px)
+		size 60px
 	size 72px
 	flex(mid)
 	border-left 1px solid $border-color
@@ -293,6 +335,25 @@ body
 	&:hover
 		.icon
 			fill white
+	.icon
+		fill $gray
+
+.header-msg
+	+above(741px)
+		display none
+	f()
+	margin-left auto
+.header-msg__el
+	+below(1024px)
+		size 60px
+	size 72px
+	flex(mid)
+	border-left 1px solid $border-color
+	tr()
+	background: white
+	&:last-child
+		border-right 1px solid $border-color
+
 .soc-el--instagram
 	position relative
 	.icon
@@ -318,6 +379,8 @@ body
 	&:hover
 		background: #48C95F
 .nav-wrap
+	+below(1024px)
+		display none
 	box-shadow: 0 4px 8px rgba(102, 130, 185, 0.12);
 	position relative
 	.main-cont
@@ -499,6 +562,8 @@ body
 //Навигация внутри
 .slider-wrap--inarrow
 	.slider-control
+		+below(1580px)
+			display none
 		position: absolute
 		top 50%
 		margin-top: -40px
@@ -522,14 +587,24 @@ body
 	background: $pink
 .slider-main__el--violet
 	background: $violet
-
 .number-slide-wrap
+	+below(960px)
+		top 10%
+	+below(640px)
+		top initial
+		bottom 20px
+		.main-cont
+			f()
 	position absolute
 	top 15%
 	width: 100%
 	z-index 10
 
 .number-slide
+	+below(640px)
+		margin-left auto
+		margin-right: 10px
+		padding: 8px 16px
 	display: inline-flex
 	align-items center
 	color white
@@ -537,18 +612,45 @@ body
 	br(18px)
 	background: #ffffff2e
 
+
 .slider-main__el-wrap
+	+below(1280px)
+		padding: 12% 0 8% 0
+	+below(640px)
+		padding: 20px 0 0 0
 	padding: 12% 0 8% 0
 	position relative
 
 .slider-main__title
+	+below(1280px)
+		font-size: 56px
+	+below(960px)
+		font-size: 30px
+	+below(640px)
+		text-align center
+		font-size: 30px
+		margin-bottom: 10px
 	@extend .type--xl
 	font-weight 700
 	color white
 	margin-bottom: 10%
 .slider-main__content
-	width: 50%
+	+below(1280px)
+		width: 100%
+		max-width 535px
+	+below(960px)
+		max-width 320px
+	+below(640px)
+		flex(mid)
+		fl()
+		max-width 100%
+	width: 47%
 .slider-main__img
+	+below(640px)
+		position: static
+		padding: 40% 24%
+		margin: 20px auto 0 auto
+		width: 90%
 	position absolute
 	padding: 20% 24%
 	bg-full()
@@ -559,12 +661,17 @@ body
 
 // advant-section
 .advant
+	+below(1024px)
+		grid-gap 20px
+		margin-bottom: 90px
 	display: grid
 	grid-gap 28px
 	grid-template-columns: repeat(4, 1fr)
 	margin-bottom: 100px
 	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
 .advant__el
+	+below(1024px)
+		padding: 20px
 	border-radius 12px
 	border 1px solid $border-color
 	padding: 28px 20px 20px 20px
@@ -575,12 +682,19 @@ body
 .advant__el-icon
 	margin: 0 0 46px 0
 	img
+		+below(1024px)
+			width: 60px
 		width: 80px
+.advant__el-text
+	+below(1024px)
+		font-size: 12px
 // advant-section === end
 
 
 // invite
 .invite
+	+below(1024px)
+		margin-bottom: 60px
 	f()
 	align-items center
 	justify-content space-between
@@ -590,7 +704,7 @@ body
 	position relative
 .invite-msg
 	position absolute
-	width: 160px
+	size: 160px
 	padding: 5.7% 3%
 	round()
 	flex(mid)
@@ -608,6 +722,8 @@ body
 .invite-info
 	width: 40%
 .invite-info-wrap
+	+below(1024px)
+		width: 100%
 	width: 70%
 .invite-title
 	@extend .type--lgx
@@ -768,14 +884,21 @@ body
 
 // program constructor
 .program-main-wrap
+	+below(1024px)
+		margin-bottom: 0
 	margin-bottom: 100px
 .program-type
+	+below(1024px)
+		grid-gap 20px
 	display: grid
 	grid-gap 28px
 	grid-template-columns: repeat(6, 1fr)
 	margin-bottom: 48px
 	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
 .program-type__el
+	+below(1024px)
+		height: 140px
+		padding: 16px
 	@extend .type--smx
 	tr()
 	cp()
@@ -786,6 +909,8 @@ body
 	fl()
 	font-weight: 700
 	.icon
+		+below(1024px)
+			size 40px
 		tr()
 		size 48px
 
@@ -895,7 +1020,7 @@ program-type(bg,textColor,iconColor)
 	@extend .type--smx
 	font-weight 700
 	color black
-	border 1px solid transparent
+	border 1px solid $border-color
 	&:hover
 		border 1px solid $mark
 	&.active
@@ -923,14 +1048,30 @@ program-type(bg,textColor,iconColor)
 .program-consist__el-type
 	@extend .type--sm
 .program-list
+	+below(1024px)
+		display block
+		margin-right: -42px
+		.slick-slide
+			margin: 0 10px
+		.slick-list
+			margin: 0 -10px
+		.slick-track
+			display: flex !important
+		.slick-slide
+			height: inherit !important;
 	display: grid
 	grid-gap 28px
 	grid-template-columns: repeat(4, 1fr)
 	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+
 .program-el
+	+below(1024px)
+		margin-bottom: 30px!important
 	br(12px)
 	overflow hidden
 	tr()
+	display: flex !important
+	fl()
 	&:hover
 		box-shadow 0 12px 32px rgba(41, 42, 53, 0.16)
 		.program-el-wrap
@@ -942,6 +1083,7 @@ program-type(bg,textColor,iconColor)
 	f()
 	fl()
 	tr()
+	flex-grow 1
 	border 1px solid $border-color
 	border-top 0!important
 	border-radius 0 0 12px 12px
@@ -978,6 +1120,8 @@ program-type(bg,textColor,iconColor)
 		font-weight 700
 		color $typeSecondary
 .program-banner
+	+below(1025px)
+		display none!important
 	background: linear-gradient(98.95deg, #E3EEFF 0%, #E4F6E4 52.6%, #FFEEE4 100%)
 	br(12px)
 	padding: 12px
@@ -1287,11 +1431,14 @@ program-type(bg,textColor,iconColor)
 .contract-content
 	padding: 48px
 .contract-config-wrap
-	margin-bottom: 32px
+	margin-bottom: 16px
 .contract-config
-	display: grid
-	grid-gap 16px
-	grid-template-columns: repeat(auto-fill, minmax(16rem,1fr))
+	f()
+	justify-content space-between
+	fw()
+	margin-left: -8px
+	margin-right: 8px
+	width calc(100% + 16px)
 .contract-config__el
 	padding: 16px
 	border 1px solid $border-color
@@ -1301,6 +1448,9 @@ program-type(bg,textColor,iconColor)
 	align-items center
 	tr()
 	cp()
+	width calc(50% - 32px)
+	margin: 0 8px 16px 8px
+	flex-grow 1
 	&.active
 		border 1px solid $mark
 		background-color $greenLight
@@ -1331,3 +1481,75 @@ program-type(bg,textColor,iconColor)
 //.contract-footer__get
 //.btn--mark
 // contract === end
+
+// slider menu
+.head-toggle
+	+above(1025px)
+		display: none
+	+below(1024px)
+		size 60px
+	flex(mid)
+	cp()
+	.icon
+		+below(640px)
+			size 20px
+		size 25px
+		fill black
+	.icon-close
+		display: none
+
+.head-toggle.slide-block-toggle--open
+	.icon-close
+		display: block
+	.icon-open
+		display: none
+
+.slide-block
+	+below(640px)
+		padding: 0
+	position: fixed
+	top 61px // Высота шапки
+	width: 100%
+	tr(all)
+	height: calc(100% - 60px) // Высота шапки
+	z-index 100
+	background: white
+	padding: 10px 32px 32px 32px
+	overflow auto
+.slide-block--left
+	left 0
+	transform translateX(-100%)
+
+.slide-block--right
+	right 0
+	transform translateX(100%)
+
+.slide-block--open
+	transform translateX(0%)
+
+.slide-nav__el
+	+below(640px)
+		padding: 22px
+	padding: 22px 0
+	border-bottom 1px solid $border-color
+	font-weight: 500
+	color black
+	display block
+	.header-location
+		f()
+		align-items flex-start
+		justify-content: flex-start
+		margin-left: 0
+.slide-nav__el--slide
+	flex(between)
+	.icon
+		tr()
+	&.active
+		border 0
+		.icon
+			transform rotate(180deg)
+.slide-nav__el-sub
+	display none
+	padding: 10px 40px 22px 22px
+	border-bottom 1px solid $border-color
+// slider menu === end

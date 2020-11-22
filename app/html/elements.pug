@@ -135,6 +135,7 @@ link(rel="stylesheet", href="./css/style-guide.css")
 	.buttons-list
 		.btn--md.btn--mark Primary
 		.btn--md.btn--light Secondary
+		a(href="#").btn--md.btn--text Text only
 		.btn--md.btn--disable Disable
 	h3 Add icon
 	.buttons-list
@@ -154,9 +155,16 @@ link(rel="stylesheet", href="./css/style-guide.css")
 	h2.title Inputs
 	.note
 		p <b>NOTE!</b>&nbsp; Use data-placeholder="Ваше имя"
-	.input-row.input-row--error
+	.input-row.input-row--validate.input-row--error
 		input(type="text" data-placeholder="Ваше имя" class="input")
 		.error-msg Введённые данные не должны содержать цифры
+		+icon("close","icon icon-validate-false")
+		+icon("checked","icon icon-validate-true")
+	.input-row.input-row--validate.input-row--success
+		input(type="text" data-placeholder="Ваше имя" class="input")
+		.error-msg Введённые данные не должны содержать цифры
+		+icon("close","icon icon-validate-false")
+		+icon("checked","icon icon-validate-true")
 	.input-cont.input-cont--two
 		.input-row
 			input(type="text" data-placeholder="Ваше имя" class="input input--disable")
