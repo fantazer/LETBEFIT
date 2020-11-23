@@ -4,7 +4,10 @@ $(document).ready(function () {
 	var currentSize = $(window).width()
 	$(window).resize(function(){
 		currentSize = $(window).width();
+
 		programListSlider()
+		programTypeSlider();
+
 		return currentSize;
 	});
 	// watch window resize === end
@@ -102,14 +105,18 @@ $(document).ready(function () {
 	// toggle single === end
 
 	// toggle class one from list
-	$('.js-tick').click(function(){
-		var parent = $(this).closest('.js-tick-cont');
-		parent.find('.js-tick').removeClass('active');
-		$(this).addClass('active')
-	});
+	var actionTick;
+	(
+		actionTick = function(){
+				$('.js-tick').click(function(){
+				var parent = $(this).closest('.js-tick-cont');
+				parent.find('.js-tick').removeClass('active');
+				$(this).addClass('active')
+				console.log('.js-tick');
+				});
+			}
+	)()
 	// toggle class one from list === end
-
-	
 
 	//toggle class + neighbor
 	$('.js-commutator-el').click(function(){
@@ -133,9 +140,6 @@ $(document).ready(function () {
 	})
 	//toggle class + neighbor === end
 
-	$('.check-el').click(function(e){
-		//e.stopPropagation()
-	});
 	// switch
 	$('.js-switch').click(function (e) {
 		if(e.target.className!='style-input'){
@@ -163,6 +167,36 @@ $(document).ready(function () {
 		}
 	});
 	// switch === end
+
+	// toggle program types list
+	var actionTab;
+	(
+		actionTab = function(){
+			$('.js-tab').click(function(){
+				var current = $(this).index();
+				console.log('.js-tab');
+				var parent = $(this).closest('.js-tab-wrap')
+				parent.find('.js-tab-cont').removeClass('active')
+				parent.find('.js-tab-cont').eq(current).addClass('active')
+			});
+		}
+	)()
+	// toggle program types list  === end
+
+	// accordion row toggle
+	$('.js-accordion-head').click(function () {
+		var current = $(this).closest('.js-accordion-el').index()
+		$(this).closest('.js-accordion').find('.js-accordion-el').each(function(){
+			if($(this).index()!=current){
+				 $(this).find('.js-accordion-head').removeClass('active')
+				 $(this).find('.js-accordion-content').slideUp('active')
+			}else{
+				 $(this).find('.js-accordion-content').slideToggle('active')
+				 $(this).find('.js-accordion-head').toggleClass('active')
+			}
+		})
+	});
+	// accordion row toggle === end
 
 	// incr
 	var incrEl= {}
@@ -261,7 +295,12 @@ $(document).ready(function () {
 	// animate placeholder === end
 
 	// === slick ===
-
+	
+	$('.program-type').on('init reInit', function (event) {
+		actionTick();
+		actionTab();
+	});
+	
 	// slider pagination
 	$('.js-slider-pagination').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
 	  var i = (currentSlide ? currentSlide : 0) + 1;
@@ -287,14 +326,26 @@ $(document).ready(function () {
 		dots:false,
 		arrows:false,
 		rows:0,
-		//fade:true
+		responsive: [
+			{
+				breakpoint: 1025,
+					settings: {
+						slidesToShow: 3.2,
+						slidesToScroll: 1,
+						infinite: false,
+						arrows:false,
+						dots: false,
+
+				}
+			}
+		]
 	});
 	// review slider === end
 
 	// mobile program list slider
 		var programListSlider = function(){
-		if( currentSize < 1024){
-			$('.program-list').not('.slick-initialized').slick({
+		if( currentSize < 10240){
+			$('.program-list1').not('.slick-initialized').slick({
 				rows:0,
 				responsive: [
 					{
@@ -317,7 +368,33 @@ $(document).ready(function () {
 		}
 	};
 
+	var programTypeSlider = function(){
+		if( currentSize < 1024){
+			$('.program-type1').not('.slick-initialized').slick({
+				responsive: [
+					{
+						breakpoint: 9999,
+						settings: "unslick"
+					},
+					{
+						breakpoint: 769,
+							settings: {
+								slidesToShow: 5.3,
+								slidesToScroll: 1,
+								infinite: false,
+								arrows:false,
+								dots: false,
+
+						}
+					}
+				]
+			});
+		}
+	};
+
+
 	programListSlider();
+	programTypeSlider();
 	// mobile program list slider === end
 
 
@@ -342,29 +419,7 @@ $(document).ready(function () {
 	});
 	// animate scroll to id === end
 	
-	// toggle program types list 
-	$('.js-tab').click(function(){
-		var current = $(this).index();
-		var parent = $(this).closest('.js-tab-wrap')
-		parent.find('.js-tab-cont').removeClass('active')
-		parent.find('.js-tab-cont').eq(current).addClass('active')
-	});
-	// toggle program types list  === end
 
-	// accordion row toggle
-	$('.js-accordion-head').click(function () {
-		var current = $(this).closest('.js-accordion-el').index()
-		$(this).closest('.js-accordion').find('.js-accordion-el').each(function(){
-			if($(this).index()!=current){
-				 $(this).find('.js-accordion-head').removeClass('active')
-				 $(this).find('.js-accordion-content').slideUp('active')
-			}else{
-				 $(this).find('.js-accordion-content').slideToggle('active')
-				 $(this).find('.js-accordion-head').toggleClass('active')
-			}
-		})
-	});
-	// accordion row toggle === end
 	
 	// drop click on contract
 	$('.js-contract-el').click(function(){

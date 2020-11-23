@@ -342,8 +342,10 @@ a:visiter {
 }
 .icon-row {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
+}
+.icon-row span {
+  width: calc(100% - 36px);
 }
 .icon-row--extend {
   margin-bottom: 32px;
@@ -710,6 +712,11 @@ a:visiter {
   position: relative;
   margin-bottom: 32px;
 }
+@media only screen and (max-width: 640px) {
+  .input-row {
+    margin-bottom: 16px;
+  }
+}
 .input-row .input {
   width: 100%;
 }
@@ -720,6 +727,12 @@ a:visiter {
 .input-btn-cont .input-row {
   margin-right: 28px;
   min-width: 300px;
+}
+@media only screen and (max-width: 640px) {
+  .input-btn-cont .input-row {
+    width: 100%;
+    min-width: initial;
+  }
 }
 .input-row__title {
   margin-bottom: 10px;

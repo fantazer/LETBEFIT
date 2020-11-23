@@ -18,10 +18,10 @@ body
 	letter-spacing 0.01em
 
 .main-cont
-	+below(1024px)
+	+below(1280px)
 		padding: 0 42px
 	+below(640px)
-		padding: 0 10px
+		padding: 0 20px
 	center(1312px,10px)
 
 .page
@@ -45,6 +45,24 @@ body
 	+above(641px)
 		display none
 
+scroll-create-mobile()
+	display: block
+	white-space: nowrap
+	overflow: auto
+	margin-right: -42px
+	+below(640px)
+		margin-right: -20px
+
+slider-create-mobile()
+	margin-right: -42px
+	.slick-slide
+		margin: 0 10px
+	.slick-list
+		margin: 0 -10px
+	.slick-track
+		display: flex !important
+	.slick-slide
+		height: inherit !important;
 
 // animate top menu
 @keyframes slideInDown
@@ -575,8 +593,12 @@ body
 // === for custom navigation ===
 .slider-extend
 	.slick-slide
+		+below(1024px)
+			margin: 0 8px
 		margin: 0 14px
 	.slick-list
+		+below(1024px)
+			margin: 0 -8px
 		margin: 0 -14px
 // slick === end
 
@@ -664,6 +686,8 @@ body
 	+below(1024px)
 		grid-gap 20px
 		margin-bottom: 90px
+	+below(768px)
+		grid-template-columns: repeat(2, 1fr)
 	display: grid
 	grid-gap 28px
 	grid-template-columns: repeat(4, 1fr)
@@ -680,6 +704,9 @@ body
 		border 1px solid white
 		box-shadow 0 12px 32px rgba(41, 42, 53, 0.16)
 .advant__el-icon
+	+below(768px)
+		width: 48px
+		margin-bottom: 32px
 	margin: 0 0 46px 0
 	img
 		+below(1024px)
@@ -695,14 +722,29 @@ body
 .invite
 	+below(1024px)
 		margin-bottom: 60px
+	+below(640px)
+		fl()
 	f()
 	align-items center
 	justify-content space-between
 	margin-bottom: 100px
 .invite-img
+	+below(640px)
+		width: 100%
+		margin-bottom: 24px
 	width: 49%
 	position relative
 .invite-msg
+	+below(768px)
+		size 120px
+	+below(640px)
+		position: static
+		f()
+		align-items center
+		background: none
+		width: auto
+		height: auto
+		flex-flow row
 	position absolute
 	size: 160px
 	padding: 5.7% 3%
@@ -714,16 +756,30 @@ body
 	top 0
 	right: 0
 	img
+		+below(640px)
+			margin 0 16px 0 0
 		size 32px
 		margin-bottom: 6px
 	span
+		+below(640px)
+			text-align: left
 		@extend .type--sm
 		text-align center
 .invite-info
+	+below(640px)
+		width: 100%
 	width: 40%
+.invite-info__btn
+	+below(768px)
+		width: 100%
+		padding: 18px 20px
+	+below(640px)
+		display none
 .invite-info-wrap
 	+below(1024px)
 		width: 100%
+	+below(640px)
+		text-align center
 	width: 70%
 .invite-title
 	@extend .type--lgx
@@ -731,22 +787,56 @@ body
 	color black
 	margin-bottom: 24px
 .invite-text
+	+below(640px)
+		margin-bottom: 0
 	margin-bottom: 56px
 .invite-subs
+	+below(1024px)
+		margin-bottom: 60px
+	+below(640px)
+		fl()
+		justify-content: center
 	f()
 	align-items center
 	margin-bottom: 100px
 .invite-subs-img
+	+below(1024px)
+		width: 50%
+	+below(640px)
+		width: 100%
+		margin-bottom: 24px
+		margin-right: 0
+		flex(mid)
 	width: 40%
 	margin-right: 10%
 .invite-subs-info
+	+below(1024px)
+		width: 45%
+	+below(640px)
+		width: 100%
 	width: 40%
+.input-btn-cont
+	fl()
+	width: 100%
+	.input-row
+		width: 100%
+	.btn--md
+		width: 100%
 .invite-subs-title
+	+below(768px)
+		line-height: 1.3
+	+below(640px)
+		text-align center
 	@extend .type--lgx
 	font-weight 700
 	color black
 	margin-bottom: 24px
 .invite-subs-text
+	+below(1024px)
+		font-size: 16px
+		margin-bottom: 32px
+	+below(640px)
+		text-align center
 	margin-bottom: 56px
 	@extend .type--md
 	color $typePrimary
@@ -785,10 +875,23 @@ body
 
 //.main-cont
 .footer-top
+	+below(1024px)
+		padding: 32px 0
+	+below(640px)
+		fl()
+		align-items center
+		justify-content center
 	f()
 	padding: 48px 0
 .footer-contact
-	width: 50%
+	+below(1024px)
+		margin-right:auto
+	+below(640px)
+		width: 100%
+		order 2
+		flex(mid)
+		fl()
+	width: 45%
 .footer-phone
 	@extend .type--lg
 	font-weight 700
@@ -796,6 +899,8 @@ body
 	display inline-block
 	margin-bottom: 12px
 .footer-work
+	+below(1024px)
+		margin-bottom: 32px
 	margin-bottom: 40px
 //.soc-row
 //.soc-row__el
@@ -817,8 +922,13 @@ body
 		background: darken(#7C509A,10)
 
 .footer-address
+	+below(1024px)
+		display none
 	margin-left auto
 .footer-scroll
+	+below(640px)
+		order 1
+		margin 0 0 32px 0
 	size 82px
 	round()
 	flex(mid)
@@ -840,6 +950,8 @@ body
 .footer-address__info
 	line-height: 1.6
 .footer-menu-wrap
+	+below(1024px)
+		padding: 32px 0
 	padding: 48px 0
 	border-top 1px solid #ffffff1a
 	border-bottom 1px solid #ffffff1a
@@ -847,7 +959,17 @@ body
 	f()
 	justify-content space-between
 .footer-menu__col
+	+below(1024px)
+		display none
 	width: 22%
+.footer-menu__col--app
+	+below(1024px)
+		width: 100%
+		flex(between)
+		.footer-menu__title
+			margin-bottom: 0
+	+below(640px)
+		fl()
 .footer-menu__title
 	@extend .type--md
 	font-weight 700
@@ -859,27 +981,63 @@ body
 	margin-bottom: 24px
 	&:last-child
 		margin-bottom: 0
-//.app-list
+.app-list
+	+below(640px)
+		f()
+		fl()
+		margin-top: 32px
 .app-list__el
+	+below(1024px)
+		margin 0 20px 0 0
+		&:last-child
+			margin 0
+	+below(640px)
+		margin 0 0 20px 0
 	display inline-block
 	margin-bottom: 20px
 //.footer-bottom-wrap
 .footer-bottom
+	+below(1024px)
+		padding: 32px 0
+	+below(640px)
+		f()
+		fl()
+		align-items center
 	padding: 48px 0
 	f()
 	justify-content space-between
 .footer-bottom__info
+	+below(640px)
+		margin: 0 0 24px 0
 	f()
 	align-items center
 .footer-bottom__info-text
+	+below(640px)
+		margin: 0
+		text-align center
 	margin-right: 42px
 .footer-payment
+	+below(640px)
+		flex(mid)
+		fw()
+		width: 80%
+		margin 0 auto
 	f()
 	align-items center
-	img
-		margin-right: 24px
+	.icon
+		+below(640px)
+			margin: 10px
+		width: 3.5em
+		margin-right: 16px
+		opacity: .3
+		tr()
+		&:hover
+			opacity: 1
 		&:last-child
 			margin-right: 0
+.soc-row--footer
+	+below(1024px)
+		display none
 // footer === end
 
 // program constructor
@@ -889,7 +1047,9 @@ body
 	margin-bottom: 100px
 .program-type
 	+below(1024px)
-		grid-gap 20px
+		scroll-create-mobile()
+	+below(768px)
+		margin-bottom: 20px
 	display: grid
 	grid-gap 28px
 	grid-template-columns: repeat(6, 1fr)
@@ -897,8 +1057,13 @@ body
 	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
 .program-type__el
 	+below(1024px)
-		height: 140px
 		padding: 16px
+		height: 140px!important
+		width: 140px
+		display: inline-flex
+		margin-right: 10px
+		&:last-child
+			margin-right: 0
 	@extend .type--smx
 	tr()
 	cp()
@@ -1006,9 +1171,14 @@ program-type(bg,textColor,iconColor)
 // program list
 //.program-list-wrap
 .program-list-header
+	+below(640px)
+		fl()
+		flex(mid)
 	flex(between)
 	margin-bottom: 40px
 .program-days
+	+below(640px)
+		margin-bottom: 24px
 	f()
 .program-days__el
 	flex(mid)
@@ -1030,10 +1200,12 @@ program-type(bg,textColor,iconColor)
 .program-consist
 	+below(640px)
 		min-width auto
+		width: 80%
 	f()
 	width: 25%
 	min-width 340px
 .program-consist__el
+	padding: 0 10px
 	flex-grow 1
 	flex(mid)
 	fl()
@@ -1048,21 +1220,19 @@ program-type(bg,textColor,iconColor)
 .program-consist__el-type
 	@extend .type--sm
 .program-list
-	+below(1024px)
-		display block
-		margin-right: -42px
-		.slick-slide
-			margin: 0 10px
-		.slick-list
-			margin: 0 -10px
-		.slick-track
-			display: flex !important
-		.slick-slide
-			height: inherit !important;
+	+below(1200px)
+		scroll-create-mobile()
+		.program-el
+			width: 300px
+			display: inline-flex
+			margin-right: 16px
+			&:last-child
+				margin-right: 0
 	display: grid
 	grid-gap 28px
 	grid-template-columns: repeat(4, 1fr)
 	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+
 
 .program-el
 	+below(1024px)
@@ -1070,8 +1240,9 @@ program-type(bg,textColor,iconColor)
 	br(12px)
 	overflow hidden
 	tr()
-	display: flex !important
+	display: flex
 	fl()
+	white-space initial
 	&:hover
 		box-shadow 0 12px 32px rgba(41, 42, 53, 0.16)
 		.program-el-wrap
@@ -1121,10 +1292,55 @@ program-type(bg,textColor,iconColor)
 		color $typeSecondary
 .program-banner
 	+below(1025px)
-		display none!important
+		display none
 	background: linear-gradient(98.95deg, #E3EEFF 0%, #E4F6E4 52.6%, #FFEEE4 100%)
 	br(12px)
 	padding: 12px
+
+.program-banner--mobile
+	+above(1025px)
+		display none
+	display block
+	margin-bottom: 40px
+	.program-banner-inner
+		+below(760px)
+			fl()
+			justify-content center
+		f()
+		flex-flow row
+		justify-content flex-start
+		background: transparent
+		.btn--md
+			+below(760px)
+				margin: 0 0 30px 0
+				width: 100%
+			width: auto
+			margin-bottom: 0
+			margin-right: 30px
+	.program-banner__cost
+		+below(820px)
+			font-size: 24px
+		+below(760px)
+			font-size: 38px
+			margin: 0
+		font-size: 32px
+		margin-right: 10px
+	.program-banner__img
+		+below(760px)
+			margin: 0 0 10px 0
+		margin-bottom: 0
+		margin-right: 30px
+	.program-banner__text
+		+below(820px)
+			font-size: 24px
+		+below(760px)
+			width: 100%
+			margin: 0 0 20px 0
+			text-align center
+		margin-bottom: 0
+		font-size: 32px
+		margin-right auto
+
 .program-banner-inner
 	background: white
 	height: 100%
@@ -1151,21 +1367,34 @@ program-type(bg,textColor,iconColor)
 
 // work-step
 .work-step
+	+below(1024px)
+		grid-gap 20px
+		margin-bottom: 60px
+	+below(690px)
+		grid-template-columns: 1fr
 	display: grid
 	grid-gap 28px
 	grid-template-columns: repeat(3, 1fr)
 	margin-bottom: 100px
 	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
 .work-step__el
+	+below(1024px)
+		padding: 20px
 	border-radius 12px
 	border 1px solid $border-color
 	padding: 32px
 	tr()
 .work-step__el-icon
+	+below(690px)
+		margin: 0 0 20px 0
 	margin: 0 0 46px 0
 	img
+		+below(768px)
+			width: 60px
 		width: 80px
 .work-step__el-title
+	+below(1024px)
+		font-size: 18px
 	color black
 	@extend .type--md
 	font-weight 700
@@ -1176,11 +1405,22 @@ program-type(bg,textColor,iconColor)
 
 // sale-list
 .sale-list
+	+below(1024px)
+		margin-bottom: 60px
+	+below(768px)
+		scroll-create-mobile()
 	display: grid
 	grid-gap 28px
 	grid-template-columns: repeat(3, 1fr)
 	margin-bottom: 100px
 .sale-el
+	+below(768px)
+		width: 300px
+		display: inline-flex
+		margin-right: 16px
+		&:last-child
+			margin-right: 0
+	white-space initial
 	br(12px)
 	overflow hidden
 	f()
@@ -1194,6 +1434,8 @@ program-type(bg,textColor,iconColor)
 	bg-full()
 	padding: 29% 10%
 .sale-el__content
+	+below(1024px)
+		padding: 20px
 	padding: 24px
 	border 1px solid $border-color
 	border-top 0!important
@@ -1212,18 +1454,36 @@ program-type(bg,textColor,iconColor)
 // sale-list === end
 
 // review slider
+.slider-review
+	+below(1024px)
+		margin-right: -42px
+	+below(640px)
+		margin-right: -20px
 .slider-review__el
 	bg-full()
 	padding: 100% 10%
 .review-head
+	+below(1024px)
+		margin: 0 0 40px 0
 	flex(between)
-	margin: -48px 0 40px 0
-	.review-head__text
-		width: 50%
+	margin: -28px 0 40px 0
+
+.review-head__text
+	+below(1024px)
+		width: 100%
+	width: 50%
+
+.review-control
+	+below(1024px)
+		display none
+
 // review slider === end
 .section
 	padding-bottom: 100px
 .section-extend
+	+below(1024px)
+		padding: 60px 0
+		margin-bottom: 60px
 	padding: 100px 0
 	margin-bottom: 100px
 
@@ -1326,11 +1586,19 @@ program-type(bg,textColor,iconColor)
 
 // FAQ
 .faq-type
+	+below(960px)
+		scroll-create-mobile()
 	display: grid
 	grid-gap 28px
 	grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
 	margin-bottom: 48px
 .faq-type__el
+	+below(960px)
+		width: 180px
+		margin-right: 16px
+		display: inline-flex
+		&:last-child
+			margin-right: 0
 	padding: 22px
 	br(12px)
 	f()
@@ -1362,9 +1630,16 @@ program-type(bg,textColor,iconColor)
 
 // deliver
 .deliver-wrap
+	+below(640px)
+		fw()
 	f()
 	justify-content space-between
 .deliver-info
+	+below(1024px)
+		width: 45%
+	+below(640px)
+		width: 100%
+		margin-bottom: 24px
 	width: 28%
 .deliver-info__text
 	margin-bottom: 42px
@@ -1384,6 +1659,13 @@ program-type(bg,textColor,iconColor)
 	font-weight 700
 	color black
 .deliver-map
+	+below(1024px)
+		width: 50%
+		padding: 22% 10%
+		min-height 420px
+	+below(640px)
+		min-height 230px
+		width: 100%
 	width: 66%
 	padding: 15% 10%
 .map-wrap
@@ -1404,11 +1686,18 @@ program-type(bg,textColor,iconColor)
 	overflow hidden
 	background: white
 .contract-head
+	+below(768px)
+		min-height: 165px
+		padding: 20px
 	padding: 36px 48px
 	color white
 	position relative
+	min-height 240px
 //.contract-head-info
 .contract-head-title
+	+below(640px)
+		width: 50%
+		line-height: 1.2
 	@extend .type--lgx
 	font-weight 700
 	margin-bottom: 16px
@@ -1418,17 +1707,29 @@ program-type(bg,textColor,iconColor)
 	display: inline-flex
 	align-items center
 	padding: 10px 18px
+	z-index 2
+	position relative
 	img
+		+below(640px)
+			size 24px
 		size 32px
 		margin-right: 8px
 .contract-head-img
-	bg-full()
-	padding: 5% 16%
+	+below(640px)
+		padding: 2% 30%
+		right: 0
+		background-size cover
+	background-size contain
+	background-repeat no-repeat
+	background-position center center
+	padding 2% 21%
 	position absolute
 	top 0
 	bottom 0
-	right 5%
+	right 10px
 .contract-content
+	+below(640px)
+		padding: 16px
 	padding: 48px
 .contract-config-wrap
 	margin-bottom: 16px
@@ -1440,6 +1741,8 @@ program-type(bg,textColor,iconColor)
 	margin-right: 8px
 	width calc(100% + 16px)
 .contract-config__el
+	+below(768px)
+		width: 100%
 	padding: 16px
 	border 1px solid $border-color
 	br(4px)
@@ -1457,6 +1760,8 @@ program-type(bg,textColor,iconColor)
 	&:hover
 		border 1px solid $mark
 	.check-el
+		+below(640px)
+			width calc(100% - 30px)
 		width 70%
 .contract-config__el-val
 	font-weight: 700
@@ -1471,14 +1776,23 @@ program-type(bg,textColor,iconColor)
 		margin: 0
 		border-top 1px dashed $border-color
 .contract-footer
+	+below(640px)
+		padding: 16px
+		fw()
+		width: 100%
 	border-top 1px dashed $border-color
 	padding: 48px 48px 56px 48px
 	flex(between)
 .contract-footer__text
+	+below(640px)
+		width: 100%
+		order 2
+		margin-top: 16px
 	width: 55%
 	color black
+
 //.link--mark
-//.contract-footer__get
+
 //.btn--mark
 // contract === end
 
@@ -1553,3 +1867,4 @@ program-type(bg,textColor,iconColor)
 	padding: 10px 40px 22px 22px
 	border-bottom 1px solid $border-color
 // slider menu === end
+

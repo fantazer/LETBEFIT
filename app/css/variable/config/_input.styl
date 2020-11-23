@@ -107,6 +107,8 @@
 
 //form
 .input-row
+	+below(640px)
+		margin-bottom: 16px
 	position relative
 	margin-bottom: 32px
 	.input
@@ -116,6 +118,9 @@
 	f()
 	align-items: flex-start
 	.input-row
+		+below(640px)
+			width: 100%
+			min-width initial
 		margin-right: 28px
 		min-width 300px
 .input-row__title

@@ -70,7 +70,7 @@ mixin footer()
 							];
 						each item in items
 							a(href="#").footer-menu__list-el #{item}
-					.footer-menu__col
+					.footer-menu__col.footer-menu__col--app
 						.footer-menu__title Мобильное приложение
 						.app-list
 							a(href="#").app-list__el
@@ -85,7 +85,7 @@ mixin footer()
 				.footer-bottom
 					.footer-bottom__info
 						.footer-bottom__info-text © 2020, Letbefit, все права защищены
-						.soc-row.soc-row--monochrome
+						.soc-row.soc-row--monochrome.soc-row--footer
 							a(href="#").soc-row__el
 								+icon("soc-inst","icon")
 							a(href="#").soc-row__el
@@ -93,8 +93,11 @@ mixin footer()
 							a(href="#").soc-row__el
 								+icon("soc-fb","icon")
 					.footer-payment
-						img(src="img/pay-apple.svg", alt="")
-						img(src="img/pay-apple.svg", alt="")
-						img(src="img/pay-apple.svg", alt="")
+						+icon("pay-visa","icon")
+						+icon("pay-master","icon")
+						+icon("pay-apple","icon")
+						+icon("pay-google","icon")
+						+icon("pay-halva","icon")
+						+icon("pay-mir","icon")
 		// footer-bottom === end
 	// footer === end

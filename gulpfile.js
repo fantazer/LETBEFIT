@@ -66,7 +66,7 @@ gulp.task('svg', function () {
 		 gulp.src(['!app/img/svg/**--color.*','app/img/svg/**.*','!app/img/svg/defs.svg','!app/img/svg/sprite.svg'])
 		 .pipe(cheerio({
 						run: function ($) {
-								//$('[fill]').removeAttr('fill'); //remove if need color icon
+								$('[fill]').removeAttr('fill'); //remove if need color icon
 								$('[style]').removeAttr('style');
 								$('[opacity]').removeAttr('opacity');
 								$('style').remove();
@@ -107,9 +107,6 @@ gulp.task('svg', function () {
      if(err) console.log('error', err);
    	});
 });
-
-
-
 
 
 //ScreenShot

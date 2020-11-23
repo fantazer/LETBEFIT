@@ -85,7 +85,7 @@ include block_html/_include.pug
 					.invite-info-wrap
 						.invite-title Настройте свой рацион
 						.invite-text Вы можете исключить любой ингредиент, блюдо или тип блюда по желанию
-						a(href="#program").js-scroll-to.btn--md.btn--mark Выбрать программу
+						a(href="#program").js-scroll-to.btn--md.btn--mark.invite-info__btn Выбрать программу
 		// invite === end
 
 		// program constructor
@@ -215,7 +215,19 @@ include block_html/_include.pug
 									+icon("arrow-right","icon icon--left icon--mark")
 						// program-banner === end
 			// program list === end
+
 		// program constructor === end
+
+		.main-cont
+			.program-banner.program-banner--mobile
+				.program-banner-inner
+					img(src="img/smile/smile-star.png", alt="").program-banner__img
+					.program-banner__cost 180
+					.program-banner__text руб/день
+					a(href="#order").btn--md.btn--mark.js-scroll-to Заказать
+					a(href="#").icon-row
+						span.type--md.type--mark.type--bold Подробнее
+						+icon("arrow-right","icon icon--left icon--mark")
 
 		// step work
 		.main-cont
@@ -240,70 +252,70 @@ include block_html/_include.pug
 
 		// contract
 		.section-extend.section--gradient
-			.contract#order
-				.contract-head.bg-sea
-					.contract-head-info
-						.contract-head-title Заказать Light
-						.contract-advant
-							img(src="img/smile/smile-hearts.png", alt="")
-							span -2 кг за неделю
-					.contract-head-img(style="background-image:url('img/banner-person-1.png')")
-				.contract-content
-					.contract-config-wrap
-						.contract-config
-							.contract-config__el.active.js-contract-el.js-switch(data-group="programSize" data-item="start")
-								+radio('Пробный день',"list","true")
-							.contract-config__el.js-contract-el.js-switch(data-group="programSize" data-item="6days")
-								+radio('Неделя (6 дней)',"list")
-							.contract-config__el.js-contract-el.js-switch(data-group="programSize" data-item="2week")
-								+radio('2 недели (12 дней)',"list")
-								.contract-config__el-val -5%
-							.contract-config__el.js-contract-el.js-switch(data-group="programSize" data-item="4week")
-								+radio('4 недели (24 дня)',"list")
-								.contract-config__el-val -7.5%
-							.contract-config__el.js-contract-el.js-switch(data-group="programSize" data-item="3month")
-								+radio('3 месяца  (72 дня)',"list")
-								.contract-config__el-val -15%
-						.icon-row.icon-row--extend.js-switch-cont.hidden(data-group="programSize" data-item="3month")
-							+icon("info","icon icon--right icon--orange")
-							span.type--sm Подписка оплачивается сразу на 2 недели и еженедельно в последующий срок
-					.input-cont
-						.input-row
-							label.check-el.js-switch(data-item="isCoupone")
-								.style-label.style-label--checkbox
-									input(type="checkbox" ).style-input
-									.style-input-element
-										+icon("checked","icon")
-									.style-input-text У меня есть купон
-					.input-cont.hidden.js-switch-cont(data-item="isCoupone")
-						.input-cont.input-cont--three
-							.input-row.input-row--validate
-								input(type="text" data-placeholder="Номер купона" class="input")
-								.error-msg Купон не подходит
-								+icon("close","icon icon-validate-false")
-								+icon("checked","icon icon-validate-true")
-							.input-row.input-row--validate
-								input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
-								.error-msg Введённые данные не должны содержать цифры
-								+icon("close","icon icon-validate-false")
-								+icon("checked","icon icon-validate-true")
+			.main-cont
+				.contract#order
+					.contract-head.bg-sea
+						.contract-head-info
+							.contract-head-title Заказать Light
+							.contract-advant
+								img(src="img/smile/smile-hearts.png", alt="")
+								span -2 кг за неделю
+						.contract-head-img(style="background-image:url('img/banner-person-1.png')")
+					.contract-content
+						.contract-config-wrap
+							.contract-config
+								.contract-config__el.active.js-contract-el.js-switch(data-group="programSize" data-item="start")
+									+radio('Пробный день',"list","true")
+								.contract-config__el.js-contract-el.js-switch(data-group="programSize" data-item="6days")
+									+radio('Неделя (6 дней)',"list")
+								.contract-config__el.js-contract-el.js-switch(data-group="programSize" data-item="2week")
+									+radio('2 недели (12 дней)',"list")
+									.contract-config__el-val -5%
+								.contract-config__el.js-contract-el.js-switch(data-group="programSize" data-item="4week")
+									+radio('4 недели (24 дня)',"list")
+									.contract-config__el-val -7.5%
+								.contract-config__el.js-contract-el.js-switch(data-group="programSize" data-item="3month")
+									+radio('3 месяца  (72 дня)',"list")
+									.contract-config__el-val -15%
+							.icon-row.icon-row--extend.js-switch-cont.hidden(data-group="programSize" data-item="3month")
+								+icon("info","icon icon--right icon--orange")
+								span.type--sm Подписка оплачивается сразу на 2 недели и еженедельно в последующий срок
+						.input-cont
 							.input-row
-								.btn--md.btn--light.disable Применить
-					.input-cont
-						.input-row
-							input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
+								label.check-el.js-switch(data-item="isCoupone")
+									.style-label.style-label--checkbox
+										input(type="checkbox" ).style-input
+										.style-input-element
+											+icon("checked","icon")
+										.style-input-text У меня есть купон
+						.input-cont.hidden.js-switch-cont(data-item="isCoupone")
+							.input-cont.input-cont--three
+								.input-row.input-row--validate
+									input(type="text" data-placeholder="Номер купона" class="input")
+									.error-msg Купон не подходит
+									+icon("close","icon icon-validate-false")
+									+icon("checked","icon icon-validate-true")
+								.input-row.input-row--validate
+									input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
+									.error-msg Введённые данные не должны содержать цифры
+									+icon("close","icon icon-validate-false")
+									+icon("checked","icon icon-validate-true")
+								.input-row
+									.btn--md.btn--light.btn--mobile.disable Применить
+						.input-cont
+							.input-row
+								input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
 
-					.contract-total-wrap
-						.contract-total
-							.contract-total__name Extralight
-							.contract-total__val 6300 руб
-						.contract-total
-							.contract-total__name Итого
-							.contract-total__val.type--mark.type--bold.type--md 6300 руб
-				.contract-footer
-					.contract-footer__text Нажимая кнопку “Оформить” я принимаю условия условия <a href="#" class="link--mark">передачи информации</a>
-					.contract-footer__get
-						.btn--md.btn--mark Оформить
+						.contract-total-wrap
+							.contract-total
+								.contract-total__name Extralight
+								.contract-total__val 6300 руб
+							.contract-total
+								.contract-total__name Итого
+								.contract-total__val.type--mark.type--bold.type--md 6300 руб
+					.contract-footer
+						.contract-footer__text Нажимая кнопку “Оформить” я принимаю условия условия <a href="#" class="link--mark">передачи информации</a>
+						.btn--md.btn--mark.btn--mobile Оформить
 
 		// contract === end
 
@@ -328,9 +340,11 @@ include block_html/_include.pug
 					.invite-subs-title Не знаете какую программу выбрать?
 					.invite-subs-text Оставьте телефон и наш менеджер поможет подобрать рацион
 					.input-btn-cont
-						.input-row
+						.input-row.input-row--validate
 							input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
-							//.error-msg Введённые данные не должны содержать цифры
+							.error-msg Введённые данные не должны содержать цифры
+							+icon("close","icon icon-validate-false")
+							+icon("checked","icon icon-validate-true")
 						.btn--md.btn--mark Отправить
 		// subscription === end
 
@@ -428,7 +442,7 @@ include block_html/_include.pug
 							.deliver-pick__el-text Доставляем бесплатно
 						.deliver-pick__el
 							.deliver-pick__el-color(style="background:#6b33b3")
-							.deliver-pick__el-text Доставляем бесплатно
+							.deliver-pick__el-text Доставка стоит 250 р.
 				.deliver-map.map-wrap
 					.map
 						//put code map her
