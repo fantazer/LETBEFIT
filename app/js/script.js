@@ -2,14 +2,10 @@ $(document).ready(function () {
 
 	// watch window resize
 	var currentSize = $(window).width()
-	$(window).resize(function(){
+/*	$(window).resize(function(){
 		currentSize = $(window).width();
-
-		programListSlider()
-		programTypeSlider();
-
 		return currentSize;
-	});
+	});*/
 	// watch window resize === end
 
 	//modals
@@ -81,20 +77,20 @@ $(document).ready(function () {
 	//modals===end
 
 	// fix top-menu
-	/*var shrinkHeader = 250;
-	var head = $('.header');
-	var heightHeader = head.height();
-	$(window).scroll(function() {
-		var scroll = $(this).scrollTop();
-		if ( scroll >= shrinkHeader ) {
-				$('body').css('paddingTop',heightHeader);
-				head.addClass('shrink');
-			}
-			else {
-					$('body').css('paddingTop',0);
-					head.removeClass('shrink');
-			}
-	});*/
+	var shrinkHeader = 250;
+		var head = $('.header');
+		var heightHeader = head.height();
+		$(window).scroll(function() {
+			var scroll = $(this).scrollTop();
+			if ( scroll >= shrinkHeader ) {
+					$('body').css('paddingTop',heightHeader);
+					head.addClass('shrink');
+				}
+				else {
+						$('body').css('paddingTop',0);
+						head.removeClass('shrink');
+				}
+		});
 	// fix top-menu === end
 
 
@@ -328,9 +324,20 @@ $(document).ready(function () {
 		rows:0,
 		responsive: [
 			{
-				breakpoint: 1025,
+				breakpoint: 1200,
 					settings: {
 						slidesToShow: 3.2,
+						slidesToScroll: 1,
+						infinite: false,
+						arrows:false,
+						dots: false,
+
+				}
+			},
+			{
+				breakpoint: 640,
+					settings: {
+						slidesToShow: 1.2,
 						slidesToScroll: 1,
 						infinite: false,
 						arrows:false,
@@ -341,62 +348,6 @@ $(document).ready(function () {
 		]
 	});
 	// review slider === end
-
-	// mobile program list slider
-		var programListSlider = function(){
-		if( currentSize < 10240){
-			$('.program-list1').not('.slick-initialized').slick({
-				rows:0,
-				responsive: [
-					{
-						breakpoint: 9999,
-						settings: "unslick"
-					},
-					{
-						breakpoint: 1025,
-							settings: {
-								slidesToShow: 3.2,
-								slidesToScroll: 1,
-								infinite: false,
-								arrows:false,
-								dots: false,
-
-						}
-					}
-				]
-			});
-		}
-	};
-
-	var programTypeSlider = function(){
-		if( currentSize < 1024){
-			$('.program-type1').not('.slick-initialized').slick({
-				responsive: [
-					{
-						breakpoint: 9999,
-						settings: "unslick"
-					},
-					{
-						breakpoint: 769,
-							settings: {
-								slidesToShow: 5.3,
-								slidesToScroll: 1,
-								infinite: false,
-								arrows:false,
-								dots: false,
-
-						}
-					}
-				]
-			});
-		}
-	};
-
-
-	programListSlider();
-	programTypeSlider();
-	// mobile program list slider === end
-
 
 	// === custom arrow el ===
 	$('.js-control-right').click(function(){
@@ -410,23 +361,17 @@ $(document).ready(function () {
 
 	// === slick === end
 
-
-
-
 	// animate scroll to id
 	$(".js-scroll-to").mPageScroll2id({
-		offset:100,
+		offset:0,
 	});
 	// animate scroll to id === end
-	
 
-	
 	// drop click on contract
 	$('.js-contract-el').click(function(){
 		$(this).find('input[type="radio"]').prop('checked', true);
 	});
 	// drop click on contract === end*/
-	
 
 	// slide menu
 	$('.js-slide-block-toggle').click(function (event) {

@@ -1,7 +1,7 @@
 include block_html/_style.pug
 include block_html/_include.pug
 
-.page
+.page#header
 	+header()
 	//main slider
 	.main-slider
@@ -95,31 +95,32 @@ include block_html/_include.pug
 			.js-tab-wrap
 				// choose type program
 				.main-cont
-					.program-type.js-tick-cont
-						.program-type__el.program-type__el--seaLight.active.js-tick.js-tab(data-programType="weightLoss")
-							.program-type__el-icon
-								+icon("cat-light","icon")
-							.program-type__el-name Снижение <br> веса
-						.program-type__el.program-type__el--blueLight.js-tick.js-tab(data-programType="saveForm")
-							.program-type__el-icon
-								+icon("cat-normal","icon")
-							.program-type__el-name Поддержание <br> формы
-						.program-type__el.program-type__el--pinkLight.js-tick.js-tab(data-programType="weightIncrease")
-							.program-type__el-icon
-								+icon("cat-strong","icon")
-							.program-type__el-name Набор <br> массы
-						.program-type__el.program-type__el--swampLight.js-tick.js-tab(data-programType="meatLoss")
-							.program-type__el-icon
-								+icon("cat-veggi","icon")
-							.program-type__el-name Питание <br> без мяса
-						.program-type__el.program-type__el--orangeLight.js-tick.js-tab(data-programType="cleanHeаlth")
-							.program-type__el-icon
-								+icon("cat-detox","icon")
-							.program-type__el-name Очищение <br> организма
-						.program-type__el.program-type__el--violetLight.js-tick.js-tab(data-programType="foodOffice")
-							.program-type__el-icon
-								+icon("cat-daily","icon")
-							.program-type__el-name Питание <br> в офис
+					.program-type-wrap
+						.program-type.js-tick-cont
+							.program-type__el.program-type__el--seaLight.active.js-tick.js-tab(data-programType="weightLoss")
+								.program-type__el-icon
+									+icon("cat-light","icon")
+								.program-type__el-name Снижение <br> веса
+							.program-type__el.program-type__el--blueLight.js-tick.js-tab(data-programType="saveForm")
+								.program-type__el-icon
+									+icon("cat-normal","icon")
+								.program-type__el-name Поддержание <br> формы
+							.program-type__el.program-type__el--pinkLight.js-tick.js-tab(data-programType="weightIncrease")
+								.program-type__el-icon
+									+icon("cat-strong","icon")
+								.program-type__el-name Набор <br> массы
+							.program-type__el.program-type__el--swampLight.js-tick.js-tab(data-programType="meatLoss")
+								.program-type__el-icon
+									+icon("cat-veggi","icon")
+								.program-type__el-name Питание <br> без мяса
+							.program-type__el.program-type__el--orangeLight.js-tick.js-tab(data-programType="cleanHeаlth")
+								.program-type__el-icon
+									+icon("cat-detox","icon")
+								.program-type__el-name Очищение <br> организма
+							.program-type__el.program-type__el--violetLight.js-tick.js-tab(data-programType="foodOffice")
+								.program-type__el-icon
+									+icon("cat-daily","icon")
+								.program-type__el-name Питание <br> в офис
 				// choose type program === end
 
 				// choose program
@@ -186,33 +187,34 @@ include block_html/_include.pug
 								.program-consist__el-val 458
 								.program-consist__el-type Углеводы
 						// program consist === end
-					.program-list
-						- for (var i=1;i<8;i++)
-							// program item
-							.program-el
-								.program-el__img(style="background-image:url('img/item-sm-"+i+".jpg')")
-								.program-el-wrap
-									.program-el__content
-										.program-el__head
-											.program-el__type Первый завтрак
-											.program-el__val 106 Ккал. 300 г.
-										.program-el__title Смузи боул с яблоком, корицей и гранола
-										.program-el__text Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус
-									.program-el__footer
-										.icon-row
-											+icon("reload","icon icon--right")
-											span Заменить блюдо
-							// program item === end
-						// program-banner
-						.program-banner
-							.program-banner-inner
-								img(src="img/smile/smile-star.png", alt="").program-banner__img
-								.program-banner__cost 180
-								.program-banner__text руб/день
-								a(href="#order").btn--md.btn--mark.js-scroll-to Заказать
-								a(href="#").icon-row
-									span.type--md.type--mark.type--bold Подробнее
-									+icon("arrow-right","icon icon--left icon--mark")
+					.program-list-container
+						.program-list
+							- for (var i=1;i<8;i++)
+								// program item
+								.program-el
+									.program-el__img(style="background-image:url('img/item-sm-"+i+".jpg')")
+									.program-el-wrap
+										.program-el__content
+											.program-el__head
+												.program-el__type Первый завтрак
+												.program-el__val 106 Ккал. 300 г.
+											.program-el__title Смузи боул с яблоком, корицей и гранола
+											.program-el__text Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус
+										.program-el__footer
+											.icon-row
+												+icon("reload","icon icon--right")
+												span Заменить блюдо
+								// program item === end
+							// program-banner
+							.program-banner
+								.program-banner-inner
+									img(src="img/smile/smile-star.png", alt="").program-banner__img
+									.program-banner__cost 180
+									.program-banner__text руб/день
+									a(href="#order").btn--md.btn--mark.js-scroll-to Заказать
+									a(href="#").icon-row
+										span.type--md.type--mark.type--bold Подробнее
+										+icon("arrow-right","icon icon--left icon--mark")
 						// program-banner === end
 			// program list === end
 
@@ -251,9 +253,9 @@ include block_html/_include.pug
 		// step work === end
 
 		// contract
-		.section-extend.section--gradient
+		.section-extend.section--gradient#order
 			.main-cont
-				.contract#order
+				.contract
 					.contract-head.bg-sea
 						.contract-head-info
 							.contract-head-title Заказать Light
@@ -316,19 +318,19 @@ include block_html/_include.pug
 					.contract-footer
 						.contract-footer__text Нажимая кнопку “Оформить” я принимаю условия условия <a href="#" class="link--mark">передачи информации</a>
 						.btn--md.btn--mark.btn--mobile Оформить
-
 		// contract === end
 
 		// sale
 		.main-cont
 			.title.title--lgx Акции
-			.sale-list
-				- for (var i=0;i<3;i++)
-					a(href="#").sale-el
-						.sale-el__img(style="background-image:url('img/sale-1.jpg')")
-						.sale-el__content
-							.sale-el__text Копи баллы - питайся бесплатно! Бонусная программа для наших клиентов
-							.sale-el__get.link--mark Посмотреть
+			.sale-list-container
+				.sale-list
+					- for (var i=0;i<3;i++)
+						a(href="#").sale-el
+							.sale-el__img(style="background-image:url('img/sale-1.jpg')")
+							.sale-el__content
+								.sale-el__text Копи баллы - питайся бесплатно! Бонусная программа для наших клиентов
+								.sale-el__get.link--mark Посмотреть
 		// sale === end
 
 		// subscription

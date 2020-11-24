@@ -309,6 +309,26 @@
                         <a class="slide-nav__el" href="#">Блог</a>
                         <a class="slide-nav__el" href="#">О нас</a>
                         <a class="slide-nav__el" href="#">Сотрудничество</a>
+                        <div class="drop-menu-card drop-menu-card--sm">
+                            <a class="drop-menu-card__el" href="#">
+                                <div class="drop-menu-card__el-info">
+                                    <svg class="icon icon--md icon--mark">
+                                        <use xlink:href="#check-wave"></use>
+                                    </svg>
+                                    <div class="drop-menu-card__title">Подбор программы</div>
+                                </div>
+                                <div class="drop-menu-card__text">Не можете определиться? Мы Вам поможем</div>
+                            </a>
+                            <a class="drop-menu-card__el" href="#">
+                                <div class="drop-menu-card__el-info">
+                                    <svg class="icon icon--md icon--mark">
+                                        <use xlink:href="#surprise"></use>
+                                    </svg>
+                                    <div class="drop-menu-card__title">Подарочный сертификат</div>
+                                </div>
+                                <div class="drop-menu-card__text">Подарите здоровье с доставкой на дом!</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -458,60 +478,62 @@
                 <div class="js-tab-wrap">
                     <!-- choose type program-->
                     <div class="main-cont">
-                        <div class="program-type js-tick-cont">
-                            <div class="program-type__el program-type__el--seaLight active js-tick js-tab" data-programType="weightLoss">
-                                <div class="program-type__el-icon">
-                                    <svg class="icon">
-                                        <use xlink:href="#cat-light"></use>
-                                    </svg>
+                        <div class="program-type-wrap">
+                            <div class="program-type js-tick-cont">
+                                <div class="program-type__el program-type__el--seaLight active js-tick js-tab" data-programType="weightLoss">
+                                    <div class="program-type__el-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#cat-light"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="program-type__el-name">Снижение
+                                        <br>веса</div>
                                 </div>
-                                <div class="program-type__el-name">Снижение
-                                    <br>веса</div>
-                            </div>
-                            <div class="program-type__el program-type__el--blueLight js-tick js-tab" data-programType="saveForm">
-                                <div class="program-type__el-icon">
-                                    <svg class="icon">
-                                        <use xlink:href="#cat-normal"></use>
-                                    </svg>
+                                <div class="program-type__el program-type__el--blueLight js-tick js-tab" data-programType="saveForm">
+                                    <div class="program-type__el-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#cat-normal"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="program-type__el-name">Поддержание
+                                        <br>формы</div>
                                 </div>
-                                <div class="program-type__el-name">Поддержание
-                                    <br>формы</div>
-                            </div>
-                            <div class="program-type__el program-type__el--pinkLight js-tick js-tab" data-programType="weightIncrease">
-                                <div class="program-type__el-icon">
-                                    <svg class="icon">
-                                        <use xlink:href="#cat-strong"></use>
-                                    </svg>
+                                <div class="program-type__el program-type__el--pinkLight js-tick js-tab" data-programType="weightIncrease">
+                                    <div class="program-type__el-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#cat-strong"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="program-type__el-name">Набор
+                                        <br>массы</div>
                                 </div>
-                                <div class="program-type__el-name">Набор
-                                    <br>массы</div>
-                            </div>
-                            <div class="program-type__el program-type__el--swampLight js-tick js-tab" data-programType="meatLoss">
-                                <div class="program-type__el-icon">
-                                    <svg class="icon">
-                                        <use xlink:href="#cat-veggi"></use>
-                                    </svg>
+                                <div class="program-type__el program-type__el--swampLight js-tick js-tab" data-programType="meatLoss">
+                                    <div class="program-type__el-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#cat-veggi"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="program-type__el-name">Питание
+                                        <br>без мяса</div>
                                 </div>
-                                <div class="program-type__el-name">Питание
-                                    <br>без мяса</div>
-                            </div>
-                            <div class="program-type__el program-type__el--orangeLight js-tick js-tab" data-programType="cleanHeаlth">
-                                <div class="program-type__el-icon">
-                                    <svg class="icon">
-                                        <use xlink:href="#cat-detox"></use>
-                                    </svg>
+                                <div class="program-type__el program-type__el--orangeLight js-tick js-tab" data-programType="cleanHeаlth">
+                                    <div class="program-type__el-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#cat-detox"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="program-type__el-name">Очищение
+                                        <br>организма</div>
                                 </div>
-                                <div class="program-type__el-name">Очищение
-                                    <br>организма</div>
-                            </div>
-                            <div class="program-type__el program-type__el--violetLight js-tick js-tab" data-programType="foodOffice">
-                                <div class="program-type__el-icon">
-                                    <svg class="icon">
-                                        <use xlink:href="#cat-daily"></use>
-                                    </svg>
+                                <div class="program-type__el program-type__el--violetLight js-tick js-tab" data-programType="foodOffice">
+                                    <div class="program-type__el-icon">
+                                        <svg class="icon">
+                                            <use xlink:href="#cat-daily"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="program-type__el-name">Питание
+                                        <br>в офис</div>
                                 </div>
-                                <div class="program-type__el-name">Питание
-                                    <br>в офис</div>
                             </div>
                         </div>
                     </div>
@@ -606,181 +628,183 @@
                             </div>
                             <!-- program consist === end-->
                         </div>
-                        <div class="program-list">
-                            <!-- program item-->
-                            <div class="program-el">
-                                <div class="program-el__img" style="background-image:url('img/item-sm-1.jpg')"></div>
-                                <div class="program-el-wrap">
-                                    <div class="program-el__content">
-                                        <div class="program-el__head">
-                                            <div class="program-el__type">Первый завтрак</div>
-                                            <div class="program-el__val">106 Ккал. 300 г.</div>
+                        <div class="program-list-container">
+                            <div class="program-list">
+                                <!-- program item-->
+                                <div class="program-el">
+                                    <div class="program-el__img" style="background-image:url('img/item-sm-1.jpg')"></div>
+                                    <div class="program-el-wrap">
+                                        <div class="program-el__content">
+                                            <div class="program-el__head">
+                                                <div class="program-el__type">Первый завтрак</div>
+                                                <div class="program-el__val">106 Ккал. 300 г.</div>
+                                            </div>
+                                            <div class="program-el__title">Смузи боул с яблоком, корицей и гранола</div>
+                                            <div class="program-el__text">Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус</div>
                                         </div>
-                                        <div class="program-el__title">Смузи боул с яблоком, корицей и гранола</div>
-                                        <div class="program-el__text">Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус</div>
-                                    </div>
-                                    <div class="program-el__footer">
-                                        <div class="icon-row">
-                                            <svg class="icon icon--right">
-                                                <use xlink:href="#reload"></use>
-                                            </svg>
-                                            <span>Заменить блюдо</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- program item === end-->
-                            <!-- program item-->
-                            <div class="program-el">
-                                <div class="program-el__img" style="background-image:url('img/item-sm-2.jpg')"></div>
-                                <div class="program-el-wrap">
-                                    <div class="program-el__content">
-                                        <div class="program-el__head">
-                                            <div class="program-el__type">Первый завтрак</div>
-                                            <div class="program-el__val">106 Ккал. 300 г.</div>
-                                        </div>
-                                        <div class="program-el__title">Смузи боул с яблоком, корицей и гранола</div>
-                                        <div class="program-el__text">Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус</div>
-                                    </div>
-                                    <div class="program-el__footer">
-                                        <div class="icon-row">
-                                            <svg class="icon icon--right">
-                                                <use xlink:href="#reload"></use>
-                                            </svg>
-                                            <span>Заменить блюдо</span>
+                                        <div class="program-el__footer">
+                                            <div class="icon-row">
+                                                <svg class="icon icon--right">
+                                                    <use xlink:href="#reload"></use>
+                                                </svg>
+                                                <span>Заменить блюдо</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- program item === end-->
-                            <!-- program item-->
-                            <div class="program-el">
-                                <div class="program-el__img" style="background-image:url('img/item-sm-3.jpg')"></div>
-                                <div class="program-el-wrap">
-                                    <div class="program-el__content">
-                                        <div class="program-el__head">
-                                            <div class="program-el__type">Первый завтрак</div>
-                                            <div class="program-el__val">106 Ккал. 300 г.</div>
+                                <!-- program item === end-->
+                                <!-- program item-->
+                                <div class="program-el">
+                                    <div class="program-el__img" style="background-image:url('img/item-sm-2.jpg')"></div>
+                                    <div class="program-el-wrap">
+                                        <div class="program-el__content">
+                                            <div class="program-el__head">
+                                                <div class="program-el__type">Первый завтрак</div>
+                                                <div class="program-el__val">106 Ккал. 300 г.</div>
+                                            </div>
+                                            <div class="program-el__title">Смузи боул с яблоком, корицей и гранола</div>
+                                            <div class="program-el__text">Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус</div>
                                         </div>
-                                        <div class="program-el__title">Смузи боул с яблоком, корицей и гранола</div>
-                                        <div class="program-el__text">Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус</div>
-                                    </div>
-                                    <div class="program-el__footer">
-                                        <div class="icon-row">
-                                            <svg class="icon icon--right">
-                                                <use xlink:href="#reload"></use>
-                                            </svg>
-                                            <span>Заменить блюдо</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- program item === end-->
-                            <!-- program item-->
-                            <div class="program-el">
-                                <div class="program-el__img" style="background-image:url('img/item-sm-4.jpg')"></div>
-                                <div class="program-el-wrap">
-                                    <div class="program-el__content">
-                                        <div class="program-el__head">
-                                            <div class="program-el__type">Первый завтрак</div>
-                                            <div class="program-el__val">106 Ккал. 300 г.</div>
-                                        </div>
-                                        <div class="program-el__title">Смузи боул с яблоком, корицей и гранола</div>
-                                        <div class="program-el__text">Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус</div>
-                                    </div>
-                                    <div class="program-el__footer">
-                                        <div class="icon-row">
-                                            <svg class="icon icon--right">
-                                                <use xlink:href="#reload"></use>
-                                            </svg>
-                                            <span>Заменить блюдо</span>
+                                        <div class="program-el__footer">
+                                            <div class="icon-row">
+                                                <svg class="icon icon--right">
+                                                    <use xlink:href="#reload"></use>
+                                                </svg>
+                                                <span>Заменить блюдо</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- program item === end-->
-                            <!-- program item-->
-                            <div class="program-el">
-                                <div class="program-el__img" style="background-image:url('img/item-sm-5.jpg')"></div>
-                                <div class="program-el-wrap">
-                                    <div class="program-el__content">
-                                        <div class="program-el__head">
-                                            <div class="program-el__type">Первый завтрак</div>
-                                            <div class="program-el__val">106 Ккал. 300 г.</div>
+                                <!-- program item === end-->
+                                <!-- program item-->
+                                <div class="program-el">
+                                    <div class="program-el__img" style="background-image:url('img/item-sm-3.jpg')"></div>
+                                    <div class="program-el-wrap">
+                                        <div class="program-el__content">
+                                            <div class="program-el__head">
+                                                <div class="program-el__type">Первый завтрак</div>
+                                                <div class="program-el__val">106 Ккал. 300 г.</div>
+                                            </div>
+                                            <div class="program-el__title">Смузи боул с яблоком, корицей и гранола</div>
+                                            <div class="program-el__text">Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус</div>
                                         </div>
-                                        <div class="program-el__title">Смузи боул с яблоком, корицей и гранола</div>
-                                        <div class="program-el__text">Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус</div>
-                                    </div>
-                                    <div class="program-el__footer">
-                                        <div class="icon-row">
-                                            <svg class="icon icon--right">
-                                                <use xlink:href="#reload"></use>
-                                            </svg>
-                                            <span>Заменить блюдо</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- program item === end-->
-                            <!-- program item-->
-                            <div class="program-el">
-                                <div class="program-el__img" style="background-image:url('img/item-sm-6.jpg')"></div>
-                                <div class="program-el-wrap">
-                                    <div class="program-el__content">
-                                        <div class="program-el__head">
-                                            <div class="program-el__type">Первый завтрак</div>
-                                            <div class="program-el__val">106 Ккал. 300 г.</div>
-                                        </div>
-                                        <div class="program-el__title">Смузи боул с яблоком, корицей и гранола</div>
-                                        <div class="program-el__text">Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус</div>
-                                    </div>
-                                    <div class="program-el__footer">
-                                        <div class="icon-row">
-                                            <svg class="icon icon--right">
-                                                <use xlink:href="#reload"></use>
-                                            </svg>
-                                            <span>Заменить блюдо</span>
+                                        <div class="program-el__footer">
+                                            <div class="icon-row">
+                                                <svg class="icon icon--right">
+                                                    <use xlink:href="#reload"></use>
+                                                </svg>
+                                                <span>Заменить блюдо</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- program item === end-->
-                            <!-- program item-->
-                            <div class="program-el">
-                                <div class="program-el__img" style="background-image:url('img/item-sm-7.jpg')"></div>
-                                <div class="program-el-wrap">
-                                    <div class="program-el__content">
-                                        <div class="program-el__head">
-                                            <div class="program-el__type">Первый завтрак</div>
-                                            <div class="program-el__val">106 Ккал. 300 г.</div>
+                                <!-- program item === end-->
+                                <!-- program item-->
+                                <div class="program-el">
+                                    <div class="program-el__img" style="background-image:url('img/item-sm-4.jpg')"></div>
+                                    <div class="program-el-wrap">
+                                        <div class="program-el__content">
+                                            <div class="program-el__head">
+                                                <div class="program-el__type">Первый завтрак</div>
+                                                <div class="program-el__val">106 Ккал. 300 г.</div>
+                                            </div>
+                                            <div class="program-el__title">Смузи боул с яблоком, корицей и гранола</div>
+                                            <div class="program-el__text">Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус</div>
                                         </div>
-                                        <div class="program-el__title">Смузи боул с яблоком, корицей и гранола</div>
-                                        <div class="program-el__text">Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус</div>
-                                    </div>
-                                    <div class="program-el__footer">
-                                        <div class="icon-row">
-                                            <svg class="icon icon--right">
-                                                <use xlink:href="#reload"></use>
-                                            </svg>
-                                            <span>Заменить блюдо</span>
+                                        <div class="program-el__footer">
+                                            <div class="icon-row">
+                                                <svg class="icon icon--right">
+                                                    <use xlink:href="#reload"></use>
+                                                </svg>
+                                                <span>Заменить блюдо</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- program item === end-->
-                            <!-- program-banner-->
-                            <div class="program-banner">
-                                <div class="program-banner-inner">
-                                    <img class="program-banner__img" src="img/smile/smile-star.png" alt="" />
-                                    <div class="program-banner__cost">180</div>
-                                    <div class="program-banner__text">руб/день</div>
-                                    <a class="btn--md btn--mark js-scroll-to" href="#order">Заказать</a>
-                                    <a class="icon-row" href="#">
-                                        <span class="type--md type--mark type--bold">Подробнее</span>
-                                        <svg class="icon icon--left icon--mark">
-                                            <use xlink:href="#arrow-right"></use>
-                                        </svg>
-                                    </a>
+                                <!-- program item === end-->
+                                <!-- program item-->
+                                <div class="program-el">
+                                    <div class="program-el__img" style="background-image:url('img/item-sm-5.jpg')"></div>
+                                    <div class="program-el-wrap">
+                                        <div class="program-el__content">
+                                            <div class="program-el__head">
+                                                <div class="program-el__type">Первый завтрак</div>
+                                                <div class="program-el__val">106 Ккал. 300 г.</div>
+                                            </div>
+                                            <div class="program-el__title">Смузи боул с яблоком, корицей и гранола</div>
+                                            <div class="program-el__text">Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус</div>
+                                        </div>
+                                        <div class="program-el__footer">
+                                            <div class="icon-row">
+                                                <svg class="icon icon--right">
+                                                    <use xlink:href="#reload"></use>
+                                                </svg>
+                                                <span>Заменить блюдо</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- program item === end-->
+                                <!-- program item-->
+                                <div class="program-el">
+                                    <div class="program-el__img" style="background-image:url('img/item-sm-6.jpg')"></div>
+                                    <div class="program-el-wrap">
+                                        <div class="program-el__content">
+                                            <div class="program-el__head">
+                                                <div class="program-el__type">Первый завтрак</div>
+                                                <div class="program-el__val">106 Ккал. 300 г.</div>
+                                            </div>
+                                            <div class="program-el__title">Смузи боул с яблоком, корицей и гранола</div>
+                                            <div class="program-el__text">Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус</div>
+                                        </div>
+                                        <div class="program-el__footer">
+                                            <div class="icon-row">
+                                                <svg class="icon icon--right">
+                                                    <use xlink:href="#reload"></use>
+                                                </svg>
+                                                <span>Заменить блюдо</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- program item === end-->
+                                <!-- program item-->
+                                <div class="program-el">
+                                    <div class="program-el__img" style="background-image:url('img/item-sm-7.jpg')"></div>
+                                    <div class="program-el-wrap">
+                                        <div class="program-el__content">
+                                            <div class="program-el__head">
+                                                <div class="program-el__type">Первый завтрак</div>
+                                                <div class="program-el__val">106 Ккал. 300 г.</div>
+                                            </div>
+                                            <div class="program-el__title">Смузи боул с яблоком, корицей и гранола</div>
+                                            <div class="program-el__text">Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус</div>
+                                        </div>
+                                        <div class="program-el__footer">
+                                            <div class="icon-row">
+                                                <svg class="icon icon--right">
+                                                    <use xlink:href="#reload"></use>
+                                                </svg>
+                                                <span>Заменить блюдо</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- program item === end-->
+                                <!-- program-banner-->
+                                <div class="program-banner">
+                                    <div class="program-banner-inner">
+                                        <img class="program-banner__img" src="img/smile/smile-star.png" alt="" />
+                                        <div class="program-banner__cost">180</div>
+                                        <div class="program-banner__text">руб/день</div>
+                                        <a class="btn--md btn--mark js-scroll-to" href="#order">Заказать</a>
+                                        <a class="icon-row" href="#">
+                                            <span class="type--md type--mark type--bold">Подробнее</span>
+                                            <svg class="icon icon--left icon--mark">
+                                                <use xlink:href="#arrow-right"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                             <!-- program-banner === end-->
@@ -835,9 +859,9 @@
             </div>
             <!-- step work === end-->
             <!-- contract-->
-            <div class="section-extend section--gradient">
+            <div class="section-extend section--gradient" id="order">
                 <div class="main-cont">
-                    <div class="contract" id="order">
+                    <div class="contract">
                         <div class="contract-head bg-sea">
                             <div class="contract-head-info">
                                 <div class="contract-head-title">Заказать Light</div>
@@ -988,28 +1012,30 @@
             <!-- sale-->
             <div class="main-cont">
                 <div class="title title--lgx">Акции</div>
-                <div class="sale-list">
-                    <a class="sale-el" href="#">
-                        <div class="sale-el__img" style="background-image:url('img/sale-1.jpg')"></div>
-                        <div class="sale-el__content">
-                            <div class="sale-el__text">Копи баллы - питайся бесплатно! Бонусная программа для наших клиентов</div>
-                            <div class="sale-el__get link--mark">Посмотреть</div>
-                        </div>
-                    </a>
-                    <a class="sale-el" href="#">
-                        <div class="sale-el__img" style="background-image:url('img/sale-1.jpg')"></div>
-                        <div class="sale-el__content">
-                            <div class="sale-el__text">Копи баллы - питайся бесплатно! Бонусная программа для наших клиентов</div>
-                            <div class="sale-el__get link--mark">Посмотреть</div>
-                        </div>
-                    </a>
-                    <a class="sale-el" href="#">
-                        <div class="sale-el__img" style="background-image:url('img/sale-1.jpg')"></div>
-                        <div class="sale-el__content">
-                            <div class="sale-el__text">Копи баллы - питайся бесплатно! Бонусная программа для наших клиентов</div>
-                            <div class="sale-el__get link--mark">Посмотреть</div>
-                        </div>
-                    </a>
+                <div class="sale-list-container">
+                    <div class="sale-list">
+                        <a class="sale-el" href="#">
+                            <div class="sale-el__img" style="background-image:url('img/sale-1.jpg')"></div>
+                            <div class="sale-el__content">
+                                <div class="sale-el__text">Копи баллы - питайся бесплатно! Бонусная программа для наших клиентов</div>
+                                <div class="sale-el__get link--mark">Посмотреть</div>
+                            </div>
+                        </a>
+                        <a class="sale-el" href="#">
+                            <div class="sale-el__img" style="background-image:url('img/sale-1.jpg')"></div>
+                            <div class="sale-el__content">
+                                <div class="sale-el__text">Копи баллы - питайся бесплатно! Бонусная программа для наших клиентов</div>
+                                <div class="sale-el__get link--mark">Посмотреть</div>
+                            </div>
+                        </a>
+                        <a class="sale-el" href="#">
+                            <div class="sale-el__img" style="background-image:url('img/sale-1.jpg')"></div>
+                            <div class="sale-el__content">
+                                <div class="sale-el__text">Копи баллы - питайся бесплатно! Бонусная программа для наших клиентов</div>
+                                <div class="sale-el__get link--mark">Посмотреть</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <!-- sale === end-->

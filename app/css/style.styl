@@ -1,5 +1,5 @@
 @import 'rupture'
-@import "grid/_grid.styl"
+//@import "grid/_grid.styl"
 @import "variable/_function.styl"
 @import "variable/_ie.styl"
 @import "variable/_helper.styl"
@@ -17,6 +17,7 @@ body
 	line-height 1.4
 	letter-spacing 0.01em
 
+
 .main-cont
 	+below(1280px)
 		padding: 0 42px
@@ -32,8 +33,11 @@ body
 .content
 	+below(1024px)
 		padding: 60px 0
+	+below(640px)
+		padding: 40px 0
 	flex-grow 1
 	padding: 100px 0
+
 .content--mid
 	flex(mid)
 
@@ -81,6 +85,9 @@ slider-create-mobile()
 	margin 0
 	animation:  slideInDown  1s 1 ease-in-out;
 	z-index 10
+	.header-top-wrap
+		+above(1025px)
+			display none
 // animate top menu === end
 
 // error
@@ -483,6 +490,28 @@ slider-create-mobile()
 	display: grid
 	grid-gap 28px
 	grid-template-columns: 1fr 1fr
+.drop-menu-card--sm
+	+below(640px)
+		padding: 22px
+		grid-template-columns: 1fr
+	padding: 32px 0
+	width: 100%
+	grid-template-columns: repeat(auto-fill, minmax(18rem,1fr))
+	.drop-menu-card__el
+		padding: 20px
+		.icon
+			margin: 0 12px 0 0
+	.drop-menu-card__text
+		width: 100%
+	.drop-menu-card__title
+		margin-bottom: 0
+
+.drop-menu-card__el-info
+	width: 100%
+	f()
+	align-items center
+	margin-bottom: 8px
+
 .drop-menu-card__title
 	margin-bottom: 8px
 .drop-menu-card__text
@@ -491,7 +520,7 @@ slider-create-mobile()
 	line-height: 1.6
 .drop-menu-card__el
 	br(12px)
-	padding: 26px 24px
+	padding: 26px
 	background: white
 	position relative
 	display block
@@ -685,9 +714,11 @@ slider-create-mobile()
 .advant
 	+below(1024px)
 		grid-gap 20px
-		margin-bottom: 90px
+		margin-bottom: 80px
 	+below(768px)
 		grid-template-columns: repeat(2, 1fr)
+	+below(640px)
+		margin-bottom: 40px
 	display: grid
 	grid-gap 28px
 	grid-template-columns: repeat(4, 1fr)
@@ -742,9 +773,11 @@ slider-create-mobile()
 		f()
 		align-items center
 		background: none
-		width: auto
+		width: 220px
+		padding: 0
 		height: auto
 		flex-flow row
+		margin: 0 auto 20px auto
 	position absolute
 	size: 160px
 	padding: 5.7% 3%
@@ -753,8 +786,8 @@ slider-create-mobile()
 	fl()
 	background: linear-gradient(98.95deg, #E3EEFF 0%, #E4F6E4 52.6%, #FFEEE4 100%);
 	color black
-	top 0
-	right: 0
+	top -7%
+	right: -7%
 	img
 		+below(640px)
 			margin 0 16px 0 0
@@ -763,6 +796,7 @@ slider-create-mobile()
 	span
 		+below(640px)
 			text-align: left
+			font-size: 12px
 		@extend .type--sm
 		text-align center
 .invite-info
@@ -812,18 +846,21 @@ slider-create-mobile()
 .invite-subs-info
 	+below(1024px)
 		width: 45%
+	+below(768px)
+		width: 50%
 	+below(640px)
 		width: 100%
 	width: 40%
-.input-btn-cont
-	fl()
-	width: 100%
-	.input-row
-		width: 100%
-	.btn--md
-		width: 100%
+	.input-btn-cont
+		+below(1024px)
+			fl()
+			width: 100%
+			.input-row
+				width: 100%
+			.btn--md
+				width: 100%
 .invite-subs-title
-	+below(768px)
+	+below(1024px)
 		line-height: 1.3
 	+below(640px)
 		text-align center
@@ -1027,6 +1064,7 @@ slider-create-mobile()
 	.icon
 		+below(640px)
 			margin: 10px
+		fill white
 		width: 3.5em
 		margin-right: 16px
 		opacity: .3
@@ -1045,12 +1083,21 @@ slider-create-mobile()
 	+below(1024px)
 		margin-bottom: 0
 	margin-bottom: 100px
-.program-type
+
+.program-type-wrap
 	+below(1024px)
 		scroll-create-mobile()
-	+below(768px)
-		margin-bottom: 20px
-	display: grid
+	display: grid!important
+	grid-template-columns: 1fr;
+	flex-grow: 1
+	+below(1024px)
+		padding-bottom: 30px
+		margin-bottom: -12px
+.program-type
+	+below(1024px)
+		grid-gap 0
+		margin-bottom: 0
+	display: grid!important
 	grid-gap 28px
 	grid-template-columns: repeat(6, 1fr)
 	margin-bottom: 48px
@@ -1060,10 +1107,8 @@ slider-create-mobile()
 		padding: 16px
 		height: 140px!important
 		width: 140px
-		display: inline-flex
+		display: flex
 		margin-right: 10px
-		&:last-child
-			margin-right: 0
 	@extend .type--smx
 	tr()
 	cp()
@@ -1137,7 +1182,7 @@ program-type(bg,textColor,iconColor)
 
 .program-group-wrap
 	border-bottom 1px solid $border-color
-	margin-bottom: 34px
+	margin-bottom: 32px
 .program-group
 	f()
 	opacity: 0
@@ -1171,19 +1216,21 @@ program-type(bg,textColor,iconColor)
 // program list
 //.program-list-wrap
 .program-list-header
-	+below(640px)
+	+below(1024px)
+		margin-bottom: 32px
+	+below(740px)
 		fl()
 		flex(mid)
 	flex(between)
 	margin-bottom: 40px
 .program-days
-	+below(640px)
+	+below(740px)
 		margin-bottom: 24px
 	f()
 .program-days__el
 	flex(mid)
-	round()
-	size 44px
+	size 42px 44px
+	br(20px)
 	margin-right: 12px
 	cp()
 	tr()
@@ -1219,24 +1266,30 @@ program-type(bg,textColor,iconColor)
 	color black
 .program-consist__el-type
 	@extend .type--sm
-.program-list
-	+below(1200px)
+.program-list-container
+	+below(1024px)
 		scroll-create-mobile()
+	display: grid!important
+	grid-template-columns: 1fr;
+	flex-grow: 1
+	+below(1024px)
+		padding-bottom: 20px
+		margin-bottom: 12px
+.program-list
+	+below(1024px)
+		grid-template-columns: initial
+		grid-auto-flow:column
+		grid-gap 0
 		.program-el
-			width: 300px
-			display: inline-flex
 			margin-right: 16px
-			&:last-child
-				margin-right: 0
+			min-width: 300px
+			display: flex
 	display: grid
 	grid-gap 28px
 	grid-template-columns: repeat(4, 1fr)
-	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
 
 
 .program-el
-	+below(1024px)
-		margin-bottom: 30px!important
 	br(12px)
 	overflow hidden
 	tr()
@@ -1291,7 +1344,7 @@ program-type(bg,textColor,iconColor)
 		font-weight 700
 		color $typeSecondary
 .program-banner
-	+below(1025px)
+	+below(1024px)
 		display none
 	background: linear-gradient(98.95deg, #E3EEFF 0%, #E4F6E4 52.6%, #FFEEE4 100%)
 	br(12px)
@@ -1300,8 +1353,10 @@ program-type(bg,textColor,iconColor)
 .program-banner--mobile
 	+above(1025px)
 		display none
+	+below(768px)
+		margin-bottom: 40px
 	display block
-	margin-bottom: 40px
+	margin-bottom: 60px
 	.program-banner-inner
 		+below(760px)
 			fl()
@@ -1387,7 +1442,7 @@ program-type(bg,textColor,iconColor)
 .work-step__el-icon
 	+below(690px)
 		margin: 0 0 20px 0
-	margin: 0 0 46px 0
+	margin: 0 0 42px 0
 	img
 		+below(768px)
 			width: 60px
@@ -1404,11 +1459,19 @@ program-type(bg,textColor,iconColor)
 // work-step === end
 
 // sale-list
-.sale-list
-	+below(1024px)
-		margin-bottom: 60px
+.sale-list-container
+	scroll-create-mobile()
+	display: grid
+	grid-template-columns: 1fr;
+	flex-grow: 1
 	+below(768px)
-		scroll-create-mobile()
+		padding-bottom: 20px
+		margin-bottom: 12px
+.sale-list
+	+below(768px)
+		grid-gap 0
+		margin-bottom: 0
+		f()
 	display: grid
 	grid-gap 28px
 	grid-template-columns: repeat(3, 1fr)
@@ -1418,8 +1481,6 @@ program-type(bg,textColor,iconColor)
 		width: 300px
 		display: inline-flex
 		margin-right: 16px
-		&:last-child
-			margin-right: 0
 	white-space initial
 	br(12px)
 	overflow hidden
@@ -1454,9 +1515,11 @@ program-type(bg,textColor,iconColor)
 // sale-list === end
 
 // review slider
+
 .slider-review
 	+below(1024px)
 		margin-right: -42px
+		overflow: hidden
 	+below(640px)
 		margin-right: -20px
 .slider-review__el
@@ -1479,11 +1542,16 @@ program-type(bg,textColor,iconColor)
 
 // review slider === end
 .section
+	+below(1024px)
+		padding-bottom: 40px
 	padding-bottom: 100px
 .section-extend
 	+below(1024px)
 		padding: 60px 0
 		margin-bottom: 60px
+	+below(640px)
+		padding: 40px 0
+		margin-bottom: 40px
 	padding: 100px 0
 	margin-bottom: 100px
 
@@ -1494,7 +1562,6 @@ program-type(bg,textColor,iconColor)
 .accordion
 	+below(640px)
 		width 100%
-		margin-bottom: 30px
 	background: white
 	opacity: 0
 	left -9999px
@@ -1539,9 +1606,7 @@ program-type(bg,textColor,iconColor)
 				transform rotate(45deg)
 .accordion__el-head-text
 	+below(640px)
-		font-weight: 400
 		line-height: 1.6
-		font-size: 14px
 	@extend .type--md
 	width: 80%
 	font-weight: 700
@@ -1572,7 +1637,7 @@ program-type(bg,textColor,iconColor)
 
 .accordion__el-content
 	+below(640px)
-		padding:20px
+		padding:0 20px 20px 20px
 	padding: 0 40px 40px 40px
 	display: none
 	p
@@ -1588,6 +1653,11 @@ program-type(bg,textColor,iconColor)
 .faq-type
 	+below(960px)
 		scroll-create-mobile()
+		padding-bottom: 28px
+		margin-bottom: 20px
+	+below(640px)
+		padding-bottom: 20px
+		margin-bottom: 4px
 	display: grid
 	grid-gap 28px
 	grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
@@ -1642,6 +1712,8 @@ program-type(bg,textColor,iconColor)
 		margin-bottom: 24px
 	width: 28%
 .deliver-info__text
+	+below(640px)
+		margin-bottom: 24px
 	margin-bottom: 42px
 	color $typeSecondary
 //.deliver-pick
@@ -1864,7 +1936,7 @@ program-type(bg,textColor,iconColor)
 			transform rotate(180deg)
 .slide-nav__el-sub
 	display none
-	padding: 10px 40px 22px 22px
+	padding: 10px 20px 22px 60px
 	border-bottom 1px solid $border-color
 // slider menu === end
 

@@ -1,6 +1,6 @@
 mixin header()
 	//block header
-	.header#header
+	.header
 		.header-top-wrap
 			.main-cont
 				.header-top
@@ -157,4 +157,15 @@ mixin header()
 										a(href="#").drop-menu__list__el Post
 					each navEl in nav
 						a(href="#").slide-nav__el #{navEl}
+					.drop-menu-card.drop-menu-card--sm
+						a(href="#").drop-menu-card__el
+							.drop-menu-card__el-info
+								+icon("check-wave","icon icon--md icon--mark")
+								.drop-menu-card__title Подбор программы
+							.drop-menu-card__text Не можете определиться? Мы Вам поможем
+						a(href="#").drop-menu-card__el
+							.drop-menu-card__el-info
+								+icon("surprise","icon icon--md icon--mark")
+								.drop-menu-card__title Подарочный сертификат
+							.drop-menu-card__text Подарите здоровье с доставкой на дом!
 	//block header end
