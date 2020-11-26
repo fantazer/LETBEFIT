@@ -1,5 +1,5 @@
 @import 'rupture'
-//@import "grid/_grid.styl"
+@import "grid/_grid.styl"
 @import "variable/_function.styl"
 @import "variable/_ie.styl"
 @import "variable/_helper.styl"
@@ -25,6 +25,12 @@ body
 		padding: 0 20px
 	center(1312px,10px)
 
+.main-cont-sm
+	+below(1280px)
+		padding: 0 42px
+	+below(640px)
+		padding: 0 20px
+	center(852px,10px)
 .page
 	f()
 	fl()
@@ -38,6 +44,12 @@ body
 	flex-grow 1
 	padding: 100px 0
 
+.content--clear-bottom
+	padding-bottom: 0
+
+.content--mark
+	background: $gradient
+
 .content--mid
 	flex(mid)
 
@@ -50,12 +62,13 @@ body
 		display none
 
 scroll-create-mobile()
-	display: block
 	white-space: nowrap
 	overflow: auto
-	margin-right: -42px
+	margin: 0 -42px
+	padding-left: 42px
 	+below(640px)
-		margin-right: -20px
+		margin: 0 -20px
+		padding-left: 20px
 
 slider-create-mobile()
 	margin-right: -42px
@@ -83,7 +96,7 @@ slider-create-mobile()
 	background white
 	width 100%
 	margin 0
-	animation:  slideInDown  1s 1 ease-in-out;
+	animation:  slideInDown  .8s 1 ease-in-out;
 	z-index 10
 	.header-top-wrap
 		+above(1025px)
@@ -153,7 +166,7 @@ slider-create-mobile()
 	position: absolute
 	opacity 0
 	transition transform .6s, opacity .8s
-	max-width 400px
+	width 410px
 	left -9999px
 	top -9999px
 	.order__row
@@ -163,14 +176,13 @@ slider-create-mobile()
 .modal-content
 	+below(640px)
 		height: 100%
-		padding: 20px
 		overflow-y scroll
-		width: 95%!important
+		width: calc(100% - 40px)
 		margin: 20px auto
 	background: white
 	position: relative
-	padding: 40px 45px
-	br(40px)
+	padding: 32px
+	br(16px)
 
 .modal__show
 	max-height 100%
@@ -184,26 +196,20 @@ slider-create-mobile()
 	will-change: transform, opacity
 
 .modal-close
-	+below(768px)
-		top 12px
-		right 12px
+	+below(640px)
+		right 20px
+		top: -16px
 	position: absolute
-	top: 20px
-	right: 20px
+	top: -36px
+	right: 10px
 	cp()
-	size 50px
-	br(20px)
-	flex(mid)
 	z-index 10
-	background: #f8f8f8
 	&:hover
 		.icon
-			opacity: 1
+			fill $mark
 	.icon
 		tr()
-		size 12px
-		fill black
-		opacity:.3
+		fill white
 
 .modal-hide-animation
 	transform scale(.9)
@@ -229,19 +235,16 @@ slider-create-mobile()
 .modal-title
 	+below(768px)
 		font-size: 20px
-	margin-bottom: 20px
-	text-align: center
-	@extend .type--xl
+	margin-bottom: 24px
+	font-size: 24px
 	font-weight: 700
+	display block
+	color black
 
 .modal-text
 	+below(768px)
 		width: 100%
-		font-size: 12px
-	text-align: center
-	margin: 20px auto
-	//width: 80%
-	line-height: 1.6
+	margin: 30px auto
 
 .modal-send
 	@extend .btn--md
@@ -250,7 +253,7 @@ slider-create-mobile()
 // modal === end
 
 // cookie
-.cookie
+/*.cookie
 	position: fixed
 	bottom 20px
 	left 0
@@ -281,7 +284,7 @@ slider-create-mobile()
 		cp()
 .cookie-text
 	width calc(100% - 30px)
-	font-size: 12px
+	font-size: 12px*/
 // cookie === end
 
 // header
@@ -632,11 +635,11 @@ slider-create-mobile()
 // slick === end
 
 // main slider
-.slider-main__el--sea
+.board__el--sea
 	background: $sea
-.slider-main__el--pink
+.board__el--pink
 	background: $pink
-.slider-main__el--violet
+.board__el--violet
 	background: $violet
 .number-slide-wrap
 	+below(960px)
@@ -664,15 +667,17 @@ slider-create-mobile()
 	background: #ffffff2e
 
 
-.slider-main__el-wrap
-	+below(1280px)
-		padding: 12% 0 8% 0
+.board__el-wrap
 	+below(640px)
 		padding: 20px 0 0 0
 	padding: 12% 0 8% 0
 	position relative
 
-.slider-main__title
+.board__el-wrap--sm
+	padding: 10% 0 8% 0
+	+below(640px)
+		padding: 20px 0 0 0
+.board__title
 	+below(1280px)
 		font-size: 56px
 	+below(960px)
@@ -685,7 +690,14 @@ slider-create-mobile()
 	font-weight 700
 	color white
 	margin-bottom: 10%
-.slider-main__content
+.board__title-sub
+	+below(1024px)
+		display none
+	color white
+	@extend .type--md
+	margin-top: -5%
+	margin-bottom: 5%
+.board__content
 	+below(1280px)
 		width: 100%
 		max-width 535px
@@ -696,7 +708,7 @@ slider-create-mobile()
 		fl()
 		max-width 100%
 	width: 47%
-.slider-main__img
+.board__img
 	+below(640px)
 		position: static
 		padding: 40% 24%
@@ -882,6 +894,15 @@ slider-create-mobile()
 // soc-row
 .soc-row
 	f()
+
+.soc-row--mid
+	flex(mid)
+
+.soc-row--lg
+	.soc-row__el
+		+below(360px)
+			size 56px
+		size 72px
 .soc-row__el
 	round()
 	flex(mid)
@@ -952,11 +973,13 @@ slider-create-mobile()
 	&:hover
 		background: darken(#2F89CE,10)
 
-
 .soc-row__el--viber
 	background: #7C509A
 	&:hover
 		background: darken(#7C509A,10)
+
+.soc-row__el--instagram
+	background: linear-gradient(43.94deg, #EEA054 16.16%, #D64763 50.11%, #B62A99 83.68%);
 
 .footer-address
 	+below(1024px)
@@ -1425,7 +1448,7 @@ program-type(bg,textColor,iconColor)
 	+below(1024px)
 		grid-gap 20px
 		margin-bottom: 60px
-	+below(690px)
+	+below(768px)
 		grid-template-columns: 1fr
 	display: grid
 	grid-gap 28px
@@ -1440,7 +1463,7 @@ program-type(bg,textColor,iconColor)
 	padding: 32px
 	tr()
 .work-step__el-icon
-	+below(690px)
+	+below(768px)
 		margin: 0 0 20px 0
 	margin: 0 0 42px 0
 	img
@@ -1460,11 +1483,11 @@ program-type(bg,textColor,iconColor)
 
 // sale-list
 .sale-list-container
-	scroll-create-mobile()
 	display: grid
 	grid-template-columns: 1fr;
 	flex-grow: 1
 	+below(768px)
+		scroll-create-mobile()
 		padding-bottom: 20px
 		margin-bottom: 12px
 .sale-list
@@ -1554,7 +1577,12 @@ program-type(bg,textColor,iconColor)
 		margin-bottom: 40px
 	padding: 100px 0
 	margin-bottom: 100px
-
+.section-full
+	padding: 100px 0
+	+below(1024px)
+		padding: 60px 0
+	+below(640px)
+		padding: 40px 0
 .section--gradient
 	background: $gradient
 
@@ -1650,25 +1678,27 @@ program-type(bg,textColor,iconColor)
 // accordion === end
 
 // FAQ
-.faq-type
-	+below(960px)
-		scroll-create-mobile()
-		padding-bottom: 28px
-		margin-bottom: 20px
-	+below(640px)
+.faq-wrap
+	scroll-create-mobile()
+	display: grid
+	grid-template-columns: 1fr;
+	flex-grow: 1
+	+below(768px)
 		padding-bottom: 20px
-		margin-bottom: 4px
+		margin-bottom: 12px
+.faq-type
+	+below(768px)
+		f()
+		margin-bottom: 0
+		grid-gap 0
 	display: grid
 	grid-gap 28px
-	grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+	grid-template-columns: repeat(auto-fill, minmax(180px,1fr))
 	margin-bottom: 48px
 .faq-type__el
 	+below(960px)
 		width: 180px
 		margin-right: 16px
-		display: inline-flex
-		&:last-child
-			margin-right: 0
 	padding: 22px
 	br(12px)
 	f()
@@ -1753,10 +1783,11 @@ program-type(bg,textColor,iconColor)
 
 // contract
 .contract
-	center(852px,0)
 	br(12px)
 	overflow hidden
 	background: white
+
+
 .contract-head
 	+below(768px)
 		min-height: 165px
@@ -1855,6 +1886,12 @@ program-type(bg,textColor,iconColor)
 	border-top 1px dashed $border-color
 	padding: 48px 48px 56px 48px
 	flex(between)
+.contract-footer--clear
+	+below(640px)
+		padding 0
+	padding: 20px 0 0 0
+	border 0
+
 .contract-footer__text
 	+below(640px)
 		width: 100%

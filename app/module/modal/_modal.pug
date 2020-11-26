@@ -25,6 +25,39 @@ mixin modal()
 										+icon("checked","icon")
 									.style-input-text Я ознакомился с #[a(href="#") политикой конфиденциальности], #[a(href="#") публичной офертой] и даю согласие на обработку моих персональных данных
 						input(type="submit" value="Отправить заявку").modal-send
+			//clever deliver
+			.modal(data-modal="cleverDeliver")
+				.modal-close
+					+icon("close","icon")
+				.modal-content
+					.title--mdx Умная доставка
+					.modal-text.text
+						p В будние дни — с интервалом в 1 час, начиная с 7 ми утра. Если Вам удобно получать доставку днем — мы с удовольствием предложим Вам и такой вариант.<br>		Вечерняя доставка осуществляется с 2-х часовым интервалом. Доставка за МКАД оплачивается отдельно и составляет 250 руб за каждую доставку. Диапазон доставки составляет 2 часа. Утренний диапазон начинается с 8:00
+					.btn--md.btn--light.btn--full.modal-hide Понятно
+			//call Back
+			.modal(data-modal="callBack")
+				.modal-close
+					+icon("close","icon")
+				.modal-content
+					a(href="tel:8 (499) 110-12-15").modal-title.type--center 8 (499) 110-12-15
+					.btn-row.btn-row--col
+						a(href="tel:8 (499) 110-12-15").btn--sm.btn--mark.btn--full Позвонить
+						.btn--sm.btn--light.btn--full Заказать звонок
+
+			//Get message
+			.modal(data-modal="getMsg")
+				.modal-close
+					+icon("close","icon")
+				.modal-content
+					.modal-title.type--center Напишите нам
+					.soc-row.soc-row--mid.soc-row--lg
+						a(href="#").soc-row__el.soc-row__el--instagram
+							+icon("soc-inst-light","icon")
+						a(href="#").soc-row__el.soc-row__el--telegram
+							+icon("soc-telegram-light","icon")
+						a(href="#").soc-row__el.soc-row__el--wp
+							+icon("soc-wp-light","icon")
+
 			//success message
 			.modal(data-modal="true")
 				.modal-content.modal-content--true
@@ -33,5 +66,4 @@ mixin modal()
 					+icon("check-round","icon icon-msg")
 					.modal-text-true Сообщение отправленно
 
-	a(href="#" data-modal="order").modal-get Открыть модальное окно
 

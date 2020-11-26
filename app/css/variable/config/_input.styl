@@ -116,7 +116,6 @@
 
 .input-btn-cont
 	f()
-
 	align-items: flex-start
 	.input-row
 		+below(640px)
@@ -128,18 +127,25 @@
 	margin-bottom: 10px
 
 .input-row--error
+	margin-bottom: 16px
 	.input
 		border-color $stateError
 		color $stateError
-	.error-msg
+	.input-msg
 		display block
+		color $stateError
 	.error
 		color $stateError
 	.style-input-element
 		border 1px solid $stateError
 
-.error-msg
-	color $stateError
+.input-row--success
+	margin-bottom: 16px
+	.input-msg
+		display block
+		color $stateSuccess
+
+.input-msg
 	margin: 10px 0
 	display none
 

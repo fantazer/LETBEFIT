@@ -15,9 +15,9 @@ mixin header()
 						a(href="tel:8 (499) 110-12-15").header-phone.link 8 (499) 110-12-15
 						.header-phone-link.link--mark Перезвоните мне
 					.header-msg
-						.header-msg__el
+						.header-msg__el.modal-get(data-modal="callBack")
 							+icon("phone","icon")
-						.header-msg__el
+						.header-msg__el.modal-get(data-modal="getMsg")
 							+icon("chat","icon")
 					.header-soc
 						a(href="#").header-soc__el.soc-el--instagram

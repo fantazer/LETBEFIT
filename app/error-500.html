@@ -48,12 +48,12 @@
                             <div class="header-phone-link link--mark">Перезвоните мне</div>
                         </div>
                         <div class="header-msg">
-                            <div class="header-msg__el">
+                            <div class="header-msg__el modal-get" data-modal="callBack">
                                 <svg class="icon">
                                     <use xlink:href="#phone"></use>
                                 </svg>
                             </div>
-                            <div class="header-msg__el">
+                            <div class="header-msg__el modal-get" data-modal="getMsg">
                                 <svg class="icon">
                                     <use xlink:href="#chat"></use>
                                 </svg>
@@ -491,6 +491,126 @@
             <!-- footer-bottom === end-->
         </div>
         <!-- footer === end-->
+        <div class="modal-layer">
+            <div class="modal-filter"></div>
+            <div class="modal-wrap">
+                <div class="modal" data-modal="order">
+                    <div class="modal-content">
+                        <div class="modal-close">
+                            <svg class="icon">
+                                <use xlink:href="#close"></use>
+                            </svg>
+                        </div>
+                        <div class="modal-title">Оставьте заявку</div>
+                        <div class="modal-text">Обращаетесь к нам впервые?
+                            <br>Оформите обращение с помощью этой формы, мы перезвоним Вам и проконсультируем по любому Вашему вопросу совершенно бесплатно!</div>
+                        <form class="validate-form" action="javascript:void(null);">
+                            <div class="input-cont">
+                                <div class="input-row">
+                                    <div class="input-row__title"></div>
+                                    <input class="input" type="text" placeholder="Ваше имя" />
+                                </div>
+                            </div>
+                            <div class="input-cont">
+                                <div class="input-row">
+                                    <div class="input-row__title"></div>
+                                    <input class="input" type="text" placeholder="Телефон" />
+                                </div>
+                            </div>
+                            <div class="login-remember">
+                                <div class="check-el">
+                                    <label class="style-label style-label--checkbox">
+                                        <input class="style-input" type="checkbox" />
+                                        <div class="style-input-element">
+                                            <svg class="icon">
+                                                <use xlink:href="#checked"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="style-input-text">Я ознакомился с
+                                            <a href="#">политикой конфиденциальности</a>,
+                                            <a href="#">публичной офертой</a>и даю согласие на обработку моих персональных данных</div>
+                                    </label>
+                                </div>
+                            </div>
+                            <input class="modal-send" type="submit" value="Отправить заявку" />
+                        </form>
+                    </div>
+                </div>
+                <!--clever deliver-->
+                <div class="modal" data-modal="cleverDeliver">
+                    <div class="modal-close">
+                        <svg class="icon">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="modal-content">
+                        <div class="title--mdx">Умная доставка</div>
+                        <div class="modal-text text">
+                            <p>В будние дни — с интервалом в 1 час, начиная с 7 ми утра. Если Вам удобно получать доставку днем — мы с удовольствием предложим Вам и такой вариант.
+                                <br>Вечерняя доставка осуществляется с 2-х часовым интервалом. Доставка за МКАД оплачивается отдельно и составляет 250 руб за каждую доставку. Диапазон доставки составляет 2 часа. Утренний диапазон начинается с 8:00</p>
+                        </div>
+                        <div class="btn--md btn--light btn--full modal-hide">Понятно</div>
+                    </div>
+                </div>
+                <!--call Back-->
+                <div class="modal" data-modal="callBack">
+                    <div class="modal-close">
+                        <svg class="icon">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="modal-content">
+                        <a class="modal-title type--center" href="tel:8 (499) 110-12-15">8 (499) 110-12-15</a>
+                        <div class="btn-row btn-row--col">
+                            <a class="btn--sm btn--mark btn--full" href="tel:8 (499) 110-12-15">Позвонить</a>
+                            <div class="btn--sm btn--light btn--full">Заказать звонок</div>
+                        </div>
+                    </div>
+                </div>
+                <!--Get message-->
+                <div class="modal" data-modal="getMsg">
+                    <div class="modal-close">
+                        <svg class="icon">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="modal-content">
+                        <div class="modal-title type--center">Напишите нам</div>
+                        <div class="soc-row soc-row--mid soc-row--lg">
+                            <a class="soc-row__el soc-row__el--instagram" href="#">
+                                <svg class="icon">
+                                    <use xlink:href="#soc-inst-light"></use>
+                                </svg>
+                            </a>
+                            <a class="soc-row__el soc-row__el--telegram" href="#">
+                                <svg class="icon">
+                                    <use xlink:href="#soc-telegram-light"></use>
+                                </svg>
+                            </a>
+                            <a class="soc-row__el soc-row__el--wp" href="#">
+                                <svg class="icon">
+                                    <use xlink:href="#soc-wp-light"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--success message-->
+                <div class="modal" data-modal="true">
+                    <div class="modal-content modal-content--true">
+                        <div class="modal-close">
+                            <svg class="icon">
+                                <use xlink:href="#close-fat"></use>
+                            </svg>
+                        </div>
+                        <svg class="icon icon-msg">
+                            <use xlink:href="#check-round"></use>
+                        </svg>
+                        <div class="modal-text-true">Сообщение отправленно</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--build:js ./js/combined.js-->
     <script src="bower/jquery/dist/jquery.js"></script>

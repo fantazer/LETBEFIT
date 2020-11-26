@@ -26,8 +26,10 @@ $(document).ready(function () {
 			});
 
 		}
-		modalState.isModalShow = true;
+		modalState.isMofdalShow = true;
 	};
+
+	//openModal()
 
 	var closeModal = function () {
 		$('.modal-layer').removeClass('modal-layer-show');
@@ -77,20 +79,51 @@ $(document).ready(function () {
 	//modals===end
 
 	// fix top-menu
-	var shrinkHeader = 250;
+	(function () {
 		var head = $('.header');
 		var heightHeader = head.height();
-		$(window).scroll(function() {
-			var scroll = $(this).scrollTop();
-			if ( scroll >= shrinkHeader ) {
-					$('body').css('paddingTop',heightHeader);
-					head.addClass('shrink');
-				}
-				else {
-						$('body').css('paddingTop',0);
-						head.removeClass('shrink');
-				}
+		var doc = document.documentElement;
+		var w = window;
+		var prevScroll = w.scrollY || doc.scrollTop;
+		var curScroll;
+		var direction = 0;
+		var prevDirection = 0;
+		var checkScroll = function () {
+			curScroll = w.scrollY || doc.scrollTop;
+			if (curScroll > prevScroll) {
+				direction = 2;
+			} else if (curScroll < prevScroll) {
+				direction = 1;
+			} 
+			if(curScroll < heightHeader){
+				$('body').css('paddingTop', 0);
+				head.removeClass('shrink')
+			}
+			if (direction !== prevDirection) {
+				toggleHeader(direction, curScroll);
+			}
+			prevScroll = curScroll;
+		}
+		var toggleHeader = function(direction, curScroll) {
+			if (direction === 2 && curScroll > heightHeader) {
+				prevDirection = direction;
+				$('body').css('paddingTop', 0);
+				head.removeClass('shrink');
+			} else if (direction === 1) {
+				$('body').css('paddingTop', heightHeader);
+				head.addClass('shrink');
+				prevDirection = direction;
+			}
+		};
+		$(window).scroll(function () {
+			checkScroll()
 		});
+	})()
+
+	var clearShrink = function(){
+		$('body').css('paddingTop',0);
+		head.removeClass('shrink');
+	}
 	// fix top-menu === end
 
 
@@ -246,7 +279,7 @@ $(document).ready(function () {
 	// dropdown === end
 
 	//bubble
-	var limit = 2400 * 3600 * 1000; // 24 часа
+	/*var limit = 2400 * 3600 * 1000; // 24 часа
 	var localStorageInitTime = localStorage.getItem('localStorageInitTime');
 
 	if (localStorageInitTime === null) {
@@ -266,7 +299,7 @@ $(document).ready(function () {
 	$('.cookie .icon-close').click(function(){
 		$(this).closest('.cookie').removeClass('cookie--active');
 		localStorage.setItem('bubble', '0');
-	});
+	});*/
 	//bubble===end
 
 	// animate placeholder

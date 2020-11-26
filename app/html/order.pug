@@ -1,0 +1,43 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page#header
+	+header()
+	.content.content--mark
+		.main-cont
+			.contract
+				.contract-content
+					.contract-title Оформление заказа
+					.contract-step Шаг 2 из 2
+
+					.input-cont.hidden.js-switch-cont(data-item="isCoupone")
+						.input-cont.input-cont--three
+							.input-row.input-row--validate
+								input(type="text" data-placeholder="Номер купона" class="input")
+								.input-msg Купон не подходит
+								+icon("close","icon icon-validate-false")
+								+icon("checked","icon icon-validate-true")
+							.input-row.input-row--validate
+								input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
+								.input-msg Введённые данные не должны содержать цифры
+								+icon("close","icon icon-validate-false")
+								+icon("checked","icon icon-validate-true")
+							.input-row
+								.btn--md.btn--light.btn--mobile.disable Применить
+					.input-cont
+						.input-row
+							input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
+
+					.contract-total-wrap
+						.contract-total
+							.contract-total__name Extralight
+							.contract-total__val 6300 руб
+						.contract-total
+							.contract-total__name Итого
+							.contract-total__val.type--mark.type--bold.type--md 6300 руб
+				.contract-footer
+					.contract-footer__text Нажимая кнопку “Оформить” я принимаю условия условия <a href="#" class="link--mark">передачи информации</a>
+					.btn--md.btn--mark.btn--mobile Оформить
+
+	+footer()
+include ./block_html/_script.pug

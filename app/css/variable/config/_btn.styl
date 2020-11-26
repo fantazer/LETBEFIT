@@ -15,29 +15,37 @@
 		left -5px
 		top -5px
 		br(34px)
-		opacity: 0
+		z-index -1
 	&:hover
 		cursor pointer
-	&:before
-		content ''
-		opacity: 1
+
 .btn--sm
 	@extend .btn
 	@extend .type--main
 	padding 10px 29px
 	font-weight: 500
-
+	.btn-icon-row--right
+		.icon
+			margin-left: 16px
+			margin-right: -5px
+	.btn-icon-row--left
+		.icon
+			margin-right: 16px
+			margin-left: -5px
 
 .btn--md
 	@extend .btn
 	@extend .type--md
 	padding 18px 48px
 	font-weight: 700
-
-.btn--lg
-	@extend .btn
-	font-size 20px
-	padding 10px 30px
+	.btn-icon-row--right
+		.icon
+			margin-left: 20px
+			margin-right: -10px
+	.btn-icon-row--left
+		.icon
+			margin-right: 20px
+			margin-left: -10px
 
 .btn--mobile
 	@extend .btn
@@ -49,7 +57,7 @@
 	@extend .btn
 	color white
 	background $mark
-	.nav-icon
+	.icon
 		fill white
 	&:hover
 		background-color $greenDark
@@ -60,7 +68,7 @@
 			border 2px solid $green
 	input[type="submit"]
 		border 0
-	.nav-icon
+	.icon
 		fill white
 
 .btn--mark.disable
@@ -78,7 +86,7 @@
 	border 1px solid $border-color
 	background-color #ffffff
 	color $mark
-	.nav-icon
+	.icon
 		fill $mark
 	&:hover
 		background: $greenLight
@@ -98,7 +106,7 @@
 	border 0
 	background-color none
 	color $mark
-	.nav-icon
+	.icon
 		fill $mark
 	&:hover
 		background: $greenLight
@@ -119,30 +127,17 @@
 	font-weight: 700
 	&:hover
 		background: rgba(255, 255, 255, 0.8);
-	.nav-icon
-		fill rgba(255, 255, 255, 0.9)
+	.icon
+		fill black
 
-.btn--icon
+.btn-icon-row
 	flex(mid)
-	.nav-icon
-		margin-left: 10px
-
-.nav-icon
-	size 20px
-	display inline-block
-
-.btn--icon-left
-	.nav-icon
-		margin-left: 0
-		margin-right: 10px
-
-.btn-row-mid
-	flex(mid)
-	margin: 30px 0
-
-.btn-row-mid--clear
-	margin: 0
 
 .btn--full
 	width: 100%
 	display block
+
+.btn-row
+	display: grid
+	grid-gap 20px
+	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
