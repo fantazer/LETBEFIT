@@ -46,6 +46,13 @@ typeSize(fontSm,font)
 .type--white
 	color white
 
+.type--black
+	color black
+
+.type--head
+	color black
+	font-weight: 700
+
 .type--bold
 	font-weight bold
 
@@ -53,9 +60,7 @@ typeSize(fontSm,font)
 	text-align center
 
 .title
-	+below(1024px)
-		margin-bottom: 32px
-	margin-bottom: 48px
+	@extend .mb-48
 	font-weight: 700
 	color black
 
@@ -200,3 +205,4 @@ p
 	fill white
 
 // icons === end
+

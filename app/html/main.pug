@@ -16,7 +16,7 @@ include block_html/_include.pug
 			.js-slider.slider-main.js-slider-pagination
 				// main slider el
 				.slider-el-wrap
-					.board__el.board__el--sea
+					.board__el.bg-sea
 						.main-cont
 							.board__el-wrap
 								.board__content
@@ -27,7 +27,7 @@ include block_html/_include.pug
 										+icon("arrow-right","icon icon--left icon--white")
 								.board__img(style="background-image:url('img/slide-person-1.png')")
 				.slider-el-wrap
-					.board__el.board__el--pink
+					.board__el.bg-pink
 						.main-cont
 							.board__el-wrap
 								.board__content
@@ -38,7 +38,7 @@ include block_html/_include.pug
 										+icon("arrow-right","icon icon--left icon--white")
 								.board__img(style="background-image:url('img/slide-person-2.png')")
 				.slider-el-wrap
-					.board__el.board__el--violet
+					.board__el.bg-violet
 						.main-cont
 							.board__el-wrap
 								.board__content
@@ -50,7 +50,6 @@ include block_html/_include.pug
 								.board__img(style="background-image:url('img/slide-person-3.png')")
 				// main slider el === end
 	// main slider === end
-
 	.content
 		// advant
 		.main-cont
@@ -232,24 +231,25 @@ include block_html/_include.pug
 						+icon("arrow-right","icon icon--left icon--mark")
 
 		// step work
-		.main-cont
-			.title.title--lgx Как это работает
-			.work-step
-				.work-step__el
-					.work-step__el-icon
-						img(src="img/icon/step-check.svg", alt="")
-					.work-step__el-title Выберите тариф
-					.work-step__el-text Мы составляем меню каждую неделю, считаем БЖУ, выбираем только свежие продукты
-				.work-step__el
-					.work-step__el-icon
-						img(src="img/icon/step-food.svg", alt="")
-					.work-step__el-title Получите продукты
-					.work-step__el-text Регулярно наш курьер привозит Вам пакет с набором блюд на весь день
-				.work-step__el
-					.work-step__el-icon
-						img(src="img/icon/step-cup.svg", alt="")
-					.work-step__el-title Вы питаетесь правильно!
-					.work-step__el-text Без лишних усилий, потери времени на кухне и в магазине за покупкой продуктов
+		.section
+			.main-cont
+				.title.title--lgx Как это работает
+				.work-step
+					.work-step__el
+						.work-step__el-icon
+							img(src="img/icon/step-check.svg", alt="")
+						.work-step__el-title Выберите тариф
+						.work-step__el-text Мы составляем меню каждую неделю, считаем БЖУ, выбираем только свежие продукты
+					.work-step__el
+						.work-step__el-icon
+							img(src="img/icon/step-food.svg", alt="")
+						.work-step__el-title Получите продукты
+						.work-step__el-text Регулярно наш курьер привозит Вам пакет с набором блюд на весь день
+					.work-step__el
+						.work-step__el-icon
+							img(src="img/icon/step-cup.svg", alt="")
+						.work-step__el-title Вы питаетесь правильно!
+						.work-step__el-text Без лишних усилий, потери времени на кухне и в магазине за покупкой продуктов
 		// step work === end
 
 		// contract
@@ -304,7 +304,7 @@ include block_html/_include.pug
 									+icon("checked","icon icon-validate-true")
 								.input-row
 									.btn--md.btn--light.btn--mobile.disable Применить
-						.input-cont
+						.input-cont.js-switch-cont(data-item="isCoupone")
 							.input-row
 								input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
 
@@ -350,87 +350,10 @@ include block_html/_include.pug
 						.btn--md.btn--mark Отправить
 		// subscription === end
 
-		// review
-		.section-extend.section--gradient
-			.main-cont.js-slider-wrap
-				.title.title--lgx Отзывы клиентов
-				.review-head
-					.review-head__text Отзывы реальных клиентов о доставке правильного питания на неделю, вкусе самой еды, ее качестве и сервисе компании BeFit. Узнай почему у нас так вкусно!
-					.review-control.slider-control-row
-						.slider-control.js-control-left
-							+icon("arrow-left","icon")
-						.slider-control.js-control-right
-							+icon("arrow-right","icon")
-				.review
-					.slider-wrap
-						.slider-review.slider-extend.js-slider
-							- for (var j=1;j<5;j++)
-								- for (var i=1;i<5;i++)
-									.slider-el-wrap
-										.slider-review__el(style="background-image:url('img/inst-item-"+i+".jpg')")
-		// review === end
+		+review()
 
-		// faq
 		.section
-			.main-cont.js-tab-wrap
-				.title.title--lgx Часто задаваемые вопросы
-				.faq-wrap
-					.faq-type.js-tick-cont
-						.faq-type__el.js-tick.js-tab.active
-							+icon("apple","icon icon--lg")
-							span Диета и питание
-						.faq-type__el.js-tick.js-tab
-							+icon("money","icon icon--lg")
-							span Заказ и оплата
-						.faq-type__el.js-tick.js-tab
-							+icon("deliver","icon icon--lg")
-							span Доставка
-						.faq-type__el.js-tick.js-tab
-							+icon("cook","icon icon--lg")
-							span Приготовление
-
-				-
-					var items = [
-						{
-							"list":[
-								'1. Как понять что и когда есть?',
-								'2. Как часто употреблять рационы?',
-								'3. Кто занимается составлением меню?',
-								'4. Как часто обновляется меню?',
-								'5. Могу ли я заменить или исключить блюдо?'
-						]},
-						{"list": [
-								'1. Как понять что и когда есть?',
-								'2. Как часто обновляется меню?',
-								'3. Могу ли я заменить или исключить блюдо?'
-						]},
-						{"list": [
-								'1. Как понять что и когда есть?',
-								'2. Как часто употреблять рационы?',
-								'3. Кто занимается составлением меню?',
-								'4. Могу ли я заменить или исключить блюдо?'
-						]},
-						{"list": [
-								'1. Как понять что и когда есть?',
-								'2. Как часто употреблять рационы?',
-								'3. Кто занимается составлением меню?',
-								'4. Как часто обновляется меню?',
-								'5. Могу ли я заменить или исключить блюдо?',
-								'6. Отзывы реальных клиентов о доставке правильного?'
-						]}
-					];
-				each item,i in items
-					.accordion.js-accordion.js-tab-cont(class=i===0?'active':'')
-						each itemList in item.list
-							.accordion__el.js-accordion-el
-								.accordion__el-head.js-accordion-head
-									.accordion__el-head-text #{itemList}
-									.accordion__el-head-icon
-								.accordion__el-content.text.js-accordion-content
-									p Платежный план «переезд в готовый дом» - дает возможность будущему покупателю переехать из квартиры в загородный дом без полной оплаты за домовладение! Для быстрого переезда в готовый загородный дом достаточно внести 10% от стоимости коттеджа и Вы можете заселяться!
-									p На продажу имеющейся в собственности у покупателя квартиры предоставляется рассрочка четыре месяца. По факту реализации квартиры оплачивается остаточная стоимость за домовладение.
-
-		// faq === end
+			+faq()
 
 		// deliver
 		.main-cont.js-tab-wrap

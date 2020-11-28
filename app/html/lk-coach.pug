@@ -4,17 +4,18 @@ include block_html/_include.pug
 .page#header
 	+header()
 	.content.content--mark
-		.main-cont
+		.main-cont-sm
 			.title.title--lgx Здравствуйте, Михаил
 			.coach-wrap
 				.coach-col
 					.coach-head
-						.type--md.type--bold Промокод
-					.input-cont
-						.input-row.input-row--validate
-							input(type="text" data-placeholder="Номер купона" class="input")
-							.input-msg Купон не подходит
-							+icon("close","icon icon-validate-false")
-							+icon("checked","icon icon-validate-true")
+						.type--md.type--head.mb-lg-1 Промокод
+						.input-cont
+							.input-row.input-row--validate
+								input(type="text" data-placeholder="Номер купона" class="input")
+								.input-msg Купон не подходит
+								+icon("close","icon icon-validate-false")
+								+icon("checked","icon icon-validate-true")
+					.coach-info
 	+footer()
 include ./block_html/_script.pug
