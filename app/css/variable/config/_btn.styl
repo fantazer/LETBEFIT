@@ -46,7 +46,9 @@
 		.icon
 			margin-right: 20px
 			margin-left: -10px
-
+	&.btn--full
+		+below(640px)
+			padding: 17px
 .btn--mobile
 	@extend .btn
 	+below(640px)
@@ -129,6 +131,14 @@
 		background: rgba(255, 255, 255, 0.8);
 	.icon
 		fill black
+
+.btn--dotted
+	border 1px dashed $border-color
+	br(8px)
+	font-size: 16px
+	&:hover
+		color $mark
+		border 1px dashed $mark
 
 .btn-icon-row
 	flex(mid)

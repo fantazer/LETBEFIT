@@ -133,6 +133,12 @@ $(document).ready(function () {
 	})
 	// toggle single === end
 
+	// slide toggle
+	$('.js-slide').click(function(){
+		$(this).closest('.js-slide-wrap').find('.js-slide-cont').slideToggle(500);
+	});
+	// slide toggle === end
+
 	// toggle class one from list
 	var actionTick;
 	(
@@ -420,7 +426,16 @@ $(document).ready(function () {
 		$(this).toggleClass('slide-block-toggle--open');
 	});
 	// slide menu === end
-
+	
+	
+	// toggle contract full view
+	$('.js-config-head').click(function(){
+		var parent = $(this).closest('.js-config');
+		parent.toggleClass('active')
+		parent.find('.js-contract-config-wrap').slideToggle();
+	});
+	// toggle contract full view === end
+	
 	//window.condition = {};
 	//window.condition.info = info;
 });

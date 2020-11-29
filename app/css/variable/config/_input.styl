@@ -172,6 +172,10 @@
 	display: grid
 	grid-gap 20px
 
+.input-cont--list
+	+below(640px)
+		grid-gap 20px
+
 .input-cont--two
 	+below(640px)
 		grid-template-columns: 1fr
@@ -430,6 +434,15 @@
 	max-height 200px
 	overflow-y auto
 	z-index 10
+	&::-webkit-scrollbar
+		-webkit-appearance: none
+		width: 7px
+		background: #f3f3f3
+
+	&::-webkit-scrollbar-thumb
+		border-radius: 2px
+		background-color: rgba(0, 0, 0, .5)
+		-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5)
 .dropdown-menu__el
 	padding 18px 20px
 	cp()

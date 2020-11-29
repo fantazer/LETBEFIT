@@ -24,12 +24,19 @@ body
 		padding: 0 20px
 	center(1312px,10px)
 
+
+
 .main-cont-sm
 	+below(1280px)
 		padding: 0 42px
 	+below(640px)
 		padding: 0 20px
 	center(852px,10px)
+
+.main-cont--mobile-clear
+	+below(640px)
+		padding: 0
+
 .page
 	f()
 	fl()
@@ -48,6 +55,10 @@ body
 
 .content--mid
 	flex(mid)
+
+.content--mobile-clear
+	+below(640px)
+		padding: 0
 
 .hidden-on-mobile
 	+below(640px)
@@ -1787,6 +1798,10 @@ program-type(bg,textColor,iconColor)
 	overflow hidden
 	background: white
 
+.contract--fluid
+	+below(640px)
+		br(0)
+
 
 .contract-head
 	+below(768px)
@@ -1832,7 +1847,7 @@ program-type(bg,textColor,iconColor)
 .contract-content
 	+below(640px)
 		padding: 16px
-	padding: 48px
+	padding: 48px 48px 32px 48px
 .contract-config-wrap
 	margin-bottom: 16px
 .contract-config
@@ -1862,9 +1877,7 @@ program-type(bg,textColor,iconColor)
 	&:hover
 		border 1px solid $mark
 	.check-el
-		+below(640px)
-			width calc(100% - 30px)
-		width 70%
+		width calc(100% - 30px)
 .contract-config__el-val
 	font-weight: 700
 	color $mark
@@ -1872,11 +1885,15 @@ program-type(bg,textColor,iconColor)
 //.contract-total-wrap
 .contract-total
 	flex(between)
-	margin-bottom: 12px
+	border-bottom 1px dashed $border-color
+	padding: 12px 0
 	&:last-child
-		padding-top: 12px
-		margin: 0
-		border-top 1px dashed $border-color
+		border 0
+
+.contract-total__name
+	color $typeSecondary
+
+
 .contract-footer
 	+below(640px)
 		padding: 16px
@@ -1899,9 +1916,70 @@ program-type(bg,textColor,iconColor)
 	width: 55%
 	color black
 
-//.link--mark
+//.contract-type-wrap
+.contract-type
+	border-radius 8px 8px 0 0
+	+below(768px)
+		min-height: 115px
+		padding: 20px
+	padding: 24px
+	color white
+	position relative
+	min-height 140px
 
-//.btn--mark
+.contract-type-title
+	+below(640px)
+		width: 50%
+		line-height: 1.2
+	@extend .type--lgx
+	font-weight 700
+	margin-bottom: 16px
+
+.contract-type-img
+	+below(640px)
+		right: 0
+		padding 2% 24%
+	background-size contain
+	background-repeat no-repeat
+	background-position center center
+	padding 2% 21%
+	position absolute
+	top 0
+	bottom 0
+	right 0
+
+.config
+	border 1px solid $border-color
+	border-top 0
+	padding: 12px 24px
+	border-radius 0 0 8px 8px
+	@extend .mb-32
+	&.active
+		box-shadow: 0px 4px 8px rgba(102, 130, 185, 0.12);
+		border 0
+		.config-head
+			@extend .mb-24
+			&>.icon
+				transform rotate(180deg)
+.config-head
+	flex(between)
+	tr()
+	cp()
+	padding-bottom: 0
+	.icon
+		tr()
+
+.config-head__val
+	width calc(100% - 40px)
+	f()
+	align-items center
+	fw()
+	.icon-row
+		flex-grow 1
+	&>span
+		margin-right: 20px
+.contract-box
+	@extend .mb-32
 // contract === end
 
 // slider menu
@@ -2008,3 +2086,22 @@ program-type(bg,textColor,iconColor)
 .program-coast__val
 	@extend .type--mdx
 	font-weight: 700
+
+// tab
+.tab
+	f()
+	border-bottom 1px solid $border-color
+.tab__el
+	+below(640px)
+		padding: 10px 10px 12px 10px
+	flex-grow 1
+	text-align center
+	font-weight: 500
+	padding: 20px 20px 16px 20px
+	color black
+	border-bottom 4px solid transparent
+	tr()
+	cp()
+	&.active
+		border-bottom 4px solid $mark
+// tab === end
