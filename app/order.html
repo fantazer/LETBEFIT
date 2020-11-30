@@ -90,6 +90,9 @@
             <div class="nav-wrap">
                 <div class="main-cont">
                     <div class="nav">
+                        <a class="nav-logo" href="#">
+                            <img src="img/logo-symbol.svg" alt="" />
+                        </a>
                         <ul class="nav-list">
                             <li class="nav-list__el nav-list__el--sub">
                                 <a href="#">Программы</a>
@@ -345,7 +348,7 @@
                     <div class="contract-content">
                         <div class="title title--xl">Оформление заказа</div>
                         <div class="input-cont input-cont--two">
-                            <div class="input-row input-row--validate">
+                            <div class="input-row input-row--validate input-row--error">
                                 <input class="input" type="text" data-placeholder="Имя и фамилия" />
                                 <div class="input-msg">В данных ошибка</div>
                                 <svg class="icon icon-validate-false">
@@ -357,7 +360,7 @@
                             </div>
                             <div class="input-row input-row--validate">
                                 <input class="input" type="text" data-placeholder="Email (необязательно)" />
-                                <div class="input-msg">В данных ошибка</div>
+                                <div class="input-msg">Ошибок нет</div>
                                 <svg class="icon icon-validate-false">
                                     <use xlink:href="#close"></use>
                                 </svg>
@@ -494,6 +497,17 @@
                                                 </label>
                                             </div>
                                             <div class="contract-config__el-val">-15%</div>
+                                        </div>
+                                    </div>
+                                    <!-- Эта кнопка есть только у тех блоков которые добавятся, у певрой программы ее нет-->
+                                    <div class="contract-remove js-contract-remove">
+                                        <div class="btn--sm btn--text-red">
+                                            <div class="btn-icon-row btn-icon-row--left">
+                                                <svg class="icon">
+                                                    <use xlink:href="#delete"></use>
+                                                </svg>
+                                                <span>Удалить</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -657,7 +671,7 @@
                                                 <use xlink:href="#checked"></use>
                                             </svg>
                                         </div>
-                                        <div class="style-input-text">Befit мне рекомендовал друг</div>
+                                        <div class="style-input-text">Добавить комментарий к заказу</div>
                                     </div>
                                 </label>
                             </div>

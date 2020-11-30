@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 	// watch window resize
 	var currentSize = $(window).width()
-/*	$(window).resize(function(){
+	/*$(window).resize(function(){
 		currentSize = $(window).width();
 		return currentSize;
 	});*/
@@ -233,40 +233,6 @@ $(document).ready(function () {
 	});
 	// accordion row toggle === end
 
-	// incr
-	var incrEl= {}
-	$('.incr__nav').click(function(){
-		incrEl.parent = $(this).closest(".incr");
-		incrEl.value = parseInt($(this).closest(".incr").find('.incr__val span').html());
-		incrEl.state = $(this).closest(".incr").find('.incr__val span')
-	});
-
-	$('.incr__minus').click(function () {
-		--incrEl.value;
-		if(incrEl.parent.hasClass("incr--one")){
-				incrEl.value = incrEl.value < 1 ? 1 : incrEl.value
-		}
-		incrEl.value = incrEl.value < 1 ? 0 : incrEl.value
-		incrEl.state.html(incrEl.value);
-	});
-
-	$('.incr__plus').click(function () {
-		++incrEl.value;
-		incrEl.value = incrEl.value > 100 ? 100 : incrEl.value;
-		incrEl.state.html(incrEl.value);
-	});
-
-	// Переключение с кнопки на инкремент
-	// increment btn
-	$('.incr-btn__el').click(function(){
-		$(this).closest(".incr-btn").addClass('incr-btn--active');
-	});
-	$('.incr-btn .incr__minus').click(function () {
-		incrEl.value === 1 ? $(this).closest(".incr-btn").removeClass("incr-btn--active") : ''
-	})
-	// increment btn === end
-	// incr === end
-
 	// dropdown
 	$('.dropdown').click(function () {
 		$(this).attr('tabindex', 1).focus();
@@ -283,30 +249,6 @@ $(document).ready(function () {
 		parent.find('input').attr('value', $(this).data('value'));
 	});
 	// dropdown === end
-
-	//bubble
-	/*var limit = 2400 * 3600 * 1000; // 24 часа
-	var localStorageInitTime = localStorage.getItem('localStorageInitTime');
-
-	if (localStorageInitTime === null) {
-			localStorage.setItem('localStorageInitTime', +new Date());
-	} else if(+new Date() - localStorageInitTime > limit){
-			localStorage.setItem('localStorageInitTime', +new Date());
-			localStorage.setItem('bubble', '1');
-	};
-
-	if(localStorage.getItem('bubble')!='0'){
-		setTimeout(function(){
-			$('.cookie').addClass('cookie--active');
-			//console.log('111');
-		},3000);
-	}
-
-	$('.cookie .icon-close').click(function(){
-		$(this).closest('.cookie').removeClass('cookie--active');
-		localStorage.setItem('bubble', '0');
-	});*/
-	//bubble===end
 
 	// animate placeholder
 	$('.input').each(function(){
@@ -330,12 +272,7 @@ $(document).ready(function () {
 	// animate placeholder === end
 
 	// === slick ===
-	
-	$('.program-type').on('init reInit', function (event) {
-		actionTick();
-		actionTab();
-	});
-	
+
 	// slider pagination
 	$('.js-slider-pagination').on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
 	  var i = (currentSlide ? currentSlide : 0) + 1;
@@ -435,7 +372,17 @@ $(document).ready(function () {
 		parent.find('.js-contract-config-wrap').slideToggle();
 	});
 	// toggle contract full view === end
-	
-	//window.condition = {};
-	//window.condition.info = info;
+
+	// copy code
+	$('.js-copy').click(function(){
+		$(this).addClass('active')
+		var valueCode = $(this).find('.js-copy-val')
+		//$("body").append(valueCode);
+		valueCode.select()
+		document.execCommand("copy");
+	});
+	// copy code === end
+
+	window.condition = {};
+	window.condition.info = "I AM";
 });

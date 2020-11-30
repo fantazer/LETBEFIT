@@ -57,7 +57,7 @@
 }
 @media only screen and (max-width: 640px) {
   .mb-12 {
-    margin-bottom: 13px;
+    margin-bottom: 12px;
   }
 }
 .mt-12 {
@@ -70,7 +70,7 @@
 }
 @media only screen and (max-width: 640px) {
   .mt-12 {
-    margin-top: 13px;
+    margin-top: 12px;
   }
 }
 .m-12 {
@@ -83,7 +83,7 @@
 }
 @media only screen and (max-width: 640px) {
   .m-12 {
-    margin: 13px 0;
+    margin: 12px 0;
   }
 }
 .pb-12 {
@@ -96,7 +96,7 @@
 }
 @media only screen and (max-width: 640px) {
   .pb-12 {
-    padding-bottom: 13px;
+    padding-bottom: 12px;
   }
 }
 .pt-12 {
@@ -109,7 +109,7 @@
 }
 @media only screen and (max-width: 640px) {
   .pt-12 {
-    padding-top: 13px;
+    padding-top: 12px;
   }
 }
 .p-12 {
@@ -122,85 +122,85 @@
 }
 @media only screen and (max-width: 640px) {
   .p-12 {
-    padding: 13px 0;
+    padding: 12px 0;
   }
 }
-.mb-100 {
-  margin-bottom: 100px;
+.mb-16 {
+  margin-bottom: 16px;
 }
 @media only screen and (max-width: 1024px) {
-  .mb-100 {
-    margin-bottom: 80px;
+  .mb-16 {
+    margin-bottom: 16px;
   }
 }
 @media only screen and (max-width: 640px) {
-  .mb-100 {
-    margin-bottom: 40px;
+  .mb-16 {
+    margin-bottom: 16px;
   }
 }
-.mt-100 {
-  margin-top: 100px;
+.mt-16 {
+  margin-top: 16px;
 }
 @media only screen and (max-width: 1024px) {
-  .mt-100 {
-    margin-top: 80px;
+  .mt-16 {
+    margin-top: 16px;
   }
 }
 @media only screen and (max-width: 640px) {
-  .mt-100 {
-    margin-top: 40px;
+  .mt-16 {
+    margin-top: 16px;
   }
 }
-.m-100 {
-  margin: 100px 0;
+.m-16 {
+  margin: 16px 0;
 }
 @media only screen and (max-width: 1024px) {
-  .m-100 {
-    margin: 80px 0;
+  .m-16 {
+    margin: 16px 0;
   }
 }
 @media only screen and (max-width: 640px) {
-  .m-100 {
-    margin: 40px 0;
+  .m-16 {
+    margin: 16px 0;
   }
 }
-.pb-100 {
-  padding-bottom: 100px;
+.pb-16 {
+  padding-bottom: 16px;
 }
 @media only screen and (max-width: 1024px) {
-  .pb-100 {
-    padding-bottom: 80px;
+  .pb-16 {
+    padding-bottom: 16px;
   }
 }
 @media only screen and (max-width: 640px) {
-  .pb-100 {
-    padding-bottom: 40px;
+  .pb-16 {
+    padding-bottom: 16px;
   }
 }
-.pt-100 {
-  padding-top: 100px;
+.pt-16 {
+  padding-top: 16px;
 }
 @media only screen and (max-width: 1024px) {
-  .pt-100 {
-    padding-top: 80px;
+  .pt-16 {
+    padding-top: 16px;
   }
 }
 @media only screen and (max-width: 640px) {
-  .pt-100 {
-    padding-top: 40px;
+  .pt-16 {
+    padding-top: 16px;
   }
 }
-.p-100 {
-  padding: 100px 0;
+.p-16 {
+  padding: 16px 0;
 }
 @media only screen and (max-width: 1024px) {
-  .p-100 {
-    padding: 80px 0;
+  .p-16 {
+    padding: 16px 0;
   }
 }
 @media only screen and (max-width: 640px) {
-  .p-100 {
-    padding: 40px 0;
+  .p-16 {
+    padding: 16px 0;
   }
 }
 .mb-24 {
@@ -596,6 +596,84 @@
     padding: 32px 0;
   }
 }
+.mb-100 {
+  margin-bottom: 100px;
+}
+@media only screen and (max-width: 1024px) {
+  .mb-100 {
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .mb-100 {
+    margin-bottom: 40px;
+  }
+}
+.mt-100 {
+  margin-top: 100px;
+}
+@media only screen and (max-width: 1024px) {
+  .mt-100 {
+    margin-top: 80px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .mt-100 {
+    margin-top: 40px;
+  }
+}
+.m-100 {
+  margin: 100px 0;
+}
+@media only screen and (max-width: 1024px) {
+  .m-100 {
+    margin: 80px 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .m-100 {
+    margin: 40px 0;
+  }
+}
+.pb-100 {
+  padding-bottom: 100px;
+}
+@media only screen and (max-width: 1024px) {
+  .pb-100 {
+    padding-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .pb-100 {
+    padding-bottom: 40px;
+  }
+}
+.pt-100 {
+  padding-top: 100px;
+}
+@media only screen and (max-width: 1024px) {
+  .pt-100 {
+    padding-top: 80px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .pt-100 {
+    padding-top: 40px;
+  }
+}
+.p-100 {
+  padding: 100px 0;
+}
+@media only screen and (max-width: 1024px) {
+  .p-100 {
+    padding: 80px 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .p-100 {
+    padding: 40px 0;
+  }
+}
 html {
   box-sizing: border-box;
 }
@@ -831,6 +909,9 @@ h1 {
 .type--center {
   text-align: center;
 }
+.type--right {
+  text-align: right;
+}
 .title {
   font-weight: 700;
   color: #111;
@@ -988,6 +1069,7 @@ a:visiter {
 .btn--mark,
 .btn--light,
 .btn--text,
+.btn--text-red,
 .btn--white {
   border-radius: 32px;
   transition: all 0.4s;
@@ -1004,6 +1086,7 @@ a:visiter {
 .btn--mark:before,
 .btn--light:before,
 .btn--text:before,
+.btn--text-red:before,
 .btn--white:before {
   content: '';
   position: absolute;
@@ -1021,6 +1104,7 @@ a:visiter {
 .btn--mark:hover,
 .btn--light:hover,
 .btn--text:hover,
+.btn--text-red:hover,
 .btn--white:hover {
   cursor: pointer;
 }
@@ -1029,11 +1113,11 @@ a:visiter {
   font-weight: 500;
 }
 .btn--sm .btn-icon-row--right .icon {
-  margin-left: 16px;
+  margin-left: 10px;
   margin-right: -5px;
 }
 .btn--sm .btn-icon-row--left .icon {
-  margin-right: 16px;
+  margin-right: 10px;
   margin-left: -5px;
 }
 .btn--md {
@@ -1125,6 +1209,22 @@ a:visiter {
 .btn--text:active:before {
   content: '';
   border: 2px solid #e6f2d6;
+}
+.btn--text-red {
+  border: 0;
+  background-color: none;
+  color: #d00025;
+}
+.btn--text-red .icon {
+  fill: #d00025;
+}
+.btn--text-red:hover {
+  color: #d00025;
+  background: #ffe1e6;
+}
+.btn--text-red:active:before {
+  content: '';
+  border: 2px solid #ffe1e6;
 }
 .btn--text.disable {
   pointer-events: none;
@@ -1311,6 +1411,9 @@ a:visiter {
 .input-row .input {
   width: 100%;
 }
+.input-row.active .input-msg {
+  display: block;
+}
 .input-btn-cont {
   display: flex;
   align-items: flex-start;
@@ -1353,7 +1456,7 @@ a:visiter {
   color: #5da600;
 }
 .input-msg {
-  margin: 10px 0;
+  margin: 10px 0 0 0;
   display: none;
 }
 .input-row--validate {
@@ -1375,6 +1478,46 @@ a:visiter {
 .input-row--validate.input-row--success .icon-validate-true {
   display: block !important;
   fill: #5da600;
+}
+.input-row--promocode {
+  position: relative;
+}
+.input-row--promocode:hover {
+  cursor: pointer;
+}
+.input-row--promocode:hover .icon {
+  fill: #111 !important;
+}
+.input-row--promocode .input {
+  padding-right: 50px;
+  color: #111;
+  font-weight: 500;
+}
+.input-row--promocode .input:hover {
+  cursor: pointer;
+}
+.input-row--promocode .input::selection {
+  background: transparent !important;
+}
+.input-row--promocode .input::-moz-selection {
+  background: transparent !important;
+}
+.input-row--promocode .input:focus {
+  pointer-events: none !important;
+  background: #f1f2f6;
+}
+.input-row--promocode .icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: all 0.4s;
+  fill: #c4c5cc;
+}
+.input-row--promocode .icon:hover {
+  cursor: pointer;
+}
+.input-row--promocode.active .input-msg {
+  margin-bottom: -32px;
 }
 .input-cont {
   display: grid;
@@ -1682,6 +1825,9 @@ a:visiter {
   height: 24px;
   transition: all 0.4s;
   fill: #c4c5cc;
+}
+.dropdown-current__val {
+  color: #111;
 }
 .dropdown-title {
   position: absolute;

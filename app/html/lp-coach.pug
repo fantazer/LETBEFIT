@@ -3,7 +3,7 @@ include block_html/_include.pug
 
 .page#header
 	+header()
-	.board__el.board__el--pink
+	.board__el.bg-pink
 		.main-cont
 			.board__el-wrap.board__el-wrap--sm
 				.board__content
@@ -20,23 +20,24 @@ include block_html/_include.pug
 	.content.content--clear-bottom
 		// step work
 		.main-cont
-			.title.title--lgx Как это работает
-			.work-step
-				.work-step__el
-					.work-step__el-icon
-						img(src="img/icon/step-phone.svg", alt="")
-					.work-step__el-title Оставляешь заявку
-					.work-step__el-text После оставления заявки ниже наш менеджер свяжется с тобой и обсудит все детали.
-				.work-step__el
-					.work-step__el-icon
-						img(src="img/icon/step-ticket.svg", alt="")
-					.work-step__el-title Приглашаешь по своему промокоду рефералов
-					.work-step__el-text Приглашаешь по своему промокоду рефералов
-				.work-step__el
-					.work-step__el-icon
-						img(src="img/icon/step-money.svg", alt="")
-					.work-step__el-title Приглашаешь по своему промокоду рефералов
-					.work-step__el-text Поздравляем, ты великолепен! Больше клиентов — больше заработок.
+			.section
+				.title.title--lgx Как это работает
+				.work-step
+					.work-step__el
+						.work-step__el-icon
+							img(src="img/icon/step-phone.svg", alt="")
+						.work-step__el-title Оставляешь заявку
+						.work-step__el-text После оставления заявки ниже наш менеджер свяжется с тобой и обсудит все детали.
+					.work-step__el
+						.work-step__el-icon
+							img(src="img/icon/step-ticket.svg", alt="")
+						.work-step__el-title Приглашаешь по своему промокоду рефералов
+						.work-step__el-text Приглашаешь по своему промокоду рефералов
+					.work-step__el
+						.work-step__el-icon
+							img(src="img/icon/step-money.svg", alt="")
+						.work-step__el-title Приглашаешь по своему промокоду рефералов
+						.work-step__el-text Поздравляем, ты великолепен! Больше клиентов — больше заработок.
 		// step work === end
 
 		.section-full.section--gradient

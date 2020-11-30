@@ -113,7 +113,9 @@
 	margin-bottom: 32px
 	.input
 		width: 100%
-
+	&.active
+		.input-msg
+			display block
 .input-btn-cont
 	f()
 	align-items: flex-start
@@ -146,7 +148,7 @@
 		color $stateSuccess
 
 .input-msg
-	margin: 10px 0
+	margin: 10px 0 0 0
 	display none
 
 .input-row--validate
@@ -166,6 +168,33 @@
 		.icon-validate-true
 			display block!important
 			fill $stateSuccess
+
+.input-row--promocode
+	position relative
+	cp()
+	&:hover
+		.icon
+			fill black!important
+	.input
+		cp()
+		padding-right: 50px
+		color black
+		font-weight: 500
+		&::selection { background: transparent!important; }
+		&::-moz-selection { background: transparent!important; }
+		&:focus
+			pointer-events none!important
+			background: $fieldBackground
+	.icon
+		position absolute
+		top 20px
+		right: 20px
+		cp()
+		tr()
+		fill $grayLight
+	&.active
+		.input-msg
+			margin-bottom: -32px
 .input-cont
 	+below(640px)
 		grid-row-gap 0
@@ -412,6 +441,8 @@
 		size 24px
 		tr()
 		fill $grayLight
+.dropdown-current__val
+	color black
 .dropdown-title
 	position absolute
 	top 8px

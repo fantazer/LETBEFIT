@@ -27,11 +27,9 @@ body
 
 
 .main-cont-sm
-	+below(1280px)
-		padding: 0 42px
 	+below(640px)
 		padding: 0 20px
-	center(852px,10px)
+	center(936px,42px)
 
 .main-cont--mobile-clear
 	+below(640px)
@@ -75,7 +73,7 @@ scroll-create-mobile()
 	padding-left: 42px
 	padding-bottom: 20px
 	+below(640px)
-		margin: 0 -20px 30px 0
+		margin: 0 -20px 30px -20px
 		padding-left: 20px
 
 slider-create-mobile()
@@ -105,10 +103,12 @@ slider-create-mobile()
 	width 100%
 	margin 0
 	animation:  slideInDown  .8s 1 ease-in-out;
-	z-index 10
+	z-index 100
 	.header-top-wrap
 		+above(1025px)
 			display none
+	.nav-logo
+		display block
 // animate top menu === end
 
 // error
@@ -209,7 +209,7 @@ slider-create-mobile()
 		top: -16px
 	position: absolute
 	top: -36px
-	right: 10px
+	right: 0px
 	cp()
 	z-index 10
 	&:hover
@@ -425,6 +425,11 @@ slider-create-mobile()
 	f()
 	height: 72px
 	align-items: stretch
+.nav-logo
+	+below(1440px)
+		display none!important
+	display none
+	transform translateY(15px) translateX(-25px)
 .nav-list
 	flex(between)
 	width: 73%
@@ -1507,15 +1512,16 @@ program-type(bg,textColor,iconColor)
 	flex-grow: 1
 	+below(768px)
 		scroll-create-mobile()
+		margin-bottom: 30px
 .sale-list
 	+below(768px)
 		grid-gap 0
-		margin-bottom: 0
 		f()
+		margin-bottom: 0
 	display: grid
 	grid-gap 28px
 	grid-template-columns: repeat(3, 1fr)
-	margin-bottom: 100px
+	@extend .mb-100
 .sale-el
 	+below(768px)
 		width: 300px
@@ -1802,7 +1808,6 @@ program-type(bg,textColor,iconColor)
 	+below(640px)
 		br(0)
 
-
 .contract-head
 	+below(768px)
 		min-height: 165px
@@ -1896,7 +1901,7 @@ program-type(bg,textColor,iconColor)
 
 .contract-footer
 	+below(640px)
-		padding: 16px
+		padding: 32px 16px
 		fw()
 		width: 100%
 	border-top 1px dashed $border-color
@@ -1916,7 +1921,7 @@ program-type(bg,textColor,iconColor)
 	width: 55%
 	color black
 
-//.contract-type-wrap
+
 .contract-type
 	border-radius 8px 8px 0 0
 	+below(768px)
@@ -1937,8 +1942,8 @@ program-type(bg,textColor,iconColor)
 
 .contract-type-img
 	+below(640px)
-		right: 0
-		padding 2% 24%
+		right: -5%
+		padding 2% 28%
 	background-size contain
 	background-repeat no-repeat
 	background-position center center
@@ -1980,6 +1985,11 @@ program-type(bg,textColor,iconColor)
 		margin-right: 20px
 .contract-box
 	@extend .mb-32
+
+.contract-remove
+	f()
+	justify-content: flex-end
+
 // contract === end
 
 // slider menu
@@ -2105,3 +2115,95 @@ program-type(bg,textColor,iconColor)
 	&.active
 		border-bottom 4px solid $mark
 // tab === end
+
+.coach-wrap
+	f()
+	fw()
+	justify-content space-between
+	margin 0 -12px
+.coach-col
+	+below(768px)
+		width: 100%
+	width calc(50% - 28px)
+	margin 0 12px 24px 12px
+	flex-grow 1
+	background: white
+	br(12px)
+	border 1px solid $border-color
+
+.coach-head
+	+below(640px)
+		padding: 28px 16px
+	padding: 32px
+	border-bottom 1px solid $border-color
+.coach-info
+	+below(640px)
+		padding: 28px 16px
+	padding: 32px
+
+.coach-descr__row
+	margin-bottom: 16px
+.coach-descr__row--border
+	padding-bottom: 30px
+	margin-bottom: 30px
+	border-bottom 1px solid $border-color
+.coach-descr__title
+	+below(640px)
+		margin-left: 90px
+	@extend .type--head
+	@extend .type--head
+	margin-left: 25%
+	margin-bottom: 16px
+.coach-descr__info
+	f()
+	justify-content space-between
+	align-items center
+	width: 100%
+	margin-bottom: 16px
+	&:last-child
+		margin-bottom: 0
+.coach-descr__val
+	+below(640px)
+		width: 70px
+		margin-right: 10px
+		min-width auto
+	width: 20%
+	margin-right: 5%
+	@extend .type--md
+	@extend .type--head
+	white-space nowrap
+	text-align: right
+	min-width 70px
+.coach-descr__text
+	+below(640px)
+		width: calc(100% - 90px)
+	width: 75%
+	color $typeSecondary
+.coach-history__row
+	f()
+	align-items center
+	justify-content space-between
+	margin-bottom: 20px
+	padding-bottom: 20px
+	border-bottom 1px solid $border-color
+	&:last-child
+		margin-bottom: 0
+.coach-history__name
+	width: 30%
+	color black
+.coach-history__val
+	margin-left auto
+	margin-right: 20px
+	color black
+.coach-history__date
+	color $typeSecondary
+
+.coach-history__head
+	flex(between)
+	@extend .mb-24
+.coach-history__title
+	@extend .type--md
+	@extend .type--head
+.coach-history__total
+	text-align: right
+	color $typeSecondary

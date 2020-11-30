@@ -26,11 +26,11 @@
 	font-weight: 500
 	.btn-icon-row--right
 		.icon
-			margin-left: 16px
+			margin-left: 10px
 			margin-right: -5px
 	.btn-icon-row--left
 		.icon
-			margin-right: 16px
+			margin-right: 10px
 			margin-left: -5px
 
 .btn--md
@@ -118,6 +118,20 @@
 			content ''
 			border 2px solid $greenLight
 
+.btn--text-red
+	@extend .btn
+	border 0
+	background-color none
+	color $stateError
+	.icon
+		fill $stateError
+	&:hover
+		color $stateError
+		background: $stateErrorBG
+	&:active
+		&:before
+			content ''
+			border 2px solid $stateErrorBG
 .btn--text.disable
 	pointer-events none
 	color $typeDisable
