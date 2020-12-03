@@ -143,11 +143,10 @@ $(document).ready(function () {
 	var actionTick;
 	(
 		actionTick = function(){
-				$('.js-tick').click(function(){
-				var parent = $(this).closest('.js-tick-cont');
-				parent.find('.js-tick').removeClass('active');
-				$(this).addClass('active')
-				console.log('.js-tick');
+				$('body').on('click','.js-tick',function(){
+					var parent = $(this).closest('.js-tick-cont');
+					parent.find('.js-tick').removeClass('active');
+					$(this).addClass('active')
 				});
 			}
 	)()
@@ -207,9 +206,8 @@ $(document).ready(function () {
 	var actionTab;
 	(
 		actionTab = function(){
-			$('.js-tab').click(function(){
+			$('body').on('click','.js-tab',function(){
 				var current = $(this).index();
-				console.log('.js-tab');
 				var parent = $(this).closest('.js-tab-wrap')
 				parent.find('.js-tab-cont').removeClass('active')
 				parent.find('.js-tab-cont').eq(current).addClass('active')
@@ -384,5 +382,8 @@ $(document).ready(function () {
 	// copy code === end
 
 	window.condition = {};
-	window.condition.info = "I AM";
+	window.condition.closeModal = closeModal
+	window.condition.initModal = initModal
+
+
 });

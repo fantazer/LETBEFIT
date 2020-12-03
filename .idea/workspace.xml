@@ -13,62 +13,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add page program">
-      <change afterPath="$PROJECT_DIR$/app/img/logo-symbol.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/svg/copy.svg" afterDir="false" />
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="upload version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style-guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style-guide.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/_helper.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/_helper.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_input.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_input.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/error-404.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/error-404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/error-500.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/error-500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/block_html/_svg.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_svg.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/elements.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/elements.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/lk-coach.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-coach.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/lp-coach.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lp-coach.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/order.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/order.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/css/sprite.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/pack.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/lk-coach.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/lk-coach.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/lp-coach.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/lp-coach.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/order.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/order.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/sprite.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/sprite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/sprite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icon/step-money.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/icon/step-money.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icon/step-phone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/icon/step-phone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/icon/step-ticket.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/icon/step-ticket.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-coach.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-coach.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lp-coach.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lp-coach.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/modal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/module/header/_header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/module/header/_header.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style-guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style-guide.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style-min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style-min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/error-404.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/error-404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/error-500.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/error-500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/css/sprite.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/pack.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/lk-coach.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/lk-coach.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/lp-coach.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/lp-coach.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/order.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/order.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/sprite.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/sprite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/svg/sprite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/step-money.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/icon/step-money.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/step-phone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/icon/step-phone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/step-ticket.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/icon/step-ticket.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/script-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script-min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lk-coach.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lk-coach.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lp-coach.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lp-coach.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/modal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/program.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/program.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -284,14 +238,11 @@
       <workItem from="1606552265718" duration="9800000" />
       <workItem from="1606640532361" duration="20602000" />
       <workItem from="1606682327073" duration="609000" />
-      <workItem from="1606726126596" duration="5441000" />
-    </task>
-    <task id="LOCAL-00013" summary="regroup _constant.styl">
-      <created>1545402263464</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1545402263464</updated>
+      <workItem from="1606726126596" duration="6521000" />
+      <workItem from="1606756087191" duration="757000" />
+      <workItem from="1606817632654" duration="914000" />
+      <workItem from="1606932149898" duration="615000" />
+      <workItem from="1607016999539" duration="2310000" />
     </task>
     <task id="LOCAL-00014" summary="small fix">
       <created>1545402384458</created>
@@ -629,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606655578346</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="upload version">
+      <created>1606747649783</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1606747649785</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -670,7 +628,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="fix location fonts + scripts" />
     <MESSAGE value="add version 3.0.1" />
     <MESSAGE value="fix color input" />
     <MESSAGE value="fix" />
@@ -695,13 +652,14 @@
     <MESSAGE value="add modals" />
     <MESSAGE value="add program page" />
     <MESSAGE value="add page program" />
-    <option name="LAST_COMMIT_MESSAGE" value="add page program" />
+    <MESSAGE value="upload version" />
+    <option name="LAST_COMMIT_MESSAGE" value="upload version" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1753" y="-40" key="CommitChangelistDialog2" timestamp="1606655573509">
+    <state x="-1753" y="-40" key="CommitChangelistDialog2" timestamp="1606747641881">
       <screen x="-2560" y="-193" width="2560" height="1400" />
     </state>
-    <state x="-1753" y="-40" key="CommitChangelistDialog2/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1606655573509" />
+    <state x="-1753" y="-40" key="CommitChangelistDialog2/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1606747641881" />
     <state x="-1753" y="-40" key="CommitChangelistDialog2/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984/-2560.-193.2560.1400@-2560.-193.2560.1400" timestamp="1606068723137" />
     <state x="-1753" y="-103" key="CommitChangelistDialog2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1602233651659" />
     <state x="-1407" y="408" key="Github.ShareDialog" timestamp="1604931252285">
@@ -733,10 +691,10 @@
     </state>
     <state x="-1982" y="-15" width="1229" height="892" key="SettingsEditor/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1606495342323" />
     <state x="-1779" y="87" key="SettingsEditor/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1599741730816" />
-    <state x="-1959" y="128" key="Vcs.Push.Dialog.v2" timestamp="1606655580373">
+    <state x="-1959" y="128" key="Vcs.Push.Dialog.v2" timestamp="1606747652039">
       <screen x="-2560" y="-193" width="2560" height="1400" />
     </state>
-    <state x="-1959" y="128" key="Vcs.Push.Dialog.v2/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1606655580373" />
+    <state x="-1959" y="128" key="Vcs.Push.Dialog.v2/-2560.-193.2560.1400/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984@-2560.-193.2560.1400" timestamp="1606747652039" />
     <state x="-1959" y="128" key="Vcs.Push.Dialog.v2/0.0.1920.1040/0.-1080.2560.1040/1920.52.1280.984/-2560.-193.2560.1400@-2560.-193.2560.1400" timestamp="1606068731017" />
     <state x="-1959" y="65" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.166.1280.984/-2560.-256.2560.1400@-2560.-256.2560.1400" timestamp="1600361287895" />
     <state x="-1675" y="145" width="763" height="710" key="find.popup" timestamp="1606745754322">
