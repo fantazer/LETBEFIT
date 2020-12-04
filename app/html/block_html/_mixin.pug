@@ -10,6 +10,14 @@ mixin checkbox(text,checked,disable)
         +icon("checked","icon")
       .style-input-text=text
 
+mixin checkboxRemove(text,checked,disable)
+  .check-el
+    label.style-label.style-label--checkbox.style-label--remove(class = disable === 'disable' ? 'style-label--disable' : '')
+      input(type="checkbox" checked=checked === "checked" ? checked : false).style-input
+      .style-input-element
+        +icon("close","icon")
+      .style-input-text=text
+
 mixin radio(text,group,checked,disable)
   .check-el
     label.style-label.style-label--radio(class = disable === 'disable' ? 'style-label--disable' : '')

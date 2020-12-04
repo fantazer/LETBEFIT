@@ -102,6 +102,15 @@
 				background white
 // radio === end
 
+
+.style-label--remove
+	.style-input
+		&:checked ~ .style-input-element
+			border 1px solid $stateError
+			background: $stateError
+		&:checked ~ .style-input-text
+			color red
+			text-decoration: line-through
 // checkbox + radio style === end
 
 
@@ -110,7 +119,7 @@
 	+below(640px)
 		margin-bottom: 16px
 	position relative
-	margin-bottom: 32px
+	margin-bottom: 24px
 	.input
 		width: 100%
 	&.active

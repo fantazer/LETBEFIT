@@ -1,3 +1,6 @@
+.block-mid {
+  margin: 0 auto;
+}
 .disabled,
 .btn--disable,
 .input--disable,
@@ -899,6 +902,9 @@ h1 {
 .type--black {
   color: #111;
 }
+.type--secondary {
+  color: #9699a8;
+}
 .type--head {
   color: #111;
   font-weight: 700;
@@ -1263,6 +1269,13 @@ a:visiter {
   display: grid;
   grid-gap: 20px;
 }
+.btn-row--line {
+  display: flex;
+  flex-wrap: wrap;
+}
+.btn--grow {
+  flex-grow: 1;
+}
 .input,
 .textarea,
 .select {
@@ -1399,9 +1412,17 @@ a:visiter {
   height: 16px;
   background: #fff;
 }
+.style-label--remove .style-input:checked ~ .style-input-element {
+  border: 1px solid #d00025;
+  background: #d00025;
+}
+.style-label--remove .style-input:checked ~ .style-input-text {
+  color: #ff4136;
+  text-decoration: line-through;
+}
 .input-row {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 @media only screen and (max-width: 640px) {
   .input-row {

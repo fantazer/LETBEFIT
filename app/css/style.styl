@@ -159,7 +159,7 @@ slider-create-mobile()
 	position: absolute
 	top: 0
 	left: 0
-	background: #18191da1
+	background: rgba(32, 34, 44, 0.5);
 	width: 100%
 	height: 100vh
 	min-height 100vh
@@ -181,12 +181,15 @@ slider-create-mobile()
 		margin-bottom: 20px
 		border-bottom 0
 
+
+
 .modal-content
 	+below(640px)
 		height: 100%
 		overflow-y scroll
 		width: calc(100% - 40px)
 		margin: 20px auto
+		padding: 24px
 	background: white
 	position: relative
 	padding: 32px
@@ -258,6 +261,17 @@ slider-create-mobile()
 	@extend .btn--md
 	@extend .btn--mark
 	width: 100%
+
+.modal--msg
+	&.modal__show
+		position absolute
+		top calc(100% + 20px)
+		left calc(50% - 160px)
+	z-index 1010
+	max-width 320px
+	.modal-content
+		padding: 20px 20px 24px 20px
+
 // modal === end
 
 // cookie
@@ -318,10 +332,8 @@ slider-create-mobile()
 		margin-left: 26px
 	+below(960px)
 		display none
-	flex(mid)
-	color black
 	margin-left: 5%
-	tr()
+	position relative
 	.icon
 		tr()
 		margin-right: 16px
@@ -331,6 +343,15 @@ slider-create-mobile()
 		color $mark
 		.icon
 			fill $mark
+.header-location-wrap
+	width: 100%
+	flex(mid)
+	color black
+	tr()
+
+.header-location-wrap
+
+
 //.header-location__val
 
 
@@ -2101,6 +2122,14 @@ program-type(bg,textColor,iconColor)
 .tab
 	f()
 	border-bottom 1px solid $border-color
+.tab--fluid-modal
+	margin-left -32px
+	margin-right -32px
+	.tab__el
+		+below(640px)
+			font-size: 14px
+		padding-top: 0
+
 .tab__el
 	+below(640px)
 		padding: 10px 10px 12px 10px
@@ -2112,8 +2141,23 @@ program-type(bg,textColor,iconColor)
 	border-bottom 4px solid transparent
 	tr()
 	cp()
+	width: 100%
 	&.active
 		border-bottom 4px solid $mark
+.tab-cont
+	background: white
+	opacity: 0
+	left -9999px
+	visibility: hidden
+	position absolute
+	transform translateY(-10px)
+	transition opacity .6s, transform .6s
+	&.active
+		transform translateY(0px)
+		visibility: visible
+		opacity: 1
+		left initial
+		position: static
 // tab === end
 
 .coach-wrap
@@ -2207,3 +2251,19 @@ program-type(bg,textColor,iconColor)
 .coach-history__total
 	text-align: right
 	color $typeSecondary
+
+.ration
+	f()
+	overflow hidden
+	br(4px)
+	background: $fieldBackground
+.ration__img
+	size 80x 70px
+	bg-full()
+	background-color #f7f7f7
+.ration__info
+	font-size: 12px
+	width calc(100% - 80px)
+	padding: 16px
+	f()
+	align-items center

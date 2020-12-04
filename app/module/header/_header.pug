@@ -7,13 +7,21 @@ mixin header()
 					a(href="/").header-logo
 						img(src="img/logo.svg", alt="")
 					.header-location
-						+icon("navigation","icon")
-						// Для Москвы не добавляй .header-location__val--lg и .header-location__val--sm
-						.header-location__val.header-location__val--lg Санкт-Петербург
-						.header-location__val.header-location__val--sm Спб
+						.header-location-wrap.modal-get(data-modal="location")
+							+icon("navigation","icon")
+							// Для Москвы не добавляй .header-location__val--lg и .header-location__val--sm
+							.header-location__val.header-location__val--lg Санкт-Петербург
+							.header-location__val.header-location__val--sm Спб
+							//Location modal
+						.modal.modal--msg(data-modal="location")
+							.modal-content
+								.modal-title Вы в Москве?
+								.btn-row.btn-row--line
+									.btn--sm.btn--mark.modal-hide Да
+									.btn--sm.btn--light Нет, в Питере
 					.header-contact
 						a(href="tel:8 (499) 110-12-15").header-phone.link 8 (499) 110-12-15
-						.header-phone-link.link--mark Перезвоните мне
+						.header-phone-link.link--mark.modal-get(data-modal="getCall") Перезвоните мне
 					.header-msg
 						.header-msg__el.modal-get(data-modal="callBack")
 							+icon("phone","icon")
@@ -95,7 +103,7 @@ mixin header()
 									a(href="#") #{navEl}
 					//toggle class .auth-wrap + .auth-wrap--true
 					.auth-wrap.link
-						.auth-state.auth-state--false
+						.auth-state.auth-state--false.modal-get(data-modal="enter")
 							+icon("lock","icon")
 							span Личный кабинет
 						a(href="#").auth-state.link.auth-state--true
@@ -105,7 +113,7 @@ mixin header()
 		.slide-block.slide-block--right.slide-block--menu(data-menu="menu")
 			.slide-block-wrap.js-accordion
 				.slide-nav
-					.slide-nav__el
+					.slide-nav__el.modal-get(data-modal="locationMobile")
 						.header-location
 							+icon("navigation","icon")
 							.header-location__val Санкт-Петербург

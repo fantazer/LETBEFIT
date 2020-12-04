@@ -1,3 +1,6 @@
+.block-mid {
+  margin: 0 auto;
+}
 .disabled,
 .btn--disable,
 .input--disable,
@@ -1034,6 +1037,9 @@ h1,
 .type--black {
   color: #111;
 }
+.type--secondary {
+  color: #9699a8;
+}
 .type--head,
 .invite-title,
 .coach-descr__title,
@@ -1442,6 +1448,19 @@ a:visiter {
   display: grid;
   grid-gap: 20px;
 }
+.btn-row--line {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.btn--grow {
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
 .input,
 .textarea,
 .select {
@@ -1594,9 +1613,17 @@ a:visiter {
   height: 16px;
   background: #fff;
 }
+.style-label--remove .style-input:checked ~ .style-input-element {
+  border: 1px solid #d00025;
+  background: #d00025;
+}
+.style-label--remove .style-input:checked ~ .style-input-text {
+  color: #ff4136;
+  text-decoration: line-through;
+}
 .input-row {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 @media only screen and (max-width: 640px) {
   .input-row {
@@ -2339,7 +2366,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(24,25,29,0.631);
+  background: rgba(32,34,44,0.5);
   width: 100%;
   height: 100vh;
   min-height: 100vh;
@@ -2380,6 +2407,7 @@ body {
     overflow-y: scroll;
     width: calc(100% - 40px);
     margin: 20px auto;
+    padding: 24px;
   }
 }
 .modal__show {
@@ -2473,6 +2501,18 @@ body {
 .modal-send {
   width: 100%;
 }
+.modal--msg {
+  z-index: 1010;
+  max-width: 320px;
+}
+.modal--msg.modal__show {
+  position: absolute;
+  top: calc(100% + 20px);
+  left: calc(50% - 160px);
+}
+.modal--msg .modal-content {
+  padding: 20px 20px 24px 20px;
+}
 /*.cookie
 	position: fixed
 	bottom 20px
@@ -2536,18 +2576,8 @@ body {
   }
 }
 .header-location {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #111;
   margin-left: 5%;
-  transition: all 0.4s;
+  position: relative;
 }
 @media only screen and (max-width: 1024px) {
   .header-location {
@@ -2573,7 +2603,22 @@ body {
 .header-location:hover .icon {
   fill: #7eca1d;
 }
+.header-location-wrap {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #111;
+  transition: all 0.4s;
+}
 @media only screen and (max-width: 1024px) {
+  .header-location-wrap,
   .header-location__val--lg {
     display: none;
   }
@@ -5540,6 +5585,18 @@ body {
   display: flex;
   border-bottom: 1px solid #dcdfe8;
 }
+.tab--fluid-modal {
+  margin-left: -32px;
+  margin-right: -32px;
+}
+.tab--fluid-modal .tab__el {
+  padding-top: 0;
+}
+@media only screen and (max-width: 640px) {
+  .tab--fluid-modal .tab__el {
+    font-size: 14px;
+  }
+}
 .tab__el {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
@@ -5550,6 +5607,7 @@ body {
   color: #111;
   border-bottom: 4px solid transparent;
   transition: all 0.4s;
+  width: 100%;
 }
 @media only screen and (max-width: 640px) {
   .tab__el {
@@ -5561,6 +5619,27 @@ body {
 }
 .tab__el.active {
   border-bottom: 4px solid #7eca1d;
+}
+.tab-cont {
+  background: #fff;
+  opacity: 0;
+  left: -9999px;
+  visibility: hidden;
+  position: absolute;
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+  transition: opacity 0.6s, -webkit-transform 0.6s;
+  transition: opacity 0.6s, transform 0.6s;
+}
+.tab-cont.active {
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  visibility: visible;
+  opacity: 1;
+  left: initial;
+  position: static;
 }
 .coach-wrap {
   display: -webkit-flex;
@@ -5705,6 +5784,33 @@ body {
 .coach-history__total {
   text-align: right;
   color: #9699a8;
+}
+.ration {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #f1f2f6;
+}
+.ration__img {
+  width: 80px;
+  height: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #f7f7f7;
+}
+.ration__info {
+  font-size: 12px;
+  width: calc(100% - 80px);
+  padding: 16px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @-webkit-keyframes slideInDown {
   from {
