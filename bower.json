@@ -23,6 +23,7 @@
   "devDependencies": {
     "flexbox-grid-stylus": "^3.2.2",
     "page-scroll-to-id": "^1.6.5",
-    "jquery-mask-plugin": "^1.14.16"
+    "jquery-mask-plugin": "^1.14.16",
+    "mixitup": "^3.3.1"
   }
 }

@@ -1,5 +1,5 @@
+@import "grid/_grid.styl"
 @import 'rupture'
-//@import "grid/_grid.styl"
 @import "variable/_function.styl"
 @import "variable/_ie.styl"
 @import "variable/_helper.styl"
@@ -24,12 +24,15 @@ body
 		padding: 0 20px
 	center(1312px,10px)
 
-
-
 .main-cont-sm
 	+below(640px)
 		padding: 0 20px
 	center(936px,42px)
+
+.main-cont-xs
+	+below(640px)
+		padding: 20px
+	center(760px,42px)
 
 .main-cont--mobile-clear
 	+below(640px)
@@ -45,6 +48,8 @@ body
 	@extend .pb-100
 	flex-grow 1
 
+.content--clear
+	padding: 0
 .content--clear-bottom
 	padding-bottom: 0
 
@@ -1614,8 +1619,6 @@ program-type(bg,textColor,iconColor)
 .section-sm
 	@extend .pb-80
 
-
-
 .section-extend
 	@extend .p-100
 	@extend .mb-100
@@ -2267,3 +2270,116 @@ program-type(bg,textColor,iconColor)
 	padding: 16px
 	f()
 	align-items center
+
+
+.blog-list
+	display: grid
+	grid-gap 28px
+	//grid-template-columns: repeat(4, 1fr)
+	grid-template-columns: repeat(auto-fill, minmax(16rem,1fr))
+
+.blog-el
+	f()
+	fl()
+	transition box-shadow .4s
+	border-radius 12px
+	&:hover
+		box-shadow: 0px 12px 32px rgba(41, 42, 53, 0.16);
+		.blog-el-content
+			border-color white
+.blog-el__img
+	bg-full()
+	border-radius 12px 12px 0 0
+	padding: 45% 10%
+.blog-el-content
+	tr()
+	f()
+	fl()
+	border 1px solid $border-color
+	border-top 0
+	border-radius 0 0 12px 12px
+	background: white
+	flex-grow 1
+.blog-el__info
+	padding: 16px 20px
+	border-bottom 1px solid $border-color
+	flex-grow 1
+.blog-el__title
+	@extend .type--head
+	@extend .link
+.blog-el-footer
+	border-radius 0 0 12px 12px
+	padding: 16px
+	flex(between)
+	@extend .type--sm
+.blog-el-tag
+	white-space nowrap
+	overflow hidden
+	text-overflow ellipsis
+	width: 70%
+	span
+		display inline-block
+		margin-right: 3px
+		&:last-child
+			margin-right: 0
+.blog-el-date
+	white-space nowrap
+
+// color box
+program-type(bg,textColor)
+	background-color bg
+	color textColor
+	.icon
+		fill textColor
+	&:hover,&.active
+		.icon
+			fill white
+		background: textColor
+		color white
+
+.el--seaLight
+	program-type($seaLight,$sea)
+
+.el--blueLight
+	program-type($blueLight,$blue)
+
+.el--pinkLight
+	program-type($pinkLight,$pink)
+
+.el--swampLight
+	program-type($swapmLight,$swapm)
+
+.el--orangeLight
+	program-type($orangeLight,$orange)
+
+.el--violetLight
+	program-type($violetLight,$violet)
+
+.el--greenLight
+	program-type($greenLight,$greenDark)
+
+// color box === end
+
+// tag list
+.tag-list
+	f()
+	margin-right -8px
+	margin-left -8px
+.tag-el--light
+	border 1px solid $border-color
+	color black
+.tag-el
+	padding: 14px 20px
+	br(24px)
+	margin: 0 8px 8px 8px
+	tr()
+	cp()
+	@extend .type--smx
+	font-weight: 700
+	line-height: 1
+// tag list === end
+
+.subscribe-block
+	flex(mid)
+	fl()
+	text-align center

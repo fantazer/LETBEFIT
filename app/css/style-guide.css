@@ -469,16 +469,19 @@
     margin-top: 24px;
   }
 }
-.m-64 {
+.m-64,
+.text img {
   margin: 64px 0;
 }
 @media only screen and (max-width: 1024px) {
-  .m-64 {
+  .m-64,
+  .text img {
     margin: 48px 0;
   }
 }
 @media only screen and (max-width: 640px) {
-  .m-64 {
+  .m-64,
+  .text img {
     margin: 24px 0;
   }
 }
@@ -767,17 +770,143 @@ table tbody tr:hover th {
 body > svg {
   display: none;
 }
-.bg-sea {
-  background: #1dd0c7;
+.bg-mark {
+  background: #7eca1d;
+}
+.type-mark {
+  color: #7eca1d;
+}
+.bg-greenDark {
+  background: #65a217;
+}
+.type-greenDark {
+  color: #65a217;
+}
+.bg-greenPrimary {
+  background: #7eca1d;
+}
+.type-greenPrimary {
+  color: #7eca1d;
+}
+.bg-green {
+  background: #a9d96b;
+}
+.type-green {
+  color: #a9d96b;
+}
+.bg-greenLight {
+  background: #e6f2d6;
+}
+.type-greenLight {
+  color: #e6f2d6;
+}
+.bg-grayPrimary {
+  background: #565762;
+}
+.type-grayPrimary {
+  color: #565762;
+}
+.bg-gray {
+  background: #adaeb9;
+}
+.type-gray {
+  color: #adaeb9;
+}
+.bg-grayLight {
+  background: #c4c5cc;
+}
+.type-grayLight {
+  color: #c4c5cc;
 }
 .bg-pink {
   background: #ff6889;
 }
+.type-pink {
+  color: #ff6889;
+}
+.bg-pinkLight {
+  background: #ffe1e7;
+}
+.type-pinkLight {
+  color: #ffe1e7;
+}
 .bg-violet {
   background: #6b33b2;
 }
+.type-violet {
+  color: #6b33b2;
+}
+.bg-violetLight {
+  background: #ebe2f7;
+}
+.type-violetLight {
+  color: #ebe2f7;
+}
+.bg-orange {
+  background: #ff7b27;
+}
+.type-orange {
+  color: #ff7b27;
+}
+.bg-orangeLight {
+  background: #ffe5d4;
+}
+.type-orangeLight {
+  color: #ffe5d4;
+}
+.bg-blue {
+  background: #0065bd;
+}
+.type-blue {
+  color: #0065bd;
+}
+.bg-blueLight {
+  background: #d4ebff;
+}
+.type-blueLight {
+  color: #d4ebff;
+}
+.bg-sea {
+  background: #1dd0c7;
+}
+.type-sea {
+  color: #1dd0c7;
+}
+.bg-seaLight {
+  background: #d5f9f7;
+}
+.type-seaLight {
+  color: #d5f9f7;
+}
 .bg-swapm {
   background: #768668;
+}
+.type-swapm {
+  color: #768668;
+}
+.bg-swapmLight {
+  background: #e4e7e0;
+}
+.type-swapmLight {
+  color: #e4e7e0;
+}
+.bg-typePrimary {
+  background: #5c5e6e;
+}
+.type-typePrimary {
+  color: #5c5e6e;
+}
+.bg-typeSecondary {
+  background: #9699a8;
+}
+.type-typeSecondary {
+  color: #9699a8;
+}
+.bg-typeDisable {
+  background: #c8cad4;
+}
+.type-typeDisable {
+  color: #c8cad4;
 }
 @font-face {
   font-family: 'Ubuntu';
@@ -953,18 +1082,23 @@ h1 {
 }
 h5 {
   color: #111;
+  margin: 0;
 }
 h4 {
   color: #111;
+  margin: 0;
 }
 h3 {
   color: #111;
+  margin: 0;
 }
 h2 {
   color: #111;
+  margin: 0;
 }
 h1 {
   color: #111;
+  margin: 0;
 }
 a {
   color: #111;
@@ -1010,16 +1144,40 @@ a:visiter {
 .link--text:hover {
   text-decoration: none;
 }
+.text {
+  color: #111;
+}
+.text h1,
+.text h2,
+.text h3,
+.text h4,
+.text h5 {
+  margin: 3.5rem 0 2rem;
+}
 .text p {
   line-height: 1.6;
   margin-bottom: 30px;
 }
 .text ul {
   margin-bottom: 30px;
+  padding-left: 26px;
+  list-style: none;
 }
 .text ul li {
   line-height: 1.6;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+  position: relative;
+  font-weight: 700;
+}
+.text ul li:before {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #7eca1d;
+  left: -26px;
+  top: 6px;
 }
 .text ul li:last-child {
   margin-bottom: 0;

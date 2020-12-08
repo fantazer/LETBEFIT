@@ -74,17 +74,37 @@ $stateWarning = #ff8a00
 //========================================
 
 
-.bg-sea
-	background: $sea
+$colors = {
+	'mark':$mark,
+	'greenDark':$greenDark,
+	'greenPrimary':$greenPrimary,
+	'green':$green,
+	'greenLight':$greenLight,
+	'grayPrimary':$grayPrimary,
+	'gray':$gray,
+	'grayLight':$grayLight,
+	'pink':$pink,
+	'pinkLight':$pinkLight,
+	'violet':$violet,
+	'violetLight':$violetLight,
+	'orange':$orange,
+	'orangeLight':$orangeLight,
+	'blue':$blue,
+	'blueLight':$blueLight,
+	'sea':$sea,
+	'seaLight':$seaLight,
+	'swapm':$swapm,
+	'swapmLight':$swapmLight,
+	'typePrimary':$typePrimary,
+	'typeSecondary':$typeSecondary,
+	'typeDisable':$typeDisable,
+}
 
-.bg-pink
-	background: $pink
-
-.bg-violet
-	background: $violet
-
-.bg-swapm
-	background: $swapm
+for $colorsName,$colorsVal in $colors
+	.bg-{$colorsName}
+		background: $colorsVal
+	.type-{$colorsName}
+		color: $colorsVal
 
 
 $main-text-color = $typePrimary

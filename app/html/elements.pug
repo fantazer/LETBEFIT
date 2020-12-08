@@ -107,22 +107,23 @@ link(rel="stylesheet", href="./css/style-guide.css")
 			li пункт 3
 		p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate delectus fuga impedit, omnis velit voluptate. Ab ad adipisci beatae consectetur consequuntur cum cumque delectus dolor doloremque ducimus earum error eveniet hic illum incidunt iste labore laborum molestiae nemo non, pariatur, possimus qui quia quisquam rem sit, suscipit tempore unde.
 
-
 	h2.title Grid
-	.note
+	//.note
 		p <b>NOTE!</b> &nbsp; Doc: https://github.com/Inshou/bootstrap-4-grid-styl
-	.row
+	.g-row
 		- for (var i=0;i<2;i++)
-			.col-sm
+			.g-sm-6
 				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores aspernatur delectus error harum inventore ipsum molestias totam vel!
-	.row
+
+	.g-row
 		- for (var i=0;i<3;i++)
-			.col-sm
-				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores aspernatur delectus error harum inventore ipsum molestias totam vel!
-	.row
-		- for (var i=0;i<4;i++)
-			.col-sm
-				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam asperiores aspernatur delectus error harum inventore ipsum molestias totam vel!
+			.g-xs-12.g-sm-3.g-md-6.g-lg-3
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, provident?
+
+	.g-row
+		.g-lg-4.g-offset-lg-3
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A doloribus ea eius fugiat omnis. Aliquam aspernatur dolores in iure maiores omnis sapiente voluptatum! Aliquam dolores ea eaque illum maiores, mollitia necessitatibus obcaecati porro tempore vel. Architecto modi, optio! Illo, possimus.
+
 
 	h2.title Buttons
 
@@ -233,9 +234,9 @@ link(rel="stylesheet", href="./css/style-guide.css")
 		.switch.disabled
 
 	h3 Dropdown
-	.row
+	.g-row
 		- for (var i=0;i<3;i++)
-			.col-md-4
+			.g-md-4.g-xs-12
 				.dropdown
 					input(type="hidden" name="name" value="0")
 					.dropdown-current

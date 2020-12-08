@@ -381,6 +381,18 @@ $(document).ready(function () {
 	});
 	// copy code === end
 
+	// animate sort
+	var mixer = mixitup('.blog-list', {
+			selectors: {
+					target: '.blog-el'
+			},
+			animation: {
+					duration: 500,
+					effects: 'fade'
+			}
+	});
+	// animate sort === end
+
 	window.condition = {};
 	window.condition.closeModal = closeModal
 	window.condition.initModal = initModal
