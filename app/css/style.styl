@@ -809,6 +809,7 @@ slider-create-mobile()
 .advant__el-text
 	+below(1024px)
 		font-size: 12px
+	color $typePrimary
 // advant-section === end
 
 
@@ -879,6 +880,7 @@ slider-create-mobile()
 	+below(640px)
 		margin-bottom: 0
 	@extend .mb-48
+	color $typePrimary
 .invite-subs
 
 	+below(640px)
@@ -930,6 +932,7 @@ slider-create-mobile()
 	@extend .mb-64
 	@extend .type--md
 	color $typePrimary
+	line-height: 1.6
 // invite === end
 
 // soc-row
@@ -1008,7 +1011,6 @@ slider-create-mobile()
 	&:hover
 		background: darken(#48C95F,10)
 
-//.icon
 .soc-row__el--telegram
 	background: #2F89CE
 	&:hover
@@ -1021,6 +1023,21 @@ slider-create-mobile()
 
 .soc-row__el--instagram
 	background: linear-gradient(43.94deg, #EEA054 16.16%, #D64763 50.11%, #B62A99 83.68%);
+
+.soc-row__el--fb
+	background: #232894
+	&:hover
+		background: darken(#232894,10)
+
+.soc-row__el--twitter
+	background: #00C2FF
+	&:hover
+		background: darken(#00C2FF,10)
+
+.soc-row__el--vk
+	background: #337FC5
+	&:hover
+		background: darken(#337FC5,10)
 
 .footer-address
 	+below(1024px)
@@ -1332,6 +1349,7 @@ program-type(bg,textColor,iconColor)
 	color black
 .program-consist__el-type
 	@extend .type--sm
+	color $typePrimary
 .program-list-container
 	+below(1024px)
 		scroll-create-mobile()
@@ -1603,11 +1621,12 @@ program-type(bg,textColor,iconColor)
 	flex(between)
 	margin: -28px 0 40px 0
 
-.review-head__text
+.review-head__info
 	+below(1024px)
 		width: 100%
-	width: 50%
-
+	width: 60%
+.review-head__text
+	color $typeSecondary
 .review-control
 	+below(1024px)
 		display none
@@ -1692,7 +1711,7 @@ program-type(bg,textColor,iconColor)
 		tr(all)
 		height: 2px
 		width: 100%
-		background: gray
+		background: black
 		position: absolute
 		top calc(50% - 1px)
 	&:after
@@ -1700,7 +1719,7 @@ program-type(bg,textColor,iconColor)
 		tr(all)
 		height: 100%
 		width: 2px
-		background: gray
+		background: black
 		position: absolute
 		left calc(50% - 1px)
 
@@ -1710,6 +1729,7 @@ program-type(bg,textColor,iconColor)
 	padding: 0 40px 40px 40px
 	display: none
 	p
+		color $typePrimary
 		&:first-child
 			margin-top: 0
 		&:last-child
@@ -2271,6 +2291,7 @@ program-type(bg,textColor,iconColor)
 	f()
 	align-items center
 
+// blog
 
 .blog-list
 	display: grid
@@ -2325,40 +2346,36 @@ program-type(bg,textColor,iconColor)
 .blog-el-date
 	white-space nowrap
 
-// color box
-program-type(bg,textColor)
-	background-color bg
-	color textColor
-	.icon
-		fill textColor
-	&:hover,&.active
-		.icon
-			fill white
-		background: textColor
-		color white
+.blog-head
+	f()
+	padding-bottom: 32px
+	@extend .mb-48
+	border-bottom 1px solid $border-color
+.blog-head__type
+	f()
+	a,span
+		margin-right: 20px
+		display inline-block
+		font-weight: 700
+		&:last-child
+			margin-right: 0
+.blog-head__date
+	margin-left auto
+	font-weight: 700
 
-.el--seaLight
-	program-type($seaLight,$sea)
+.share
+	f()
+	align-items center
+	padding-top: 32px
+	@extend .mt-48
+	border-top 1px solid $border-color
+.share__title
+	font-weight: 700
+	margin-right auto
+	@extend .type--lg
+// blog === end
 
-.el--blueLight
-	program-type($blueLight,$blue)
 
-.el--pinkLight
-	program-type($pinkLight,$pink)
-
-.el--swampLight
-	program-type($swapmLight,$swapm)
-
-.el--orangeLight
-	program-type($orangeLight,$orange)
-
-.el--violetLight
-	program-type($violetLight,$violet)
-
-.el--greenLight
-	program-type($greenLight,$greenDark)
-
-// color box === end
 
 // tag list
 .tag-list
@@ -2383,3 +2400,140 @@ program-type(bg,textColor)
 	flex(mid)
 	fl()
 	text-align center
+
+
+// offer
+.offer
+	+below(768px)
+		min-height: 165px
+		padding: 20px
+	padding: 36px 48px
+	color white
+	position relative
+	br(12px)
+.offer-title
+	+below(640px)
+		width: 50%
+		line-height: 1.2
+	@extend .type--lg
+	font-weight 700
+	margin-bottom: 16px
+	width: 60%
+	margin-bottom: 5%
+.offer-img
+	+below(640px)
+		padding: 2% 30%
+		right: 0
+	background-size cover
+	background-repeat no-repeat
+	background-position center center
+	padding 3% 28%
+	position absolute
+	top 0
+	bottom 0
+	right 10px
+// offer === end
+
+// review
+.review-intro
+	f()
+.review--intro__info
+	width: 50%
+.review-get
+	margin-left auto
+
+.review-item
+	@extend .mb-64
+
+.review-item__name
+	@extend .type--md
+	@extend .type--head
+	margin-bottom: 16px
+
+.review-item-gallery
+	f()
+	fw()
+	margin 0 -8px 8px -8px
+
+.review-item-gallary__img
+	size 64px
+	br(8px)
+	bg-full()
+	margin: 0 8px 8px 8px
+	background-size 100% 100%
+	&:hover
+		background-size 120% 120%
+//.fancybox
+.review-item__info
+	color $typeSecondary
+	margin-bottom: 16px
+.review-item__footer
+	padding-top: 16px
+	border-top 1px solid $border-color
+	@extend .type--sm
+	flex(between)
+.review-item__date
+	color $typeSecondary
+.review-item__type
+	color $mark
+
+// review === end
+
+// upload
+//upload
+.upload-wrap
+	f()
+	align-items center
+	fw()
+.upload
+	f()
+	cp()
+	tr(all)
+
+.upload__text
+	color $mark
+	font-weight: 500
+	flex(mid)
+	margin-left: 16px
+.upload-img
+	+below(640px)
+		margin-left: 0
+	flex(mid)
+	margin-left: 24px
+	margin-right: -8px
+.upload-img__el
+	size 44px
+	round()
+	border 1px solid $border-color
+	background-size: cover
+	background-repeat: no-repeat
+	position: relative
+	overflow: hidden
+	margin-right: 8px
+	cp()
+	&:hover
+		&:before
+			content 'X'
+			opacity:1
+	&:before
+		content 'X'
+		position: absolute
+		background: #000000b3
+		width: 100%
+		height: 100%
+		left 0
+		top 0
+		flex(mid)
+		color white
+		opacity:0
+		tr(all)
+.upload-btn
+	position: absolute
+	left -9999px
+//form
+// upload === end
+
+.cell-row
+	display: grid
+	grid-column-gap 24px
+	grid-template-columns: repeat(auto-fill, minmax(16rem,1fr))

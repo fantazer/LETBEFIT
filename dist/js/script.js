@@ -381,6 +381,44 @@ $(document).ready(function () {
 	});
 	// copy code === end
 
+	// animate sort
+	if($('.blog-list').length > 0){
+		var mixer = mixitup('.blog-list', {
+				selectors: {
+						target: '.blog-el'
+				},
+				animation: {
+						duration: 500,
+						effects: 'fade'
+				}
+		});
+	}
+	// animate sort === end
+	
+	// init fancybox
+	$('.fancybox').fancybox();
+	// init fancybox === end
+
+
+	// upload btn
+	$(".upload-btn").change(function () { //Если выбрал файл
+		console.log('img');
+		if (this.files && this.files[0]) {
+			$('.upload-img').append('<div class="upload-img__el" onclick="this.parentNode.removeChild(this);"></div>');
+			var currentUpload = $('.upload-img .upload-img__el:last'); //выбираем куда
+			var reader = new FileReader();
+			reader.onload = function(){
+				currentUpload.attr('style', " background-image:url( "+reader.result+ ") ");
+			}
+			reader.readAsDataURL(this.files[0]);
+		}
+	});
+	$('.upload-img__el').click(function(){
+		console.log('remove');
+		$(this).remove();
+	});
+	// upload btn === end
+
 	window.condition = {};
 	window.condition.closeModal = closeModal
 	window.condition.initModal = initModal

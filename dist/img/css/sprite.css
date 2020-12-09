@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../svg/sprite.svg");
     background-repeat: no-repeat;
-    background-size: 6.4em 172.3em;
+    background-size: 6.4em 174.1em;
 }
 
 .no-svg .icon:before {
@@ -584,8 +584,17 @@
 
 
 
-  .icon.soc-viber:before {
+  .icon.soc-twitter:before {
       background-position: 0em -148.3em;
+      width: 2.2em;
+      height: 1.8em;
+  }
+
+
+
+
+  .icon.soc-viber:before {
+      background-position: 0em -150.1em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -594,7 +603,7 @@
 
 
   .icon.soc-vk:before {
-      background-position: 0em -150.7em;
+      background-position: 0em -152.5em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -603,7 +612,7 @@
 
 
   .icon.soc-wp:before {
-      background-position: 0em -153.1em;
+      background-position: 0em -154.9em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -612,7 +621,7 @@
 
 
   .icon.soc-wp-light:before {
-      background-position: 0em -155.5em;
+      background-position: 0em -157.3em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -621,7 +630,7 @@
 
 
   .icon.squares:before {
-      background-position: 0em -157.9em;
+      background-position: 0em -159.7em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -630,7 +639,7 @@
 
 
   .icon.star:before {
-      background-position: 0em -160.3em;
+      background-position: 0em -162.1em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -639,7 +648,7 @@
 
 
   .icon.stop:before {
-      background-position: 0em -162.7em;
+      background-position: 0em -164.5em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -648,7 +657,7 @@
 
 
   .icon.surprise:before {
-      background-position: 0em -165.1em;
+      background-position: 0em -166.9em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -657,7 +666,7 @@
 
 
   .icon.time:before {
-      background-position: 0em -167.5em;
+      background-position: 0em -169.3em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -666,7 +675,7 @@
 
 
   .icon.view:before {
-      background-position: 0em -169.9em;
+      background-position: 0em -171.7em;
       width: 2.4em;
       height: 2.4em;
   }
