@@ -8,11 +8,10 @@ include block_html/_include.pug
 			.main-cont
 				.review-intro
 					.review--intro__info
-						.type--xl.type--head Отзывы клиентов
-						.review--intro__text.text
-							p Отзывы реальных клиентов о доставке правильного питания на неделю, вкусе самой еды, ее качестве и сервисе компании BeFit. Узнай почему у нас так вкусно!
+						.type--xl.type--head.mb-16 Отзывы клиентов
+						.review--intro__text Отзывы реальных клиентов о доставке правильного питания на неделю, вкусе самой еды, ее качестве и сервисе компании BeFit. Узнай почему у нас так вкусно!
 					.review-get
-						a(href="#").btn--md.btn--mark Оставить отзыв
+						a(href="#review").js-scroll-to.btn--md.btn--mark Оставить отзыв
 		.section-extend.section--gradient
 			.main-cont.js-slider-wrap
 				.review-head
@@ -49,7 +48,7 @@ include block_html/_include.pug
 							.review-item__date 2 ноя, 2020
 							.review-item__type Правильное питание “Normal”
 
-		.section-full.section--gradient
+		.section-full.section--gradient#review
 			.main-cont-sm
 				.contract
 					.contract-content
@@ -86,7 +85,6 @@ include block_html/_include.pug
 									+icon("plus","icon")
 								.upload__text Добавить фото
 								input(type="file").upload-btn
-							.upload-img
 					.contract-footer
 						.contract-footer__text Нажимая кнопку “Оформить” я принимаю условия условия <a href="#" class="link--mark">передачи информации</a>
 						.btn--md.btn--mark.btn--mobile Оставить отзыв
