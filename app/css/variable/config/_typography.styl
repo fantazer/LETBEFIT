@@ -169,11 +169,25 @@ p
 	color black
 	h1,h2,h3,h4,h5
 		margin 3.5rem 0 2rem
+	h1:first-of-type,
+	h2:first-of-type,
+	h3:first-of-type,
+	h4:first-of-type,
+	h5:first-of-type,
+	h6:first-of-type,
+	p
+		margin-top: 0!important
+	a:not(.btn--md):not(.btn--sm)
+		@extend .link--mark
 	img
 		@extend .m-64
 	p
 		line-height: 1.6
 		margin-bottom: 30px
+		&:first-child
+			margin-top: 0
+		&:last-child
+			margin-bottom: 0
 	ul
 		margin-bottom: 30px
 		padding-left 26px
@@ -182,7 +196,7 @@ p
 			line-height: 1.6
 			margin-bottom: 16px
 			position relative
-			font-weight: 700
+			//font-weight: 700
 			&:before
 				content ''
 				position absolute
@@ -232,6 +246,9 @@ p
 
 .icon--white
 	fill white
+
+.db
+	display block
 
 // icons === end
 

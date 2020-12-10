@@ -1,0 +1,32 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page#header
+	+header()
+	.content
+		.main-cont
+			.title.title--xl Сотрудничество
+			.g-row.mb-80
+				.g-md-6
+					.box-gradient
+						.box-gradient-inner.text
+							p.type--md Вы фитнес-клуб? Или хотите обеспечить вкусным и здоровым питанием сотрудников? Или может быть делаете проект в области здорового питания? Тогда вам к нам!
+
+							p.type--md Мы открыты для сотрудничества и готовы развиваться сами и помогать развивать ваш бизнес.
+
+				.g-md-5.g-offset-md-1
+					.type--md.type--head.mb-12 Вопросы по сотрудничеству
+					a(href="mailto:delivery@letbefit.ru").type--md.link--mark.mb-48.db delivery@letbefit.ru
+
+					.type--md.type--head.mb-12 Отдел корпоративных продаж
+					a(href="mailto:delivery@letbefit.ru").type--md.link--mark.db sales@letbefit.ru
+					.type--md +7 499 444 25 83
+
+			.type--lg.type--head.mb-32 Наши партнеры
+			.partners
+				- for (var i=1;i<7;i++)
+					.partners__el(style="background-image:url('img/cooperation-"+i+".jpg')")
+
+
+	+footer()
+include ./block_html/_script.pug

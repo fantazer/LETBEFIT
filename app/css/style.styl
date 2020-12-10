@@ -125,13 +125,13 @@ slider-create-mobile()
 	@extend .type--xl
 	margin-bottom: 30px
 	font-weight: 700
-	color $gray
 .page-error__img
 	margin-bottom: 30px
+	max-width 250px
 .page-error__text
-	@extend .type--md
-	color $gray
 	margin-bottom: 30px
+	max-width 300px
+	text-align center
 .page-error__get
 	@extend .btn--md
 	@extend .btn--mark
@@ -785,8 +785,10 @@ slider-create-mobile()
 	display: grid
 	grid-gap 28px
 	grid-template-columns: repeat(4, 1fr)
-	@extend .mb-100
 	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+.advant--sm
+	grid-template-columns: repeat(3, 1fr)
+
 .advant__el
 	+below(1024px)
 		padding: 20px
@@ -794,6 +796,8 @@ slider-create-mobile()
 	border 1px solid $border-color
 	padding: 28px 20px 20px 20px
 	tr()
+	f()
+	fl()
 	&:hover
 		border 1px solid white
 		box-shadow 0 12px 32px rgba(41, 42, 53, 0.16)
@@ -810,6 +814,7 @@ slider-create-mobile()
 	+below(1024px)
 		font-size: 12px
 	color $typePrimary
+	margin-top: auto
 // advant-section === end
 
 
@@ -1834,6 +1839,12 @@ program-type(bg,textColor,iconColor)
 .map-wrap
 	position relative
 	background: $grayLight
+
+.map-wrap--md
+	width: 100%
+	padding: 28% 10%
+	+below(640px)
+		min-height 230px
 .map
 	position absolute
 	top 0
@@ -2550,7 +2561,7 @@ program-type(bg,textColor,iconColor)
 
 // sale-item
 .offer-full-page
-	padding: 20% 10%
+	padding: 15% 10%
 
 .sale-descr
 	background: white
@@ -2558,3 +2569,64 @@ program-type(bg,textColor,iconColor)
 	center(1072px,110px)
 	padding-top: 10px
 // sale-item === end
+
+.msg
+	padding: 16px
+	br(10px)
+
+
+.box-gradient
+	background: linear-gradient(98.95deg, #E3EEFF 0%, #E4F6E4 52.6%, #FFEEE4 100%)
+	br(12px)
+	padding: 12px
+
+.box-gradient-inner
+	background: white
+	padding: 48px 40px
+
+.box-gradient-inner--sm
+	padding: 24px 16px
+
+.partners
+	display: grid
+	grid-gap 28px
+	grid-template-columns: repeat(6, 1fr)
+	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+.partners__el
+	bg-full()
+	padding: 35% 10%
+	background-size contain
+
+
+// present
+.present
+	f()
+	justify-content space-between
+	align-items: stretch
+.present-img
+	width: calc(100% - 475px)
+.present-img__el
+	width: 100%
+	height: 100%
+	bg-full()
+.present-info
+	width: 400px
+// present === end
+
+.video
+	position relative
+	padding: 30% 10%
+.video__el
+	position absolute
+	top 0
+	left 0
+	width: 100%
+	height: 100%
+
+.contact-info
+	.icon-row
+		margin-bottom: 32px
+		.icon
+			margin-right: 20px
+		&:last-child
+			margin-bottom: 0
