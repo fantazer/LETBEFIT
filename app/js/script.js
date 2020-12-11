@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+	var body = $('body')
+
 	// watch window resize
 	var currentSize = $(window).width()
 	/*$(window).resize(function(){
@@ -128,13 +130,13 @@ $(document).ready(function () {
 
 
 	// toggle single
-	$('.js-toggle').click(function(){
+	body.on('click','.js-toggle',function(){
 		$(this).toggleClass("active")
 	})
 	// toggle single === end
 
 	// slide toggle
-	$('.js-slide').click(function(){
+	body.on('click','.js-slide',function(){
 		$(this).closest('.js-slide-wrap').find('.js-slide-cont').slideToggle(500);
 	});
 	// slide toggle === end
@@ -153,7 +155,7 @@ $(document).ready(function () {
 	// toggle class one from list === end
 
 	//toggle class + neighbor
-	$('.js-commutator-el').click(function(){
+	body.on('click','.js-commutator-el', function(){
 		var thisItem = $(this).data("item");
 		var thisGroup = $(this).data("group") || false;
 		var isEach = $(this).data("each") || false;
@@ -175,7 +177,7 @@ $(document).ready(function () {
 	//toggle class + neighbor === end
 
 	// switch
-	$('.js-switch').click(function (e) {
+	body.on('click','.js-switch', function(e){
 		if(e.target.className!='style-input'){
 				var typeItem = $(this).data("item");
 				var groupItem = $(this).data("group");
@@ -217,7 +219,7 @@ $(document).ready(function () {
 	// toggle program types list  === end
 
 	// accordion row toggle
-	$('.js-accordion-head').click(function () {
+	body.on('click','.js-accordion-head', function(e){
 		var current = $(this).closest('.js-accordion-el').index()
 		$(this).closest('.js-accordion').find('.js-accordion-el').each(function(){
 			if($(this).index()!=current){
@@ -342,13 +344,13 @@ $(document).ready(function () {
 	// animate scroll to id === end
 
 	// drop click on contract
-	$('.js-contract-el').click(function(){
+	body.on('click','.js-contract-el', function(e){
 		$(this).find('input[type="radio"]').prop('checked', true);
 	});
 	// drop click on contract === end*/
 
 	// slide menu
-	$('.js-slide-block-toggle').click(function (event) {
+	body.on('click','.js-slide-block-toggle', function(event){
 		$(".js-slide-block-toggle").not(this).removeClass('slide-block-toggle--open');
 		var current = $(this).data("menu");
 		$(".slide-block").each(function () {
@@ -364,7 +366,7 @@ $(document).ready(function () {
 	
 	
 	// toggle contract full view
-	$('.js-config-head').click(function(){
+	body.on('click','.js-config-head', function(event){
 		var parent = $(this).closest('.js-config');
 		parent.toggleClass('active')
 		parent.find('.js-contract-config-wrap').slideToggle();
