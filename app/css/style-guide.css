@@ -1162,6 +1162,9 @@ h1 {
   font-weight: 700;
   color: #111;
 }
+.title wbr {
+  display: none;
+}
 .title--sm {
   font-weight: 700;
   color: #111;
@@ -2009,6 +2012,7 @@ a:visiter {
   left: 20px;
   top: 20px;
   transition: all 0.4s;
+  color: #5c5e6e;
 }
 .input:focus+span,
 .input[data-empty="false"] + span {

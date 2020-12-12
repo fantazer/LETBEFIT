@@ -72,18 +72,19 @@ include block_html/_include.pug
 		.section-full.section--gradient
 			.main-cont
 				.title.title--lgx Интересное по теме
-				.blog-list
-					- for (var i=1;i<5;i++)
-						.blog-el(class = item )
-							.blog-el__img(style="background-image:url('img/blog-" + i + ".jpg')")
-							.blog-el-content
-								.blog-el__info
-									a(href="#").blog-el__title Как пользоваться конструктором от «BeFit» и в чем его преимущества?
-								.blog-el-footer
-									.blog-el-tag
-										span.type-pink Набор массы
-										span.type-sea Похудение
-										span.type-blue ЗОЖ
-									.blog-el-date 20 апр, 2019
+				.mobile-row-scroll
+					.blog-list.mobile-row-scroll-wrap
+						- for (var i=1;i<5;i++)
+							.blog-el.mobile-row-scroll-item(class = item )
+								.blog-el__img(style="background-image:url('img/blog-" + i + ".jpg')")
+								.blog-el-content
+									.blog-el__info
+										a(href="#").blog-el__title Как пользоваться конструктором от «BeFit» и в чем его преимущества?
+									.blog-el-footer
+										.blog-el-tag
+											span.type-pink Набор массы
+											span.type-sea Похудение
+											span.type-blue ЗОЖ
+										.blog-el-date 20 апр, 2019
 	+footer()
 include ./block_html/_script.pug

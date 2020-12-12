@@ -177,11 +177,12 @@ $(document).ready(function () {
 	//toggle class + neighbor === end
 
 	// switch
-	body.on('click','.js-switch', function(e){
-		if(e.target.className!='style-input'){
-				var typeItem = $(this).data("item");
+	body.on('click', '.js-switch', function (e) {
+		if (e.target.className != 'style-input') {
+			var typeItem = $(this).data("item");
+			if ($(this).closest('.js-switch-wrap').length < 0) {
 				var groupItem = $(this).data("group");
-				var selector = $('.js-switch[data-group=' + groupItem +']');
+				var selector = $('.js-switch[data-group=' + groupItem + ']');
 				var size = selector.size()
 				selector.each(function () {
 					$(this).removeClass("active");
@@ -199,7 +200,18 @@ $(document).ready(function () {
 						}
 					}
 				});
-				$(this).addClass("active");
+			}else{
+				var parent = $(this).closest('.js-switch-wrap');
+				parent.find('.js-switch').removeClass('active')
+				parent.find('.js-switch-cont').each(function () {
+						if($(this).data("item") === typeItem) {
+							$(this).removeClass("hidden")
+						} else {
+							$(this).addClass("hidden");
+						}
+				});
+			}
+			$(this).addClass("active");
 		}
 	});
 	// switch === end
