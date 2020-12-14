@@ -1923,7 +1923,8 @@ body > svg {
 .title--main,
 p,
 .btn--sm,
-body {
+body,
+.drop-menu__list--simple .drop-menu__list__el {
   font-size: 16px;
 }
 @media only screen and (max-width: 768px) {
@@ -1931,7 +1932,8 @@ body {
   .title--main,
   p,
   .btn--sm,
-  body {
+  body,
+  .drop-menu__list--simple .drop-menu__list__el {
     font-size: 16px;
   }
 }
@@ -3849,7 +3851,8 @@ body {
 .nav-list__el:hover > a {
   color: #7eca1d;
 }
-.nav-list__el > a {
+.nav-list__el > a,
+.nav-list__el > span {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -3858,6 +3861,10 @@ body {
           align-items: center;
   height: 100%;
   width: 100%;
+}
+.nav-list__el > a:hover,
+.nav-list__el > span:hover {
+  cursor: pointer;
 }
 .nav-list__el:hover > span {
   color: #7eca1d;
@@ -3921,6 +3928,22 @@ body {
 }
 .drop-menu__list {
   margin-bottom: 32px;
+}
+.drop-menu__list--simple .drop-menu__list__el {
+  margin-bottom: 10px;
+}
+.drop-menu__list--simple .drop-menu__list__el:last-child {
+  margin-bottom: 0;
+}
+.drop-menu__list--extend {
+  margin-bottom: 0;
+  -webkit-column-count: 2;
+          column-count: 2;
+  -webkit-column-gap: 140px;
+          column-gap: 140px;
+}
+.drop-menu__list--extend .drop-menu__list__el {
+  white-space: nowrap;
 }
 .drop-menu__list__el {
   margin-bottom: 15px;
@@ -7048,11 +7071,30 @@ body {
   margin-right: auto;
 }
 .tag-list {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
   margin-right: -8px;
   margin-left: -8px;
+  overflow: auto;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 1024px) {
+  .tag-list {
+    margin-left: -42px;
+    margin-right: -42px;
+    padding-left: 42px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .tag-list {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+  }
+}
+.tag-list:after {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 1px;
 }
 .tag-el--light {
   border: 1px solid #dcdfe8;
@@ -7065,6 +7107,8 @@ body {
   transition: all 0.4s;
   font-weight: 700;
   line-height: 1;
+  white-space: nowrap;
+  display: inline-block;
 }
 .tag-el:hover {
   cursor: pointer;
@@ -7083,6 +7127,20 @@ body {
       -ms-flex-flow: column;
           flex-flow: column;
   text-align: center;
+}
+@media only screen and (max-width: 640px) {
+  .subscribe-block .input-btn-cont {
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 100%;
+  }
+  .subscribe-block .input-btn-cont .input-row {
+    width: 100%;
+  }
+  .subscribe-block .input-btn-cont .btn--md {
+    width: 100%;
+  }
 }
 .offer {
   padding: 36px 48px;

@@ -102,7 +102,7 @@
                         </a>
                         <ul class="nav-list">
                             <li class="nav-list__el nav-list__el--sub">
-                                <a href="#">Программы</a>
+                                <span>Программы</span>
                                 <div class="drop-menu-wrap">
                                     <div class="main-cont">
                                         <div class="drop-menu">
@@ -203,8 +203,23 @@
                             <div class="nav-list__el">
                                 <a href="#">Блог</a>
                             </div>
-                            <div class="nav-list__el">
-                                <a href="#">О нас</a>
+                            <div class="nav-list__el nav-list__el--sub">
+                                <span>О нас</span>
+                                <div class="drop-menu-wrap">
+                                    <div class="main-cont">
+                                        <div class="drop-menu">
+                                            <div class="drop-menu__list drop-menu__list--extend">
+                                                <a class="drop-menu__list__el" href="#">Что такое Befit?</a>
+                                                <a class="drop-menu__list__el" href="#">Наше производство</a>
+                                                <a class="drop-menu__list__el" href="#">О компании</a>
+                                                <a class="drop-menu__list__el" href="#">Основатели</a>
+                                                <a class="drop-menu__list__el" href="#">Тренерам</a>
+                                                <a class="drop-menu__list__el" href="#">Франшиза</a>
+                                                <a class="drop-menu__list__el" href="#">Контакты</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="nav-list__el">
                                 <a href="#">Сотрудничество</a>
@@ -316,13 +331,32 @@
                             </div>
                         </div>
                         <a class="slide-nav__el" href="#">Акции</a>
-                        <a class="slide-nav__el" href="#">Программы</a>
                         <a class="slide-nav__el" href="#">Отзывы</a>
                         <a class="slide-nav__el" href="#">Доставка</a>
                         <a class="slide-nav__el" href="#">Оплата</a>
                         <a class="slide-nav__el" href="#">Вопрос - ответ</a>
                         <a class="slide-nav__el" href="#">Блог</a>
-                        <a class="slide-nav__el" href="#">О нас</a>
+                        <div class="js-accordion-el">
+                            <div class="slide-nav__el slide-nav__el--slide js-accordion-head">
+                                <span>О нас</span>
+                                <svg class="icon">
+                                    <use xlink:href="#arrow-down"></use>
+                                </svg>
+                            </div>
+                            <div class="slide-nav__el-sub js-accordion-content">
+                                <div class="drop-menu__el">
+                                    <div class="drop-menu__list drop-menu__list--simple">
+                                        <a class="drop-menu__list__el" href="#">Что такое Befit?</a>
+                                        <a class="drop-menu__list__el" href="#">Наше производство</a>
+                                        <a class="drop-menu__list__el" href="#">О компании</a>
+                                        <a class="drop-menu__list__el" href="#">Основатели</a>
+                                        <a class="drop-menu__list__el" href="#">Тренерам</a>
+                                        <a class="drop-menu__list__el" href="#">Франшиза</a>
+                                        <a class="drop-menu__list__el" href="#">Контакты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <a class="slide-nav__el" href="#">Сотрудничество</a>
                         <div class="drop-menu-card drop-menu-card--sm">
                             <a class="drop-menu-card__el" href="#">
@@ -352,15 +386,17 @@
         <div class="content content--clear-bottom">
             <div class="main-cont">
                 <div class="title title--xl">Блог</div>
-                <div class="tag-list js-tick-cont mb-48">
-                    <div class="tag-el tag-el--light js-tick" data-filter="all">Все</div>
-                    <div class="tag-el el--seaLight js-tick" data-filter=".cat-thin">Похудение</div>
-                    <div class="tag-el el--blueLight js-tick" data-filter=".cat-health">ЗОЖ</div>
-                    <div class="tag-el el--pinkLight js-tick" data-filter=".cat-strong">Набор массы</div>
-                    <div class="tag-el el--violetLight js-tick" data-filter=".cat-fitnes">Фитнес</div>
-                    <div class="tag-el el--orangeLight js-tick" data-filter=".cat-food">Питание</div>
-                    <div class="tag-el el--swapmLight js-tick" data-filter=".cat-recipe">Рецепты</div>
-                    <div class="tag-el el--greenLight js-tick" data-filter=".cat-befit">Befit</div>
+                <div class="tag-list-wrap">
+                    <div class="tag-list js-tick-cont mb-48">
+                        <div class="tag-el tag-el--light js-tick" data-filter="all">Все</div>
+                        <div class="tag-el el--seaLight js-tick" data-filter=".cat-thin">Похудение</div>
+                        <div class="tag-el el--blueLight js-tick" data-filter=".cat-health">ЗОЖ</div>
+                        <div class="tag-el el--pinkLight js-tick" data-filter=".cat-strong">Набор массы</div>
+                        <div class="tag-el el--violetLight js-tick" data-filter=".cat-fitnes">Фитнес</div>
+                        <div class="tag-el el--orangeLight js-tick" data-filter=".cat-food">Питание</div>
+                        <div class="tag-el el--swapmLight js-tick" data-filter=".cat-recipe">Рецепты</div>
+                        <div class="tag-el el--greenLight js-tick" data-filter=".cat-befit">Befit</div>
+                    </div>
                 </div>
                 <!-- color for tags name-->
                 <!-- Похудение .type-sea-->

@@ -44,7 +44,7 @@ mixin header()
 						img(src="img/logo-symbol.svg", alt="")
 					ul.nav-list
 						li.nav-list__el.nav-list__el--sub
-							a(href="#") Программы
+							span Программы
 							.drop-menu-wrap
 								.main-cont
 									.drop-menu
@@ -97,10 +97,31 @@ mixin header()
 												+icon("surprise","icon icon--md icon--mark")
 												.drop-menu-card__title Подарочный сертификат
 												.drop-menu-card__text Подарите здоровье с доставкой на дом!
-						each navEl in nav
+						each navEl in navSm
 							if(navEl!='Программы')
 								.nav-list__el
 									a(href="#") #{navEl}
+						.nav-list__el.nav-list__el--sub
+							span О нас
+							.drop-menu-wrap
+								.main-cont
+									.drop-menu
+										.drop-menu__list.drop-menu__list--extend
+											-
+												var items = [
+													'Что такое Befit?',
+													'Наше производство',
+													'О компании',
+													'Основатели',
+													'Тренерам',
+													'Франшиза',
+													'Контакты',
+													];
+											each item in items
+												a(href="#").drop-menu__list__el #{item}
+						.nav-list__el
+							a(href="#") Сотрудничество
+
 					//toggle class .auth-wrap + .auth-wrap--true
 					.auth-wrap.link
 						.auth-state.auth-state--false.modal-get(data-modal="enter")
@@ -165,8 +186,28 @@ mixin header()
 									.drop-menu__list
 										a(href="#").drop-menu__list__el Detox
 										a(href="#").drop-menu__list__el Post
-					each navEl in nav
+					each navEl in navSm
 						a(href="#").slide-nav__el #{navEl}
+					.js-accordion-el
+						.slide-nav__el.slide-nav__el--slide.js-accordion-head
+							span О нас
+							+icon("arrow-down","icon")
+						.slide-nav__el-sub.js-accordion-content
+								.drop-menu__el
+									.drop-menu__list.drop-menu__list--simple
+										-
+											var items = [
+												'Что такое Befit?',
+												'Наше производство',
+												'О компании',
+												'Основатели',
+												'Тренерам',
+												'Франшиза',
+												'Контакты',
+											];
+										each item in items
+											a(href="#").drop-menu__list__el #{item}
+					a(href="#").slide-nav__el Сотрудничество
 					.drop-menu-card.drop-menu-card--sm
 						a(href="#").drop-menu-card__el
 							.drop-menu-card__el-info

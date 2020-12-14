@@ -470,11 +470,12 @@ slider-create-mobile()
 	&:hover
 		& > a
 			color $mark
-	& > a
+	& > a, & > span
 		f()
 		align-items center
 		height: 100%
 		width: 100%
+		cp()
 	&:hover
 		& > span
 			color $mark
@@ -519,6 +520,18 @@ slider-create-mobile()
 	margin-bottom: 20px
 .drop-menu__list
 	margin-bottom: 32px
+.drop-menu__list--simple
+	.drop-menu__list__el
+		margin-bottom: 10px
+		@extend .type--main
+		&:last-child
+			margin-bottom: 0
+.drop-menu__list--extend
+	margin-bottom: 0
+	column-count 2
+	column-gap 140px
+	.drop-menu__list__el
+		white-space nowrap
 .drop-menu__list__el
 	margin-bottom: 15px
 	@extend .type--md
@@ -527,6 +540,7 @@ slider-create-mobile()
 	display block
 	&:last-child
 		margin-bottom: 0
+
 .drop-menu-card
 	width: 34%
 	display: grid
@@ -2400,10 +2414,25 @@ program-type(bg,textColor,iconColor)
 
 
 // tag list
+//.tag-list-wrap
 .tag-list
-	f()
+	+below(1024px)
+		margin-left -42px
+		margin-right -42px
+		padding-left: 42px
+	+below(640px)
+		margin-left -20px
+		margin-right -20px
+		padding-left: 20px
 	margin-right -8px
 	margin-left -8px
+	overflow auto
+	white-space nowrap
+	&:after
+		content ''
+		display inline-block
+		width: 40px
+		height: 1px
 .tag-el--light
 	border 1px solid $border-color
 	color black
@@ -2416,13 +2445,22 @@ program-type(bg,textColor,iconColor)
 	@extend .type--smx
 	font-weight: 700
 	line-height: 1
+	white-space nowrap
+	display inline-block
 // tag list === end
 
 .subscribe-block
 	flex(mid)
 	fl()
 	text-align center
-
+	.input-btn-cont
+		+below(640px)
+			fl()
+			width: 100%
+			.input-row
+				width: 100%
+			.btn--md
+				width: 100%
 
 // offer
 .offer
