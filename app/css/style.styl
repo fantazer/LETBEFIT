@@ -186,15 +186,18 @@ slider-create-mobile()
 		margin-bottom: 20px
 		border-bottom 0
 
+.modal--md
+	+below(640px)
+		width: 100%
+	width 632px
 
 
 .modal-content
 	+below(640px)
 		height: 100%
-		overflow-y scroll
+		//overflow-y scroll
 		width: calc(100% - 40px)
-		margin: 20px auto
-		padding: 24px
+	margin: 60px auto
 	background: white
 	position: relative
 	padding: 32px
@@ -214,9 +217,8 @@ slider-create-mobile()
 .modal-close
 	+below(640px)
 		right 20px
-		top: -16px
 	position: absolute
-	top: -36px
+	top: 20px
 	right: 0px
 	cp()
 	z-index 10
@@ -2725,3 +2727,44 @@ program-type(bg,textColor,iconColor)
 	width: 300px
 	margin-right: 16px
 	white-space initial
+
+.program-register
+	margin-bottom: -32px
+.program-register-row
+	+below(640px)
+		padding: 12px 24px
+		margin-left: -32px
+		margin-right: -32px
+	f()
+	align-items center
+	padding: 12px 32px
+	border-top 1px solid $border-color
+	border-bottom 1px solid $border-color
+	margin-bottom: -1px
+	margin-left: -32px
+	margin-right: -32px
+	cp()
+	tr()
+	&:hover
+		background: $mark
+		color white
+		.program-register__val
+			color white
+	&:last-child
+		border 0
+.program-register__name
+	+below(640px)
+		margin-right: 15px
+	font-weight: 700
+	margin-right: 10%
+.program-register__val
+	+below(640px)
+		font-size: 14px
+	color $typeSecondary
+	tr()
+	margin-right: 10px
+
+.program-register__cost
+	+below(640px)
+		font-size: 14px
+	margin-left auto

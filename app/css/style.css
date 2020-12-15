@@ -3435,7 +3435,16 @@ body {
   margin-bottom: 20px;
   border-bottom: 0;
 }
+.modal--md {
+  width: 632px;
+}
+@media only screen and (max-width: 640px) {
+  .modal--md {
+    width: 100%;
+  }
+}
 .modal-content {
+  margin: 60px auto;
   background: #fff;
   position: relative;
   padding: 32px;
@@ -3444,10 +3453,7 @@ body {
 @media only screen and (max-width: 640px) {
   .modal-content {
     height: 100%;
-    overflow-y: scroll;
     width: calc(100% - 40px);
-    margin: 20px auto;
-    padding: 24px;
   }
 }
 .modal__show {
@@ -3465,14 +3471,13 @@ body {
 }
 .modal-close {
   position: absolute;
-  top: -36px;
+  top: 20px;
   right: 0px;
   z-index: 10;
 }
 @media only screen and (max-width: 640px) {
   .modal-close {
     right: 20px;
-    top: -16px;
   }
 }
 .modal-close:hover {
@@ -7566,6 +7571,71 @@ body {
   width: 300px;
   margin-right: 16px;
   white-space: initial;
+}
+.program-register {
+  margin-bottom: -32px;
+}
+.program-register-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 32px;
+  border-top: 1px solid #dcdfe8;
+  border-bottom: 1px solid #dcdfe8;
+  margin-bottom: -1px;
+  margin-left: -32px;
+  margin-right: -32px;
+  transition: all 0.4s;
+}
+@media only screen and (max-width: 640px) {
+  .program-register-row {
+    padding: 12px 24px;
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+}
+.program-register-row:hover {
+  cursor: pointer;
+}
+.program-register-row:hover {
+  background: #7eca1d;
+  color: #fff;
+}
+.program-register-row:hover .program-register__val {
+  color: #fff;
+}
+.program-register-row:last-child {
+  border: 0;
+}
+.program-register__name {
+  font-weight: 700;
+  margin-right: 10%;
+}
+@media only screen and (max-width: 640px) {
+  .program-register__name {
+    margin-right: 15px;
+  }
+}
+.program-register__val {
+  color: #9699a8;
+  transition: all 0.4s;
+  margin-right: 10px;
+}
+@media only screen and (max-width: 640px) {
+  .program-register__val {
+    font-size: 14px;
+  }
+}
+.program-register__cost {
+  margin-left: auto;
+}
+@media only screen and (max-width: 640px) {
+  .program-register__cost {
+    font-size: 14px;
+  }
 }
 @-webkit-keyframes slideInDown {
   from {

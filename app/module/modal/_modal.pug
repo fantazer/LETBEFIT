@@ -84,7 +84,7 @@ mixin modal()
 						+icon("checked","icon icon-validate-true")
 					.btn--md.btn--mark.btn--full Сохранить
 
-			//Get name
+			//True review
 			.modal(data-modal="trueReview")
 				.modal-close
 					+icon("close","icon")
@@ -103,7 +103,7 @@ mixin modal()
 						.btn--sm.btn--mark.modal-hide Да
 						.btn--sm.btn--light Нет, в Питере
 
-			//Location mobile
+			//Remove Program
 			.modal(data-modal="removeProgram")
 				.modal-close
 					+icon("close","icon")
@@ -131,3 +131,16 @@ mixin modal()
 					.btn-row.btn-row--line
 						.btn--sm.btn--grow.btn--light.modal-hide Отменить
 						.btn--sm.btn--grow.btn--mark Исключить
+
+			//Get name
+			.modal.modal--md(data-modal="changeProgram")
+				.modal-close
+					+icon("close","icon")
+				.modal-content
+					.modal-title Добавить программу
+					.program-register
+						- for (var i=0;i<13;i++)
+							.program-register-row
+								.program-register__name Every Daily
+								.program-register__val 1100 Ккал
+								.program-register__cost от 6400 руб.

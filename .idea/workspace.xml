@@ -13,7 +13,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix config event">
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add page about">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/blog-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog-item.html" afterDir="false" />
@@ -27,14 +27,12 @@
       <change beforePath="$PROJECT_DIR$/app/error-500.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/error-500.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/faq.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/franchise.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/franchise.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/block_html/_const.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_const.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/blog-list.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/blog-list.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/review.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/review.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/modal.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/lk-coach.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-coach.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/lp-coach.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lp-coach.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/modal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/module/header/_header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/module/header/_header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/module/modal/_modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/module/modal/_modal.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/offer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/offer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/order-present.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/order-present.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/order.html" afterDir="false" />
@@ -316,21 +314,8 @@
       <workItem from="1607594364170" duration="23112000" />
       <workItem from="1607684499159" duration="10701000" />
       <workItem from="1607760149557" duration="9987000" />
-      <workItem from="1607943544164" duration="6906000" />
-    </task>
-    <task id="LOCAL-00022" summary="add templates style + js">
-      <created>1559220561843</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1559220561843</updated>
-    </task>
-    <task id="LOCAL-00023" summary="add icon + fix readme + add modal page">
-      <created>1560779957354</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1560779957354</updated>
+      <workItem from="1607943544164" duration="11883000" />
+      <workItem from="1608019772611" duration="120000" />
     </task>
     <task id="LOCAL-00024" summary="fix hrefs">
       <created>1561392840348</created>
@@ -661,7 +646,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607764283293</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="fix config event">
+      <created>1607952636445</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1607952636445</updated>
+    </task>
+    <task id="LOCAL-00072" summary="add page about">
+      <created>1607952664159</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1607952664159</updated>
+    </task>
+    <option name="localTasksCounter" value="73" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -702,7 +701,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="up version v 1.7.1" />
     <MESSAGE value="fix windows config" />
     <MESSAGE value="fix styles" />
     <MESSAGE value="fix inputs" />
@@ -727,6 +725,7 @@
     <MESSAGE value="add content desctop pages" />
     <MESSAGE value="add body event" />
     <MESSAGE value="fix config event" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix config event" />
+    <MESSAGE value="add page about" />
+    <option name="LAST_COMMIT_MESSAGE" value="add page about" />
   </component>
 </project>
