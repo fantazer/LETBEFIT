@@ -718,10 +718,13 @@ slider-create-mobile()
 
 
 .board__el-wrap
+	+below(1280px)
+		min-height auto
 	+below(640px)
 		padding: 20px 0 0 0
 	padding: 12% 0 8% 0
 	position relative
+	min-height 560px
 
 .board__el-wrap--extend
 	+below(640px)
@@ -762,9 +765,10 @@ slider-create-mobile()
 	+below(1024px)
 		display none
 	color white
-	@extend .type--md
+	@extend .type--mdx
 	margin-top: -5%
 	margin-bottom: 5%
+	max-width 475px
 .board__content
 	+below(1280px)
 		width: 100%
@@ -775,7 +779,7 @@ slider-create-mobile()
 		flex(mid)
 		fl()
 		max-width 100%
-	width: 47%
+	width: 52%
 .board__img
 	+below(640px)
 		position: static
@@ -1288,6 +1292,18 @@ program-type(bg,textColor,iconColor)
 	border-bottom 1px solid $border-color
 	margin-bottom: 32px
 .program-group
+	+below(640px)
+		overflow auto
+		margin-right: -20px
+		margin-left: -20px
+		padding-left: 20px
+		white-space nowrap
+		display block
+		&:after
+			content ''
+			display inline-block
+			width: 40px
+			height: 1px
 	f()
 	opacity: 0
 	left -9999px
@@ -1300,10 +1316,15 @@ program-type(bg,textColor,iconColor)
 		visibility: visible
 		opacity: 1
 		left initial
-		position: static
+		position: relative
 .program-group__el
+	+below(640px)
+		padding: 10px
+		display inline-block
+		min-width 132px
+	min-width 192px
 	padding: 20px
-	width: 192px
+	//width: 192px
 	border-bottom 3px solid transparent
 	cp()
 	tr()
@@ -1314,7 +1335,17 @@ program-type(bg,textColor,iconColor)
 	font-weight 700
 	color black
 .program-group__el-val
+	+below(640px)
+		flex-flow column
+		font-size: 12px
 	color $typeSecondary
+	f()
+	fw()
+	white-space nowrap
+	grid-column-gap 5px
+	span
+		color black
+		display inline-block
 // program constructor === end
 
 // program list
@@ -1325,12 +1356,23 @@ program-type(bg,textColor,iconColor)
 	+below(740px)
 		fl()
 		flex(mid)
-	flex(between)
-	margin-bottom: 40px
-.program-days
-	+below(740px)
-		margin-bottom: 24px
+	fw()
 	f()
+	align-items center
+	margin-bottom: 40px
+	grid-gap 20px
+.program-list-header--extend
+	+below(1024px)
+		.program-days
+			order 3
+	+below(768px)
+		.program-days
+			order initial
+.program-days
+	+below(1024px)
+		margin-right:initial
+	f()
+	margin-right auto
 .program-days__el
 	flex(mid)
 	size 42px 44px
@@ -2768,3 +2810,25 @@ program-type(bg,textColor,iconColor)
 	+below(640px)
 		font-size: 14px
 	margin-left auto
+
+.size
+	f()
+	font-weight: 500
+.size__el
+	border 1px solid $border-color
+	text-align center
+	padding: 12px 28px
+	cp()
+	margin-left: -1px
+	tr()
+	white-space nowrap
+	&:hover
+		background: $greenLight
+	&:first-child
+		border-radius 32px 0 0 32px
+	&:last-child
+		border-radius 0 32px 32px 0
+	&.active
+		background $mark
+		color white
+		border-color $mark
