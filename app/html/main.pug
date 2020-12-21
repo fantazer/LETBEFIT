@@ -270,34 +270,34 @@ include block_html/_include.pug
 								img(src="img/smile/smile-hearts.png", alt="")
 								span -2 кг за неделю
 						.contract-head-img(style="background-image:url('img/banner-person-1.png')")
-					.contract-content.js-switch-wrap
+					.contract-content
 						.contract-config-wrap.js-contract-config-wrap
 							.contract-config
-								.contract-config__el.active.js-contract-el.js-switch(data-item="start")
+								.contract-config__el.active.js-contract-el.js-switch(data-group="programSize" data-item="start")
 									+radio('Пробный день',"list","true")
-								.contract-config__el.js-contract-el.js-switch(data-item="6days")
+								.contract-config__el.js-contract-el.js-switch(data-group="programSize" data-item="6days")
 									+radio('Неделя (6 дней)',"list")
-								.contract-config__el.js-contract-el.js-switch(data-item="2week")
+								.contract-config__el.js-contract-el.js-switch(data-group="programSize" data-item="2week")
 									+radio('2 недели (12 дней)',"list")
 									.contract-config__el-val -5%
-								.contract-config__el.js-contract-el.js-switch(data-item="4week")
+								.contract-config__el.js-contract-el.js-switch(data-group="programSize" data-item="4week")
 									+radio('4 недели (24 дня)',"list")
 									.contract-config__el-val -7.5%
-								.contract-config__el.js-contract-el.js-switch(data-item="3month")
+								.contract-config__el.js-contract-el.js-switch(data-group="programSize" data-item="3month")
 									+radio('3 месяца  (72 дня)',"list")
 									.contract-config__el-val -15%
-							.icon-row.icon-row--extend.js-switch-cont.hidden(data-item="3month")
+							.icon-row.icon-row--extend.js-switch-cont.hidden(data-group="programSize" data-item="3month")
 								+icon("info","icon icon--right icon--orange")
 								span.type--sm Подписка оплачивается сразу на 2 недели и еженедельно в последующий срок
 						.input-cont
 							.input-row
-								label.check-el.js-switch(data-item="isCoupone")
+								label.check-el.js-switch(data-group="coupone" data-item="isCoupone")
 									.style-label.style-label--checkbox
 										input(type="checkbox" ).style-input
 										.style-input-element
 											+icon("checked","icon")
 										.style-input-text У меня есть купон
-						.input-cont.hidden.js-switch-cont(data-item="isCoupone")
+						.input-cont.hidden.js-switch-cont(data-group="coupone" data-item="isCoupone")
 							.input-cont.input-cont--three
 								.input-row.input-row--validate
 									input(type="text" data-placeholder="Номер купона" class="input")
@@ -311,7 +311,7 @@ include block_html/_include.pug
 									+icon("checked","icon icon-validate-true")
 								.input-row
 									.btn--md.btn--light.btn--mobile.disable Применить
-						.input-cont.js-switch-cont(data-item="isCoupone")
+						.input-cont.js-switch-cont(data-group="coupone" data-item="isCoupone")
 							.input-row
 								input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
 

@@ -932,10 +932,10 @@
                             </div>
                             <div class="contract-head-img" style="background-image:url('img/banner-person-1.png')"></div>
                         </div>
-                        <div class="contract-content js-switch-wrap">
+                        <div class="contract-content">
                             <div class="contract-config-wrap js-contract-config-wrap">
                                 <div class="contract-config">
-                                    <div class="contract-config__el active js-contract-el js-switch" data-item="start">
+                                    <div class="contract-config__el active js-contract-el js-switch" data-group="programSize" data-item="start">
                                         <div class="check-el">
                                             <label class="style-label style-label--radio">
                                                 <input class="style-input" type="radio" name="list" checked="true" />
@@ -946,7 +946,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="contract-config__el js-contract-el js-switch" data-item="6days">
+                                    <div class="contract-config__el js-contract-el js-switch" data-group="programSize" data-item="6days">
                                         <div class="check-el">
                                             <label class="style-label style-label--radio">
                                                 <input class="style-input" type="radio" name="list" />
@@ -957,7 +957,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="contract-config__el js-contract-el js-switch" data-item="2week">
+                                    <div class="contract-config__el js-contract-el js-switch" data-group="programSize" data-item="2week">
                                         <div class="check-el">
                                             <label class="style-label style-label--radio">
                                                 <input class="style-input" type="radio" name="list" />
@@ -969,7 +969,7 @@
                                         </div>
                                         <div class="contract-config__el-val">-5%</div>
                                     </div>
-                                    <div class="contract-config__el js-contract-el js-switch" data-item="4week">
+                                    <div class="contract-config__el js-contract-el js-switch" data-group="programSize" data-item="4week">
                                         <div class="check-el">
                                             <label class="style-label style-label--radio">
                                                 <input class="style-input" type="radio" name="list" />
@@ -981,7 +981,7 @@
                                         </div>
                                         <div class="contract-config__el-val">-7.5%</div>
                                     </div>
-                                    <div class="contract-config__el js-contract-el js-switch" data-item="3month">
+                                    <div class="contract-config__el js-contract-el js-switch" data-group="programSize" data-item="3month">
                                         <div class="check-el">
                                             <label class="style-label style-label--radio">
                                                 <input class="style-input" type="radio" name="list" />
@@ -994,7 +994,7 @@
                                         <div class="contract-config__el-val">-15%</div>
                                     </div>
                                 </div>
-                                <div class="icon-row icon-row--extend js-switch-cont hidden" data-item="3month">
+                                <div class="icon-row icon-row--extend js-switch-cont hidden" data-group="programSize" data-item="3month">
                                     <svg class="icon icon--right icon--orange">
                                         <use xlink:href="#info"></use>
                                     </svg>
@@ -1003,7 +1003,7 @@
                             </div>
                             <div class="input-cont">
                                 <div class="input-row">
-                                    <label class="check-el js-switch" data-item="isCoupone">
+                                    <label class="check-el js-switch" data-group="coupone" data-item="isCoupone">
                                         <div class="style-label style-label--checkbox">
                                             <input class="style-input" type="checkbox" />
                                             <div class="style-input-element">
@@ -1016,7 +1016,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <div class="input-cont hidden js-switch-cont" data-item="isCoupone">
+                            <div class="input-cont hidden js-switch-cont" data-group="coupone" data-item="isCoupone">
                                 <div class="input-cont input-cont--three">
                                     <div class="input-row input-row--validate">
                                         <input class="input" type="text" data-placeholder="Номер купона" />
@@ -1043,7 +1043,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="input-cont js-switch-cont" data-item="isCoupone">
+                            <div class="input-cont js-switch-cont" data-group="coupone" data-item="isCoupone">
                                 <div class="input-row">
                                     <input class="input" type="text" data-placeholder="Телефон" data-mask="8(000)000-00-00" />
                                 </div>

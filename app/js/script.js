@@ -180,7 +180,7 @@ $(document).ready(function () {
 	body.on('click', '.js-switch', function (e) {
 		if (e.target.className != 'style-input') {
 			var typeItem = $(this).data("item");
-			if ($(this).closest('.js-switch-wrap').length < 0) {
+			if ($(this).closest('.js-switch-wrap').length < 1) {
 				var groupItem = $(this).data("group");
 				var selector = $('.js-switch[data-group=' + groupItem + ']');
 				var size = selector.size()
@@ -190,7 +190,7 @@ $(document).ready(function () {
 				$('.js-switch-cont').each(function () {
 					if ($(this).data("group") === groupItem) {
 						if ($(this).data("item") === typeItem) {
-							if (size === 0) {
+							if (size === 1) {
 								$(this).toggleClass("hidden")
 							} else {
 								$(this).removeClass("hidden")

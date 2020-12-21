@@ -13,10 +13,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add tab 21 day">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix contract form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/main.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,14 +274,8 @@
       <workItem from="1608307839171" duration="621000" />
       <workItem from="1608458434390" duration="397000" />
       <workItem from="1608462113312" duration="627000" />
-      <workItem from="1608535495551" duration="905000" />
-    </task>
-    <task id="LOCAL-00026" summary="add soc icon">
-      <created>1561564237284</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1561564237284</updated>
+      <workItem from="1608535495551" duration="2907000" />
+      <workItem from="1608547627988" duration="1399000" />
     </task>
     <task id="LOCAL-00027" summary="fix input style">
       <created>1562781408424</created>
@@ -618,7 +613,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608135642549</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="fix contract form">
+      <created>1608537053936</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1608537053937</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -659,7 +661,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="fix inputs" />
     <MESSAGE value="fix favicon" />
     <MESSAGE value="add cookie msg" />
     <MESSAGE value="add styleguide" />
@@ -684,6 +685,7 @@
     <MESSAGE value="add page about" />
     <MESSAGE value="add modal change program" />
     <MESSAGE value="add tab 21 day" />
-    <option name="LAST_COMMIT_MESSAGE" value="add tab 21 day" />
+    <MESSAGE value="fix contract form" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix contract form" />
   </component>
 </project>
