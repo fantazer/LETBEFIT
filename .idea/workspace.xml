@@ -14,10 +14,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix contract form">
+      <change afterPath="$PROJECT_DIR$/app/html/lk-main.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/lk-slider-1--lg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/lk-slider-1--sm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/lk-slider-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/svg/dumbbells.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/main.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/style-guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style-guide.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_input.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_input.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/block_html/_const.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_const.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/block_html/_svg.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_svg.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/css/sprite.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/pack.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/sprite.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/sprite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/sprite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/css/sprite.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/pack.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/sprite.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/sprite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/svg/sprite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +52,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/app/js/script.js" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/gulpfile.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/js/script.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1OgzLs5tRzA7rKn4Yudy7oRwBFY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -57,10 +78,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\PROJECT\WORK\LETBEFIT\app\img" />
+      <recent name="E:\PROJECT\WORK\LETBEFIT\app\img\svg" />
       <recent name="E:\PROJECT\WORK\LETBEFIT\app\img\icon" />
       <recent name="E:\PROJECT\WORK\LETBEFIT\app\bower" />
       <recent name="E:\PROJECT\WORK\LETBEFIT\app\css\grid" />
-      <recent name="E:\PROJECT\WORK\LETBEFIT\dist\css" />
     </key>
   </component>
   <component name="RunManager" selected="Gulp.js.screenshot">
@@ -276,6 +297,13 @@
       <workItem from="1608462113312" duration="627000" />
       <workItem from="1608535495551" duration="2907000" />
       <workItem from="1608547627988" duration="1399000" />
+      <workItem from="1608550754614" duration="1062000" />
+      <workItem from="1608552085039" duration="630000" />
+      <workItem from="1608623953343" duration="13216000" />
+      <workItem from="1608723780880" duration="1216000" />
+      <workItem from="1608809135340" duration="72000" />
+      <workItem from="1608816303729" duration="1896000" />
+      <workItem from="1608830559991" duration="6120000" />
     </task>
     <task id="LOCAL-00027" summary="fix input style">
       <created>1562781408424</created>

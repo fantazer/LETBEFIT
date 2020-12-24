@@ -1,0 +1,97 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page#header
+	+header()
+	.content.content--clear-top
+		.lk
+			.lk-head-wrap
+				.main-cont
+					.lk-head
+						.lk-profile
+							.lk-user
+								.lk-user__icon
+									+icon("profile","icon")
+								.lk-user__cont
+									.lk-user__name Анастасия
+									.lk-user__info +7 983 666 55 55
+							.lk-bonus
+								.lk-bonus-cont
+									.lk-bonus-icon
+										+icon("coin","icon")
+									.lk-bonus-val 2500
+								.lk-bonus-info Куда тратить бонусы?
+			.main-cont
+				.lk-wrap
+					.lk-tool
+						.lk-nav
+							a(href="#").lk-nav__el.active
+								+icon("squares","icon")
+								span Профиль
+							a(href="#").lk-nav__el
+								+icon("dish","icon")
+								span Профиль
+							a(href="#").lk-nav__el
+								+icon("folder-menu","icon")
+								span Исключения
+							a(href="#").lk-nav__el
+								+icon("surprise","icon")
+								span Бонусы партнеров
+							a(href="#").lk-nav__el
+								+icon("dumbbells","icon")
+								span Тренировки
+							.lk-nav__divider
+							a(href="#").lk-nav__el
+								+icon("settings","icon")
+								span Настройки
+							a(href="#").lk-nav__el
+								+icon("exit","icon")
+								span Выход
+					.lk-cont
+						.slider-wrap.slider-wrap--lk.js-slider-wrap.mb-64
+							.slider-control-wrap
+								.slider-control.slider-control--white.slider-control--sm.js-control-left
+									+icon("arrow-left","icon")
+								.slider-control.slider-control--white.slider-control--sm.js-control-right
+									+icon("arrow-right","icon")
+							.slider-item.slider-lk.js-slider
+								- for (var i=0;i<4;i++)
+									a(href="#").slider-el-wrap
+										.slider-lk__el.slider-lk__el--lg(style="background-image:url('img/lk-slider-1--lg.jpg')")
+										.slider-lk__el.slider-lk__el--sm(style="background-image:url('img/lk-slider-1--lg.jpg')")
+										.btn--sm.btn--white Получить
+
+						.title-row.mb-48
+							.type--lg.type--head Ближайшая доставка
+							a(href="#").more
+								span.type--mark Все
+								+icon("arrow-right","icon icon--sm icon--mark")
+
+						.lk-empty.mb-64
+							.lk-empty__info
+								img(src="img/icon/food--gray.svg", alt="")
+								span.type--md.type--secondary У Вас еще нет заказов
+
+						.type--lg.type--head.mb-48 Опции
+
+						.switch-row.mb-24.js-switch(data-group="Oneness" data-item="isOneness")
+							.switch.js-toggle
+							.type--head.type--md Доставка без встречи с курьером
+						.text.mb-32.js-switch-cont(data-group="Oneness" data-item="isOneness")
+							p.type--secondary В режиме доставки "без встречи с курьером" курьер будет вешать Ваш заказ на ручку или оставлять в оговоренном Вами месте. Вам придет уведомление о доставке как только курьер отметит заказ доставленным. Если Вы выбрали оплату наличными, то курьер встретится с Вами при первой доставке для получения оплаты
+						.input-btn-cont.input-btn-cont--full.js-switch-cont.mb-12.hidden(data-group="Oneness" data-item="isOneness")
+							.input-row.input-row--validate
+								input(type="text" data-placeholder="Где оставить?" class="input")
+								.input-msg Введённые данные не должны содержать цифры
+								+icon("close","icon icon-validate-false")
+								+icon("checked","icon icon-validate-true")
+							.btn--md.btn--light.disable Отправить
+
+						.switch-row.mb-24
+							.switch.js-toggle
+							.type--head.type--md Я буду сдавать упаковку в переработку
+						.text.mb-64
+							p.type--secondary Вы можете сдать пластиковые лотки в переработку нашему курьеру. Лотки должны быть вымыты и не содержать остатков пищи. Мы собираем такие лотки на нашем производстве и регулярно отправляем их нашим партнерам по утилизации
+
++footer()
+include ./block_html/_script.pug

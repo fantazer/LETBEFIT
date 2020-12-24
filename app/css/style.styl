@@ -53,6 +53,9 @@ body
 .content--clear-bottom
 	padding-bottom: 0
 
+.content--clear-top
+	padding-top: 0
+
 .content--mark
 	background: $gradient
 
@@ -633,6 +636,10 @@ slider-create-mobile()
 .slider-wrap
 	position relative
 
+.slider-control-wrap
+	f()
+	grid-gap 16px
+
 .slider-control-row
 	f()
 	.slider-control
@@ -655,6 +662,10 @@ slider-create-mobile()
 	.icon
 		fill black
 
+.slider-control--sm
+	size 44px
+	.icon
+		size 18px
 .slider-control--light
 	border 2px solid #ffffff2e
 	&:hover
@@ -664,6 +675,12 @@ slider-create-mobile()
 			fill black
 	.icon
 		fill white
+
+.slider-control
+	background: white
+	border 0!important
+
+
 //Навигация внутри
 .slider-wrap--inarrow
 	.slider-control
@@ -779,7 +796,7 @@ slider-create-mobile()
 		flex(mid)
 		fl()
 		max-width 100%
-	width: 52%
+	width: 50%
 .board__img
 	+below(640px)
 		position: static
@@ -2832,3 +2849,144 @@ program-type(bg,textColor,iconColor)
 		background $mark
 		color white
 		border-color $mark
+
+
+// LK STYLE
+
+
+
+//.lk
+//.main-cont
+.lk-head-wrap
+	padding-top: 64px
+	background: $gradient
+.lk-head
+	width calc(100% - 330px)
+	margin-left auto
+.lk-profile
+	f()
+	justify-content space-between
+	margin-bottom: 92px
+//.lk-head
+.lk-user
+	f()
+.lk-user__icon
+	round()
+	flex(mid)
+	size 48px
+	background: $green
+	margin-right: 20px
+	.icon
+		fill $greenDark
+.lk-user__info
+	color $typePrimary
+.lk-user__name
+	@extend .type--lgx
+	font-weight: 700
+	line-height: 1
+	margin-bottom: 8px
+//.lk-bonus
+
+.lk-bonus-cont
+	f()
+	margin-bottom: 12px
+.lk-bonus-icon
+	round()
+	flex(mid)
+	size 48px
+	background: $orangeLight
+	margin-right: 20px
+	.icon
+		fill $orange
+
+.lk-bonus-val
+	@extend .type--lgx
+	color $orange
+	line-height: 1
+	font-weight: 700
+.lk-bonus-info
+	color $typePrimary
+.lk-wrap
+	f()
+.lk-tool
+	width: 268px
+	margin-right: 62px
+	margin-top: -180px
+.lk-nav
+	padding: 30px 26px
+	box-shadow: 0px 8px 32px rgba(102, 130, 185, 0.12);
+	br(12px)
+	background: white
+.lk-nav__el
+	f()
+	align-items center
+	margin-bottom: 30px
+	font-weight: 500
+	&:last-child
+		margin-bottom: 0
+	&.active
+		.icon
+			fill $mark
+	.icon
+		margin-right: 18px
+		fill $grayLight
+.lk-nav__divider
+	background: #DCDFE8
+	height: 1px
+	margin-bottom: 30px
+.lk-cont
+	width calc(100% - 330px)
+
+.slider-lk
+	.slider-el-wrap
+		position relative
+	.btn--white
+		position absolute
+		left: 32px
+		bottom: 32px
+
+.slider-lk__el
+	bg-full()
+	padding: 14% 10%
+	br(8px)
+.slider-lk__el--lg
+	+below(640px)
+		display none
+
+.slider-lk__el--sm
+	+above(641px)
+		display none
+
+.slider-wrap--lk
+	margin-top: -42px
+	.slider-control-wrap
+		position absolute
+		bottom 32px
+		right: 32px
+
+.more
+	f()
+	align-items center
+	grid-gap 6px
+	.icon
+		tr()
+	&:hover
+		span
+			color black
+		.icon
+			fill black
+	span
+		tr()
+		line-height: 1
+		font-weight: 500
+
+
+.lk-empty
+	border 1px solid $border-color
+	flex(mid)
+	padding: 34px
+	br(8px)
+.lk-empty__info
+	flex(mid)
+	grid-gap 24px
+// LK STYLE === end

@@ -1194,6 +1194,13 @@ h1 {
   font-weight: 700;
   color: #111;
 }
+.title-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 20px;
+}
 h5 {
   color: #111;
   margin: 0;
@@ -1327,6 +1334,10 @@ a:visiter {
 .icon {
   width: 24px;
   height: 24px;
+}
+.icon--sm {
+  width: 18px;
+  height: 18px;
 }
 .icon--md {
   width: 32px;
@@ -1517,7 +1528,7 @@ a:visiter {
 }
 .btn--light.disable {
   pointer-events: none;
-  color: #c8cad4;
+  color: #c8cad4 !important;
 }
 .btn--text {
   border: 0;
@@ -1773,6 +1784,9 @@ a:visiter {
     width: 100%;
     min-width: initial;
   }
+}
+.input-btn-cont--full .input-row {
+  width: 100%;
 }
 .input-row__title {
   margin-bottom: 10px;
@@ -2052,6 +2066,11 @@ a:visiter {
   background: #fff;
   position: absolute;
   left: calc(100% - 30px);
+}
+.switch-row {
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
 }
 .dropdown {
   width: 100%;
