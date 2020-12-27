@@ -1,0 +1,54 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page#header
+	+header()
+	.content.content--clear-top
+		.lk
+			.lk-head-wrap
+				.main-cont
+					.lk-head-cont
+						.lk-head
+							.type--head.type--lgx.mb-32 Исключения
+							.text.mb-48
+								p.type--secondary Здесь отображаются блюда которые были заменены. Вы можете вернуть их в любой момент, финальный вариант замен определяется за сутки до приготовления блюда
+						.lk-tool
+							+lk-nav()
+			.main-cont
+				.lk-wrap
+
+					.lk-cont
+						.switch-row.mb-24.js-switch(data-group="isIngr" data-item="ingr")
+							.switch.js-toggle
+							.type--head.type--md Я не ем некоторые ингредиенты
+						.text.mb-32.js-switch-cont.hidden(data-group="isIngr" data-item="ingr")
+							p.type--secondary В режиме доставки "без встречи с курьером" курьер будет вешать Ваш заказ на ручку или оставлять в оговоренном Вами месте. Вам придет уведомление о доставке как только курьер отметит заказ доставленным. Если Вы выбрали оплату наличными, то курьер встретится с Вами при первой доставке для получения оплаты
+
+						.switch-row.mb-24.js-switch(data-group="isFood" data-item="food")
+							.switch.js-toggle
+							.type--head.type--md Я не ем некоторые типы блюд
+						.text.mb-32.js-switch-cont.hidden(data-group="isFood" data-item="food")
+							p.type--secondary В режиме доставки "без встречи с курьером" курьер будет вешать Ваш заказ на ручку или оставлять в оговоренном Вами месте. Вам придет уведомление о доставке как только курьер отметит заказ доставленным. Если Вы выбрали оплату наличными, то курьер встретится с Вами при первой доставке для получения оплаты
+
+						.type--head.type--mdx.mb-32.mt-48 Исключенные блюда
+
+						.mobile-row-scroll
+							.list.list--three.mobile-row-scroll-wrap
+								- for (var i=1;i<6;i++)
+									.program-el.mobile-row-scroll-wrap
+										.program-el__img(style="background-image:url('img/item-sm-" + i + ".jpg')")
+										.program-el-wrap
+											.program-el__content
+												.program-el__title Смузи боул с яблоком, корицей и гранола
+											.program-el__footer--clear
+												.program-el__type
+													.type--sm.type--secondary первый завтрак
+													.type--sm.type--secondary 106 Ккал
+												.btn--sm.btn--sm-fix.btn--mark
+													.btn-icon-row.btn-icon-row--left
+														+icon("reload","icon")
+														span Вернуть
+
+
+	+footer()
+include ./block_html/_script.pug

@@ -1,0 +1,46 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page#header
+	+header()
+	.content.content--clear-top
+		.lk
+			.lk-head-wrap
+				.main-cont
+					.lk-head-cont
+						.lk-head
+							.type--head.type--lg.mb-64 Мои заказы
+							.tab.tab--fix.js-tick-cont
+								.tab__el.tab__el--lg.js-tick.active Будущие
+								.tab__el.tab__el--lg.js-tick Доставленные
+						.lk-tool
+							+lk-nav()
+			.main-cont
+				.lk-wrap
+					.lk-cont
+						//remove hidden for empty state
+						.lk-empty.lk-empty--lg.mb-64.hidden
+							.lk-empty__info.lk-empty__info--col
+								img(src="img/icon/food--gray.svg", alt="")
+								span.type--md.type--secondary У Вас еще нет заказов
+
+						.lk-panel-head.mb-48
+							.btn--sm.btn--light
+								.btn-icon-row.btn-icon-row--right
+									span Скачать меню
+									+icon("download","icon")
+							.marker.js-tick-cont
+								.marker-el.js-tick.active
+									+icon("menu-list","icon")
+								.marker-el.js-tick
+									+icon("menu-bold","icon")
+
+						// history item
+						.history-list-el
+							.history-wrap
+								.history-date Сб, 24 Сентября
+								- for (var j=0;j<5;j++)
+									+history(j)
+						// history item === end
+	+footer()
+include ./block_html/_script.pug

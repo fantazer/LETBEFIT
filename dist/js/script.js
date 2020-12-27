@@ -137,7 +137,8 @@ $(document).ready(function () {
 
 	// slide toggle
 	body.on('click','.js-slide',function(){
-		$(this).closest('.js-slide-wrap').find('.js-slide-cont').slideToggle(500);
+		$(this).toggleClass('active')
+		$(this).closest('.js-slide-wrap').toggleClass('active').find('.js-slide-cont').slideToggle(500);
 	});
 	// slide toggle === end
 
@@ -180,7 +181,8 @@ $(document).ready(function () {
 	body.on('click', '.js-switch', function (e) {
 		if (e.target.className != 'style-input') {
 			var typeItem = $(this).data("item");
-			if ($(this).closest('.js-switch-wrap').length < 1) {
+			var hasParent = $(this).closest('.js-switch-wrap').length
+			if (hasParent < 1) {
 				var groupItem = $(this).data("group");
 				var selector = $('.js-switch[data-group=' + groupItem + ']');
 				var size = selector.size()
@@ -188,7 +190,9 @@ $(document).ready(function () {
 					$(this).removeClass("active");
 				});
 				$('.js-switch-cont').each(function () {
-					if ($(this).data("group") === groupItem) {
+					var hasParentInner = $(this).closest('.js-switch-wrap').length
+					if ($(this).data("group") === groupItem && $(this).data("group") != undefined) {
+						console.log('inner');
 						if ($(this).data("item") === typeItem) {
 							if (size === 1) {
 								$(this).toggleClass("hidden")
@@ -198,17 +202,21 @@ $(document).ready(function () {
 						} else {
 							$(this).addClass("hidden");
 						}
+					} else {
+						if ($(this).data("item") === typeItem) {
+							$(this).toggleClass("hidden");
+						}
 					}
 				});
-			}else{
+			} else {
 				var parent = $(this).closest('.js-switch-wrap');
 				parent.find('.js-switch').removeClass('active')
 				parent.find('.js-switch-cont').each(function () {
-						if($(this).data("item") === typeItem) {
-							$(this).removeClass("hidden")
-						} else {
-							$(this).addClass("hidden");
-						}
+					if ($(this).data("item") === typeItem) {
+						$(this).removeClass("hidden")
+					} else {
+						$(this).addClass("hidden");
+					}
 				});
 			}
 			$(this).addClass("active");
@@ -294,6 +302,17 @@ $(document).ready(function () {
 
 	// main slider
 	$('.slider-main').slick({
+		slidesToShow: 1,
+		speed: 800,
+		dots:false,
+		arrows:false,
+		rows:0,
+		//fade:true
+	});
+	// main slider === end
+
+	// main slider
+	$('.slider-lk').slick({
 		slidesToShow: 1,
 		speed: 800,
 		dots:false,
@@ -432,7 +451,66 @@ $(document).ready(function () {
 		$(this).remove();
 	});
 	// upload btn === end
+	
+	// horizontal scroll
+	$(".js-horizontal-scroll").mousewheel(function(event, delta) {
+      //this.scrollLeft -= (delta * 30);
+      return (this.scrollLeft-=(delta * 40))!=this.scrollLeft
+   });
+	// horizontal scroll === end
 
+	// edit history
+	//TODO SET PRETTY THIS CODE
+	var btnToDefault = function(parent){
+		parent.find('.js-history-edit').removeClass('active');
+		parent.find('.btn-menu').slideUp(200)
+	}
+	body.on('click','.js-history-edit', function(){
+		var current = $(this)
+		var notCurrent = $('.js-history-edit').not(this)
+
+		notCurrent.removeClass('active')
+		notCurrent.closest('.btn-menu-wrap').find('.btn-menu').slideUp(200)
+
+		current.toggleClass('active');
+		current.closest('.btn-menu-wrap').find('.btn-menu').slideToggle(200)
+	});
+	body.on('click','.btn-menu__el', function(event){
+		var parent = $(this).closest('.btn-menu-wrap')
+		btnToDefault(parent);
+	});
+	$(document).mouseup(function (e) {
+		var parent = $(".btn-menu-wrap");
+		if (!parent.is(e.target) && parent.has(e.target).length === 0) {
+			btnToDefault(parent);
+		}
+	});
+	// edit history === end
+
+
+	// chart
+	$(".chart").circleProgress({
+		animation: true,
+		size: 160,
+		startAngle: -1.6,
+		lineCap: 'round',
+		thickness: 10,
+		fill: 'white',
+		emptyFill: "#ffffff80"
+	});
+	// chart === end
+
+	// history panel slideToggle
+	body.on('click','.history-panel-toggle', function(){
+		$(this).closest('.history-list-el').find('.history-wrap').slideToggle()
+	})
+	// history panel slideToggle === end
+	
+	
+	// drug scroll
+
+	// drug scroll === end
+	
 	window.condition = {};
 	window.condition.closeModal = closeModal
 	window.condition.initModal = initModal

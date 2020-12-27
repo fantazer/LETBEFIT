@@ -192,7 +192,8 @@ gulp.task('watch', () => {
 
 
 gulp.task('pug', function() {
-		gulp.src(['app/html/lk-*.pug','app/module/**/*.pug',])
+		gulp.src(['app/html/*.pug','app/module/**/*.pug',])
+		//gulp.src(['app/html/lk-*.pug','app/module/**/*.pug',])
 				//.pipe(changed('app/', {extension: '.html'}))
 				//.pipe(cache('pug'))
 				//.pipe(pugInheritance({basedir: 'app/html/',skip:'node_modules/'}))
@@ -385,7 +386,7 @@ gulp.task('build:ftp',function(){
 				'copy:css',
 				'min:css',
 				'min:js',
-				//'screenshot',
+				'screenshot',
 				'img',
 				'svg',
 				'make',

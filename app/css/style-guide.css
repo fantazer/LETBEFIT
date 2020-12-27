@@ -695,6 +695,13 @@
     font-size: 16px !important;
   }
 }
+.list {
+  display: grid;
+  grid-gap: 28px;
+}
+.list--three {
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+}
 html {
   box-sizing: border-box;
 }
@@ -791,11 +798,17 @@ body > svg {
 .type-mark {
   color: #7eca1d;
 }
+.icon-mark {
+  fill: #7eca1d;
+}
 .bg-greenDark {
   background: #65a217;
 }
 .type-greenDark {
   color: #65a217;
+}
+.icon-greenDark {
+  fill: #65a217;
 }
 .bg-greenPrimary {
   background: #7eca1d;
@@ -803,11 +816,17 @@ body > svg {
 .type-greenPrimary {
   color: #7eca1d;
 }
+.icon-greenPrimary {
+  fill: #7eca1d;
+}
 .bg-green {
   background: #a9d96b;
 }
 .type-green {
   color: #a9d96b;
+}
+.icon-green {
+  fill: #a9d96b;
 }
 .bg-greenLight {
   background: #e6f2d6;
@@ -815,11 +834,17 @@ body > svg {
 .type-greenLight {
   color: #e6f2d6;
 }
+.icon-greenLight {
+  fill: #e6f2d6;
+}
 .bg-grayPrimary {
   background: #565762;
 }
 .type-grayPrimary {
   color: #565762;
+}
+.icon-grayPrimary {
+  fill: #565762;
 }
 .bg-gray {
   background: #adaeb9;
@@ -827,11 +852,17 @@ body > svg {
 .type-gray {
   color: #adaeb9;
 }
+.icon-gray {
+  fill: #adaeb9;
+}
 .bg-grayLight {
   background: #c4c5cc;
 }
 .type-grayLight {
   color: #c4c5cc;
+}
+.icon-grayLight {
+  fill: #c4c5cc;
 }
 .bg-pink {
   background: #ff6889;
@@ -839,11 +870,17 @@ body > svg {
 .type-pink {
   color: #ff6889;
 }
+.icon-pink {
+  fill: #ff6889;
+}
 .bg-pinkLight {
   background: #ffe1e7;
 }
 .type-pinkLight {
   color: #ffe1e7;
+}
+.icon-pinkLight {
+  fill: #ffe1e7;
 }
 .bg-violet {
   background: #6b33b2;
@@ -851,11 +888,17 @@ body > svg {
 .type-violet {
   color: #6b33b2;
 }
+.icon-violet {
+  fill: #6b33b2;
+}
 .bg-violetLight {
   background: #ebe2f7;
 }
 .type-violetLight {
   color: #ebe2f7;
+}
+.icon-violetLight {
+  fill: #ebe2f7;
 }
 .bg-orange {
   background: #ff7b27;
@@ -863,11 +906,17 @@ body > svg {
 .type-orange {
   color: #ff7b27;
 }
+.icon-orange {
+  fill: #ff7b27;
+}
 .bg-orangeLight {
   background: #ffe5d4;
 }
 .type-orangeLight {
   color: #ffe5d4;
+}
+.icon-orangeLight {
+  fill: #ffe5d4;
 }
 .bg-blue {
   background: #0065bd;
@@ -875,11 +924,17 @@ body > svg {
 .type-blue {
   color: #0065bd;
 }
+.icon-blue {
+  fill: #0065bd;
+}
 .bg-blueLight {
   background: #d4ebff;
 }
 .type-blueLight {
   color: #d4ebff;
+}
+.icon-blueLight {
+  fill: #d4ebff;
 }
 .bg-sea {
   background: #1dd0c7;
@@ -887,11 +942,17 @@ body > svg {
 .type-sea {
   color: #1dd0c7;
 }
+.icon-sea {
+  fill: #1dd0c7;
+}
 .bg-seaLight {
   background: #d5f9f7;
 }
 .type-seaLight {
   color: #d5f9f7;
+}
+.icon-seaLight {
+  fill: #d5f9f7;
 }
 .bg-swapm {
   background: #768668;
@@ -899,11 +960,17 @@ body > svg {
 .type-swapm {
   color: #768668;
 }
+.icon-swapm {
+  fill: #768668;
+}
 .bg-swapmLight {
   background: #e4e7e0;
 }
 .type-swapmLight {
   color: #e4e7e0;
+}
+.icon-swapmLight {
+  fill: #e4e7e0;
 }
 .bg-typePrimary {
   background: #5c5e6e;
@@ -911,11 +978,17 @@ body > svg {
 .type-typePrimary {
   color: #5c5e6e;
 }
+.icon-typePrimary {
+  fill: #5c5e6e;
+}
 .bg-typeSecondary {
   background: #9699a8;
 }
 .type-typeSecondary {
   color: #9699a8;
+}
+.icon-typeSecondary {
+  fill: #9699a8;
 }
 .bg-typeDisable {
   background: #c8cad4;
@@ -923,11 +996,17 @@ body > svg {
 .type-typeDisable {
   color: #c8cad4;
 }
+.icon-typeDisable {
+  fill: #c8cad4;
+}
 .bg-stateErrorBG {
   background: #ffe1e6;
 }
 .type-stateErrorBG {
   color: #ffe1e6;
+}
+.icon-stateErrorBG {
+  fill: #ffe1e6;
 }
 .bg-stateError {
   background: #d00025;
@@ -935,11 +1014,17 @@ body > svg {
 .type-stateError {
   color: #d00025;
 }
+.icon-stateError {
+  fill: #d00025;
+}
 .bg-stateSuccessBG {
   background: #edfdd9;
 }
 .type-stateSuccessBG {
   color: #edfdd9;
+}
+.icon-stateSuccessBG {
+  fill: #edfdd9;
 }
 .bg-stateWarningBG {
   background: #ffedd8;
@@ -947,11 +1032,17 @@ body > svg {
 .type-stateWarningBG {
   color: #ffedd8;
 }
+.icon-stateWarningBG {
+  fill: #ffedd8;
+}
 .bg-stateWarning {
   background: #ff8a00;
 }
 .type-stateWarning {
   color: #ff8a00;
+}
+.icon-stateWarning {
+  fill: #ff8a00;
 }
 .el--seaLight {
   background-color: #d5f9f7;
@@ -1430,6 +1521,17 @@ a:visiter {
   margin-right: 10px;
   margin-left: -5px;
 }
+.btn--sm-fix {
+  padding: 10px 20px;
+}
+.btn--sm-round {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
 .btn--md {
   padding: 17px 48px;
   font-weight: 700;
@@ -1501,9 +1603,10 @@ a:visiter {
   fill: #fff;
 }
 .btn--mark.disable {
-  background: none;
+  background: #c4c5cc;
   color: #c8cad4;
   pointer-events: none;
+  color: #fff;
 }
 .btn--disable {
   border: 1px solid #dcdfe8;
@@ -1517,7 +1620,13 @@ a:visiter {
 .btn--light .icon {
   fill: #7eca1d;
 }
-.btn--light:hover {
+.btn--light:hover,
+.btn--light.active {
+  background: #e6f2d6;
+  border: 1px solid #7eca1d;
+  color: #7eca1d;
+}
+.btn--light.active {
   background: #e6f2d6;
   border: 1px solid #7eca1d;
   color: #7eca1d;
@@ -1605,6 +1714,40 @@ a:visiter {
 }
 .btn--grow {
   flex-grow: 1;
+}
+.btn-menu-wrap {
+  position: relative;
+}
+.btn-menu-wrap .btn-menu {
+  display: none;
+  position: absolute;
+  left: calc(-50% + 10px);
+  top: 110%;
+  z-index: 10;
+}
+.btn-menu-wrap .btn-menu-cont {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #dcdfe8;
+  display: flex;
+  flex-flow: column;
+  width: 248px;
+  padding: 20px;
+  grid-gap: 10px;
+  text-align: left;
+}
+.btn-menu-wrap .btn-menu__el {
+  color: #111;
+  transition: all 0.4s;
+}
+.btn-menu-wrap .btn-menu__el:hover {
+  cursor: pointer;
+}
+.btn-menu-wrap .btn-menu__el.type--stateError {
+  color: #d00025;
+}
+.btn-menu-wrap .btn-menu__el:hover {
+  color: #7eca1d;
 }
 .input,
 .textarea,

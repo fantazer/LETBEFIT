@@ -33,6 +33,14 @@
 			margin-right: 10px
 			margin-left: -5px
 
+.btn--sm-fix
+	padding: 10px 20px
+
+.btn--sm-round
+	size 44px
+	flex(mid)
+	padding 0
+
 .btn--md
 	@extend .btn
 	@extend .type--md
@@ -90,10 +98,11 @@
 	.icon
 		fill white
 
-.btn--mark.disable
-	background: none
-	color $typeDisable
-	pointer-events none
+	&.disable
+		background: $grayLight
+		color $typeDisable
+		pointer-events none
+		color white
 
 .btn--disable
 	@extend .disabled
@@ -107,7 +116,11 @@
 	color $mark
 	.icon
 		fill $mark
-	&:hover
+	&:hover,&.active
+		background: $greenLight
+		border 1px solid $mark
+		color $mark
+	&.active
 		background: $greenLight
 		border 1px solid $mark
 		color $mark
@@ -188,3 +201,30 @@
 
 .btn--grow
 	flex-grow 1
+
+.btn-menu-wrap
+	position relative
+	.btn-menu
+		display none
+		position absolute
+		left calc(-50% + 10px)
+		top 110%
+		z-index 10
+	.btn-menu-cont
+		background: white
+		br(8px)
+		border 1px solid $border-color
+		f()
+		fl()
+		width: 248px
+		padding: 20px
+		grid-gap 10px
+		text-align: left
+	.btn-menu__el
+		color black
+		tr()
+		cp()
+		&.type--stateError
+			color $stateError
+		&:hover
+			color $mark
