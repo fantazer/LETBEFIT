@@ -85,7 +85,22 @@ include block_html/_include.pug
 											span Удалить
 					// choose program type === end
 
+					.g.g-between.mb-24
+						.input-cont
+							.input-row.input-row--clear
+								label.check-el.js-switch(data-item="isPerson")
+									.style-label.style-label--checkbox
+										input(type="checkbox" ).style-input
+										.style-input-element
+											+icon("checked","icon")
+										.style-input-text Я буду питаться с коллегами (-15%)
+						.hidden.js-switch-cont(data-item="isPerson")
+							+incr(1,"incr--single")
+
+
+
 					.btn--md.btn--full.btn--dotted.mb-32 Добавить еще программу
+
 					.input-cont.input-cont--list.mb-48
 						+checkbox('Сдавать лотки в переработку')
 						+checkbox('Нужны приборы')
@@ -157,12 +172,22 @@ include block_html/_include.pug
 
 					.input-cont
 						.input-row
+							label.check-el
+								.style-label.style-label--checkbox
+									input(type="checkbox" ).style-input
+									.style-input-element
+										+icon("checked","icon")
+									.style-input-text У меня есть 2000 бонусов и я хочу оплатить ими заказ
+
+					.input-cont
+						.input-row
 							label.check-el.js-switch(data-item="isComment")
 								.style-label.style-label--checkbox
 									input(type="checkbox" ).style-input
 									.style-input-element
 										+icon("checked","icon")
 									.style-input-text Добавить комментарий к заказу
+
 					.input-cont.hidden.js-switch-cont(data-item="isComment")
 						.input-cont
 							.input-row

@@ -205,6 +205,9 @@
 .btn-menu-wrap
 	position relative
 	.btn-menu
+		+below(1024px)
+			left initial
+			right 0
 		display none
 		position absolute
 		left calc(-50% + 10px)

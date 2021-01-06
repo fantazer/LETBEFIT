@@ -18,15 +18,16 @@ body
 	letter-spacing 0.01em
 
 .scroll-template
-	&::-webkit-scrollbar
-		-webkit-appearance: none
-		width: 4px
-		height: 8px
-		background: #DCDFE8
-		border-radius: 4px
-	&::-webkit-scrollbar-thumb
-		border-radius: 4px
-		background: $mark
+	+above(1025px)
+		&::-webkit-scrollbar
+			-webkit-appearance: none
+			width: 4px
+			height: 8px
+			background: #DCDFE8
+			border-radius: 4px
+		&::-webkit-scrollbar-thumb
+			border-radius: 4px
+			background: $mark
 
 .main-cont
 	+below(1280px)
@@ -2831,12 +2832,13 @@ program-type(bg,textColor,iconColor)
 	white-space initial
 
 .desktop-row-scroll
+	+above(1025px)
+		margin: 0
+		padding: 0
 	display: grid
 	grid-template-columns: 1fr;
 	flex-grow: 1
 	scroll-create-mobile()
-	margin: 0
-	padding: 0
 	overflow auto
 .desktop-row-scroll-wrap
 	grid-gap 0!important
@@ -2844,6 +2846,8 @@ program-type(bg,textColor,iconColor)
 	margin-bottom: 0
 
 .desktop-row-scroll-item
+	+below(1024px)
+		margin-right: 18px
 	width: 300px
 	margin-right: 24px
 	white-space initial
@@ -2911,28 +2915,43 @@ program-type(bg,textColor,iconColor)
 		background $mark
 		color white
 		border-color $mark
-
-
 // LK STYLE
-
 
 
 //.lk
 //.main-cont
 .lk-head-wrap
+	+below(1024px)
+		padding: 24px 0
 	padding-top: 64px
 	background: $gradient
+.lk-head-wrap--clear-mobile
+	+below(1024px)
+		padding-bottom: 0
 .lk-head-cont
 	position relative
 .lk-head
+	+below(1024px)
+		width: 100%
 	width calc(100% - 330px)
 	margin-left auto
+
+.lk-head-title
+	+below(1024px)
+		margin-bottom: 0
+
 .lk-profile
+	+below(1024px)
+		margin-bottom: 0
+	+below(640px)
+		fl()
 	f()
 	justify-content space-between
 	margin-bottom: 92px
 //.lk-head
 .lk-user
+	+below(640px)
+		margin-bottom: 20px
 	f()
 .lk-user__icon
 	round()
@@ -2952,6 +2971,8 @@ program-type(bg,textColor,iconColor)
 //.lk-bonus
 
 .lk-bonus-cont
+	+below(640px)
+		margin-bottom: 0
 	f()
 	margin-bottom: 12px
 .lk-bonus-icon
@@ -2968,14 +2989,19 @@ program-type(bg,textColor,iconColor)
 	color $orange
 	line-height: 1
 	font-weight: 700
+	flex(mid)
 .lk-bonus-info
+	+below(640px)
+		padding-left: 64px
 	color $typePrimary
 .lk-wrap
 	f()
 	z-index -1
 .lk-tool
+	+below(1024px)
+		display none
 	width: 268px
-	//margin-right: 62px
+	z-index 100
 	position absolute
 	left 0
 	top 5%
@@ -3004,10 +3030,14 @@ program-type(bg,textColor,iconColor)
 	height: 1px
 	margin-bottom: 30px
 .lk-cont
+	+below(1024px)
+		width: 100%
+		padding-top: 32px
 	width calc(100% - 330px)
 	padding-top: 64px
 	margin-left auto
 .slider-lk
+
 	.slider-el-wrap
 		position relative
 	.btn--white
@@ -3016,9 +3046,11 @@ program-type(bg,textColor,iconColor)
 		bottom: 32px
 
 .slider-lk__el
+	+below(640px)
+		padding: 30% 10%
+	br(8px)
 	bg-full()
 	padding: 14% 10%
-	br(8px)
 .slider-lk__el--lg
 	+below(640px)
 		display none
@@ -3028,11 +3060,20 @@ program-type(bg,textColor,iconColor)
 		display none
 
 .slider-wrap--lk
+	+below(1024px)
+		margin-top: 0
 	margin-top: -106px
 	.slider-control-wrap
+		+below(640px)
+			display none
 		position absolute
 		bottom 32px
 		right: 32px
+
+.slider-lk-get
+	+below(640px)
+		display none
+
 
 .more
 	f()
@@ -3103,11 +3144,16 @@ program-type(bg,textColor,iconColor)
 	grid-auto-flow: column;
 	grid-gap: 0;
 	padding-bottom: 20px
-	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
-// LK STYLE === end
+	+below(1024px)
+		&:after
+			content ''
+			display block
+			width: 42px
 
 
 .lk-list-head
+	grid-gap 10px
+	fw()
 	f()
 	justify-content space-between
 
@@ -3115,7 +3161,6 @@ program-type(bg,textColor,iconColor)
 	+below(1024px)
 		margin-right:initial
 	margin-right auto
-
 
 .marker
 	f()
@@ -3131,6 +3176,7 @@ program-type(bg,textColor,iconColor)
 	font-weight 700
 	color black
 	border 1px solid $border-color
+	white-space nowrap
 	&:hover
 		border 1px solid $mark
 	&.active
@@ -3144,6 +3190,10 @@ program-type(bg,textColor,iconColor)
 		margin-right: 0
 
 .lk-list-head-info
+	+below(480px)
+		fl()
+		align-items: flex-end
+		grid-gap 0
 	f()
 	align-items center
 	grid-gap 20px
@@ -3153,47 +3203,112 @@ program-type(bg,textColor,iconColor)
 
 .lk-panel-head
 	flex(between)
+
 .history-wrap
 	margin-bottom: 20px
+
 .history-date
+	+below(1024px)
+		padding: 0
 	color $typePrimary
 	margin-bottom: 16px
 	padding: 0 18px
 .history
+	+below(1024px)
+		padding: 12px 42px 0 42px
+		margin: 0 -42px
+		br(0)
+	+below(640px)
+		padding: 12px 20px 0 20px
+		margin: 0 -20px
+		margin-bottom: 10px
 	br(12px)
 	margin-bottom: 10px
 	padding: 0 18px
 	&.active
+		+below(1024px)
+			padding: 12px 48px
+		+below(640px)
+			padding: 12px 20px
 		background #F1F2F6
 		padding:10px 18px
+		.history-head
+			+below(640px)
+				padding: 20px 20px 0 20px
+			box-shadow 0 0 0
 		.history-cont
+			+below(1024px)
+				padding-bottom 0
 			padding-bottom: 20px
 .history-head
+	+below(768px)
+		fw()
+		br(10px)
+		padding: 20px
+		bsh()
 	f()
 	align-items center
 	justify-content space-between
 	padding-bottom 10px
-	border-bottom 1px solid $border-color
 .history-type
+	+below(768px)
+		width: 100%
+		margin-bottom: 16px
 	f()
+	cp()
 	align-items center
+	position relative
+	&:hover
+		.history-type__msg
+			left 0
+			opacity: 1
+			transform: translateX(calc(-50% + 15px)) translateY(0px)
 	.icon
 		margin-right: 20px
 	span
-		+above(640px)
+		+above(769px)
 			display none
+.history-type__msg
+	+below(1024px)
+		display none!important
+	position absolute
+	top -50px
+	padding: 10px 20px
+	br(10px)
+	color white
+	background: $grayPrimary
+	white-space nowrap
+	transform: translateX(calc(-50% + 15px)) translateY(10px)
+	left -9999px
+	opacity: 0
+	transition opacity .4s, transform .3s
+	z-index 110
 .history-program
+	+below(768px)
+		font-size: 28px
+		width: 45%
 	font-weight 700
 	width: 10%
 	margin-right: 10px
 .history-day
+	+below(768px)
+		width: 45%
+		margin-right: 0
+		text-align: right
 	width: 15%
 	margin-right: 10px
 .history-time
+	+below(768px)
+		width: 100%
+		margin-right: 0
+		margin: 16px 0
 	width: 15%
 	margin-right: 10px
 	white-space nowrap
 .history-location
+	+below(768px)
+		width: 100%
+		margin-bottom: 16px
 	width: 215px
 	white-space nowrap
 	text-overflow ellipsis
@@ -3204,9 +3319,14 @@ program-type(bg,textColor,iconColor)
 	grid-gap 10px
 //.history-edit
 .history-cont
+	+below(640px)
+		.desktop-row-scroll
+			margin-bottom: 0
 	padding-top: 20px
 	display none
 .history-cont-head
+	+below(640px)
+		padding-left: 30px
 	margin-bottom: 20px
 
 .history-panel
@@ -3272,3 +3392,18 @@ program-type(bg,textColor,iconColor)
 			fill $stateError
 		tr()
 		fill $gray
+
+
+.dropdown-nav-lk
+	+above(1025px)
+		display none
+	.dropdown-current
+		+below(640px)
+			padding: 20px
+		padding: 26px 42px
+	.dropdown-menu__el
+		+below(640px)
+			padding: 20px
+		padding: 20px 42px
+
+// LK STYLE === end

@@ -3,11 +3,11 @@ $(document).ready(function () {
 	var body = $('body')
 
 	// watch window resize
-	var currentSize = $(window).width()
-	/*$(window).resize(function(){
-		currentSize = $(window).width();
-		return currentSize;
-	});*/
+	var windowSize = $(window).width()
+	$(window).resize(function(){
+		windowSize = $(window).width();
+		return windowSize;
+	});
 	// watch window resize === end
 
 	//modals
@@ -453,10 +453,12 @@ $(document).ready(function () {
 	// upload btn === end
 	
 	// horizontal scroll
-	$(".js-horizontal-scroll").mousewheel(function(event, delta) {
-      //this.scrollLeft -= (delta * 30);
-      return (this.scrollLeft-=(delta * 40))!=this.scrollLeft
-   });
+	if(windowSize>1025){
+		$(".js-horizontal-scroll").mousewheel(function(event, delta) {
+				//this.scrollLeft -= (delta * 30);
+				return (this.scrollLeft-=(delta * 40))!=this.scrollLeft
+		 });
+   }
 	// horizontal scroll === end
 
 	// edit history
@@ -507,10 +509,48 @@ $(document).ready(function () {
 	// history panel slideToggle === end
 	
 	
-	// drug scroll
+	// incr === end
+	var incrEl= {}
+	$('.incr__nav').click(function(){
+		incrEl.parent = $(this).closest(".incr");
+		incrEl.value = parseInt($(this).closest(".incr").find('.incr__val span').html());
+		incrEl.state = $(this).closest(".incr").find('.incr__val span')
+	});
 
-	// drug scroll === end
-	
+	$('.incr__minus').click(function () {
+		--incrEl.value;
+		if(incrEl.parent.hasClass("incr--one")){
+				incrEl.value = incrEl.value < 1 ? 1 : incrEl.value
+		}
+		incrEl.value = incrEl.value < 1 ? 0 : incrEl.value
+		incrEl.state.html(incrEl.value);
+	});
+
+	$('.incr__plus').click(function () {
+		++incrEl.value;
+		incrEl.value = incrEl.value > 100 ? 100 : incrEl.value;
+		incrEl.state.html(incrEl.value);
+	});
+
+	$('.incr--single .incr__nav').click(function(){
+		var parrent = $(this).closest(".incr--single")
+		if(!parrent.hasClass('incr--one')){
+			if(incrEl.value){
+				parrent.addClass('incr--single-active');
+			}else{
+				parrent.removeClass('incr--single-active');
+			}
+		}else{
+			if(incrEl.value>1){
+				parrent.addClass('incr--single-active');
+			}else{
+				parrent.removeClass('incr--single-active');
+			}
+		}
+	});
+
+	// incr === end
+
 	window.condition = {};
 	window.condition.closeModal = closeModal
 	window.condition.initModal = initModal

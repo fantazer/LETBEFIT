@@ -4,6 +4,7 @@ include block_html/_include.pug
 .page#header
 	+header()
 	.content.content--clear-top
+		+lk-nav-mobile()
 		.lk
 			.lk-head-wrap
 				.main-cont
@@ -37,8 +38,8 @@ include block_html/_include.pug
 								- for (var i=0;i<4;i++)
 									a(href="#").slider-el-wrap
 										.slider-lk__el.slider-lk__el--lg(style="background-image:url('img/lk-slider-1--lg.jpg')")
-										.slider-lk__el.slider-lk__el--sm(style="background-image:url('img/lk-slider-1--lg.jpg')")
-										.btn--sm.btn--white Получить
+										.slider-lk__el.slider-lk__el--sm(style="background-image:url('img/lk-slider-1--sm.jpg')")
+										.btn--sm.btn--white.slider-lk-get Получить
 
 						.title-row.mb-48
 							.type--lg.type--head Ближайшая доставка
@@ -56,7 +57,7 @@ include block_html/_include.pug
 								.lk-list-head-val 12:00 - 16:00
 
 						.lk-list-wrap.mb-64
-							.desktop-row-scroll.js-horizontal-scroll.scroll-template
+							.desktop-row-scroll.js-horizontal-scroll.scroll-template.dragscroll
 								.lk-list.desktop-row-scroll-wrap
 									- for (var i=1;i<8;i++)
 										+lk-item(i)
@@ -79,7 +80,7 @@ include block_html/_include.pug
 								.input-msg Введённые данные не должны содержать цифры
 								+icon("close","icon icon-validate-false")
 								+icon("checked","icon icon-validate-true")
-							.btn--md.btn--light.disable Отправить
+							.btn--md.btn--mobile.btn--light.disable Отправить
 
 						.switch-row.mb-24
 							.switch.js-toggle

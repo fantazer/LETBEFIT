@@ -36,8 +36,9 @@
 		left -9999px
 
 .style-input-text
+	+below(640px)
+		width: calc(100% - 60px)
 	color black
-	width: calc(100% - 60px)
 	line-height: 1.6
 	a
 		color $mark
@@ -125,6 +126,10 @@
 	&.active
 		.input-msg
 			display block
+
+.input-row--clear
+	margin-bottom: 0
+
 .input-row--full
 	height: 100%
 	textarea
@@ -140,6 +145,8 @@
 		min-width 300px
 
 .input-btn-cont--full
+	+below(640px)
+		fl()
 	.input-row
 		width: 100%
 
@@ -238,6 +245,7 @@
 		grid-template-columns: 1fr 1fr
 	grid-template-columns: repeat(4,1fr)
 
+
 //checkbox remember
 .login-remember
 	.style-label
@@ -246,7 +254,6 @@
 	.style-input-text
 		font-size: 14px
 		color black
-		width: calc(100% - 60px)
 		line-height: 1.6
 		margin-top: 3px
 		a
@@ -284,24 +291,27 @@
 .incr
 	f()
 	position relative
+	border 1px solid $border-color
+	br(22px)
+	tr()
+	height: 44px
+	&:hover
+		box-shadow: 0px 4px 8px rgba(102, 130, 185, 0.12);
 .incr__nav
 	flex(mid)
 	tr(all)
 	size 40px
-	border 1px solid #dddddd
-	background white
 	round()
 	.icon
-		size 14px
+		size 20px
 		fill $gray
 		tr()
 	&:hover
 		cp()
-		border 1px solid $mark
 		.icon
 			fill $mark
-	&:active
-		background-color darken($mark,10)
+
+
 .incr__val
 	flex(mid)
 	background white
@@ -345,6 +355,7 @@
 	position relative
 	background: $grayPrimary
 	height: 34px
+	min-width: 62px
 	width: 62px
 	br(18px)
 	cp()
@@ -381,6 +392,7 @@
 	tr()
 	position relative
 	outline none!important
+	z-index 100
 .dropdown-current
 	br(4px)
 	tr()
@@ -394,13 +406,20 @@
 		border 1px solid $borderHover
 		.icon
 			fill black
-	.icon
+	&>.icon
 		position absolute
 		top calc(50% - 12px)
 		right 20px
 		size 24px
 		tr()
 		fill $grayLight
+
+.dropdown-current--flat
+	padding: 20px
+.dropdown-current--white
+	border 0!important
+	background: white
+
 .dropdown-current__val
 	color black
 	white-space nowrap
@@ -413,7 +432,7 @@
 	@extend .type--sm
 	color $typeSecondary
 .dropdown.active
-	.icon
+	&>.icon
 		transform rotate(180deg)
 	.dropdown-current
 		background: white
@@ -437,14 +456,20 @@
 		border-radius: 2px
 		background-color: rgba(0, 0, 0, .5)
 		-webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5)
+
+.dropdown-menu
+	max-height initial
+
 .dropdown-menu__el
 	padding 18px 20px
 	cp()
 	tr()
 	//background: #f9f9f9
+	display block
 	&:last-child
 		border 0
 	&:hover
 		background: $greenLight
 		color black
+
 // drop === end

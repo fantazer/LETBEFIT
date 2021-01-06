@@ -4,12 +4,13 @@ include block_html/_include.pug
 .page#header
 	+header()
 	.content.content--clear-top
+		+lk-nav-mobile()
 		.lk
-			.lk-head-wrap
+			.lk-head-wrap.lk-head-wrap--clear-mobile
 				.main-cont
 					.lk-head-cont
 						.lk-head
-							.type--head.type--lg.mb-64 Мои заказы
+							.lk-head-title.type--head.type--lg.mb-64 Мои заказы
 							.tab.tab--fix.js-tick-cont
 								.tab__el.tab__el--lg.js-tick.active Будущие
 								.tab__el.tab__el--lg.js-tick Доставленные

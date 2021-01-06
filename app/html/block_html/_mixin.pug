@@ -178,22 +178,27 @@ mixin history(j,delivered)
         .history-type
           +icon("transport","icon icon-mark")
           span.type-mark ожидается доставка
+          .history-type__msg ожидается доставка
       if(j === 1)
         .history-type
           +icon("time","icon icon-stateWarning")
           span.type-stateWarning проверяется оператором
+          .history-type__msg проверяется оператором
       if(j === 2)
         .history-type
           +icon("checked","icon icon-typeSecondary")
           span.type-typeSecondary доставлен
+          .history-type__msg доставлен
       if(j === 3)
         .history-type
           +icon("snow","icon icon-blue")
           span.type-blue Заморожен
+          .history-type__msg Заморожен
       if(j === 4)
         .history-type
           +icon("close","icon icon-stateError")
-          span.type-stateError отменен
+          span.type-stateError Отменен
+          .history-type__msg Отменен
       .history-program ExtraLight
       .history-day на вторник
       .history-time 12:00 - 16:00
@@ -260,3 +265,37 @@ mixin lk-nav()
     a(href="#").lk-nav__el
       +icon("exit","icon")
       span Выход
+
+mixin lk-nav-mobile()
+  .dropdown.dropdown-nav-lk
+    input(type="hidden" name="name" value="0")
+    .dropdown-current.dropdown-current--flat.dropdown-current--white
+      .dropdown-current__val
+        .icon-row
+          +icon("squares","icon icon--right")
+          span Профиль
+      +icon("arrow-down","icon")
+    .dropdown-menu.dropdown-menu--full
+      -
+        var items = [
+          {icon: "dish", name: "Профиль"},
+          {icon: "folder-menu", name: "Исключения"},
+          {icon: "surprise", name: "Бонусы партнеров"},
+          {icon: "dumbbells", name: "Тренировки"},
+          {icon: "settings", name: "Настройки"},
+          {icon: "exit", name: "Выход"},
+        ];
+      each item in items
+        a(href="#").dropdown-menu__el
+          .icon-row
+            +icon(item.icon,"icon icon--right")
+            span #{item.name}
+mixin incr(state,className='')
+  .incr(class= state ? className  +' incr--one' : className )
+    .incr__minus.incr__nav
+      +icon("minus","icon")
+    .incr__val
+      span=state ? 1 : 0
+      .incr__val-coner
+    .incr__plus.incr__nav
+      +icon("plus","icon")
