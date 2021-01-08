@@ -13,58 +13,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add lk desktop">
-      <change afterPath="$PROJECT_DIR$/app/img/svg/minus.svg" afterDir="false" />
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add mobile version lk">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/grid/_grid.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/grid/_grid.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style-guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style-guide.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_input.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_input.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_color.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_color.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/block_html/_svg.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_svg.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/lk-main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-main.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/lk-order.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-order.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/order.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/order.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/css/sprite.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/pack.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/about.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/about.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/lk-main.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/lk-main.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/lk-order-delivered.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/lk-order-delivered.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/lk-order-sort.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/lk-order-sort.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/lk-order.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/lk-order.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/order.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/order.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/production.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/production.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/sprite.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/sprite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/plus.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/sprite.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-order-delivered.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order-delivered.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/elements.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/elements.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/lk-exceptions.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-exceptions.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/lk-order-sort.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-order-sort.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lk-exceptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-exceptions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/lk-order-sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order-sort.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style-guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style-guide.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style-min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style-min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/css/sprite.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/pack.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/about.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/about.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/lk-main.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/lk-main.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/lk-order-delivered.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/lk-order-delivered.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/lk-order-sort.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/lk-order-sort.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/lk-order.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/lk-order.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/order.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/order.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/production.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/production.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/sprite.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/sprite.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/svg/sprite.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/script-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script-min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lk-main.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lk-main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lk-exceptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lk-exceptions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lk-order-delivered.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lk-order-delivered.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/lk-order-sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lk-order-sort.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/lk-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lk-order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/order.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,18 +66,18 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="add_unversioned_files" value="true" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="G:/Web" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dist/css" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PROJECT\WORK\LETBEFIT\dist\css" />
       <recent name="E:\PROJECT\WORK\LETBEFIT\app\img" />
       <recent name="E:\PROJECT\WORK\LETBEFIT\app\img\svg" />
       <recent name="E:\PROJECT\WORK\LETBEFIT\app\js" />
       <recent name="E:\PROJECT\WORK\LETBEFIT\app\bower" />
-      <recent name="E:\PROJECT\WORK\LETBEFIT\app\img\icon" />
     </key>
   </component>
   <component name="RunManager" selected="Gulp.js.screenshot">
@@ -338,14 +307,9 @@
       <workItem from="1609229540059" duration="6527000" />
       <workItem from="1609841964474" duration="10272000" />
       <workItem from="1609868318686" duration="862000" />
-      <workItem from="1609931167286" duration="2244000" />
-    </task>
-    <task id="LOCAL-00029" summary="add mixin link">
-      <created>1564580702388</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1564580702388</updated>
+      <workItem from="1609931167286" duration="9532000" />
+      <workItem from="1610010963936" duration="744000" />
+      <workItem from="1610099903869" duration="1671000" />
     </task>
     <task id="LOCAL-00030" summary="fix slide menu">
       <created>1566731873740</created>
@@ -683,7 +647,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609092624614</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="add mobile version lk">
+      <created>1609933995032</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1609933995033</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -724,7 +695,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add styleguide" />
     <MESSAGE value="add dropdown" />
     <MESSAGE value="add header + footer" />
     <MESSAGE value="add construct program" />
@@ -749,6 +719,7 @@
     <MESSAGE value="fix contract form" />
     <MESSAGE value="add page lk" />
     <MESSAGE value="add lk desktop" />
-    <option name="LAST_COMMIT_MESSAGE" value="add lk desktop" />
+    <MESSAGE value="add mobile version lk" />
+    <option name="LAST_COMMIT_MESSAGE" value="add mobile version lk" />
   </component>
 </project>

@@ -874,13 +874,13 @@ body > svg {
   fill: #ff6889;
 }
 .bg-pinkLight {
-  background: #ffe1e7;
+  background: #fff3f6;
 }
 .type-pinkLight {
-  color: #ffe1e7;
+  color: #fff3f6;
 }
 .icon-pinkLight {
-  fill: #ffe1e7;
+  fill: #fff3f6;
 }
 .bg-violet {
   background: #6b33b2;
@@ -892,13 +892,13 @@ body > svg {
   fill: #6b33b2;
 }
 .bg-violetLight {
-  background: #ebe2f7;
+  background: #f4eff9;
 }
 .type-violetLight {
-  color: #ebe2f7;
+  color: #f4eff9;
 }
 .icon-violetLight {
-  fill: #ebe2f7;
+  fill: #f4eff9;
 }
 .bg-orange {
   background: #ff7b27;
@@ -910,13 +910,13 @@ body > svg {
   fill: #ff7b27;
 }
 .bg-orangeLight {
-  background: #ffe5d4;
+  background: #fff5ee;
 }
 .type-orangeLight {
-  color: #ffe5d4;
+  color: #fff5ee;
 }
 .icon-orangeLight {
-  fill: #ffe5d4;
+  fill: #fff5ee;
 }
 .bg-blue {
   background: #0065bd;
@@ -928,13 +928,13 @@ body > svg {
   fill: #0065bd;
 }
 .bg-blueLight {
-  background: #d4ebff;
+  background: #ebf3fa;
 }
 .type-blueLight {
-  color: #d4ebff;
+  color: #ebf3fa;
 }
 .icon-blueLight {
-  fill: #d4ebff;
+  fill: #ebf3fa;
 }
 .bg-sea {
   background: #1dd0c7;
@@ -946,13 +946,13 @@ body > svg {
   fill: #1dd0c7;
 }
 .bg-seaLight {
-  background: #d5f9f7;
+  background: #edfcfb;
 }
 .type-seaLight {
-  color: #d5f9f7;
+  color: #edfcfb;
 }
 .icon-seaLight {
-  fill: #d5f9f7;
+  fill: #edfcfb;
 }
 .bg-swapm {
   background: #768668;
@@ -964,13 +964,13 @@ body > svg {
   fill: #768668;
 }
 .bg-swapmLight {
-  background: #e4e7e0;
+  background: #f4f6f3;
 }
 .type-swapmLight {
-  color: #e4e7e0;
+  color: #f4f6f3;
 }
 .icon-swapmLight {
-  fill: #e4e7e0;
+  fill: #f4f6f3;
 }
 .bg-typePrimary {
   background: #5c5e6e;
@@ -1045,7 +1045,7 @@ body > svg {
   fill: #ff8a00;
 }
 .el--seaLight {
-  background-color: #d5f9f7;
+  background-color: #edfcfb;
   color: #1dd0c7;
 }
 .el--seaLight:hover,
@@ -1054,7 +1054,7 @@ body > svg {
   color: #fff;
 }
 .el--blueLight {
-  background-color: #d4ebff;
+  background-color: #ebf3fa;
   color: #0065bd;
 }
 .el--blueLight:hover,
@@ -1063,7 +1063,7 @@ body > svg {
   color: #fff;
 }
 .el--pinkLight {
-  background-color: #ffe1e7;
+  background-color: #fff3f6;
   color: #ff6889;
 }
 .el--pinkLight:hover,
@@ -1072,7 +1072,7 @@ body > svg {
   color: #fff;
 }
 .el--violetLight {
-  background-color: #ebe2f7;
+  background-color: #f4eff9;
   color: #6b33b2;
 }
 .el--violetLight:hover,
@@ -1081,7 +1081,7 @@ body > svg {
   color: #fff;
 }
 .el--orangeLight {
-  background-color: #ffe5d4;
+  background-color: #fff5ee;
   color: #ff7b27;
 }
 .el--orangeLight:hover,
@@ -1090,7 +1090,7 @@ body > svg {
   color: #fff;
 }
 .el--swapmLight {
-  background-color: #e4e7e0;
+  background-color: #f4f6f3;
   color: #768668;
 }
 .el--swapmLight:hover,
@@ -1531,6 +1531,7 @@ a:visiter {
   justify-content: center;
   align-items: center;
   padding: 0;
+  min-width: 44px;
 }
 .btn--md {
   padding: 17px 48px;
@@ -2428,7 +2429,7 @@ a:visiter {
   flex-wrap: wrap;
 }
 .note {
-  background: #ffe5d4;
+  background: #fff5ee;
   padding: 2px 30px;
   border-radius: 30px;
   margin-bottom: 50px;

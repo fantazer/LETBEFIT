@@ -5,11 +5,11 @@ include block_html/_include.pug
 	+header()
 	.content.content--clear-top
 		.lk
-			.lk-head-wrap
+			.lk-head-wrap.lk-head-wrap--clear-mobile
 				.main-cont
 					.lk-head-cont
 						.lk-head
-							.type--head.type--lgx.mb-48 Мои заказы
+							.lk-head-title.type--head.type--lgx.mb-48 Мои заказы
 							.tab.tab--fix.js-tick-cont
 								a(href="#").tab__el.tab__el--lg.js-tick.active Будущие
 								a(href="#").tab__el.tab__el--lg.js-tick Доставленные
@@ -51,7 +51,7 @@ include block_html/_include.pug
 								.history-panel-nav
 									.btn--sm.btn--sm-round.btn--white.history-panel-toggle.js-toggle
 										+icon("arrow-down","icon")
-									.btn--sm.btn--white Продлить
+									.btn--sm.btn--white.btn--mobile Продлить
 							// head panel === end
 
 							// list-items
@@ -80,7 +80,7 @@ include block_html/_include.pug
 								.history-panel-nav
 									.btn--sm.btn--sm-round.btn--white.history-panel-toggle.js-toggle
 										+icon("arrow-down","icon")
-									.btn--sm.btn--white Продлить
+									.btn--sm.btn--white.btn--mobile Продлить
 							// head panel === end
 
 							// list-items
