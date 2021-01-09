@@ -13,27 +13,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add mobile version lk">
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="deploy lk">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style-guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style-guide.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_color.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_color.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/elements.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/elements.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/lk-exceptions.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-exceptions.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/lk-order-sort.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-order-sort.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-exceptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-exceptions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-order-sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order-sort.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style-guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style-guide.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/diet.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/diet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/block_html/_script.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_script.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/diet.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/diet.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style-min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style-min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lk-exceptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lk-exceptions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lk-order-delivered.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lk-order-delivered.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lk-order-sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lk-order-sort.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lk-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lk-order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/diet.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/diet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/program.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/program.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -309,14 +303,8 @@
       <workItem from="1609868318686" duration="862000" />
       <workItem from="1609931167286" duration="9532000" />
       <workItem from="1610010963936" duration="744000" />
-      <workItem from="1610099903869" duration="1671000" />
-    </task>
-    <task id="LOCAL-00030" summary="fix slide menu">
-      <created>1566731873740</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1566731873740</updated>
+      <workItem from="1610099903869" duration="12590000" />
+      <workItem from="1610184514432" duration="4754000" />
     </task>
     <task id="LOCAL-00031" summary="fix btn + animateShow function">
       <created>1572863739175</created>
@@ -654,7 +642,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609933995033</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="deploy lk">
+      <created>1610101600475</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1610101600476</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -695,7 +690,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add dropdown" />
     <MESSAGE value="add header + footer" />
     <MESSAGE value="add construct program" />
     <MESSAGE value="add start mobile version" />
@@ -720,6 +714,7 @@
     <MESSAGE value="add page lk" />
     <MESSAGE value="add lk desktop" />
     <MESSAGE value="add mobile version lk" />
-    <option name="LAST_COMMIT_MESSAGE" value="add mobile version lk" />
+    <MESSAGE value="deploy lk" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy lk" />
   </component>
 </project>

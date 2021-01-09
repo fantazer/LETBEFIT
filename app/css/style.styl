@@ -664,7 +664,7 @@ slider-create-mobile()
 	size 80px
 	cp()
 	round()
-	border 1px solid $border-color
+	background: white
 	&:hover
 		background: white
 		border 1px solid white
@@ -673,24 +673,36 @@ slider-create-mobile()
 			fill black
 	.icon
 		fill black
+	&.slider-control--light
+		border 1px solid #ffffff3b
+		background: transparent
+		.icon
+			fill white
+			tr()
+		&:hover
+			background: white
+			border 1px solid white
+			.icon
+				fill black
+	&.slider-control--light-gray
+		border 1px solid #11111133
+		background: transparent
+		.icon
+			tr()
+		&:hover
+			background: white
+			border 1px solid white
+			.icon
+				fill black
+	&.slider-control--white
+		border 0!important
 
 .slider-control--sm
 	size 44px
 	.icon
 		size 18px
-.slider-control--light
-	border 2px solid #ffffff2e
-	&:hover
-		background: white
-		border 1px solid white
-		.icon
-			fill black
-	//.icon
-	//	fill white
 
-.slider-control
-	background: white
-	border 0!important
+
 
 
 //Навигация внутри
@@ -1628,8 +1640,8 @@ program-type(bg,textColor,iconColor)
 		grid-template-columns: 1fr
 	display: grid
 	grid-gap 28px
-	grid-template-columns: repeat(3, 1fr)
-	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+	//grid-template-columns: repeat(3, 1fr)
+	grid-template-columns: repeat(auto-fit, minmax(12rem,1fr))
 
 .work-step--swamp
 	.work-step__el
@@ -1639,12 +1651,22 @@ program-type(bg,textColor,iconColor)
 		color $swapm
 	.work-step__el-text
 		color $swapm
+
+.work-step--pink
+	.work-step__el
+		background: $pinkLight
+		border 0
+	.work-step__el-title
+		color $pink
+	.work-step__el-text
+		color $pink
+
 .work-step__el
 	+below(1024px)
 		padding: 20px
 	border-radius 12px
 	border 1px solid $border-color
-	padding: 32px
+	padding: 24px
 	tr()
 .work-step__el-icon
 	+below(768px)
@@ -1771,6 +1793,7 @@ program-type(bg,textColor,iconColor)
 	background: white
 	opacity: 0
 	left -9999px
+	top 0
 	visibility: hidden
 	position absolute
 	transform translateX(10px)
@@ -2005,8 +2028,8 @@ program-type(bg,textColor,iconColor)
 		margin-right: 8px
 .contract-head-img
 	+below(640px)
-		padding: 2% 30%
-		right: 0
+		padding: 2% 35%
+		right: -8%
 	background-size contain
 	background-repeat no-repeat
 	background-position center center

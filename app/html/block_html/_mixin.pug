@@ -38,8 +38,6 @@ mixin incr(state,className='')
 
 mixin faq(type)
   // faq
-
-
   .faq-wrap
     .faq-type.js-tick-cont
       .faq-type__el.js-tick.js-tab.active
@@ -105,19 +103,20 @@ mixin faq(type)
 
   // faq === end
 
-mixin review()
+mixin review(clear)
   // review
-  .section-extend.section--gradient
+  .section--gradient(class=clear?'section-full':'section-extend')
     .main-cont.js-slider-wrap
       .review-head
         .review-head__info
           .type--head.type--lgx.mb-16 Отзывы клиентов
           .review-head__text Отзывы реальных клиентов о доставке правильного питания на неделю, вкусе самой еды, ее качестве и сервисе компании BeFit. Узнай почему у нас так вкусно!
         .review-control.slider-control-row
-          .slider-control.js-control-left
+          .slider-control.slider-control--light-gray.js-control-left
             +icon("arrow-left","icon")
-          .slider-control.js-control-right
+          .slider-control.slider-control--light-gray.js-control-right
             +icon("arrow-right","icon")
+
       .review
         .slider-wrap
           .slider-review.slider-extend.js-slider

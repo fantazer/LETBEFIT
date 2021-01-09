@@ -4361,7 +4361,7 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 1px solid #dcdfe8;
+  background: #fff;
 }
 .slider-control:hover {
   cursor: pointer;
@@ -4377,6 +4377,38 @@ body {
 .slider-control .icon {
   fill: #111;
 }
+.slider-control.slider-control--light {
+  border: 1px solid rgba(255,255,255,0.231);
+  background: transparent;
+}
+.slider-control.slider-control--light .icon {
+  fill: #fff;
+  transition: all 0.4s;
+}
+.slider-control.slider-control--light:hover {
+  background: #fff;
+  border: 1px solid #fff;
+}
+.slider-control.slider-control--light:hover .icon {
+  fill: #111;
+}
+.slider-control.slider-control--light-gray {
+  border: 1px solid rgba(17,17,17,0.2);
+  background: transparent;
+}
+.slider-control.slider-control--light-gray .icon {
+  transition: all 0.4s;
+}
+.slider-control.slider-control--light-gray:hover {
+  background: #fff;
+  border: 1px solid #fff;
+}
+.slider-control.slider-control--light-gray:hover .icon {
+  fill: #111;
+}
+.slider-control.slider-control--white {
+  border: 0 !important;
+}
 .slider-control--sm {
   width: 44px;
   height: 44px;
@@ -4384,20 +4416,6 @@ body {
 .slider-control--sm .icon {
   width: 18px;
   height: 18px;
-}
-.slider-control--light {
-  border: 2px solid rgba(255,255,255,0.18);
-}
-.slider-control--light:hover {
-  background: #fff;
-  border: 1px solid #fff;
-}
-.slider-control--light:hover .icon {
-  fill: #111;
-}
-.slider-control {
-  background: #fff;
-  border: 0 !important;
 }
 .slider-wrap--inarrow .slider-control {
   position: absolute;
@@ -6078,7 +6096,7 @@ body {
 .work-step {
   display: grid;
   grid-gap: 28px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
 }
 @media only screen and (max-width: 1024px) {
   .work-step {
@@ -6100,10 +6118,20 @@ body {
 .work-step--swamp .work-step__el-text {
   color: #768668;
 }
+.work-step--pink .work-step__el {
+  background: #fff3f6;
+  border: 0;
+}
+.work-step--pink .work-step__el-title {
+  color: #ff6889;
+}
+.work-step--pink .work-step__el-text {
+  color: #ff6889;
+}
 .work-step__el {
   border-radius: 12px;
   border: 1px solid #dcdfe8;
-  padding: 32px;
+  padding: 24px;
   transition: all 0.4s;
 }
 @media only screen and (max-width: 1024px) {
@@ -6298,6 +6326,7 @@ body {
   background: #fff;
   opacity: 0;
   left: -9999px;
+  top: 0;
   visibility: hidden;
   position: absolute;
   -webkit-transform: translateX(10px);
@@ -6672,8 +6701,8 @@ body {
 }
 @media only screen and (max-width: 640px) {
   .contract-head-img {
-    padding: 2% 30%;
-    right: 0;
+    padding: 2% 35%;
+    right: -8%;
   }
 }
 .contract-content {
