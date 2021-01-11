@@ -2007,7 +2007,6 @@ body > svg {
 .type--smx,
 .program-type__el,
 .program-days__el,
-.program-el__footer span,
 .faq-type__el,
 .tag-el,
 .marker-el {
@@ -2017,7 +2016,6 @@ body > svg {
   .type--smx,
   .program-type__el,
   .program-days__el,
-  .program-el__footer span,
   .faq-type__el,
   .tag-el,
   .marker-el {
@@ -2654,6 +2652,9 @@ a:visiter {
   pointer-events: none;
   color: #c8cad4 !important;
 }
+.btn--light.disable .icon {
+  fill: #c8cad4 !important;
+}
 .btn--text {
   border: 0;
   background-color: none;
@@ -2720,6 +2721,19 @@ a:visiter {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.btn-icon-row span {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -2px;
+  line-height: 1;
 }
 .btn--full {
   width: 100%;
@@ -3431,6 +3445,19 @@ body {
   .scroll-template::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background: #7eca1d;
+  }
+}
+@media only screen and (min-width: 1025px) {
+  .scroll-template-light::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 4px;
+    height: 8px;
+    background: #f8f8f8;
+    border-radius: 4px;
+  }
+  .scroll-template-light::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #dcdfe8;
   }
 }
 .main-cont {
@@ -5870,10 +5897,37 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+.rating-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.rating-wrap .icon {
+  margin-right: 5px;
+  fill: #c4c5cc;
+}
 .rating-val {
   color: #fff;
   line-height: 1;
   margin: -4px 0 0 4px;
+}
+.rating--fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
 }
 .rating__el .icon {
   width: 16px;
@@ -5926,28 +5980,6 @@ body {
   color: #5c5e6e;
 }
 .program-el__footer {
-  padding: 12px 20px;
-  border-top: 1px solid #dcdfe8;
-}
-.program-el__footer:hover {
-  cursor: pointer;
-}
-.program-el__footer:hover .icon {
-  fill: #7eca1d;
-}
-.program-el__footer:hover span {
-  color: #7eca1d;
-}
-.program-el__footer .icon {
-  transition: all 0.4s;
-  fill: #c4c5cc;
-}
-.program-el__footer span {
-  transition: all 0.4s;
-  font-weight: 700;
-  color: #9699a8;
-}
-.program-el__footer--clear {
   padding: 12px 20px;
   border-top: 1px solid #dcdfe8;
   display: -webkit-flex;
@@ -6280,11 +6312,58 @@ body {
     margin-right: -20px;
   }
 }
+.slider-review .slider-el-wrap {
+  max-width: 310px;
+}
 .slider-review__el {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.slider-review-head {
+  padding: 16px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 12px;
+}
+.slider-review-img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 100% 10%;
+  padding: 40% 10%;
+}
+.slider-review-wrap {
+  padding: 16px 8px 16px 16px;
+  position: relative;
+}
+.slider-review-wrap:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 15px;
+  left: 0;
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, #fff 100%);
+}
+.slider-review-content {
+  height: 270px;
+  overflow: auto;
+  padding-right: 16px;
+}
+.slider-review-text {
+  padding: 0 0 60px 0;
+}
+.slider-review-head__user {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .review-head {
   display: -webkit-flex;

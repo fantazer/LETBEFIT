@@ -195,22 +195,15 @@ include block_html/_include.pug
 						// program consist === end
 					.program-list-container
 						.program-list
-							- for (var i=1;i<8;i++)
-								// program item
-								.program-el
-									.program-el__img(style="background-image:url('img/item-sm-"+i+".jpg')")
-									.program-el-wrap
-										.program-el__content
-											.program-el__head
-												.program-el__type Первый завтрак
-												.program-el__val 106 Ккал. 300 г.
-											.program-el__title Смузи боул с яблоком, корицей и гранола
-											.program-el__text Филе куриное, лук, яйцо, специи, гречка зеленая, соус сливочный, грецкие орехи, сливочно-ореховый соус
-										.program-el__footer
-											.icon-row.modal-get(data-modal="removeProgram")
-												+icon("reload","icon icon--right")
-												span Заменить блюдо
-								// program item === end
+							// program item
+							+item(1,'simple')
+							+item(2,'change')
+							+item(3,'rating')
+							+item(4,'ratingTrue')
+							+item(5,'return')
+							+item(2,'change')
+							+item(3,'rating')
+							// program item === end
 							// program-banner
 							.program-banner
 								.program-banner-inner

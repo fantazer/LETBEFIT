@@ -1640,6 +1640,9 @@ a:visiter {
   pointer-events: none;
   color: #c8cad4 !important;
 }
+.btn--light.disable .icon {
+  fill: #c8cad4 !important;
+}
 .btn--text {
   border: 0;
   background-color: none;
@@ -1700,6 +1703,13 @@ a:visiter {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.btn-icon-row span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2px;
+  line-height: 1;
 }
 .btn--full {
   width: 100%;

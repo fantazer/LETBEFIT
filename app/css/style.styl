@@ -29,6 +29,19 @@ body
 			border-radius: 4px
 			background: $mark
 
+.scroll-template-light
+	+above(1025px)
+		&::-webkit-scrollbar
+			-webkit-appearance: none
+			width: 4px
+			height: 8px
+			background: #f8f8f8
+			border-radius: 4px
+		&::-webkit-scrollbar-thumb
+			border-radius: 4px
+			background: $border-color
+
+
 .main-cont
 	+below(1280px)
 		padding: 0 42px
@@ -1499,10 +1512,27 @@ program-type(bg,textColor,iconColor)
 	f()
 	grid-gap 5px
 	align-items center
+.rating-wrap
+	f()
+	align-items center
+	position relative
+	.icon
+		margin-right: 5px
+		fill $grayLight
 .rating-val
 	color white
 	line-height: 1
 	margin: -4px 0 0 4px
+
+.rating--fill
+	position absolute
+	top 0
+	left 0
+	width: 100%
+	height: 100%
+	f()
+	align-items center
+	overflow hidden
 .rating__el
 	.icon
 		size 16px
@@ -1533,24 +1563,8 @@ program-type(bg,textColor,iconColor)
 .program-el__text
 	@extend .type--sm
 	color $typePrimary
+
 .program-el__footer
-	padding: 12px 20px
-	border-top 1px solid $border-color
-	cp()
-	&:hover
-		.icon
-			fill $mark
-		span
-			color $mark
-	.icon
-		tr()
-		fill $grayLight
-	span
-		tr()
-		@extend .type--smx
-		font-weight 700
-		color $typeSecondary
-.program-el__footer--clear
 	padding: 12px 20px
 	border-top 1px solid $border-color
 	flex(between)
@@ -1750,9 +1764,47 @@ program-type(bg,textColor,iconColor)
 		overflow: hidden
 	+below(640px)
 		margin-right: -20px
+	.slider-el-wrap
+		max-width 310px
 .slider-review__el
+	background: white
+	br(12px)
+	overflow hidden
+
+.slider-review-head
+	padding: 16px
+	f()
+	align-items center
+	grid-gap 12px
+
+.slider-review-img
 	bg-full()
-	padding: 100% 10%
+	padding: 40% 10%
+.slider-review-wrap
+	padding: 16px 8px 16px 16px
+	position relative
+	&:before
+		content ''
+		position absolute
+		width: 100%
+		height: 100px
+		bottom 15px
+		left 0
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+
+.slider-review-content
+	height 270px
+	overflow auto
+	padding-right: 16px
+.slider-review-text
+	padding:0 0 60px 0
+
+
+.slider-review-head__user
+	size 44px
+	round()
+	bg-full()
+
 .review-head
 	+below(1024px)
 		margin: 0 0 40px 0

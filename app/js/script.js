@@ -342,6 +342,17 @@ $(document).ready(function () {
 				}
 			},
 			{
+				breakpoint: 769,
+					settings: {
+						slidesToShow: 2.2,
+						slidesToScroll: 1,
+						infinite: false,
+						arrows:false,
+						dots: false,
+
+				}
+			},
+			{
 				breakpoint: 640,
 					settings: {
 						slidesToShow: 1.2,
@@ -550,6 +561,15 @@ $(document).ready(function () {
 	});
 
 	// incr === end
+
+	// rating size
+	$('.rating').each(function(){
+		var sizeRating  = $(this).data('size')*1;
+		var totalRating = (sizeRating * 100) / 5 + '%'
+		$('.rating--fill').css('width','calc('+totalRating+' - 2.5px')
+	})
+	// rating size === end
+
 
 	window.condition = {};
 	window.condition.closeModal = closeModal

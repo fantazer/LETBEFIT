@@ -132,7 +132,8 @@
 	&.disable
 		pointer-events none
 		color $typeDisable!important
-
+		.icon
+			fill $typeDisable!important
 .btn--text
 	@extend .btn
 	border 0
@@ -186,7 +187,10 @@
 
 .btn-icon-row
 	flex(mid)
-
+	span
+		flex(mid)
+		margin-top: -2px
+		line-height: 1
 .btn--full
 	width: 100%
 	display block
