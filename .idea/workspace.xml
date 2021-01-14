@@ -13,136 +13,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix review slider + rating + item cards">
-      <change afterPath="$PROJECT_DIR$/app/html/program-balance.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/html/program-daily.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/html/program-detox.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/html/program-everydaily.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/html/program-fish.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/html/program-light.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/html/program-normal.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/html/program-strong.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/detox/detox-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/detox/detox-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/detox/detox-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/detox/detox-12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/detox/detox-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/detox/detox-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/detox/detox-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/detox/detox-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/detox/detox-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/detox/detox-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/detox/detox-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/detox/detox-9.jpg" afterDir="false" />
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add program page + fix order increment">
+      <change afterPath="$PROJECT_DIR$/app/html/retail.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/haccp.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/msg-list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/square.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/video-production.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style-guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style-guide.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_color.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_color.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_input.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_input.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/diet.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/variable/_helper.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/_helper.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/block_html/_const.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_const.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/diet.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-diet.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/lk-exceptions.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-exceptions.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/main.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/order.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/order.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/program.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-vegan.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/review.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/review.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/sale-item.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/sale-item.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/icon/bank.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/icon/bank.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/icon/shield.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/icon/shield.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/icon/stopwatch.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/icon/stopwatch.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/about.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/about.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/blog-item.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/blog-item.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/blog-list.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/blog-list.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/contact.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/contact.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/cooperation.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/cooperation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/delivery.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/delivery.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/error-404.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/error-404.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/error-500.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/error-500.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/faq.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/faq.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/franchise.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/franchise.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/index.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/index.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/lk-coach.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/lk-coach.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/lk-exceptions.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/lk-exceptions.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/lk-main.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/lk-main.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/lk-order-delivered.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/lk-order-delivered.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/lk-order-sort.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/lk-order-sort.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/lk-order.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/lk-order.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/lk-partners.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/lk-partners.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/lk-tools.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/lk-tools.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/lp-coach.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/lp-coach.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/main.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/main.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/modal.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/modal.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/offer.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/offer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/order-present.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/order-present.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/order.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/order.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/payment.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/payment.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/present.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/present.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/production.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/production.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/review.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/review.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/sale-item.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/sale-item.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/screen/app/sale-list.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/screen/app/sale-list.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-exceptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-exceptions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-order-sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order-sort.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/review.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/review.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sale-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/sale-item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style-min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style-min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/diet.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icon/bank.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/icon/bank.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icon/shield.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/icon/shield.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/icon/stopwatch.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/icon/stopwatch.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/about.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/about.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/blog-item.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/blog-item.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/blog-list.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/blog-list.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/contact.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/contact.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/cooperation.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/cooperation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/delivery.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/delivery.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/error-404.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/error-404.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/error-500.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/error-500.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/faq.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/faq.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/franchise.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/franchise.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/index.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/index.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/lk-coach.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/lk-coach.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/lk-exceptions.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/lk-exceptions.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/lk-main.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/lk-main.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/lk-order-delivered.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/lk-order-delivered.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/lk-order-sort.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/lk-order-sort.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/lk-order.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/lk-order.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/lk-partners.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/lk-partners.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/lk-tools.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/lk-tools.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/lp-coach.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/lp-coach.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/main.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/main.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/modal.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/modal.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/offer.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/offer.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/order-present.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/order-present.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/order.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/order.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/payment.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/payment.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/present.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/present.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/production.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/production.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/review.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/review.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/sale-item.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/sale-item.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/screen/app/sale-list.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/screen/app/sale-list.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/script-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script-min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lk-exceptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lk-exceptions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lk-order-sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lk-order-sort.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/lk-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/lk-order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/program.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/review.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/review.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/sale-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/sale-item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/present.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/present.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -183,16 +67,16 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="add_unversioned_files" value="true" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/img/detox" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/img" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\PROJECT\WORK\LETBEFIT\app\img\detox" />
-      <recent name="E:\PROJECT\WORK\LETBEFIT\app\html" />
       <recent name="E:\PROJECT\WORK\LETBEFIT\app\img" />
+      <recent name="E:\PROJECT\WORK\LETBEFIT\app\html" />
+      <recent name="E:\PROJECT\WORK\LETBEFIT\app\img\detox" />
       <recent name="E:\PROJECT\WORK\LETBEFIT\dist\css" />
       <recent name="E:\PROJECT\WORK\LETBEFIT\app\img\svg" />
     </key>
@@ -431,14 +315,7 @@
       <workItem from="1610356052889" duration="11645000" />
       <workItem from="1610453259562" duration="7984000" />
       <workItem from="1610530614090" duration="11893000" />
-      <workItem from="1610614484854" duration="4612000" />
-    </task>
-    <task id="LOCAL-00033" summary="fix shrink">
-      <created>1575358156367</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1575358156367</updated>
+      <workItem from="1610614484854" duration="16047000" />
     </task>
     <task id="LOCAL-00034" summary="fix radio">
       <created>1577618353073</created>
@@ -776,7 +653,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610367606284</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="add program page + fix order increment">
+      <created>1610619584433</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1610619584434</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -817,7 +701,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add start mobile version" />
     <MESSAGE value="remove sliders" />
     <MESSAGE value="fix scroll mobile list" />
     <MESSAGE value="add modals" />
@@ -842,6 +725,7 @@
     <MESSAGE value="deploy lk" />
     <MESSAGE value="fix page 21 day + fix nav slider" />
     <MESSAGE value="fix review slider + rating + item cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix review slider + rating + item cards" />
+    <MESSAGE value="add program page + fix order increment" />
+    <option name="LAST_COMMIT_MESSAGE" value="add program page + fix order increment" />
   </component>
 </project>

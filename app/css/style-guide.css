@@ -702,6 +702,16 @@
 .list--three {
   grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
 }
+@media only screen and (max-width: 640px) {
+  .mobile-order-2 {
+    order: 2;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .mobile-order-1 {
+    order: 1;
+  }
+}
 html {
   box-sizing: border-box;
 }

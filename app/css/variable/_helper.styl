@@ -165,9 +165,16 @@ for $type,$typeVal in $st
 	input
 		font-size: 16px!important
 
-
 .list
 	display: grid
 	grid-gap 28px
 .list--three
 	grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+
+.mobile-order-2
+	+below(640px)
+		order 2
+.mobile-order-1
+	+below(640px)
+		order 1
+

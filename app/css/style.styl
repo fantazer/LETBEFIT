@@ -77,9 +77,11 @@ body
 	@extend .pt-80
 	@extend .pb-100
 	flex-grow 1
+	position relative
 
 .content--clear
 	padding: 0
+
 .content--clear-bottom
 	padding-bottom: 0
 
@@ -807,6 +809,10 @@ slider-create-mobile()
 			padding: 40% 24%
 			margin: 0px auto
 
+.board__el-wrap--full
+	+below(1024px)
+		height calc(100vh - 60px)
+	height calc(100vh - 145px)
 .board__el-wrap--sm
 	padding: 10% 0 8% 0
 	+below(640px)
@@ -823,16 +829,25 @@ slider-create-mobile()
 	@extend .type--xl
 	font-weight 700
 	color white
-	margin-bottom: 10%
+	margin-bottom: 32px
 .board__title-sub
 	+below(640px)
 		margin-top: 0
 		text-align center
 	color white
 	@extend .type--mdx
-	margin-top: -5%
 	margin-bottom: 5%
 	max-width 475px
+
+.board__title-sub-sm
+	+below(640px)
+		margin-top: 0
+		text-align center
+	color white
+	@extend .type--md
+	margin-top: 0
+	margin-bottom: 5%
+	max-width 630px
 
 .board__content
 	+below(1280px)
@@ -1502,6 +1517,25 @@ program-type(bg,textColor,iconColor)
 	grid-gap 28px
 	grid-template-columns: repeat(4, 1fr)
 
+.program-list-scroll-wrap
+	overflow: hidden!important
+.program-list-scroll
+	f()
+	margin-left: -200px
+	animation autoScroll linear 100s infinite both
+	padding-bottom: 20px
+	.program-el
+		width: 300px
+		margin-right: 20px
+
+// animate top menu
+@keyframes autoScroll
+	0%
+		transform: translateX(0)
+	50%
+		transform: translateX(calc(-50% ))
+	100%
+		transform: translateX(0)
 
 .program-el
 	br(12px)
@@ -1510,6 +1544,7 @@ program-type(bg,textColor,iconColor)
 	display: flex
 	fl()
 	white-space initial
+	max-width 300px
 	&:hover
 		box-shadow 0 12px 32px rgba(41, 42, 53, 0.16)
 		.program-el-wrap
@@ -1813,6 +1848,9 @@ work-step(bgVal,colorVal)
 	br(12px)
 	overflow hidden
 
+.slider-review__el--border
+	border 1px solid $border-color
+
 .slider-review-head
 	padding: 16px
 	f()
@@ -1867,8 +1905,12 @@ work-step(bgVal,colorVal)
 .section
 	@extend .pb-100
 
+.section--border
+	border-bottom 1px solid $border-color
+
 .section-sm
 	@extend .pb-80
+	position relative
 
 .section-extend
 	@extend .p-100
@@ -1876,6 +1918,7 @@ work-step(bgVal,colorVal)
 
 .section-full
 	@extend .p-100
+	position relative
 
 .section--gradient
 	background: $gradient
@@ -2957,6 +3000,10 @@ work-step(bgVal,colorVal)
 	flex-grow: 1
 	scroll-create-mobile()
 	overflow auto
+
+.desktop-row-scroll--clear
+	margin: 0
+
 .desktop-row-scroll-wrap
 	grid-gap 0!important
 	display: flex !important
@@ -3280,6 +3327,8 @@ work-step(bgVal,colorVal)
 	margin-right auto
 
 .marker
+	white-space nowrap
+	overflow auto
 	f()
 
 .marker-el
@@ -3540,3 +3589,65 @@ work-step(bgVal,colorVal)
 		padding: 20px 42px
 
 // LK STYLE === end
+
+.video-production
+	width: 100%
+	position relative
+	padding: 15%
+	border 1px solid $border-color
+	round()
+	flex(mid)
+	cp()
+	.icon
+		position absolute
+		top 50%
+		left 50%
+		margin -24px 0 0 -24px
+		size 48px
+		fill white
+.video-production__el
+	bg-full()
+	round()
+	padding: 50%
+	position relative
+	overflow hidden
+	&:before
+		content ''
+		position absolute
+		left 0
+		top 0
+		width: 100%
+		height: 100%
+		background: #11110185
+
+.video-production-info
+	+below(640px)
+		flex(mid)
+		fl()
+		text-align center
+
+.card-advant
+	+below(640px)
+		padding: 30px 12px
+	background: white
+	br(12px)
+	flex(mid)
+	fl()
+	padding: 50px 24px
+	height: 100%
+	img
+		width: 60%
+
+.card-advant-text
+	+below(640px)
+		font-size: 12px
+		text-align: left
+
+.bg-square
+	+below(1024px)
+		display none
+	position absolute
+	bg-full()
+	padding: 5% 10%
+	top 0
+	right: 0

@@ -103,9 +103,9 @@ mixin faq(type)
 
   // faq === end
 
-mixin review(clear)
+mixin review(clear,bg)
   // review
-  .section--gradient(class=clear?'section-full':'section-extend')
+  div(class=clear?'section-full':'section-extend' class=bg?'':'section--gradient')
     .main-cont.js-slider-wrap
       .review-head
         .review-head__info
@@ -123,7 +123,7 @@ mixin review(clear)
             - for (var j=1;j<5;j++)
               - for (var i=1;i<5;i++)
                 .slider-el-wrap
-                  .slider-review__el
+                  .slider-review__el(class=bg?'slider-review__el--border':'')
                     .slider-review-head
                       .slider-review-head__user(style="background-image:url('img/user.jpg')")
                       .slider-review-head__info
