@@ -457,96 +457,135 @@
                             <!-- !!! NOTE !!!-->
                             <!--  <- сюда добавляй название программы-->
                             <!-- !!! NOTE !!!-->
-                            <div class="config js-config js-switch-wrap">
-                                <div class="config-head js-config-head">
-                                    <div class="config-head__val js-switch-cont hidden" data-item="start">
-                                        <span>Пробный день</span>
-                                    </div>
-                                    <div class="config-head__val js-switch-cont" data-item="6days">
-                                        <span>1 Неделя</span>
-                                    </div>
-                                    <div class="config-head__val js-switch-cont hidden" data-item="2week">
-                                        <span>2 недели</span>
-                                    </div>
-                                    <div class="config-head__val js-switch-cont hidden" data-item="4week">
-                                        <span>4 недели</span>
-                                    </div>
-                                    <div class="config-head__val js-switch-cont hidden" data-item="3month">
-                                        <span>3 месяца</span>
-                                        <div class="icon-row">
-                                            <svg class="icon icon--right icon--orange">
-                                                <use xlink:href="#info"></use>
-                                            </svg>
-                                            <span class="type--sm">Подписка оплачивается сразу на 2 недели и еженедельно в последующий срок</span>
+                            <div class="config js-config">
+                                <div class="js-switch-wrap">
+                                    <div class="config-head js-config-head">
+                                        <div class="config-head__val js-switch-cont hidden" data-item="start">
+                                            <span>Пробный день</span>
                                         </div>
+                                        <div class="config-head__val js-switch-cont" data-item="6days">
+                                            <span>1 Неделя</span>
+                                        </div>
+                                        <div class="config-head__val js-switch-cont hidden" data-item="2week">
+                                            <span>2 недели</span>
+                                        </div>
+                                        <div class="config-head__val js-switch-cont hidden" data-item="4week">
+                                            <span>4 недели</span>
+                                        </div>
+                                        <div class="config-head__val js-switch-cont hidden" data-item="3month">
+                                            <span>3 месяца</span>
+                                            <div class="icon-row">
+                                                <svg class="icon icon--right icon--orange">
+                                                    <use xlink:href="#info"></use>
+                                                </svg>
+                                                <span class="type--sm">Подписка оплачивается сразу на 2 недели и еженедельно в последующий срок</span>
+                                            </div>
+                                        </div>
+                                        <svg class="icon">
+                                            <use xlink:href="#arrow-up"></use>
+                                        </svg>
                                     </div>
-                                    <svg class="icon">
-                                        <use xlink:href="#arrow-up"></use>
-                                    </svg>
+                                    <div class="contract-config-wrap js-contract-config-wrap hide">
+                                        <div class="contract-config">
+                                            <div class="contract-config__el js-contract-el js-switch" data-item="start">
+                                                <div class="check-el">
+                                                    <label class="style-label style-label--radio">
+                                                        <input class="style-input" type="radio" name="list" />
+                                                        <div class="style-input-element">
+                                                            <div class="icon-radio"></div>
+                                                        </div>
+                                                        <div class="style-input-text">Пробный день</div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="contract-config__el active js-contract-el js-switch" data-item="6days">
+                                                <div class="check-el">
+                                                    <label class="style-label style-label--radio">
+                                                        <input class="style-input" type="radio" name="list" checked="true" />
+                                                        <div class="style-input-element">
+                                                            <div class="icon-radio"></div>
+                                                        </div>
+                                                        <div class="style-input-text">Неделя (6 дней)</div>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="contract-config__el js-contract-el js-switch" data-item="2week">
+                                                <div class="check-el">
+                                                    <label class="style-label style-label--radio">
+                                                        <input class="style-input" type="radio" name="list" />
+                                                        <div class="style-input-element">
+                                                            <div class="icon-radio"></div>
+                                                        </div>
+                                                        <div class="style-input-text">2 недели (12 дней)</div>
+                                                    </label>
+                                                </div>
+                                                <div class="contract-config__el-val">-5%</div>
+                                            </div>
+                                            <div class="contract-config__el js-contract-el js-switch" data-item="4week">
+                                                <div class="check-el">
+                                                    <label class="style-label style-label--radio">
+                                                        <input class="style-input" type="radio" name="list" />
+                                                        <div class="style-input-element">
+                                                            <div class="icon-radio"></div>
+                                                        </div>
+                                                        <div class="style-input-text">4 недели (24 дня)</div>
+                                                    </label>
+                                                </div>
+                                                <div class="contract-config__el-val">-7.5%</div>
+                                            </div>
+                                            <div class="contract-config__el js-contract-el js-switch" data-item="3month">
+                                                <div class="check-el">
+                                                    <label class="style-label style-label--radio">
+                                                        <input class="style-input" type="radio" name="list" />
+                                                        <div class="style-input-element">
+                                                            <div class="icon-radio"></div>
+                                                        </div>
+                                                        <div class="style-input-text">3 месяца (72 дня)</div>
+                                                    </label>
+                                                </div>
+                                                <div class="contract-config__el-val">-15%</div>
+                                            </div>
+                                        </div>
+                                        <!-- Эта кнопка есть только у тех блоков которые добавятся, у певрой программы ее нет-->
+                                    </div>
                                 </div>
-                                <div class="contract-config-wrap js-contract-config-wrap hide">
-                                    <div class="contract-config">
-                                        <div class="contract-config__el js-contract-el js-switch" data-item="start">
-                                            <div class="check-el">
-                                                <label class="style-label style-label--radio">
-                                                    <input class="style-input" type="radio" name="list" />
-                                                    <div class="style-input-element">
-                                                        <div class="icon-radio"></div>
+                                <div class="js-contract-config-wrap hide">
+                                    <div class="g g-between mb-24">
+                                        <div class="input-cont">
+                                            <div class="input-row input-row--clear">
+                                                <label class="check-el js-switch" data-item="isPerson">
+                                                    <div class="style-label style-label--checkbox">
+                                                        <input class="style-input" type="checkbox" />
+                                                        <div class="style-input-element">
+                                                            <svg class="icon">
+                                                                <use xlink:href="#checked"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="style-input-text">Я буду питаться с коллегами (-15%)</div>
                                                     </div>
-                                                    <div class="style-input-text">Пробный день</div>
                                                 </label>
                                             </div>
                                         </div>
-                                        <div class="contract-config__el active js-contract-el js-switch" data-item="6days">
-                                            <div class="check-el">
-                                                <label class="style-label style-label--radio">
-                                                    <input class="style-input" type="radio" name="list" checked="true" />
-                                                    <div class="style-input-element">
-                                                        <div class="icon-radio"></div>
-                                                    </div>
-                                                    <div class="style-input-text">Неделя (6 дней)</div>
-                                                </label>
+                                        <div class="js-switch-cont hidden" data-item="isPerson">
+                                            <div class="incr incr--single incr--one">
+                                                <div class="incr__minus incr__nav">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#minus"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="incr__val">
+                                                    <span>1</span>
+                                                    <div class="incr__val-coner"></div>
+                                                </div>
+                                                <div class="incr__plus incr__nav">
+                                                    <svg class="icon">
+                                                        <use xlink:href="#plus"></use>
+                                                    </svg>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="contract-config__el js-contract-el js-switch" data-item="2week">
-                                            <div class="check-el">
-                                                <label class="style-label style-label--radio">
-                                                    <input class="style-input" type="radio" name="list" />
-                                                    <div class="style-input-element">
-                                                        <div class="icon-radio"></div>
-                                                    </div>
-                                                    <div class="style-input-text">2 недели (12 дней)</div>
-                                                </label>
-                                            </div>
-                                            <div class="contract-config__el-val">-5%</div>
-                                        </div>
-                                        <div class="contract-config__el js-contract-el js-switch" data-item="4week">
-                                            <div class="check-el">
-                                                <label class="style-label style-label--radio">
-                                                    <input class="style-input" type="radio" name="list" />
-                                                    <div class="style-input-element">
-                                                        <div class="icon-radio"></div>
-                                                    </div>
-                                                    <div class="style-input-text">4 недели (24 дня)</div>
-                                                </label>
-                                            </div>
-                                            <div class="contract-config__el-val">-7.5%</div>
-                                        </div>
-                                        <div class="contract-config__el js-contract-el js-switch" data-item="3month">
-                                            <div class="check-el">
-                                                <label class="style-label style-label--radio">
-                                                    <input class="style-input" type="radio" name="list" />
-                                                    <div class="style-input-element">
-                                                        <div class="icon-radio"></div>
-                                                    </div>
-                                                    <div class="style-input-text">3 месяца (72 дня)</div>
-                                                </label>
-                                            </div>
-                                            <div class="contract-config__el-val">-15%</div>
                                         </div>
                                     </div>
-                                    <!-- Эта кнопка есть только у тех блоков которые добавятся, у певрой программы ее нет-->
-                                    <div class="contract-remove js-contract-remove">
+                                    <div class="contract-remove js-contract-remove mb-16">
                                         <div class="btn--sm btn--text-red">
                                             <div class="btn-icon-row btn-icon-row--left">
                                                 <svg class="icon">
@@ -560,41 +599,6 @@
                             </div>
                         </div>
                         <!-- choose program type === end-->
-                        <div class="g g-between mb-24">
-                            <div class="input-cont">
-                                <div class="input-row input-row--clear">
-                                    <label class="check-el js-switch" data-item="isPerson">
-                                        <div class="style-label style-label--checkbox">
-                                            <input class="style-input" type="checkbox" />
-                                            <div class="style-input-element">
-                                                <svg class="icon">
-                                                    <use xlink:href="#checked"></use>
-                                                </svg>
-                                            </div>
-                                            <div class="style-input-text">Я буду питаться с коллегами (-15%)</div>
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="hidden js-switch-cont" data-item="isPerson">
-                                <div class="incr incr--single incr--one">
-                                    <div class="incr__minus incr__nav">
-                                        <svg class="icon">
-                                            <use xlink:href="#minus"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="incr__val">
-                                        <span>1</span>
-                                        <div class="incr__val-coner"></div>
-                                    </div>
-                                    <div class="incr__plus incr__nav">
-                                        <svg class="icon">
-                                            <use xlink:href="#plus"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="btn--md btn--full btn--dotted mb-32">Добавить еще программу</div>
                         <div class="input-cont input-cont--list mb-48">
                             <div class="check-el">

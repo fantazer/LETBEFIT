@@ -972,6 +972,24 @@ body > svg {
 .icon-swapmLight {
   fill: #f4f6f3;
 }
+.bg-coral {
+  background: #ff4f4f;
+}
+.type-coral {
+  color: #ff4f4f;
+}
+.icon-coral {
+  fill: #ff4f4f;
+}
+.bg-coralLight {
+  background: #fff0f0;
+}
+.type-coralLight {
+  color: #fff0f0;
+}
+.icon-coralLight {
+  fill: #fff0f0;
+}
 .bg-typePrimary {
   background: #5c5e6e;
 }
@@ -1235,6 +1253,9 @@ h1 {
 }
 .type--secondary {
   color: #9699a8;
+}
+.type--primary {
+  color: #5c5e6e;
 }
 .type--head {
   color: #111;
@@ -2322,9 +2343,6 @@ a:visiter {
   border-radius: 2px;
   background-color: rgba(0,0,0,0.5);
   -webkit-box-shadow: 0 0 1px rgba(255,255,255,0.5);
-}
-.dropdown-menu {
-  max-height: initial;
 }
 .dropdown-menu__el {
   padding: 18px 20px;

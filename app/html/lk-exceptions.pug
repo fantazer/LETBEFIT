@@ -31,7 +31,6 @@ include block_html/_include.pug
 							p.type--secondary В режиме доставки "без встречи с курьером" курьер будет вешать Ваш заказ на ручку или оставлять в оговоренном Вами месте. Вам придет уведомление о доставке как только курьер отметит заказ доставленным. Если Вы выбрали оплату наличными, то курьер встретится с Вами при первой доставке для получения оплаты
 
 						.type--head.type--mdx.mb-32.mt-48 Исключенные блюда
-
 						.mobile-row-scroll
 							.list.list--three.mobile-row-scroll-wrap
 								- for (var i=1;i<6;i++)
@@ -40,7 +39,7 @@ include block_html/_include.pug
 										.program-el-wrap
 											.program-el__content
 												.program-el__title Смузи боул с яблоком, корицей и гранола
-											.program-el__footer--clear
+											.program-el__footer
 												.program-el__type
 													.type--sm.type--secondary первый завтрак
 													.type--sm.type--secondary 106 Ккал
@@ -48,7 +47,6 @@ include block_html/_include.pug
 													.btn-icon-row.btn-icon-row--left
 														+icon("reload","icon")
 														span Вернуть
-
 
 	+footer()
 include ./block_html/_script.pug

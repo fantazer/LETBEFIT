@@ -46,56 +46,59 @@ include block_html/_include.pug
 						// !!! NOTE !!!
 						//  <- сюда добавляй название программы
 						// !!! NOTE !!!
-						.config.js-config.js-switch-wrap
-							.config-head.js-config-head
-								.config-head__val.js-switch-cont.hidden(data-item="start")
-									span Пробный день
-								.config-head__val.js-switch-cont(data-item="6days")
-									span 1 Неделя
-								.config-head__val.js-switch-cont.hidden(data-item="2week")
-									span 2 недели
-								.config-head__val.js-switch-cont.hidden(data-item="4week")
-									span 4 недели
-								.config-head__val.js-switch-cont.hidden(data-item="3month")
-									span 3 месяца
-									.icon-row
-										+icon("info","icon icon--right icon--orange")
-										span.type--sm Подписка оплачивается сразу на 2 недели и еженедельно в последующий срок
-								+icon("arrow-up","icon")
-							.contract-config-wrap.js-contract-config-wrap.hide
-								.contract-config
-									.contract-config__el.js-contract-el.js-switch(data-item="start")
-										+radio('Пробный день',"list")
-									.contract-config__el.active.js-contract-el.js-switch(data-item="6days")
-										+radio('Неделя (6 дней)',"list","true")
-									.contract-config__el.js-contract-el.js-switch(data-item="2week")
-										+radio('2 недели (12 дней)',"list")
-										.contract-config__el-val -5%
-									.contract-config__el.js-contract-el.js-switch(data-item="4week")
-										+radio('4 недели (24 дня)',"list")
-										.contract-config__el-val -7.5%
-									.contract-config__el.js-contract-el.js-switch(data-item="3month")
-										+radio('3 месяца  (72 дня)',"list")
-										.contract-config__el-val -15%
-								// Эта кнопка есть только у тех блоков которые добавятся, у певрой программы ее нет
-								.contract-remove.js-contract-remove
+						.config.js-config
+							.js-switch-wrap
+								.config-head.js-config-head
+									.config-head__val.js-switch-cont.hidden(data-item="start")
+										span Пробный день
+									.config-head__val.js-switch-cont(data-item="6days")
+										span 1 Неделя
+									.config-head__val.js-switch-cont.hidden(data-item="2week")
+										span 2 недели
+									.config-head__val.js-switch-cont.hidden(data-item="4week")
+										span 4 недели
+									.config-head__val.js-switch-cont.hidden(data-item="3month")
+										span 3 месяца
+										.icon-row
+											+icon("info","icon icon--right icon--orange")
+											span.type--sm Подписка оплачивается сразу на 2 недели и еженедельно в последующий срок
+									+icon("arrow-up","icon")
+								.contract-config-wrap.js-contract-config-wrap.hide
+									.contract-config
+										.contract-config__el.js-contract-el.js-switch(data-item="start")
+											+radio('Пробный день',"list")
+										.contract-config__el.active.js-contract-el.js-switch(data-item="6days")
+											+radio('Неделя (6 дней)',"list","true")
+										.contract-config__el.js-contract-el.js-switch(data-item="2week")
+											+radio('2 недели (12 дней)',"list")
+											.contract-config__el-val -5%
+										.contract-config__el.js-contract-el.js-switch(data-item="4week")
+											+radio('4 недели (24 дня)',"list")
+											.contract-config__el-val -7.5%
+										.contract-config__el.js-contract-el.js-switch(data-item="3month")
+											+radio('3 месяца  (72 дня)',"list")
+											.contract-config__el-val -15%
+									// Эта кнопка есть только у тех блоков которые добавятся, у певрой программы ее нет
+							.js-contract-config-wrap.hide
+								.g.g-between.mb-24
+									.input-cont
+										.input-row.input-row--clear
+											label.check-el.js-switch(data-item="isPerson")
+												.style-label.style-label--checkbox
+													input(type="checkbox" ).style-input
+													.style-input-element
+														+icon("checked","icon")
+													.style-input-text Я буду питаться с коллегами (-15%)
+									.js-switch-cont.hidden(data-item="isPerson")
+										+incr(1,"incr--single")
+								.contract-remove.js-contract-remove.mb-16
 									.btn--sm.btn--text-red
 										.btn-icon-row.btn-icon-row--left
 											+icon("delete","icon")
 											span Удалить
 					// choose program type === end
 
-					.g.g-between.mb-24
-						.input-cont
-							.input-row.input-row--clear
-								label.check-el.js-switch(data-item="isPerson")
-									.style-label.style-label--checkbox
-										input(type="checkbox" ).style-input
-										.style-input-element
-											+icon("checked","icon")
-										.style-input-text Я буду питаться с коллегами (-15%)
-						.hidden.js-switch-cont(data-item="isPerson")
-							+incr(1,"incr--single")
+
 
 
 

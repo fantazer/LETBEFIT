@@ -29,7 +29,16 @@ include block_html/_include.pug
 							- for (var j=1;j<5;j++)
 								- for (var i=1;i<5;i++)
 									.slider-el-wrap
-										.slider-review__el(style="background-image:url('img/inst-item-" + i + ".jpg')")
+										.slider-review__el
+											.slider-review-head
+												.slider-review-head__user(style="background-image:url('img/user.jpg')")
+												.slider-review-head__info
+													.type--head mike_beyond_the_sea
+													.type--sm Moskow
+											.slider-review-img(style="background-image:url('img/inst-img-" + i + ".jpg')")
+											.slider-review-wrap
+												.slider-review-content.scroll-template-light
+													.slider-review-text Мы то - что мы едим.Пожалуй, лучшее мое решение за последнее время - это отказ от вредной пищи, сладкого, мучного и бокальчика вина за ужином. (да, черт подери, сама не верю в это, но Алкоголь тоже попал под санкционку в моей жизни)И знаете, это было решение за последнее время  - это отказ от мучного и бокальчика вина за ужином. (да, черт подери, сама не верю в это, но Алкоголь тоже попал под санкционку в моей жизни)И знаете, это было решение за последнее время  - это отказ от
 		.section
 			.main-cont-xs
 				.type--lgx.type--head.mb-64 Отзывы с сайта

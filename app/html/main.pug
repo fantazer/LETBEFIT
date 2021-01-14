@@ -193,30 +193,8 @@ include block_html/_include.pug
 								.program-consist__el-val 458
 								.program-consist__el-type Углеводы
 						// program consist === end
-					.program-list-container
-						.program-list
-							// program item
-							+item(1,'simple')
-							+item(2,'change')
-							+item(3,'rating')
-							+item(4,'ratingTrue')
-							+item(5,'return')
-							+item(2,'change')
-							+item(3,'rating')
-							// program item === end
-							// program-banner
-							.program-banner
-								.program-banner-inner
-									img(src="img/smile/smile-star.png", alt="").program-banner__img
-									.program-banner__cost 180
-									.program-banner__text руб/день
-									a(href="#order").btn--md.btn--mark.js-scroll-to Заказать
-									a(href="#").icon-row
-										span.type--md.type--mark.type--bold Подробнее
-										+icon("arrow-right","icon icon--left icon--mark")
-						// program-banner === end
+					+programList()
 			// program list === end
-
 		// program constructor === end
 
 		.main-cont

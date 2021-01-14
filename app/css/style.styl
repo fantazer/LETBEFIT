@@ -49,6 +49,11 @@ body
 		padding: 0 20px
 	center(1312px,10px)
 
+.main-cont-md
+	+below(640px)
+		padding: 0 20px
+	center(1088px,42px)
+
 .main-cont-sm
 	+below(640px)
 		padding: 0 20px
@@ -488,7 +493,7 @@ slider-create-mobile()
 	transform translateY(15px) translateX(-25px)
 .nav-list
 	flex(between)
-	width: 73%
+	width: 75%
 	margin 0 auto 0 0
 	padding: 0
 .nav-list__el
@@ -773,13 +778,17 @@ slider-create-mobile()
 
 .board__el-wrap
 	+below(1280px)
-		min-height auto
+		min-height 520px
+	+below(960px)
+		min-height 350px
 	+below(640px)
 		padding: 20px 0 0 0
+		fl()
 	padding: 12% 0 8% 0
 	position relative
 	min-height 560px
-
+	f()
+	align-items center
 .board__el-wrap--extend
 	+below(640px)
 		padding: 20px 0 0 0
@@ -816,13 +825,15 @@ slider-create-mobile()
 	color white
 	margin-bottom: 10%
 .board__title-sub
-	+below(1024px)
-		display none
+	+below(640px)
+		margin-top: 0
+		text-align center
 	color white
 	@extend .type--mdx
 	margin-top: -5%
 	margin-bottom: 5%
 	max-width 475px
+
 .board__content
 	+below(1280px)
 		width: 100%
@@ -834,7 +845,12 @@ slider-create-mobile()
 		fl()
 		max-width 100%
 	width: 50%
+	f()
+	fl()
+	align-items: flex-start
 .board__img
+	+below(1024px)
+		padding: 24% 24%
 	+below(640px)
 		position: static
 		padding: 40% 24%
@@ -961,7 +977,6 @@ slider-create-mobile()
 	@extend .mb-48
 	color $typePrimary
 .invite-subs
-
 	+below(640px)
 		fl()
 		justify-content: center
@@ -1054,7 +1069,6 @@ slider-create-mobile()
 		&:hover
 			color $mark
 
-//.main-cont
 .footer-top
 	+below(1024px)
 		padding: 32px 0
@@ -1450,7 +1464,7 @@ program-type(bg,textColor,iconColor)
 		width: 80%
 	f()
 	width: 25%
-	min-width 340px
+	min-width 320px
 .program-consist__el
 	padding: 0 10px
 	flex-grow 1
@@ -1468,7 +1482,7 @@ program-type(bg,textColor,iconColor)
 	@extend .type--sm
 	color $typePrimary
 .program-list-container
-	+below(1024px)
+	+below(1280px)
 		scroll-create-mobile()
 		padding-bottom: 20px
 		margin-bottom: 10px!important
@@ -1476,7 +1490,7 @@ program-type(bg,textColor,iconColor)
 	grid-template-columns: 1fr;
 	flex-grow: 1
 .program-list
-	+below(1024px)
+	+below(1280px)
 		grid-template-columns: initial
 		grid-auto-flow:column
 		grid-gap 0
@@ -1500,9 +1514,14 @@ program-type(bg,textColor,iconColor)
 		box-shadow 0 12px 32px rgba(41, 42, 53, 0.16)
 		.program-el-wrap
 			border 1px solid transparent
+
+
+
 .program-el__img
 	bg-full()
-	padding: 38% 10%
+	//padding: 38% 10%
+	width: 100%
+	height: 200px
 	position relative
 	.rating
 		position absolute
@@ -1551,6 +1570,9 @@ program-type(bg,textColor,iconColor)
 .program-el__content
 	flex-grow 1
 	padding: 20px
+.program-el__content--flex
+	f()
+	fl()
 .program-el__head
 	flex(between)
 	color $typeSecondary
@@ -1568,6 +1590,11 @@ program-type(bg,textColor,iconColor)
 	padding: 12px 20px
 	border-top 1px solid $border-color
 	flex(between)
+
+.program-el__footer--clear
+	border 0
+	padding: 0
+	margin-top: auto
 .program-banner
 	+below(1024px)
 		display none
@@ -1657,23 +1684,38 @@ program-type(bg,textColor,iconColor)
 	//grid-template-columns: repeat(3, 1fr)
 	grid-template-columns: repeat(auto-fit, minmax(12rem,1fr))
 
-.work-step--swamp
+work-step(bgVal,colorVal)
 	.work-step__el
-		background: $swapmLight
+		background: bgVal
 		border 0
 	.work-step__el-title
-		color $swapm
+		color colorVal
 	.work-step__el-text
-		color $swapm
+		color colorVal
+
+.work-step--swamp
+	work-step($swapmLight,$swapm)
+
+.work-step--green
+	work-step($greenLight,$greenDark)
 
 .work-step--pink
-	.work-step__el
-		background: $pinkLight
-		border 0
-	.work-step__el-title
-		color $pink
-	.work-step__el-text
-		color $pink
+	work-step($pinkLight,$pink)
+
+.work-step--violet
+	work-step($violetLight,$violet)
+
+.work-step--coral
+	work-step($coralLight,$coral)
+
+.work-step--blue
+	work-step($blueLight,$blue)
+
+.work-step--sea
+	work-step($seaLight,$sea)
+
+.work-step--orange
+	work-step($orangeLight,$orange)
 
 .work-step__el
 	+below(1024px)
@@ -2084,7 +2126,7 @@ program-type(bg,textColor,iconColor)
 		right: -8%
 	background-size contain
 	background-repeat no-repeat
-	background-position center center
+	background-position center bottom
 	padding 2% 21%
 	position absolute
 	top 0
@@ -2667,7 +2709,7 @@ program-type(bg,textColor,iconColor)
 	background-size cover
 	background-repeat no-repeat
 	background-position center center
-	padding 3% 28%
+	padding 3% 15%
 	position absolute
 	top 0
 	bottom 0
@@ -2804,8 +2846,8 @@ program-type(bg,textColor,iconColor)
 		padding: 20px
 	background: white
 	margin-top: -10%
-	center(1072px,110px)
-	padding-top: 110px
+	center(1072px,0px)
+	padding: 110px
 // sale-item === end
 
 .msg
@@ -2902,7 +2944,7 @@ program-type(bg,textColor,iconColor)
 		margin-bottom: 0
 
 .mobile-row-scroll-item
-	width: 300px
+	min-width: 300px
 	margin-right: 16px
 	white-space initial
 
@@ -2994,7 +3036,7 @@ program-type(bg,textColor,iconColor)
 
 
 //.lk
-//.main-cont
+
 .lk-head-wrap
 	+below(1024px)
 		padding: 24px 0

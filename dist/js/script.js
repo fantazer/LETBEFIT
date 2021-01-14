@@ -564,9 +564,9 @@ $(document).ready(function () {
 
 	// rating size
 	$('.rating').each(function(){
-		var sizeRating  = $(this).data('size')*1;
-		var totalRating = (sizeRating * 100) / 5 + '%'
-		$('.rating--fill').css('width','calc('+totalRating+' - 2.5px')
+    var sizeRating  = $(this).data('size')*1;
+    var totalRating = (sizeRating * 100) / 5 + '%'
+    $(this).find('.rating--fill').css('width','calc('+totalRating+' - 2.5px')
 	})
 	// rating size === end
 

@@ -193,8 +193,8 @@ gulp.task('watch', () => {
 
 gulp.task('pug', function() {
 		gulp.src(['app/html/*.pug','app/module/**/*.pug',])
-		//gulp.src(['app/html/diet.pug','app/module/**/*.pug',])
-		//gulp.src(['app/html/lk-*.pug','app/module/**/*.pug',])
+		//gulp.src(['app/html/program-*.pug','app/module/**/*.pug',])
+		//gulp.src(['app/html/order.pug','app/module/**/*.pug',])
 				//.pipe(changed('app/', {extension: '.html'}))
 				//.pipe(cache('pug'))
 				//.pipe(pugInheritance({basedir: 'app/html/',skip:'node_modules/'}))
@@ -232,8 +232,6 @@ gulp.task('include-pug',function(){
 
 		}
 })
-
-
 
 // ########## make html end###############
 
