@@ -2247,9 +2247,11 @@ work-step(bgVal,colorVal)
 	&:last-child
 		border 0
 
+.contract-total--clear
+	border-bottom 0
+
 .contract-total__name
 	color $typeSecondary
-
 
 .contract-footer
 	+below(640px)
@@ -2259,6 +2261,7 @@ work-step(bgVal,colorVal)
 	border-top 1px dashed $border-color
 	padding: 48px 48px 56px 48px
 	flex(between)
+
 .contract-footer--clear
 	+below(640px)
 		padding 0
@@ -2304,6 +2307,23 @@ work-step(bgVal,colorVal)
 	top 0
 	bottom 0
 	right 0
+
+.order-success-head
+	flex(mid)
+	fl()
+
+.contract-banner-wrap
+	+below(640px)
+		margin-left -16px
+		margin-right -16px
+	margin-left -48px
+	margin-right -48px
+	flex(mid)
+.contract-banner
+	flex(mid)
+	fl()
+	padding: 48px 16px
+	max-width 488px
 
 .config
 	border 1px solid $border-color
