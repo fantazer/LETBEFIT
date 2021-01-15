@@ -13,20 +13,54 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add program page + fix order increment">
-      <change afterPath="$PROJECT_DIR$/app/html/retail.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/haccp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/msg-list.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/square.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/video-production.jpg" afterDir="false" />
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add start retail">
+      <change afterPath="$PROJECT_DIR$/app/img/banner-ritail.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style-guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style-guide.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/_helper.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/_helper.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/block_html/_const.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_const.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/about.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/about.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/present.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/present.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/main.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-balance.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-balance.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-daily.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-daily.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-detox.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-detox.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-everydaily.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-everydaily.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-fish.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-fish.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-light.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-light.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-normal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-normal.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-strong.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-strong.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-vegan.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-vegan.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/retail.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/retail.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/michael.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/michael.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/аnastasia.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/аnastasia.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-balance.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-balance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-daily.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-daily.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-detox.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-detox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-everydaily.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-everydaily.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-fish.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-fish.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-light.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-light.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-normal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-normal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-strong.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-strong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-vegan.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-vegan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/retail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/retail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style-min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style-min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/michael.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/michael.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/аnastasia.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/аnastasia.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/program-balance.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/program-balance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/program-daily.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/program-daily.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/program-detox.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/program-detox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/program-everydaily.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/program-everydaily.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/program-fish.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/program-fish.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/program-light.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/program-light.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/program-normal.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/program-normal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/program-strong.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/program-strong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/program-vegan.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/program-vegan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/retail.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/retail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -315,14 +349,8 @@
       <workItem from="1610356052889" duration="11645000" />
       <workItem from="1610453259562" duration="7984000" />
       <workItem from="1610530614090" duration="11893000" />
-      <workItem from="1610614484854" duration="16047000" />
-    </task>
-    <task id="LOCAL-00034" summary="fix radio">
-      <created>1577618353073</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1577618353073</updated>
+      <workItem from="1610614484854" duration="16420000" />
+      <workItem from="1610698211806" duration="4191000" />
     </task>
     <task id="LOCAL-00035" summary="fix package + gulp">
       <created>1581418066426</created>
@@ -660,7 +688,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610619584434</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="add start retail">
+      <created>1610654045398</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1610654045399</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -701,7 +736,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="remove sliders" />
     <MESSAGE value="fix scroll mobile list" />
     <MESSAGE value="add modals" />
     <MESSAGE value="add program page" />
@@ -726,6 +760,7 @@
     <MESSAGE value="fix page 21 day + fix nav slider" />
     <MESSAGE value="fix review slider + rating + item cards" />
     <MESSAGE value="add program page + fix order increment" />
-    <option name="LAST_COMMIT_MESSAGE" value="add program page + fix order increment" />
+    <MESSAGE value="add start retail" />
+    <option name="LAST_COMMIT_MESSAGE" value="add start retail" />
   </component>
 </project>

@@ -777,6 +777,11 @@ slider-create-mobile()
 	br(18px)
 	background: #ffffff2e
 
+.board__el
+	position relative
+
+.board__el--hidden
+	overflow hidden
 
 .board__el-wrap
 	+below(1280px)
@@ -807,7 +812,7 @@ slider-create-mobile()
 		+below(640px)
 			position: static
 			padding: 40% 24%
-			margin: 0px auto
+			margin: auto auto 0 auto
 
 .board__el-wrap--full
 	+below(1024px)
@@ -824,7 +829,6 @@ slider-create-mobile()
 		font-size: 30px
 	+below(640px)
 		text-align center
-		font-size: 34px
 		margin-bottom: 10px
 	@extend .type--xl
 	font-weight 700
@@ -841,8 +845,8 @@ slider-create-mobile()
 
 .board__title-sub-sm
 	+below(640px)
-		margin-top: 0
 		text-align center
+		margin-bottom: 50px
 	color white
 	@extend .type--md
 	margin-top: 0
@@ -863,6 +867,23 @@ slider-create-mobile()
 	f()
 	fl()
 	align-items: flex-start
+	z-index 10
+
+.board__content--retail
+	+below(640px)
+		f()
+		align-items start
+		fl()
+		height: 100%
+		.board__title
+			margin-top: -15%
+			text-align: left
+			width: 70%
+			font-size: 44px
+		.board__title-sub-sm
+			text-align: left
+			width: 90%
+
 .board__img
 	+below(1024px)
 		padding: 24% 24%
@@ -1455,6 +1476,8 @@ program-type(bg,textColor,iconColor)
 	f()
 	margin-right auto
 .program-days__el
+	+below(640px)
+		margin-bottom: 6px
 	flex(mid)
 	size 42px 44px
 	br(20px)
@@ -1562,6 +1585,11 @@ program-type(bg,textColor,iconColor)
 		position absolute
 		bottom 12px
 		left 20px
+.program-el__img-val
+	position absolute
+	color white
+	top 16px
+	left 16px
 .rating
 	f()
 	grid-gap 5px
@@ -1693,10 +1721,8 @@ program-type(bg,textColor,iconColor)
 	padding: 20px
 	.btn--md
 		width: 100%
-		margin-bottom: 30px
 .program-banner__img
 	size 48px
-	margin-bottom: 20px
 .program-banner__cost
 	@extend .type--xl
 	font-weight 700
@@ -1705,7 +1731,7 @@ program-type(bg,textColor,iconColor)
 	@extend .type--md
 	font-weight 700
 	color black
-	margin-bottom: 40px
+	margin-bottom: 32px
 // program list === end
 
 // work-step
@@ -2165,8 +2191,8 @@ work-step(bgVal,colorVal)
 		margin-right: 8px
 .contract-head-img
 	+below(640px)
-		padding: 2% 35%
-		right: -8%
+		padding: 2% 28%
+		right: -5%
 	background-size contain
 	background-repeat no-repeat
 	background-position center bottom
@@ -3651,3 +3677,15 @@ work-step(bgVal,colorVal)
 	padding: 5% 10%
 	top 0
 	right: 0
+
+.retail-img
+	+below(1370px)
+		background-size cover
+	position absolute
+	top 0
+	right: -20%
+	padding: 20% 37%
+	height: 100%
+	background-size contain
+	background-repeat no-repeat
+	background-position center left

@@ -392,11 +392,13 @@ mixin programList(program)
           img(src="img/smile/smile-star.png", alt="").program-banner__img
           .program-banner__cost 180
           .program-banner__text руб/день
-          a(href="#order").btn--md.btn--mark.js-scroll-to Заказать
+          a(href="#order").btn--md.btn--mark.js-scroll-to.mb-24 Заказать
           if(program)
-            a(href="#").icon-row
-              span.type--md.type--mark.type--bold Подробнее
-              +icon("arrow-right","icon icon--left icon--mark")
+            a(href="#").btn--md.btn--text
+              .btn-icon-row.btn-icon-row--right
+                span Подробнее
+                +icon("arrow-right","icon icon--left icon--mark")
+
 
 mixin contract(name,bg,img)
   // contract

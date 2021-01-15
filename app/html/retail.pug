@@ -3,14 +3,14 @@ include block_html/_include.pug
 
 .page#header
 	+header()
-	.board__el.bg-greenDark
+	.board__el.board__el--hidden.bg-greenDark
 		.main-cont
 			.board__el-wrap.board__el-wrap--full
-				.board__content
+				.board__content.board__content--retail
 					.board__title Поставка ПП-блюд ритейлерам
 					.board__title-sub-sm Мы специализируемя на здоровом питании и умеем делать классные и вкусные ПП-блюда
-					a(href="#form").js-scroll-to.btn--md.btn--white Оставить заявку
-				.board__img(style="background-image:url('img/slide-person-2.png')")
+					a(href="#form").js-scroll-to.btn--md.btn--white.btn--mobile Оставить заявку
+		.retail-img(style="background-image:url('img/banner-ritail.png')")
 	.content.content--clear-bottom
 		.bg-square(style="background-image:url('img/square.svg')")
 		.section-sm
@@ -53,7 +53,7 @@ include block_html/_include.pug
 		.section-full
 			.main-cont
 				.title-row.mb-48
-					.type--lg.type--head Примеры блюд
+					.type--lgx.type--head Примеры блюд
 					.marker.js-tick-cont
 						.marker-el.js-tick.active Завтрак
 						.marker-el.js-tick Суп
@@ -71,7 +71,7 @@ include block_html/_include.pug
 					.g-lg-5.g-md-12.g-xs-12.mobile-order-2
 						.type--head.type--lgx.mb-32 Гибкая доставка по Москве и Питеру
 						.type--md.type--primary.mb-80 У нас своя курьерская служба, именно поэтому , мы можем предложить Вам гибкие условия доставки
-						a(href="#form").js-scroll-to.btn--md.btn--mark Оставить заявку
+						a(href="#form").js-scroll-to.btn--md.btn--mark.btn--mobile Оставить заявку
 					.g-xl-5.g-offset-xl-2.g-lg-6.g-offset-lg-1.g-md-12.g-xs-12.mobile-order-1
 						.g-stretch
 							.g-lg-6.g-xs-6
