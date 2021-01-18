@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../svg/sprite.svg");
     background-repeat: no-repeat;
-    background-size: 6.4em 189.1em;
+    background-size: 6.4em 190.8em;
 }
 
 .no-svg .icon:before {
@@ -737,8 +737,17 @@
 
 
 
-  .icon.view:before {
+  .icon.userGroup:before {
       background-position: 0em -186.7em;
+      width: 2.4em;
+      height: 1.7em;
+  }
+
+
+
+
+  .icon.view:before {
+      background-position: 0em -188.4em;
       width: 2.4em;
       height: 2.4em;
   }

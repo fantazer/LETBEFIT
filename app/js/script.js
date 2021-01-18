@@ -570,7 +570,29 @@ $(document).ready(function () {
 	})
 	// rating size === end
 
-
+	// range slider
+	if($('.js-sale-range').length){
+			var rangeConfig = $(".js-sale-range").data('config');
+			var rangeSalePercent = $('.js-sale-calc-total__val')
+			var rangeSaleCost = $('.js-sale-calc-total__cost')
+		 $(".js-sale-range").ionRangeSlider({
+			prefix: "<span class='msg-range-icon'><svg class='icon'><use xlink:href='#userGroup'></use></svg></span>От ",
+			postfix: "-х",
+			from:2,
+			to_fixed: true,
+			onChange: function (data) {
+				console.log(data.from_pretty);
+				rangeConfig.forEach(function(item){
+					if(item.value == data.from_pretty){
+						rangeSalePercent.text(item.sale);
+						rangeSaleCost.text(item.cost);
+					}
+				})
+			},
+		})
+	}
+	// range slider === end
+	
 	window.condition = {};
 	window.condition.closeModal = closeModal
 	window.condition.initModal = initModal

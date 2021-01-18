@@ -316,41 +316,6 @@ slider-create-mobile()
 
 // modal === end
 
-// cookie
-/*.cookie
-	position: fixed
-	bottom 20px
-	left 0
-	width: 100%
-	transform translateY(10px)
-	opacity: 0
-	z-index -1
-	tr()
-.cookie--active
-	z-index 20
-	opacity: 1
-	transform translateY(0)
-.cookie-wrap
-	padding: 15px 20px
-	br(20px)
-	z-index 10
-	background: white
-	f()
-	justify-content: space-between
-	border 1px solid $border-color
-	.icon
-		&:hover
-			fill black
-		tr()
-		size 14px
-		margin-left: 10px
-		fill $gray
-		cp()
-.cookie-text
-	width calc(100% - 30px)
-	font-size: 12px*/
-// cookie === end
-
 // header
 .header
 	background: white
@@ -385,17 +350,12 @@ slider-create-mobile()
 		color $mark
 		.icon
 			fill $mark
+
 .header-location-wrap
 	width: 100%
 	flex(mid)
 	color black
 	tr()
-
-.header-location-wrap
-
-
-//.header-location__val
-
 
 .header-location__val--lg
 	+below(1024px)
@@ -651,10 +611,8 @@ slider-create-mobile()
 		margin-right: 18px
 		fill $mark
 
-//.auth-state--false
-//.auth-state--true
-// header === end
 
+// header === end
 
 // slick
 .slick-slide
@@ -722,9 +680,6 @@ slider-create-mobile()
 	.icon
 		size 18px
 
-
-
-
 //Навигация внутри
 .slider-wrap--inarrow
 	.slider-control
@@ -791,6 +746,7 @@ slider-create-mobile()
 	+below(640px)
 		padding: 20px 0 0 0
 		fl()
+		min-height initial
 	padding: 12% 0 8% 0
 	position relative
 	min-height 560px
@@ -808,7 +764,7 @@ slider-create-mobile()
 		@extend .mb-32
 	.board__img
 		+below(1160px)
-			padding: 24%
+			padding: 25% 30%
 		+below(640px)
 			position: static
 			padding: 40% 24%
@@ -846,11 +802,11 @@ slider-create-mobile()
 .board__title-sub-sm
 	+below(640px)
 		text-align center
-		margin-bottom: 50px
+		margin-bottom: 20px
 	color white
 	@extend .type--md
 	margin-top: 0
-	margin-bottom: 5%
+	margin-bottom: 40px
 	max-width 630px
 
 .board__content
@@ -895,7 +851,7 @@ slider-create-mobile()
 	position absolute
 	padding: 20% 24%
 	bg-full()
-	right: 0
+	right: -32px
 	bottom 0
 // main slider === end
 
@@ -924,6 +880,7 @@ slider-create-mobile()
 	tr()
 	f()
 	fl()
+	background: white
 	&:hover
 		border 1px solid white
 		box-shadow 0 12px 32px rgba(41, 42, 53, 0.16)
@@ -942,7 +899,6 @@ slider-create-mobile()
 	color $typePrimary
 	margin-top: auto
 // advant-section === end
-
 
 // invite
 .invite
@@ -1723,6 +1679,7 @@ program-type(bg,textColor,iconColor)
 		width: 100%
 .program-banner__img
 	size 48px
+	margin-bottom: 32px
 .program-banner__cost
 	@extend .type--xl
 	font-weight 700
@@ -1948,7 +1905,8 @@ work-step(bgVal,colorVal)
 
 .section--gradient
 	background: $gradient
-
+	.advant__el
+		border 1px solid transparent
 // accordion
 .accordion
 	+below(640px)
@@ -3709,3 +3667,97 @@ work-step(bgVal,colorVal)
 	background-size contain
 	background-repeat no-repeat
 	background-position center left
+
+
+.sale-calc
+	+below(640px)
+		padding: 40px 20px
+	padding: 48px 64px
+	background: white
+	br(12px)
+
+.sale-calc-footer
+	+below(640px)
+		fl()
+	flex(between)
+
+.sale-calc-total
+	+below(640px)
+		margin-bottom: 20px
+	flex(mid)
+.sale-calc-total__val
+	size 56px
+	round()
+	background: $coral
+	flex(mid)
+	color white
+	font-weight: 700
+	margin-right: 28px
+.sale-calc-total__cost
+	font-weight: 700
+	@extend .type--lg
+
+
+// range slider
+.range-wrap
+	+below(640px)
+		padding: 0 20px
+		margin 60px 0 30px 0
+	margin 90px 0 50px 0
+	position relative
+	.irs-hidden-input
+		display none!important
+	.irs-bar-edge
+		background $mark
+		height 15px
+		border-radius 10px 0px 0px 10px
+		width 25px
+	.irs-bar
+		height 15px
+		background $mark
+		br(10px)
+	.irs-line-left
+		height 15px
+		border-radius 10px 0px 0px 10px
+		background $snow
+	.irs-line-right
+		height 15px
+		background $snow
+		border-radius 0px 10px 10px 0px
+	.irs-line-mid
+		background $snow
+		height 15px
+	.irs-line
+		height 15px
+	.single
+		background: $mark
+		size 25px
+		br(5px)
+		top 20px
+	.irs-slider
+		width 45px
+		height 30px
+	.irs-min, .irs-max
+		display none
+	.irs-single
+		&:before
+			content ''
+			display none
+		background transparent
+		color black
+		padding: 10px 20px
+		br(28px)
+		background: $fieldBackground
+		font-size: 16px
+		top -40px
+		flex(mid)
+		font-weight: 700
+		.icon
+			margin-right: 12px
+	.irs--flat .irs-handle > i:first-child
+		display none
+	.irs--flat .irs-line
+		background: #F8F8F8
+		border 1px solid $border-color
+		border-radius 10px
+// range slider === end

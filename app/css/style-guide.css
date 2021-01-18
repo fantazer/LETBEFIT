@@ -1829,6 +1829,9 @@ a:visiter {
   width: 100%;
   display: block;
 }
+.btn--full.btn--md {
+  padding: 17px;
+}
 .btn-row {
   display: grid;
   grid-gap: 20px;

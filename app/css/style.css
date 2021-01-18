@@ -2217,7 +2217,8 @@ h4,
 h3,
 .footer-phone,
 .share__title,
-.offer-title {
+.offer-title,
+.sale-calc-total__cost {
   font-size: 32px;
 }
 @media only screen and (max-width: 768px) {
@@ -2226,7 +2227,8 @@ h3,
   h3,
   .footer-phone,
   .share__title,
-  .offer-title {
+  .offer-title,
+  .sale-calc-total__cost {
     font-size: 24px;
   }
 }
@@ -2864,6 +2866,9 @@ a:visiter {
 .btn--full {
   width: 100%;
   display: block;
+}
+.btn--full.btn--md {
+  padding: 17px;
 }
 .btn-row {
   display: grid;
@@ -4002,38 +4007,6 @@ body {
 .modal--msg .modal-content {
   padding: 20px 20px 24px 20px;
 }
-/*.cookie
-	position: fixed
-	bottom 20px
-	left 0
-	width: 100%
-	transform translateY(10px)
-	opacity: 0
-	z-index -1
-	tr()
-.cookie--active
-	z-index 20
-	opacity: 1
-	transform translateY(0)
-.cookie-wrap
-	padding: 15px 20px
-	br(20px)
-	z-index 10
-	background: white
-	f()
-	justify-content: space-between
-	border 1px solid $border-color
-	.icon
-		&:hover
-			fill black
-		tr()
-		size 14px
-		margin-left: 10px
-		fill $gray
-		cp()
-.cookie-text
-	width calc(100% - 30px)
-	font-size: 12px*/
 .header {
   background: #fff;
 }
@@ -4107,7 +4080,6 @@ body {
   transition: all 0.4s;
 }
 @media only screen and (max-width: 1024px) {
-  .header-location-wrap,
   .header-location__val--lg {
     display: none;
   }
@@ -4709,6 +4681,7 @@ body {
     -webkit-flex-flow: column;
         -ms-flex-flow: column;
             flex-flow: column;
+    min-height: initial;
   }
 }
 .board__el-wrap--extend {
@@ -4731,7 +4704,7 @@ body {
 }
 @media only screen and (max-width: 1160px) {
   .board__el-wrap--extend .board__img {
-    padding: 24%;
+    padding: 25% 30%;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -4792,13 +4765,13 @@ body {
 .board__title-sub-sm {
   color: #fff;
   margin-top: 0;
-  margin-bottom: 5%;
+  margin-bottom: 40px;
   max-width: 630px;
 }
 @media only screen and (max-width: 640px) {
   .board__title-sub-sm {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 }
 .board__content {
@@ -4872,7 +4845,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  right: 0;
+  right: -32px;
   bottom: 0;
 }
 @media only screen and (max-width: 1024px) {
@@ -4922,6 +4895,7 @@ body {
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
+  background: #fff;
 }
 @media only screen and (max-width: 1024px) {
   .advant__el {
@@ -6392,6 +6366,7 @@ body {
 .program-banner__img {
   width: 48px;
   height: 48px;
+  margin-bottom: 32px;
 }
 .program-banner__cost {
   font-weight: 700;
@@ -6749,6 +6724,9 @@ body {
 }
 .section--gradient {
   background: linear-gradient(98.95deg, #e3eeff 0%, #e4f6e4 52.6%, #ffeee4 100%);
+}
+.section--gradient .advant__el {
+  border: 1px solid transparent;
 }
 .accordion {
   background: #fff;
@@ -9570,6 +9548,161 @@ body {
   .retail-img {
     background-size: cover;
   }
+}
+.sale-calc {
+  padding: 48px 64px;
+  background: #fff;
+  border-radius: 12px;
+}
+@media only screen and (max-width: 640px) {
+  .sale-calc {
+    padding: 40px 20px;
+  }
+}
+.sale-calc-footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 640px) {
+  .sale-calc-footer {
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+}
+.sale-calc-total {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 640px) {
+  .sale-calc-total {
+    margin-bottom: 20px;
+  }
+}
+.sale-calc-total__val {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #ff4f4f;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-weight: 700;
+  margin-right: 28px;
+}
+.sale-calc-total__cost {
+  font-weight: 700;
+}
+.range-wrap {
+  margin: 90px 0 50px 0;
+  position: relative;
+}
+@media only screen and (max-width: 640px) {
+  .range-wrap {
+    padding: 0 20px;
+    margin: 60px 0 30px 0;
+  }
+}
+.range-wrap .irs-hidden-input {
+  display: none !important;
+}
+.range-wrap .irs-bar-edge {
+  background: #7eca1d;
+  height: 15px;
+  border-radius: 10px 0px 0px 10px;
+  width: 25px;
+}
+.range-wrap .irs-bar {
+  height: 15px;
+  background: #7eca1d;
+  border-radius: 10px;
+}
+.range-wrap .irs-line-left {
+  height: 15px;
+  border-radius: 10px 0px 0px 10px;
+  background: $snow;
+}
+.range-wrap .irs-line-right {
+  height: 15px;
+  background: $snow;
+  border-radius: 0px 10px 10px 0px;
+}
+.range-wrap .irs-line-mid {
+  background: $snow;
+  height: 15px;
+}
+.range-wrap .irs-line {
+  height: 15px;
+}
+.range-wrap .single {
+  background: #7eca1d;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  top: 20px;
+}
+.range-wrap .irs-slider {
+  width: 45px;
+  height: 30px;
+}
+.range-wrap .irs-min,
+.range-wrap .irs-max {
+  display: none;
+}
+.range-wrap .irs-single {
+  background: transparent;
+  color: #111;
+  padding: 10px 20px;
+  border-radius: 28px;
+  background: #f1f2f6;
+  font-size: 16px;
+  top: -40px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+}
+.range-wrap .irs-single:before {
+  content: '';
+  display: none;
+}
+.range-wrap .irs-single .icon {
+  margin-right: 12px;
+}
+.range-wrap .irs--flat .irs-handle > i:first-child {
+  display: none;
+}
+.range-wrap .irs--flat .irs-line {
+  background: #f8f8f8;
+  border: 1px solid #dcdfe8;
+  border-radius: 10px;
 }
 @-webkit-keyframes slideInDown {
   from {
