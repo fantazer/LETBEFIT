@@ -1,0 +1,46 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page#header
+	+header()
+	.content.content--clear-top
+		.lk
+			.lk-head-wrap
+				.main-cont
+					.lk-head-cont
+						.lk-head
+							.type--head.type--lgx.mb-24 Тренировки
+							.type--head.type--md.mb-64 Мы подготовили специально для вас цикл тренировок на весь месяц
+						.lk-tool
+							+lk-nav()
+			.main-cont
+				.lk-wrap
+					.lk-cont
+						.text.mb-24
+							p Здесь будет текст, возможно описание того какие тренировки нужно делать, какую пользу это даст организму, в какое время суток лучше заниматься, какие делать перерывы между занятиями и тому подобные вещи.
+							// program days
+						.program-days.js-tick-cont.mb-24
+							-
+								var items = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
+							each item,i in items
+								.program-days__el.js-tick(class=i === 0 ? 'active' : '') #{item}
+						// program days === end
+						.training-list
+							- for (var i=0;i<6;i++)
+								a(href="https://youtu.be/eCtknu1zA54").training-el.fancybox
+									.training-el__img(style="background-image:url('img/training.jpg')")
+									.training-el-cont
+										.training-el__title Разминка 1 мин
+										.training-el__info.text + Сгибаем ноги в коленях, отводим таз назад	+ Опускаемся в нижнюю точку + Выдох - выпрыгиваем из нижней точки + Стараемся прыгнуть как можно выше + Приземляемся на носки
+										.training-el__footer
+											.training-el__state(class=i % 2 ? 'active' : '')
+												if(i % 2)
+													span Новое
+												else
+													+icon("checked","icon")
+													span Просмотрено
+											.training-el__date 23 янв 20
+
+
+	+footer()
+include ./block_html/_script.pug

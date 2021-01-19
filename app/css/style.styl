@@ -1433,7 +1433,7 @@ program-type(bg,textColor,iconColor)
 	margin-right auto
 .program-days__el
 	+below(640px)
-		margin-bottom: 6px
+		margin-right: 6px
 	flex(mid)
 	size 42px 44px
 	br(20px)
@@ -1535,8 +1535,9 @@ program-type(bg,textColor,iconColor)
 	bg-full()
 	//padding: 38% 10%
 	width: 100%
-	height: 200px
+	height: 232px
 	position relative
+
 	.rating
 		position absolute
 		bottom 12px
@@ -1679,7 +1680,7 @@ program-type(bg,textColor,iconColor)
 		width: 100%
 .program-banner__img
 	size 48px
-	margin-bottom: 32px
+	margin-bottom: 20px
 .program-banner__cost
 	@extend .type--xl
 	font-weight 700
@@ -3204,6 +3205,7 @@ work-step(bgVal,colorVal)
 	width calc(100% - 330px)
 	padding-top: 64px
 	margin-left auto
+	min-height 300px
 .slider-lk
 
 	.slider-el-wrap
@@ -3761,3 +3763,48 @@ work-step(bgVal,colorVal)
 		border 1px solid $border-color
 		border-radius 10px
 // range slider === end
+
+// training
+.training-list
+	display: grid
+	grid-gap 28px
+	grid-template-columns: repeat(auto-fill, minmax(18rem,1fr))
+
+.training-el
+	br(12px)
+	overflow hidden
+	border 1px solid $border-color
+
+.training-el__img
+	bg-full()
+	padding: 30% 10%
+
+.training-el-cont
+	padding: 20px
+	f()
+	fl()
+
+.training-el__info
+	margin-bottom: 20px
+
+.training-el__title
+	font-weight: 700
+	margin-bottom: 12px
+
+.training-el__footer
+	flex(between)
+	margin-top: auto
+.training-el__state
+	f()
+	align-items center
+	.icon
+		margin-right: 6px
+		fill $typeSecondary
+	span
+		color $typeSecondary
+	&.active
+		span
+			color $green
+.training-el__date
+	color $typeSecondary
+// training === end
