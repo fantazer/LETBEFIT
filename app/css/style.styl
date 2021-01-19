@@ -97,7 +97,7 @@ body
 .content--mobile-clear
 	+below(640px)
 		padding: 0
-
+		background: white
 .hidden-on-mobile
 	+below(640px)
 		display none!important
@@ -864,8 +864,15 @@ slider-create-mobile()
 		grid-template-columns: repeat(2, 1fr)
 	display: grid
 	grid-gap 28px
-	grid-template-columns: repeat(4, 1fr)
-	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+	//grid-template-columns: repeat(4, 1fr)
+	grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+
+.advant--md
+	+below(1024px)
+		grid-template-columns: repeat(auto-fill, minmax(14rem,1fr))
+		grid-gap 20px
+	grid-template-columns: repeat(5, 1fr)
+
 .advant--sm
 	+below(640px)
 		grid-template-columns: repeat(1, 1fr)
@@ -891,13 +898,12 @@ slider-create-mobile()
 	margin: 0 0 46px 0
 	img
 		+below(1024px)
-			width: 60px
-		width: 80px
+			size: 60px
+		size: 80px
 .advant__el-text
 	+below(1024px)
 		font-size: 12px
 	color $typePrimary
-	margin-top: auto
 // advant-section === end
 
 // invite
@@ -2162,7 +2168,7 @@ work-step(bgVal,colorVal)
 	right 10px
 .contract-content
 	+below(640px)
-		padding: 16px
+		padding: 20px
 	padding: 48px 48px 32px 48px
 .contract-config-wrap
 	margin-bottom: 16px
@@ -2214,7 +2220,7 @@ work-step(bgVal,colorVal)
 
 .contract-footer
 	+below(640px)
-		padding: 32px 16px
+		padding: 32px 20px
 		fw()
 		width: 100%
 	border-top 1px dashed $border-color
@@ -2593,8 +2599,10 @@ work-step(bgVal,colorVal)
 .blog-list
 	display: grid
 	grid-gap 28px
-	//grid-template-columns: repeat(4, 1fr)
 	grid-template-columns: repeat(auto-fill, minmax(16rem,1fr))
+
+.blog-list--sm
+	grid-template-columns: repeat(auto-fill, minmax(20rem,1fr))
 
 .blog-el
 	f()
@@ -2609,6 +2617,10 @@ work-step(bgVal,colorVal)
 	bg-full()
 	border-radius 12px 12px 0 0
 	padding: 45% 10%
+
+.blog-el__img--sm
+	padding: 25% 10%
+
 .blog-el-content
 	tr()
 	f()
@@ -2752,16 +2764,17 @@ work-step(bgVal,colorVal)
 	margin-bottom: 5%
 .offer-img
 	+below(640px)
-		padding: 2% 30%
 		right: 0
+		padding 20% 23%
 	background-size cover
 	background-repeat no-repeat
-	background-position center center
-	padding 3% 15%
+	background-position center bottom
+	padding 15% 16%
 	position absolute
-	top 0
 	bottom 0
+	top 0
 	right 10px
+	max-height 250px
 // offer === end
 
 // review
@@ -3349,6 +3362,7 @@ work-step(bgVal,colorVal)
 	color black
 	border 1px solid $border-color
 	white-space nowrap
+	background: white
 	&:hover
 		border 1px solid $mark
 	&.active
@@ -3360,6 +3374,12 @@ work-step(bgVal,colorVal)
 			tr()
 	&:last-child
 		margin-right: 0
+
+.marker-el--simple
+	border 1px solid $border-color!important
+	&:hover
+		pointer-events none
+	
 
 .lk-list-head-info
 	+below(480px)
@@ -3808,3 +3828,22 @@ work-step(bgVal,colorVal)
 .training-el__date
 	color $typeSecondary
 // training === end
+
+// poll
+.poll
+	+below(640px)
+		br(0)
+		border-bottom 1px solid $border-color
+	br(12px)
+	overflow hidden
+	background: white
+
+.poll-img
+	bg-full()
+	padding: 20% 10%
+
+.poll-content
+	+below(640px)
+		padding: 20px
+	padding: 48px 48px 32px 48px
+// poll === end

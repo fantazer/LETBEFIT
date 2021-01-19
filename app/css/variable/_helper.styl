@@ -106,6 +106,22 @@ mb(size1,size2,size3)
 		+below(640px)
 			margin-bottom: size3 px
 
+mr(size1,size2,size3)
+	.mr-{size1}
+		margin-right size1 px
+		+below(1024px)
+			margin-right: size2 px
+		+below(640px)
+			margin-right: size3 px
+
+ml(size1,size2,size3)
+	.ml-{size1}
+		margin-left size1 px
+		+below(1024px)
+			margin-left: size2 px
+		+below(640px)
+			margin-left: size3 px
+
 mt(size1,size2,size3)
 	.mt-{size1}
 		margin-top size1 px
@@ -149,6 +165,8 @@ p(size1,size2,size3)
 
 for $type,$typeVal in $st
 	mb($typeVal['size1'],$typeVal['size2'],$typeVal['size3'])
+	mr($typeVal['size1'],$typeVal['size2'],$typeVal['size3'])
+	ml($typeVal['size1'],$typeVal['size2'],$typeVal['size3'])
 	mt($typeVal['size1'],$typeVal['size2'],$typeVal['size3'])
 	m($typeVal['size1'],$typeVal['size2'],$typeVal['size3'])
 	pb($typeVal['size1'],$typeVal['size2'],$typeVal['size3'])
