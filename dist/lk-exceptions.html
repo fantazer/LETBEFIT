@@ -452,16 +452,80 @@
                                 <div class="type--head type--md">Я не ем некоторые ингредиенты</div>
                             </div>
                             <div class="text mb-32 js-switch-cont hidden" data-group="isIngr" data-item="ingr">
-                                <p class="type--secondary">В режиме доставки "без встречи с курьером" курьер будет вешать Ваш заказ на ручку или оставлять в оговоренном Вами месте. Вам придет уведомление о доставке как только курьер отметит заказ доставленным. Если Вы выбрали оплату
-                                    наличными, то курьер встретится с Вами при первой доставке для получения оплаты</p>
+                                <div class="filter-wrap js-filter-wrap">
+                                    <div class="filter-item">
+                                        <div class="input-row">
+                                            <input class="input input--simple input-filter" type="text" placeholder="Например: рыба, орехи..." />
+                                            <div class="filter-list scroll-template js-filter-list hide">
+                                                <!--Если есть варианты из поиска - Удали класс "hide"-->
+                                                <!-- Варианты из поиска  - > в js-filter-list append  .filter-list__el.js-filter-list-el-->
+                                                <div class="filter-list__el js-filter-list-el">Колбаса</div>
+                                                <div class="filter-list__el js-filter-list-el">Рыба</div>
+                                                <div class="filter-list__el js-filter-list-el">Орехи</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-result mb-24">
+                                        <div class="filter-result__el js-filter-result__el">
+                                            <span>Колбаса</span>
+                                            <svg class="icon">
+                                                <use xlink:href="#close"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="filter-result__el js-filter-result__el">
+                                            <span>Рыба</span>
+                                            <svg class="icon">
+                                                <use xlink:href="#close"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="filter-result__el js-filter-result__el">
+                                            <span>Хлеб</span>
+                                            <svg class="icon">
+                                                <use xlink:href="#close"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="switch-row mb-24 js-switch" data-group="isFood" data-item="food">
                                 <div class="switch js-toggle"></div>
                                 <div class="type--head type--md">Я не ем некоторые типы блюд</div>
                             </div>
                             <div class="text mb-32 js-switch-cont hidden" data-group="isFood" data-item="food">
-                                <p class="type--secondary">В режиме доставки "без встречи с курьером" курьер будет вешать Ваш заказ на ручку или оставлять в оговоренном Вами месте. Вам придет уведомление о доставке как только курьер отметит заказ доставленным. Если Вы выбрали оплату
-                                    наличными, то курьер встретится с Вами при первой доставке для получения оплаты</p>
+                                <div class="filter-wrap js-filter-wrap">
+                                    <div class="filter-item">
+                                        <div class="input-row">
+                                            <input class="input input--simple input-filter" type="text" placeholder="Например: оливье, куриный суп..." />
+                                            <div class="filter-list scroll-template js-filter-list">
+                                                <!--Если есть варианты из поиска - Удали класс "hide"-->
+                                                <!-- Варианты из поиска  - > в js-filter-list append  .filter-list__el.js-filter-list-el "Текст"-->
+                                                <div class="filter-list__el js-filter-list-el">Колбаса</div>
+                                                <div class="filter-list__el js-filter-list-el">Рыба</div>
+                                                <div class="filter-list__el js-filter-list-el">Орехи</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-result mb-24">
+                                        <div class="filter-result__el js-filter-result__el">
+                                            <span>Колбаса</span>
+                                            <svg class="icon">
+                                                <use xlink:href="#close"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="filter-result__el js-filter-result__el">
+                                            <span>Рыба</span>
+                                            <svg class="icon">
+                                                <use xlink:href="#close"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="filter-result__el js-filter-result__el">
+                                            <span>Хлеб</span>
+                                            <svg class="icon">
+                                                <use xlink:href="#close"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="type--head type--mdx mb-32 mt-48">Исключенные блюда</div>
                             <div class="mobile-row-scroll">

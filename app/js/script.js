@@ -593,9 +593,31 @@ $(document).ready(function () {
 	}
 	// range slider === end
 	
+	//  filter list
+	body.on('click','.js-filter-result__el', function(){
+		$(this).remove()
+	});
+
+	body.on('click','.js-filter-list-el', function(){
+		$(this).closest('.js-filter-list').addClass('hide');
+		var filterValue = $(this).text();
+		$(this).closest('.js-filter-wrap').find('.filter-result').append('<div class="filter-result__el js-filter-result__el"><span>'+filterValue+'</span><svg class="icon"><use xlink:href="#close"></use></svg></div>')
+	});
+
+	$(document).mouseup(function (e) {
+		var parrent = $(".filter-item");
+		if (!parrent.is(e.target) && parrent.has(e.target).length === 0) {
+			$('.filter-list').addClass('hide');
+		}
+	});
+
+
+	//  filter list === end
+	
 	window.condition = {};
 	window.condition.closeModal = closeModal
 	window.condition.initModal = initModal
-
+	
+	
 
 });

@@ -645,7 +645,6 @@ slider-create-mobile()
 	background: white
 	&:hover
 		background: white
-		border 1px solid white
 		box-shadow: 0px 12px 32px rgba(41, 42, 53, 0.16);
 		.icon
 			fill black
@@ -860,12 +859,13 @@ slider-create-mobile()
 .advant
 	+below(1024px)
 		grid-gap 20px
+		grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
 	+below(768px)
 		grid-template-columns: repeat(2, 1fr)
 	display: grid
 	grid-gap 28px
 	//grid-template-columns: repeat(4, 1fr)
-	grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+	grid-template-columns: repeat(auto-fill, minmax(16rem,1fr))
 
 .advant--md
 	+below(1024px)
@@ -3415,7 +3415,6 @@ work-step(bgVal,colorVal)
 		margin: 0 -20px
 		margin-bottom: 10px
 	br(12px)
-	margin-bottom: 10px
 	padding: 0 18px
 	&.active
 		+below(1024px)
@@ -3428,6 +3427,7 @@ work-step(bgVal,colorVal)
 			+below(640px)
 				padding: 20px 20px 0 20px
 			box-shadow 0 0 0
+			border 0
 		.history-cont
 			+below(1024px)
 				padding-bottom 0
@@ -3436,12 +3436,13 @@ work-step(bgVal,colorVal)
 	+below(768px)
 		fw()
 		br(10px)
-		padding: 20px
+		padding: 10px 0
 		bsh()
 	f()
 	align-items center
 	justify-content space-between
-	padding-bottom 10px
+	padding 10px
+	border-bottom 1px solid $border-color
 .history-type
 	+below(768px)
 		width: 100%
@@ -3847,3 +3848,44 @@ work-step(bgVal,colorVal)
 		padding: 20px
 	padding: 48px 48px 32px 48px
 // poll === end
+
+
+// filter els
+.filter-list
+	position absolute
+	top 100%
+	left 0
+	width: 100%
+	background: white
+	box-shadow: 0px 12px 32px rgba(41, 42, 53, 0.16)
+	border-radius: 4px
+	z-index 2
+	max-height 200px
+	overflow auto
+.filter-list__el
+	padding: 16px 20px
+	cp()
+	tr()
+	&:hover
+		background: $greenLight
+
+.filter-result
+	f()
+	fw()
+	grid-gap 20px
+
+.filter-result__el
+	+below(640px)
+		padding: 6px 12px
+	br(32px)
+	f()
+	cp()
+	tr()
+	padding: 12px 24px
+	border 1px solid $border-color
+	align-items center
+	grid-gap 12px
+	font-weight: 700
+	&:hover
+		border 1px solid $mark
+// filter els === end

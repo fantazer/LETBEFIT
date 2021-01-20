@@ -221,7 +221,7 @@ mixin item(i,type)
               +icon("reload","icon")
               span Вернуть
 
-mixin lk-item(i)
+mixin lk-item(i,type)
   .program-el.desktop-row-scroll-item
     .program-el__img(style="background-image:url('img/item-sm-" + i + ".jpg')")
       .rating(data-size='4.5')
@@ -242,12 +242,19 @@ mixin lk-item(i)
         .program-el__type
           .type--sm.type--secondary первый завтрак
           .type--sm.type--secondary 106 Ккал
-        .btn--sm.btn--sm-fix.btn--light
-          .btn-icon-row.btn-icon-row--left
-            +icon("reload","icon")
-            span Заменить
-
-mixin history(j,delivered)
+        if(!type)
+          .btn--sm.btn--sm-fix.btn--light
+            // toggle class .disable
+            .btn-icon-row.btn-icon-row--left
+              +icon("reload","icon")
+              span Заменить
+        if(type==='needMark')
+          .btn--sm.btn--sm-fix.btn--light
+            // toggle class .disable
+            .btn-icon-row.btn-icon-row--left
+              +icon("star","icon")
+              span Оценить
+mixin history(j,delivered,type)
   .history.js-slide-wrap
     .history-head
       if(j === 0)
@@ -315,7 +322,7 @@ mixin history(j,delivered)
       .desktop-row-scroll.js-horizontal-scroll.scroll-template.dragscroll
         .lk-list.desktop-row-scroll-wrap
           - for (var i=1;i<8;i++)
-           +lk-item(i)
+           +lk-item(i,typeItem=type)
 
 mixin lk-nav()
   .lk-nav
