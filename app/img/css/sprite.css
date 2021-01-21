@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../svg/sprite.svg");
     background-repeat: no-repeat;
-    background-size: 6.4em 190.8em;
+    background-size: 6.4em 196.2em;
 }
 
 .no-svg .icon:before {
@@ -685,24 +685,24 @@
 
   .icon.star:before {
       background-position: 0em -172.9em;
-      width: 2.4em;
-      height: 2.4em;
+      width: 4.8em;
+      height: 4.8em;
   }
 
 
 
 
   .icon.star-full:before {
-      background-position: 0em -175.3em;
-      width: 1.8em;
-      height: 1.8em;
+      background-position: 0em -177.7em;
+      width: 4.8em;
+      height: 4.8em;
   }
 
 
 
 
   .icon.stop:before {
-      background-position: 0em -177.1em;
+      background-position: 0em -182.5em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -711,7 +711,7 @@
 
 
   .icon.surprise:before {
-      background-position: 0em -179.5em;
+      background-position: 0em -184.9em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -720,7 +720,7 @@
 
 
   .icon.time:before {
-      background-position: 0em -181.9em;
+      background-position: 0em -187.3em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -729,7 +729,7 @@
 
 
   .icon.transport:before {
-      background-position: 0em -184.3em;
+      background-position: 0em -189.7em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -738,7 +738,7 @@
 
 
   .icon.userGroup:before {
-      background-position: 0em -186.7em;
+      background-position: 0em -192.1em;
       width: 2.4em;
       height: 1.7em;
   }
@@ -747,7 +747,7 @@
 
 
   .icon.view:before {
-      background-position: 0em -188.4em;
+      background-position: 0em -193.8em;
       width: 2.4em;
       height: 2.4em;
   }

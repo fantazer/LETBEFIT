@@ -610,10 +610,22 @@ $(document).ready(function () {
 			$('.filter-list').addClass('hide');
 		}
 	});
-
-
 	//  filter list === end
-	
+
+	// set mark
+	body.on('click','.js-mark', function(){
+		$(this).closest('.js-mark-wrap').find('.js-mark').removeClass('active');
+		$(this).addClass('active');
+		var sizeMark = $(this).prevAll('.js-mark').addClass('active').length
+		var msgMark = $(this).closest('.js-mark-wrap').find('.js-mark-msg')
+		if(sizeMark<1){
+			msgMark.removeClass('hidden')
+		}else{
+			msgMark.addClass('hidden')
+		}
+	});
+	// set mark === end
+
 	window.condition = {};
 	window.condition.closeModal = closeModal
 	window.condition.initModal = initModal

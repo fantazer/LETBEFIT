@@ -144,3 +144,313 @@ mixin modal()
 								.program-register__name Every Daily
 								.program-register__val 1100 Ккал
 								.program-register__cost от 6400 руб.
+			
+			//Partner bonus
+			.modal.modal--mdx(data-modal="bonusPartner")
+				.modal-close
+					+icon("close","icon")
+				.modal-content
+					.modal-partner-img(style="background-image:url('img/bonus-1.jpg')")
+					.type--head.type--md.mb-16 Puzzle English - изучение английского языка со скидкой 50% на тариф премиум
+					.type--primary Промокод не суммируется с другими акциями. Учить английский по отрывкам из фильмов и сериалов, песням, подкастам и игровому контенту реально на Puzzle English. Это сервис для самостоятельного изучения английского, с которым вполне реально подтянуть себя до нового уровня
+					.modal-partner-footer
+						.modal-partner-footer__info
+							.type-greenPrimary BeFit-month
+							.type--sm.type-typeSecondary Промокод действует до 31 декабря
+						.btn--sm.btn--mark.btn--mobile Активировать
+
+			//Edit delivery
+			.modal.modal--mdx(data-modal="editDelivery")
+				.modal-close
+					+icon("close","icon")
+				.modal-content
+					.type--head.type--mdx.mb-12 Редактировать доставку
+					.type--bold.type--md.type--secondary.mb-32 24 сен, Light
+					.input-cont
+						.input-row.input-row--validate
+							input(type="text" data-placeholder="Адрес" class="input")
+							.input-msg Введённые данные не должны содержать цифры
+							+icon("close","icon icon-validate-false")
+							+icon("checked","icon icon-validate-true")
+					.input-cont.input-cont--two
+						.input-row
+							.dropdown
+								input(type="hidden" name="name" value="0")
+								.dropdown-current
+									.dropdown-title Дата
+									.dropdown-current__val 24 сентября
+									+icon("arrow-down","icon")
+								.dropdown-menu
+									.dropdown-menu__el(data-value="1") 24 сентября
+									.dropdown-menu__el(data-value="2") 25 сентября
+									.dropdown-menu__el(data-value="3") 26 сентября
+						.input-row
+							.dropdown
+								input(type="hidden" name="name" value="0")
+								.dropdown-current
+									.dropdown-title Время
+									.dropdown-current__val 18:00 - 20:00
+									+icon("arrow-down","icon")
+								.dropdown-menu
+									.dropdown-menu__el(data-value="1") 18:00 - 20:00
+									.dropdown-menu__el(data-value="2") 20:00 - 22:00
+									.dropdown-menu__el(data-value="3") 22:00 - 24:00
+					//remove disable on true validation
+					.btn--md.btn--mark.btn--full.disable Изменить
+
+			//Freeze delivery
+			.modal.modal--mdx(data-modal="freezeDelivery")
+				.modal-close
+					+icon("close","icon")
+				.modal-content
+					.type--head.type--mdx.mb-12 Редактировать доставку
+					.type--bold.type--md.type--secondary.mb-32 24 сен, Light
+					.input-cont.input-cont--two
+						.input-row
+							.dropdown
+								input(type="hidden" name="name" value="0")
+								.dropdown-current
+									.dropdown-title Дата
+									.dropdown-current__val 24 сентября
+									+icon("arrow-down","icon")
+								.dropdown-menu
+									.dropdown-menu__el(data-value="1") 24 сентября
+									.dropdown-menu__el(data-value="2") 25 сентября
+									.dropdown-menu__el(data-value="3") 26 сентября
+						.input-row
+							.dropdown
+								input(type="hidden" name="name" value="0")
+								.dropdown-current
+									.dropdown-title Время
+									.dropdown-current__val 18:00 - 20:00
+									+icon("arrow-down","icon")
+								.dropdown-menu
+									.dropdown-menu__el(data-value="1") 18:00 - 20:00
+									.dropdown-menu__el(data-value="2") 20:00 - 22:00
+									.dropdown-menu__el(data-value="3") 22:00 - 24:00
+					//remove disable on true validation
+					.btn--md.btn--mark.btn--full Заморозить
+
+			//Cancel delivery
+			.modal.modal--mdx(data-modal="cancelDelivery")
+				.modal-close
+					+icon("close","icon")
+				.modal-content
+					.type--head.type--mdx.mb-12 Вы действительно хотите отменить доставку?
+					.type--bold.type--md.type-stateError.mb-32 Light 1000 Ккал, 24 д
+					.btn-row.btn-row--line
+						.btn--md.btn--grow.btn--light.modal-hide Нет
+						.btn--md.btn--grow.btn--mark Да
+
+			//Select delivery
+			.modal.modal--mdx(data-modal="selectProgram")
+				.modal-close
+					+icon("close","icon")
+				.modal-content
+					.type--head.type--lg.mb-24 Подобрать программу
+					.tab.js-tick-cont.mb-24
+						.tab__el.js-tick.active Мужчина
+						.tab__el.js-tick Женщина
+					.input-cont.input-cont--three
+						.input-row.input-row--validate
+							input(type="text" data-placeholder="Рост" class="input")
+							.input-msg Введённые данные не должны содержать цифры
+							+icon("close","icon icon-validate-false")
+							+icon("checked","icon icon-validate-true")
+						.input-row.input-row--validate
+							input(type="text" data-placeholder="Вес" class="input")
+							.input-msg Введённые данные не должны содержать цифры
+							+icon("close","icon icon-validate-false")
+							+icon("checked","icon icon-validate-true")
+						.input-row.input-row--validate
+							input(type="text" data-placeholder="Возраст" class="input")
+							.input-msg Введённые данные не должны содержать цифры
+							+icon("close","icon icon-validate-false")
+							+icon("checked","icon icon-validate-true")
+
+					.type--head.type--md.mb-24 Физическая активность
+					.choose.mb-24.js-tick-cont
+						.choose__el.js-tick.active
+							.choose__el-info
+								.type--head.mb-4 Низкая
+								.type--secondary Одна или менее тренировок в неделю
+							.choose-marker
+								span
+						.choose__el.js-tick
+							.choose__el-info
+								.type--head.mb-4 Средняя
+								.type--secondary 2-3 тренировки в неделю
+							.choose-marker
+								span
+						.choose__el.js-tick
+							.choose__el-info
+								.type--head.mb-4 Высокая
+								.type--secondary Более 3-х тренировок в неделю
+							.choose-marker
+								span
+					.type--head.type--md.mb-24 Цель
+					.choose.js-tick-cont.mb-24
+						.choose__el.js-tick.active
+							.choose__el-info.m-5
+								.icon-row
+									+icon("cat-light","icon icon--md icon--right icon-sea")
+									.type--head Похудеть
+							.choose-marker
+								span
+						.choose__el.js-tick
+							.choose__el-info.m-5
+								.icon-row
+									+icon("cat-normal","icon icon--md icon--right icon-blue")
+									.type--head Поддерживать форму
+							.choose-marker
+								span
+						.choose__el.js-tick
+							.choose__el-info.m-5
+								.icon-row
+									+icon("cat-strong","icon icon--md icon--right icon-coral")
+									.type--head Набрать массу
+							.choose-marker
+								span
+					.btn--md.btn--mark.btn--full Подобрать
+
+			//Mark delivery
+			.modal.modal--mdx(data-modal="markDelivery")
+				.modal-close
+					+icon("close","icon")
+				.modal-content
+					.type--head.type--mdx.mb-12 Оценить доставку
+					.type--bold.type--md.type--secondary.mb-32 24 сен, Light
+					.js-mark-wrap
+						.mark-row.mb-24
+							.mark-el.js-mark
+								+icon("star","icon mark-el--empty")
+								+icon("star-full","icon mark-el--val")
+							- for (var i=0;i<4;i++)
+								.mark-el.js-mark
+									+icon("star","icon mark-el--empty")
+									+icon("star-full","icon mark-el--val")
+					.input-row.input-row--validate
+						textarea(name="text", cols="30", rows="5" class="input" data-placeholder="Комментарий")
+						.input-msg Введённые данные не должны содержать цифры
+						+icon("close","icon icon-validate-false")
+						+icon("checked","icon icon-validate-true")
+					.btn--md.btn--mark.btn--full Отправить
+
+			//Mark food
+			.modal.modal--mdx(data-modal="markFood")
+				.modal-close
+					+icon("close","icon")
+				.modal-content
+					.type--head.type--mdx.mb-12 Оценить блюдо
+					.mb-32 Куриная котлета с зеленой гречей в сливочно-ореховом соусе
+					.js-mark-wrap
+						.mark-row.mb-24
+							.mark-el.js-mark
+								+icon("star","icon mark-el--empty")
+								+icon("star-full","icon mark-el--val")
+							- for (var i=0;i<4;i++)
+								.mark-el.js-mark
+									+icon("star","icon mark-el--empty")
+									+icon("star-full","icon mark-el--val")
+						.js-mark-msg.hidden.mb-24
+							+checkbox('Я хочу удалить это блюдо из рациона')
+					.input-row.input-row--validate
+						textarea(name="text", cols="30", rows="5" class="input" data-placeholder="Комментарий")
+						.input-msg Введённые данные не должны содержать цифры
+						+icon("close","icon icon-validate-false")
+						+icon("checked","icon icon-validate-true")
+					.btn--md.btn--mark.btn--full Отправить
+
+			//Add card
+			.modal.modal--mdx(data-modal="addCard")
+				.modal-close
+					+icon("close","icon")
+				.modal-content
+					.type--head.type--mdx.mb-32 Добавить карту
+					.input-cont
+						.input-row.input-row--validate
+							input(type="text" data-placeholder="Номер карты" data-mask="0000-0000-0000-0000" class="input")
+							.input-msg Введённые данные не должны содержать цифры
+							+icon("close","icon icon-validate-false")
+							+icon("checked","icon icon-validate-true")
+					.input-cont.input-cont--two
+						.input-row.input-row--validate
+							input(type="text" data-placeholder="Действует до" data-mask="00/00" class="input")
+							.input-msg Введённые данные не должны содержать цифры
+							+icon("close","icon icon-validate-false")
+							+icon("checked","icon icon-validate-true")
+						.input-row.input-row--validate
+							input(type="text" data-placeholder="CVV" data-mask="000" class="input")
+							.input-msg Введённые данные не должны содержать цифры
+							+icon("close","icon icon-validate-false")
+							+icon("checked","icon icon-validate-true")
+					//remove disable on true validation
+					.btn--md.btn--mark.btn--full.disable Добавить
+
+			//Recommend
+			.modal.modal--mdx(data-modal="recommend")
+				.modal-close
+					+icon("close","icon")
+				.modal-content.modal-content--clear
+					.modal-goods.bg-sea
+						.type--md.type--center.type--white.mb-4 Рекомендуем программу
+						.type--bold.type--lg.type--center.type--white.mb-24 Extralight 900 Ккал
+						a(href="#").btn--md.btn--white.mb-32
+							.btn-icon-row.btn-icon-row--right
+								span Подробнее
+								+icon("arrow-right","icon")
+						.modal-goods-img(style="background-image:url('img/slide-person-1.png')")
+
+			//Referal
+			.modal.modal--mdx(data-modal="referal")
+				.modal-close
+					+icon("close","icon")
+				.modal-content
+					.type--head.type--mdx.mb-24 Порекомендовать нас друзьям
+					.modal-fluid-cont.bg-gradient.mb-24
+						.type--head.type--md.mb-12 Чтобы получить 500 бонусов:
+						.type--main Ваш друг должен сделать заказ на сайте или по телефону и указать вас как рекомендателя (Для идентификации подойдёт ваш телефон или email)
+					.type--secondary.mb-16 Вы можете отправить рекомендацию по почте или телефону
+					.referal-row.mb-24
+						.input-row.input-row--validate
+							input(type="text" data-placeholder="Почта друга" class="input")
+							.input-msg Введённые данные не должны содержать цифры
+							+icon("close","icon icon-validate-false")
+							+icon("checked","icon icon-validate-true")
+						//remove class disable on true validate
+						.btn--md-figure.btn--mark.disable.modal-get(data-modal="recommend")
+							+icon("arrow-right","icon")
+					.referal-row
+						.input-row.input-row--validate
+							input(type="text" data-placeholder="Телефон друга" class="input")
+							.input-msg Введённые данные не должны содержать цифры
+							+icon("close","icon icon-validate-false")
+							+icon("checked","icon icon-validate-true")
+						//remove class disable on true validate
+						.btn--md-figure.btn--mark.disable.modal-get(data-modal="recommend")
+							+icon("arrow-right","icon")
+
+			//Referal true
+			.modal.modal--mdx(data-modal="referalTrue")
+				.modal-close
+					+icon("close","icon")
+				.modal-content
+					.type--head.type--mdx.mb-12 Рекомендация отправлена!
+					.mb-32 Бонусные баллы будут начислены Вам после того как Ваш друг сделает заказ
+					.btn--md.btn--mark.btn--full.modal-hide Хорошо
+
+			//Referal true
+			.modal.modal--mdx(data-modal="sendReview")
+				.modal-close
+					+icon("close","icon")
+				.modal-content
+					.type--head.type--mdx.mb-24 Поделиться отзывом
+					.modal-fluid-cont.bg-gradient.mb-24
+						.type--head.type--md.mb-12 Чтобы получить 500 бонусов:
+						.type--main Ваш друг должен сделать заказ на сайте или по телефону и указать вас как рекомендателя (Для идентификации подойдёт ваш телефон или email)
+					.input-row.input-row--validate.mb-24
+						input(type="text" data-placeholder="Ссылка на отзыв" class="input")
+						.input-msg Введённые данные не должны содержать цифры
+						+icon("close","icon icon-validate-false")
+						+icon("checked","icon icon-validate-true")
+					.btn--md.btn--mark.btn--full Отправить

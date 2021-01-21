@@ -833,6 +833,110 @@
           transform: scaleY(1);
   opacity: 1;
 }
+.mb-5 {
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .mb-5 {
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .mb-5 {
+    margin-bottom: 5px;
+  }
+}
+.mr-5 {
+  margin-right: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .mr-5 {
+    margin-right: 5px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .mr-5 {
+    margin-right: 5px;
+  }
+}
+.ml-5 {
+  margin-left: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .ml-5 {
+    margin-left: 5px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .ml-5 {
+    margin-left: 5px;
+  }
+}
+.mt-5 {
+  margin-top: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .mt-5 {
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .mt-5 {
+    margin-top: 5px;
+  }
+}
+.m-5 {
+  margin: 5px 0;
+}
+@media only screen and (max-width: 1024px) {
+  .m-5 {
+    margin: 5px 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .m-5 {
+    margin: 5px 0;
+  }
+}
+.pb-5 {
+  padding-bottom: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .pb-5 {
+    padding-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .pb-5 {
+    padding-bottom: 5px;
+  }
+}
+.pt-5 {
+  padding-top: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .pt-5 {
+    padding-top: 5px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .pt-5 {
+    padding-top: 5px;
+  }
+}
+.p-5 {
+  padding: 5px 0;
+}
+@media only screen and (max-width: 1024px) {
+  .p-5 {
+    padding: 5px 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .p-5 {
+    padding: 5px 0;
+  }
+}
 .mb-12 {
   margin-bottom: 12px;
 }
@@ -2755,10 +2859,12 @@ a:visiter {
 .icon--sm {
   width: 18px;
   height: 18px;
+  min-width: 18px;
 }
 .icon--md {
   width: 32px;
   height: 32px;
+  min-width: 32px;
 }
 .icon--lg {
   width: 48px;
@@ -2884,14 +2990,14 @@ a:visiter {
 .btn--md .btn-icon-row--right .icon,
 .page-error__getпоп .btn-icon-row--right .icon,
 .modal-send .btn-icon-row--right .icon {
-  margin-left: 20px;
-  margin-right: -10px;
+  margin-left: 16px;
+  margin-right: -24px;
 }
 .btn--md .btn-icon-row--left .icon,
 .page-error__getпоп .btn-icon-row--left .icon,
 .modal-send .btn-icon-row--left .icon {
-  margin-right: 20px;
-  margin-left: -10px;
+  margin-right: 16px;
+  margin-left: -24px;
 }
 @media only screen and (max-width: 640px) {
   .btn--md.btn--full,
@@ -2903,6 +3009,7 @@ a:visiter {
 .btn--md-figure {
   width: 64px;
   height: 64px;
+  min-width: 64px;
   padding: 0;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2918,6 +3025,10 @@ a:visiter {
   fill: #fff;
   width: 24px;
   height: 24px;
+}
+.btn--md-figure.disable {
+  pointer-events: none;
+  background: #c4c5cc;
 }
 .btn--sm-figure {
   width: 44px;
@@ -3098,7 +3209,6 @@ a:visiter {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -2px;
   line-height: 1;
 }
 .btn--full {
@@ -3704,7 +3814,6 @@ a:visiter {
   transition: all 0.4s;
   position: relative;
   outline: none !important;
-  z-index: 100;
 }
 .dropdown-current {
   border-radius: 4px;
@@ -3750,7 +3859,7 @@ a:visiter {
   left: 20px;
   color: #9699a8;
 }
-.dropdown.active>.icon {
+.dropdown.active .icon {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -3768,7 +3877,7 @@ a:visiter {
   display: none;
   max-height: 200px;
   overflow-y: auto;
-  z-index: 10;
+  z-index: 110;
 }
 .dropdown-menu::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -4154,6 +4263,14 @@ body {
     width: 100%;
   }
 }
+.modal--mdx {
+  width: 476px;
+}
+@media only screen and (max-width: 640px) {
+  .modal--mdx {
+    width: 100%;
+  }
+}
 .modal-content {
   margin: 60px auto;
   background: #fff;
@@ -4167,8 +4284,15 @@ body {
     width: calc(100% - 40px);
   }
 }
+@media only screen and (max-width: 340px) {
+  .modal-content {
+    padding: 24px 16px;
+  }
+}
+.modal-content--clear {
+  padding: 0;
+}
 .modal__show {
-  max-height: 100%;
   opacity: 1;
   -webkit-transform: scale(1) translateZ(0) translate3d(0, 0, 0);
           transform: scale(1) translateZ(0) translate3d(0, 0, 0);
@@ -4179,6 +4303,7 @@ body {
   transition: -webkit-transform 0.6s, opacity 0.8s;
   transition: transform 0.6s, opacity 0.8s;
   will-change: transform, opacity;
+  margin: auto;
 }
 .modal-close {
   position: absolute;
@@ -4268,6 +4393,48 @@ body {
 }
 .modal--msg .modal-content {
   padding: 20px 20px 24px 20px;
+}
+.modal-partner-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 35% 10%;
+  margin: -32px -32px 24px -32px;
+  border-radius: 16px 16px 0 0;
+}
+.modal-partner-footer {
+  padding-top: 30px;
+  margin-top: 24px;
+  border-top: 1px solid #dcdfe8;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 12px;
+}
+@media only screen and (max-width: 640px) {
+  .modal-partner-footer {
+    padding-top: 12px;
+    margin-top: 12px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .modal-partner-footer__info {
+    width: 100%;
+  }
+}
+.modal-fluid-cont {
+  padding: 24px 32px;
+  margin-left: -32px;
+  margin-right: -32px;
 }
 .header {
   background: #fff;
@@ -10137,6 +10304,134 @@ body {
 }
 .filter-result__el:hover {
   border: 1px solid #7eca1d;
+}
+.choose__el {
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #dcdfe8;
+  margin-bottom: 12px;
+  transition: all 0.4s;
+  position: relative;
+}
+.choose__el:hover {
+  cursor: pointer;
+}
+.choose__el:hover {
+  border: 1px solid transparent;
+  box-shadow: 0px 4px 8px rgba(102,130,185,0.12);
+}
+.choose__el.active .choose-marker {
+  border: 1px solid #7eca1d;
+  background: #7eca1d;
+}
+.choose-marker {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #dcdfe8;
+  top: 12px;
+  right: 12px;
+  border-radius: 50%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.choose-marker span {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+}
+.choose__el-info {
+  width: calc(100% - 48px);
+}
+.mark-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 6px;
+}
+.mark-el {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mark-el:hover {
+  cursor: pointer;
+}
+.mark-el .icon {
+  width: 48px;
+  height: 48px;
+}
+@media only screen and (max-width: 640px) {
+  .mark-el .icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+.mark-el.active .mark-el--empty {
+  display: none;
+}
+.mark-el.active .mark-el--val {
+  display: block;
+}
+.mark-el--empty {
+  fill: #dcdfe8;
+}
+.mark-el--val {
+  fill: #ffa800;
+  display: none;
+}
+.modal-goods {
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 32px 32px 0 32px;
+  border-radius: 16px;
+}
+.modal-goods-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 35% 10%;
+  width: 85%;
+}
+.referal-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 20px;
+}
+.referal-row .input-row {
+  width: 100%;
+  margin-bottom: 0;
 }
 @-webkit-keyframes slideInDown {
   from {

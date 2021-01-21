@@ -48,24 +48,27 @@
 	font-weight: 700
 	.btn-icon-row--right
 		.icon
-			margin-left: 20px
-			margin-right: -10px
+			margin-left: 16px
+			margin-right: -24px
 	.btn-icon-row--left
 		.icon
-			margin-right: 20px
-			margin-left: -10px
+			margin-right: 16px
+			margin-left: -24px
 	&.btn--full
 		+below(640px)
 			padding: 17px
 
 .btn--md-figure
 	size 64px
+	min-width 64px
 	padding: 0
 	flex(mid)
 	.icon
 		fill white
 		size 24px
-
+	&.disable
+		pointer-events none
+		background: $grayLight
 .btn--sm-figure
 	size 44px
 	padding: 0
@@ -193,7 +196,6 @@
 	flex(mid)
 	span
 		flex(mid)
-		margin-top: -2px
 		line-height: 1
 .btn--full
 	width: 100%

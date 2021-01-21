@@ -396,7 +396,6 @@
 	tr()
 	position relative
 	outline none!important
-	z-index 100
 .dropdown-current
 	br(4px)
 	tr()
@@ -436,7 +435,7 @@
 	@extend .type--sm
 	color $typeSecondary
 .dropdown.active
-	&>.icon
+	.icon
 		transform rotate(180deg)
 	.dropdown-current
 		background: white
@@ -450,7 +449,7 @@
 	display none
 	max-height 200px
 	overflow-y auto
-	z-index 10
+	z-index 110
 	&::-webkit-scrollbar
 		-webkit-appearance: none
 		width: 7px

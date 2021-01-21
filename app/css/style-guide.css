@@ -50,6 +50,110 @@
   transform: scaleY(1);
   opacity: 1;
 }
+.mb-5 {
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .mb-5 {
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .mb-5 {
+    margin-bottom: 5px;
+  }
+}
+.mr-5 {
+  margin-right: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .mr-5 {
+    margin-right: 5px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .mr-5 {
+    margin-right: 5px;
+  }
+}
+.ml-5 {
+  margin-left: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .ml-5 {
+    margin-left: 5px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .ml-5 {
+    margin-left: 5px;
+  }
+}
+.mt-5 {
+  margin-top: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .mt-5 {
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .mt-5 {
+    margin-top: 5px;
+  }
+}
+.m-5 {
+  margin: 5px 0;
+}
+@media only screen and (max-width: 1024px) {
+  .m-5 {
+    margin: 5px 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .m-5 {
+    margin: 5px 0;
+  }
+}
+.pb-5 {
+  padding-bottom: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .pb-5 {
+    padding-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .pb-5 {
+    padding-bottom: 5px;
+  }
+}
+.pt-5 {
+  padding-top: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  .pt-5 {
+    padding-top: 5px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .pt-5 {
+    padding-top: 5px;
+  }
+}
+.p-5 {
+  padding: 5px 0;
+}
+@media only screen and (max-width: 1024px) {
+  .p-5 {
+    padding: 5px 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .p-5 {
+    padding: 5px 0;
+  }
+}
 .mb-12 {
   margin-bottom: 12px;
 }
@@ -1775,10 +1879,12 @@ a:visiter {
 .icon--sm {
   width: 18px;
   height: 18px;
+  min-width: 18px;
 }
 .icon--md {
   width: 32px;
   height: 32px;
+  min-width: 32px;
 }
 .icon--lg {
   width: 48px;
@@ -1888,12 +1994,12 @@ a:visiter {
   font-weight: 700;
 }
 .btn--md .btn-icon-row--right .icon {
-  margin-left: 20px;
-  margin-right: -10px;
+  margin-left: 16px;
+  margin-right: -24px;
 }
 .btn--md .btn-icon-row--left .icon {
-  margin-right: 20px;
-  margin-left: -10px;
+  margin-right: 16px;
+  margin-left: -24px;
 }
 @media only screen and (max-width: 640px) {
   .btn--md.btn--full {
@@ -1903,6 +2009,7 @@ a:visiter {
 .btn--md-figure {
   width: 64px;
   height: 64px;
+  min-width: 64px;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -1912,6 +2019,10 @@ a:visiter {
   fill: #fff;
   width: 24px;
   height: 24px;
+}
+.btn--md-figure.disable {
+  pointer-events: none;
+  background: #c4c5cc;
 }
 .btn--sm-figure {
   width: 44px;
@@ -2060,7 +2171,6 @@ a:visiter {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -2px;
   line-height: 1;
 }
 .btn--full {
@@ -2607,7 +2717,6 @@ a:visiter {
   transition: all 0.4s;
   position: relative;
   outline: none !important;
-  z-index: 100;
 }
 .dropdown-current {
   border-radius: 4px;
@@ -2653,7 +2762,7 @@ a:visiter {
   left: 20px;
   color: #9699a8;
 }
-.dropdown.active>.icon {
+.dropdown.active .icon {
   transform: rotate(180deg);
 }
 .dropdown.active .dropdown-current {
@@ -2669,7 +2778,7 @@ a:visiter {
   display: none;
   max-height: 200px;
   overflow-y: auto;
-  z-index: 10;
+  z-index: 110;
 }
 .dropdown-menu::-webkit-scrollbar {
   -webkit-appearance: none;
