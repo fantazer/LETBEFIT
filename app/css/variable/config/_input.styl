@@ -396,6 +396,13 @@
 	tr()
 	position relative
 	outline none!important
+	&.active
+		.dropdown-current
+			background: white
+			&>.icon
+				transform rotate(180deg)
+
+
 .dropdown-current
 	br(4px)
 	tr()
@@ -434,11 +441,7 @@
 	left 20px
 	@extend .type--sm
 	color $typeSecondary
-.dropdown.active
-	.icon
-		transform rotate(180deg)
-	.dropdown-current
-		background: white
+
 .dropdown-menu
 	position absolute
 	background-color #fff

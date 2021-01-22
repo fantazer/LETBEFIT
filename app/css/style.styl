@@ -3378,21 +3378,30 @@ work-step(bgVal,colorVal)
 	f()
 	justify-content space-between
 
+
 .lk-day
 	+below(1024px)
-		margin-right:initial
-	margin-right auto
+		margin-bottom: 0
+	margin-bottom: 20px
 
 .marker
 	white-space nowrap
 	overflow auto
 	f()
 
+.marker--fluid
+	+below(1024px)
+		&:after
+			content ''
+			display block
+			width: 42px
+
 .marker-el
 	flex(mid)
 	br(20px)
 	margin-right: 12px
 	padding: 12px
+	grid-gap 6px
 	cp()
 	tr()
 	@extend .type--smx
@@ -3433,6 +3442,8 @@ work-step(bgVal,colorVal)
 
 .lk-panel-head
 	flex(between)
+	fw()
+	grid-gap 20px
 
 .history-wrap
 	margin-bottom: 20px
@@ -3458,7 +3469,7 @@ work-step(bgVal,colorVal)
 		+below(1024px)
 			padding: 12px 48px
 		+below(640px)
-			padding: 12px 20px
+			padding: 16px
 		background #F1F2F6
 		padding:10px 18px
 		.history-head
@@ -3474,7 +3485,7 @@ work-step(bgVal,colorVal)
 	+below(768px)
 		fw()
 		br(10px)
-		padding: 10px 0
+		padding: 16px
 		bsh()
 	f()
 	align-items center

@@ -13,27 +13,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add filter in lk-exclude">
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add new modals">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style-guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style-guide.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/_helper.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/_helper.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/variable/config/_input.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_input.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/modal.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/css/sprite.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/pack.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/sprite.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/star-full.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/star-full.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/star.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/star.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/modal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/module/modal/_modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/module/modal/_modal.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/css/sprite.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/pack.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/svg/sprite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/lk-main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-main.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/lk-order-sort.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-order-sort.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/lk-order.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-order.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lk-main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lk-order-sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order-sort.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lk-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -337,14 +329,8 @@
       <workItem from="1611067393782" duration="9405000" />
       <workItem from="1611131022751" duration="8401000" />
       <workItem from="1611159498026" duration="644000" />
-      <workItem from="1611223166096" duration="15519000" />
-    </task>
-    <task id="LOCAL-00042" summary="fix fonts">
-      <created>1594117942074</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1594117942074</updated>
+      <workItem from="1611223166096" duration="15803000" />
+      <workItem from="1611300987593" duration="5134000" />
     </task>
     <task id="LOCAL-00043" summary="fix bower script scroll template">
       <created>1594210491349</created>
@@ -682,7 +668,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611159537718</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="add new modals">
+      <created>1611246305582</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1611246305583</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -723,7 +716,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add blog item" />
     <MESSAGE value="add review list + item" />
     <MESSAGE value="add sales" />
     <MESSAGE value="add content desctop pages" />
@@ -748,6 +740,7 @@
     <MESSAGE value="add page lk-training" />
     <MESSAGE value="add page smi + poll + what is befit" />
     <MESSAGE value="add filter in lk-exclude" />
-    <option name="LAST_COMMIT_MESSAGE" value="add filter in lk-exclude" />
+    <MESSAGE value="add new modals" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new modals" />
   </component>
 </project>

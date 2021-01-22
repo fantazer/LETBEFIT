@@ -3241,15 +3241,12 @@ a:visiter {
 .btn-menu-wrap .btn-menu {
   display: none;
   position: absolute;
-  left: calc(-50% + 10px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 110%;
   z-index: 10;
-}
-@media only screen and (max-width: 1024px) {
-  .btn-menu-wrap .btn-menu {
-    left: initial;
-    right: 0;
-  }
 }
 .btn-menu-wrap .btn-menu-cont {
   background: #fff;
@@ -3265,6 +3262,11 @@ a:visiter {
   padding: 20px;
   grid-gap: 10px;
   text-align: left;
+}
+@media only screen and (max-width: 640px) {
+  .btn-menu-wrap .btn-menu-cont {
+    width: 220px;
+  }
 }
 .btn-menu-wrap .btn-menu__el {
   color: #111;
@@ -3815,6 +3817,14 @@ a:visiter {
   position: relative;
   outline: none !important;
 }
+.dropdown.active .dropdown-current {
+  background: #fff;
+}
+.dropdown.active .dropdown-current>.icon {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 .dropdown-current {
   border-radius: 4px;
   transition: all 0.4s;
@@ -3858,14 +3868,6 @@ a:visiter {
   top: 8px;
   left: 20px;
   color: #9699a8;
-}
-.dropdown.active .icon {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-.dropdown.active .dropdown-current {
-  background: #fff;
 }
 .dropdown-menu {
   position: absolute;
@@ -9428,11 +9430,11 @@ body {
           justify-content: space-between;
 }
 .lk-day {
-  margin-right: auto;
+  margin-bottom: 20px;
 }
 @media only screen and (max-width: 1024px) {
   .lk-day {
-    margin-right: initial;
+    margin-bottom: 0;
   }
 }
 .marker {
@@ -9441,6 +9443,13 @@ body {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+@media only screen and (max-width: 1024px) {
+  .marker--fluid:after {
+    content: '';
+    display: block;
+    width: 42px;
+  }
 }
 .marker-el {
   display: -webkit-flex;
@@ -9455,6 +9464,7 @@ body {
   border-radius: 20px;
   margin-right: 12px;
   padding: 12px;
+  grid-gap: 6px;
   transition: all 0.4s;
   font-weight: 700;
   color: #111;
@@ -9519,6 +9529,10 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  grid-gap: 20px;
 }
 .history-wrap {
   margin-bottom: 20px;
@@ -9562,7 +9576,7 @@ body {
 }
 @media only screen and (max-width: 640px) {
   .history.active {
-    padding: 12px 20px;
+    padding: 16px;
   }
 }
 .history.active .history-head {
@@ -9601,7 +9615,7 @@ body {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     border-radius: 10px;
-    padding: 10px 0;
+    padding: 16px;
     box-shadow: 0px 3px 8px #e3e3e3;
   }
 }

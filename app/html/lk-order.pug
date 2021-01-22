@@ -26,10 +26,16 @@ include block_html/_include.pug
 								span.type--md.type--secondary У Вас еще нет заказов
 
 						.lk-panel-head.mb-48
-							.btn--sm.btn--light
-								.btn-icon-row.btn-icon-row--right
-									span Скачать меню
-									+icon("download","icon")
+							.btn-menu-wrap.btn--mobile
+								.btn--sm.btn--light.btn--mobile
+									.btn-icon-row.btn-icon-row--right.js-history-edit
+										span Скачать меню
+										+icon("download","icon")
+								.btn-menu
+									.btn-menu-cont
+										a(href="#").btn-menu__el На текущую неделю
+										a(href="#").btn-menu__el На прошлую неделю
+
 							.marker.js-tick-cont
 								.marker-el.js-tick.active
 									+icon("menu-list","icon")

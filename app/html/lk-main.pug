@@ -48,15 +48,23 @@ include block_html/_include.pug
 								+icon("arrow-right","icon icon--sm icon--mark")
 
 
-						.lk-list-head.mb-32
-							.marker.lk-day.js-tick-cont
-								.marker-el.js-tick.active Вт, 24 Сен
-								.marker-el.js-tick Ср, 25 Сен
-							.lk-list-head-info
-								.lk-list-head-program Balance
-								.lk-list-head-val 12:00 - 16:00
+						.lk-list-head.desktop-row-scroll.lk-day
+							.marker--fluid.desktop-row-scroll-wrap.js-tick-cont
+								.marker-el.js-tick.active
+									.type--smx.type--strong Вт, 24 Сен
+									.type--sm | Extralight 900 Ккал
+								.marker-el.js-tick
+									.type--smx.type--strong Чт, 26
+									.type--sm | Extralight 900 Ккал
+								.marker-el.js-tick
+									.type--smx.type--strong Пт, 27
+									.type--sm | Balance 1400 Ккал
+								.marker-el.js-tick
+									.type--smx.type--strong Сб, 11
+									.type--sm | Extralight 900 Ккал
 
-						.lk-list-wrap.mb-64
+
+						.lk-list-wrap.mb-32
 							.desktop-row-scroll.js-horizontal-scroll.scroll-template.dragscroll
 								.lk-list.desktop-row-scroll-wrap
 									- for (var i=1;i<8;i++)
