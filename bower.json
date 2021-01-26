@@ -18,7 +18,8 @@
     "slick-carousel": "^1.8.1",
     "jquery.nicescroll": "^3.7.6",
     "jquery-nice-select": "^1.1.0",
-    "ion-rangeslider": "ionrangeslider#^2.3.1"
+    "ion-rangeslider": "ionrangeslider#^2.3.1",
+    "parallax.js": "^1.5.0"
   },
   "devDependencies": {
     "flexbox-grid-stylus": "^3.2.2",

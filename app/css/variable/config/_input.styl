@@ -386,6 +386,24 @@
 	align-items center
 	grid-gap 20px
 
+.switch-btn
+	display: inline-flex
+	padding: 4px
+	br(32px)
+	cp()
+.switch-btn__val
+	padding: 12px 32px
+	br(32px)
+	font-weight: 700
+
+.switch-btn--green
+	background: $greenLight
+	.switch-btn__val
+		color $greenPrimary
+		&.active
+			color white
+			background: $greenPrimary
+
 // switch === end
 
 

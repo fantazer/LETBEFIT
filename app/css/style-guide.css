@@ -18,6 +18,11 @@
 .show {
   display: block !important;
 }
+.border {
+  height: 1px;
+  background: #dcdfe8;
+  width: 100%;
+}
 .invisible {
   visibility: hidden;
 }
@@ -2710,6 +2715,29 @@ a:visiter {
   display: flex;
   align-items: center;
   grid-gap: 20px;
+}
+.switch-btn {
+  display: inline-flex;
+  padding: 4px;
+  border-radius: 32px;
+}
+.switch-btn:hover {
+  cursor: pointer;
+}
+.switch-btn__val {
+  padding: 12px 32px;
+  border-radius: 32px;
+  font-weight: 700;
+}
+.switch-btn--green {
+  background: #e6f2d6;
+}
+.switch-btn--green .switch-btn__val {
+  color: #7eca1d;
+}
+.switch-btn--green .switch-btn__val.active {
+  color: #fff;
+  background: #7eca1d;
 }
 .dropdown {
   width: 100%;

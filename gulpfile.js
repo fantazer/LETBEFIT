@@ -193,6 +193,8 @@ gulp.task('watch', () => {
 
 gulp.task('pug', function() {
 		gulp.src(['app/html/*.pug','app/module/**/*.pug',])
+		//gulp.src(['app/html/main.pug','app/module/**/*.pug',])
+		//gulp.src(['app/html/modal.pug','app/module/**/*.pug',])
 		/*gulp.src([
 			'app/html/smi-list.pug',
 			'app/html/smi-item.pug',
@@ -201,7 +203,6 @@ gulp.task('pug', function() {
 			'app/html/contact.pug',
 			'app/module/!**!/!*.pug',
 		])*/
-		//gulp.src(['app/html/modal.pug','app/module/**/*.pug',])
 		//gulp.src(['app/html/lk-*.pug','app/module/**/*.pug',])
 				//.pipe(changed('app/', {extension: '.html'}))
 				//.pipe(cache('pug'))

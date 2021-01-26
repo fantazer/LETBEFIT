@@ -349,6 +349,10 @@ slider-create-mobile()
 		width: 100%
 
 .modal-fluid-cont
+	+below(640px)
+		margin-left: -16px
+		margin-right: -16px
+		padding: 16px
 	padding: 24px 32px
 	margin-left: -32px
 	margin-right: -32px
@@ -526,7 +530,7 @@ slider-create-mobile()
 	top 100%
 	width: 100%
 	background: white
-	z-index 20
+	z-index 110
 	padding: 32px 0 48px 0
 	border-top 1px solid $border-color
 	box-shadow: 0 4px 8px rgba(102, 130, 185, 0.12);
@@ -879,7 +883,7 @@ slider-create-mobile()
 
 .board__img
 	+below(1024px)
-		padding: 24% 24%
+		padding: 24% 27%
 	+below(640px)
 		position: static
 		padding: 40% 24%
@@ -972,7 +976,7 @@ slider-create-mobile()
 	fl()
 	background: linear-gradient(98.95deg, #E3EEFF 0%, #E4F6E4 52.6%, #FFEEE4 100%);
 	color black
-	top -3%
+	top 35%
 	right: -3%
 	img
 		+below(640px)
@@ -3101,7 +3105,7 @@ work-step(bgVal,colorVal)
 	+below(640px)
 		margin-right: 15px
 	font-weight: 700
-	margin-right: 10%
+	min-width 30%
 .program-register__val
 	+below(640px)
 		font-size: 14px
@@ -3465,6 +3469,8 @@ work-step(bgVal,colorVal)
 		margin-bottom: 10px
 	br(12px)
 	padding: 0 18px
+	&:last-child
+		margin-bottom: 32px
 	&.active
 		+below(1024px)
 			padding: 12px 48px
@@ -3977,6 +3983,10 @@ work-step(bgVal,colorVal)
 	f()
 	align-items center
 	grid-gap 6px
+.mark-row--sm
+	.mark-el
+		.icon
+			size 32px
 .mark-el
 	flex(mid)
 	cp()
@@ -3994,6 +4004,8 @@ work-step(bgVal,colorVal)
 .mark-el--val
 	fill $yellow
 	display none
+
+
 
 .modal-goods
 	fl()
@@ -4013,3 +4025,67 @@ work-step(bgVal,colorVal)
 	.input-row
 		width 100%
 		margin-bottom: 0
+
+.promo-wrap
+	padding: 60px 20px
+	background: $gradient
+	br(12px)
+	flex(mid)
+
+
+// promo
+.promo-wrap
+	position relative
+.promo
+	max-width 632px
+.promo-img
+	position absolute
+
+.promo-img--1
+	left -15%
+	bottom -5%
+.promo-img--2
+	bottom -25%
+	left 20%
+.promo-img--3
+	right: 20%
+	bottom -25%
+.promo-img--4
+	right: -15%
+	bottom: -25%
+
+.timer
+	flex(mid)
+.timer__el-wrap
+	flex(mid)
+	fl()
+.timer__el
+	background: white
+	size 80px
+	br(12px)
+	box-shadow: 0px 4px 8px rgba(102, 130, 185, 0.12);
+	@extend .type--lg
+	font-weight: 700
+	flex(mid)
+	margin: 0 8px
+
+.timer-dot
+	width: 8px
+	height: 24px
+	margin-top: -24px
+	&:before
+		content ''
+		size 8px
+		round()
+		box-shadow: 0px 4px 8px rgba(102, 130, 185, 0.12);
+		background: white
+		display block
+		margin-bottom: 12px
+	&:after
+		content ''
+		size 8px
+		display block
+		round()
+		box-shadow: 0px 4px 8px rgba(102, 130, 185, 0.12);
+		background: white
+// promo === end

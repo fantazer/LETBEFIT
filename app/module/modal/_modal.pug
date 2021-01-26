@@ -319,16 +319,45 @@ mixin modal()
 					+icon("close","icon")
 				.modal-content
 					.type--head.type--mdx.mb-12 Оценить доставку
-					.type--bold.type--md.type--secondary.mb-32 24 сен, Light
-					.js-mark-wrap
-						.mark-row.mb-24
-							.mark-el.js-mark
-								+icon("star","icon mark-el--empty")
-								+icon("star-full","icon mark-el--val")
-							- for (var i=0;i<4;i++)
-								.mark-el.js-mark
-									+icon("star","icon mark-el--empty")
-									+icon("star-full","icon mark-el--val")
+					.type--bold.type--md.type--secondary.mb-24 24 сен, Light
+					.border.mb-24
+					.g-center.mb-12
+						.g-md-6.g-xs-12
+							.type--main Доставили вовремя?
+						.g-md-6.g-xs-12
+							.switch-btn.js-tick-cont.switch-btn--green
+								.switch-btn__val.js-tick.active Да
+								.switch-btn__val.js-tick Нет
+					.g-center.mb-12
+						.g-md-6.g-xs-12
+							.type--main Было вкусно? все понравилось?
+						.g-md-6.g-xs-12
+							.switch-btn.js-tick-cont.switch-btn--green
+								.switch-btn__val.js-tick.active Да
+								.switch-btn__val.js-tick Нет
+
+					.g-center.mb-12
+						.g-md-6.g-xs-12
+							.type--main Порекомендуете нас друзьям?
+						.g-md-6.g-xs-12
+							.switch-btn.js-tick-cont.switch-btn--green
+								.switch-btn__val.js-tick.active Да
+								.switch-btn__val.js-tick Нет
+
+					.g-center.mb-24
+						.g-md-6.g-xs-12
+							.type--main Порекомендуете нас друзьям?
+						.g-md-6.g-xs-12
+							.js-mark-wrap
+								.mark-row.mark-row--sm
+									.mark-el.js-mark
+										+icon("star","icon mark-el--empty")
+										+icon("star-full","icon mark-el--val")
+									- for (var i=0;i<4;i++)
+										.mark-el.js-mark
+											+icon("star","icon mark-el--empty")
+											+icon("star-full","icon mark-el--val")
+
 					.input-row.input-row--validate
 						textarea(name="text", cols="30", rows="5" class="input" data-placeholder="Комментарий")
 						.input-msg Введённые данные не должны содержать цифры

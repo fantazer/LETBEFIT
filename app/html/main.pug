@@ -51,6 +51,37 @@ include block_html/_include.pug
 				// main slider el === end
 	// main slider === end
 	.content
+		.section
+			.main-cont-md
+				.promo-wrap
+					img(src="img/promo-1.png", data-depth="60" alt="").promo-img.promo-img--1.paralax-el
+					img(src="img/promo-2.png", data-depth="12" alt="").promo-img.promo-img--2.paralax-el
+					img(src="img/promo-3.png", data-depth="5" alt="").promo-img.promo-img--3.paralax-el
+					img(src="img/promo-4.png", data-depth="30" alt="").promo-img.promo-img--4.paralax-el
+					.promo
+
+						.promo-content
+							.type--head.type--center.type--lg.mb-12 Закажи любую программу питания и получи скидку <span class="type-orange">-10%</span> на месяц
+							.type--bold.type--mark.type--center.type--md.mb-32 Поторопись, время ограничено!
+							.timer.mb-32
+								.timer__el-wrap
+									.timer__el.timer__el-day 03
+									.timer__el-type дней
+								.timer-dot
+								.timer__el-wrap
+									.timer__el.timer__el-hour 03
+									.timer__el-type часов
+								.timer-dot
+								.timer__el-wrap
+									.timer__el.timer__el-min 28
+									.timer__el-type минут
+								.timer-dot
+								.timer__el-wrap
+									.timer__el.timer__el-sec 21
+									.timer__el-type cекунд
+							.g.g-line-center
+								.btn--md.btn--mark Заказать
+
 		// advant
 		.main-cont
 			.advant.mb-100
@@ -76,7 +107,7 @@ include block_html/_include.pug
 		.main-cont
 			.invite
 				.invite-img
-					.invite-msg
+					.invite-msg.paralax-el(data-depth="10")
 						img(src="img/smile/smile-lazy.png", alt="")
 						span Вот так выглядит наш набор готового питания на сутки
 					img(src="img/circle-food-1.png", alt="")
