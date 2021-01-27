@@ -627,18 +627,23 @@ $(document).ready(function () {
 	// set mark === end
 
 	// countDown
-	if ($('.timer').length > 0) {
-		function makeTimer() {
+	if ($('.js-timer').length > 0) {
+		var declOfNum = function(n, textType) {
+				n = Math.abs(n) % 100; var n1 = n % 10;
+				if (n > 10 && n < 20) { return textType[2]; }
+				if (n1 > 1 && n1 < 5) { return textType[1]; }
+				if (n1 == 1) { return textType[0]; }
+				return textType[2];
+		}
 
-			var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
-			//var endTime = new Date("26/01/2021");
-			endTime = (Date.parse(endTime) / 1000);
+		var timeVal = $('.js-timer').data('time');
+		var endTime = new Date(timeVal);
+		endTime = (Date.parse(endTime) / 1000);
 
+		var makeTimer = function() {
 			var now = new Date();
 			now = (Date.parse(now) / 1000);
-
 			var timeLeft = endTime - now;
-
 			var days = Math.floor(timeLeft / 86400);
 			var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
 			var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
@@ -654,11 +659,21 @@ $(document).ready(function () {
 				seconds = "0" + seconds;
 			}
 
-			$("#days").html(days + "<span>Days</span>");
-			$(".timer__el-hour").html(hours);
-			$(".timer__el-min").html(minutes);
-			$(".timer__el-sec").html(seconds);
+			days*1 < 0 ? $('.js-promo-cont').addClass('hidden') : ""
 
+			$(".js-timer__el-day").html(days);
+			$(".js-timer__el-day-name").html(declOfNum(days,['день','дня','дней']));
+
+			$(".js-timer__el-hour").html(hours);
+			$(".js-timer__el-hour-name").html(declOfNum(hours,['час','часа','часов']));
+
+			$(".js-timer__el-min").html(minutes);
+			$(".js-timer__el-min-name").html(declOfNum(minutes,['минута','минуты','минут']));
+
+			$(".js-timer__el-sec").html(seconds);
+			$(".js-timer__el-sec-name").html(declOfNum(seconds ,['секунда','секунды','секунд']));
+
+			$('.timer-dot').toggleClass('hideOpacity')
 		}
 
 		setInterval(function () {

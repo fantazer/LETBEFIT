@@ -78,6 +78,7 @@ body
 	@extend .pb-100
 	flex-grow 1
 	position relative
+	overflow: hidden
 
 .content--clear
 	padding: 0
@@ -1572,6 +1573,7 @@ program-type(bg,textColor,iconColor)
 	fl()
 	white-space initial
 	max-width 300px
+	position relative
 	&:hover
 		box-shadow 0 12px 32px rgba(41, 42, 53, 0.16)
 		.program-el-wrap
@@ -4027,6 +4029,8 @@ work-step(bgVal,colorVal)
 		margin-bottom: 0
 
 .promo-wrap
+	+below(640px)
+		padding: 30px 20px
 	padding: 60px 20px
 	background: $gradient
 	br(12px)
@@ -4034,15 +4038,26 @@ work-step(bgVal,colorVal)
 
 
 // promo
+
 .promo-wrap
 	position relative
 .promo
 	max-width 632px
 .promo-img
+	+below(960px)
+		display none
 	position absolute
-
+.promo-banner
+	+above(961px)
+		display none
+	+below(640px)
+		margin 20px 0 -40px 0
+		width: 100%
+	margin 20px -10% -20% -10%
+	width 120%
+	max-width initial
 .promo-img--1
-	left -15%
+	left -200px
 	bottom -5%
 .promo-img--2
 	bottom -25%
@@ -4051,15 +4066,21 @@ work-step(bgVal,colorVal)
 	right: 20%
 	bottom -25%
 .promo-img--4
-	right: -15%
+	right: -200px
 	bottom: -25%
 
 .timer
-	flex(mid)
+	f()
+	align-items: flex-start
+	justify-content center
 .timer__el-wrap
 	flex(mid)
 	fl()
 .timer__el
+	+below(640px)
+		size 45px
+		font-size: 22px
+		margin: 0 4px
 	background: white
 	size 80px
 	br(12px)
@@ -4070,10 +4091,17 @@ work-step(bgVal,colorVal)
 	margin: 0 8px
 
 .timer-dot
+	+below(640px)
+		width: 6px
+		margin-top: -18px
 	width: 8px
 	height: 24px
 	margin-top: -24px
+	align-self center
+	tr()
 	&:before
+		+below(640px)
+			size 6px
 		content ''
 		size 8px
 		round()
@@ -4082,10 +4110,37 @@ work-step(bgVal,colorVal)
 		display block
 		margin-bottom: 12px
 	&:after
+		+below(640px)
+			size 6px
 		content ''
 		size 8px
 		display block
 		round()
 		box-shadow: 0px 4px 8px rgba(102, 130, 185, 0.12);
 		background: white
+.timer__el-type
+	+below(640px)
+		font-size: 12px
 // promo === end
+
+.loader-bg
+	position relative
+	overflow: hidden
+	box-shadow 0 6px 16px rgba(41, 42, 53, 0.08)
+	&:before
+		content ''
+		top 0
+		left 0
+		height: 100%
+		width: 100%
+		position absolute
+		animation: gradientBg 1.5s linear infinite;
+		background-size 200% 200%
+		background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, #fffdfd 35%, #f0f0f0 50%, #fffdfd 65%, rgba(255,255,255,1) 100%);
+		tr()
+		z-index 10
+@keyframes gradientBg
+	0%
+		background-position: 100% 100%
+	100%
+		background-position: -100% -100%

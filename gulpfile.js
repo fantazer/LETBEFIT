@@ -192,8 +192,8 @@ gulp.task('watch', () => {
 
 
 gulp.task('pug', function() {
-		gulp.src(['app/html/*.pug','app/module/**/*.pug',])
-		//gulp.src(['app/html/main.pug','app/module/**/*.pug',])
+		//gulp.src(['app/html/*.pug','app/module/**/*.pug',])
+		gulp.src(['app/html/main.pug','app/module/**/*.pug',])
 		//gulp.src(['app/html/modal.pug','app/module/**/*.pug',])
 		/*gulp.src([
 			'app/html/smi-list.pug',
