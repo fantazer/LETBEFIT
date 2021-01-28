@@ -230,6 +230,15 @@ link(rel="stylesheet", href="./css/style-guide.css")
 					+icon("checked","icon")
 				.style-input-text Я ознакомился с #[a(href="#") политикой конфиденциальности], #[a(href="#") публичной офертой] и даю согласие на обработку моих персональных данных
 
+	.validate-el.validate-el--false.mb-24
+		.validate-msg--error.msg.bg-stateErrorBG.type-stateError Тект с описанием ошибки
+		.validate-msg--success.msg.bg-stateSuccessBG.type-stateSuccess Тект с успешным действием
+
+	.validate-el.validate-el--true.mb-24
+		.validate-msg--error.msg.bg-stateErrorBG.type-stateError Тект с описанием ошибки
+		.validate-msg--success.msg.bg-stateSuccessBG.type-stateSuccess Тект с успешным действием
+
+
 	h3 Checkbox + Radio
 	.buttons-list
 		+checkbox('Выбрать пункт 1')

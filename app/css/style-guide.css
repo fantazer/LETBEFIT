@@ -1479,6 +1479,15 @@ body > svg {
 .icon-stateSuccessBG {
   fill: #edfdd9;
 }
+.bg-stateSuccess {
+  background: #5da600;
+}
+.type-stateSuccess {
+  color: #5da600;
+}
+.icon-stateSuccess {
+  fill: #5da600;
+}
 .bg-stateWarningBG {
   background: #ffedd8;
 }
@@ -1906,6 +1915,7 @@ a:visiter {
 .icon--xl {
   width: 80px;
   height: 80px;
+  min-width: 80px;
 }
 .icon--left {
   margin-left: 10px;
@@ -2474,7 +2484,7 @@ a:visiter {
 .input-row--validate .input {
   padding-right: 50px;
 }
-.input-row--validate .icon {
+.input-row--validate>.icon {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -2487,6 +2497,27 @@ a:visiter {
 .input-row--validate.input-row--success .icon-validate-true {
   display: block !important;
   fill: #5da600;
+}
+.validate-el {
+  display: none;
+}
+.validate-el.validate-el--false {
+  display: block;
+}
+.validate-el.validate-el--true {
+  display: block;
+}
+.validate-el--false .validate-msg--error {
+  display: block;
+}
+.validate-msg--error {
+  display: none;
+}
+.validate-el--true .validate-msg--success {
+  display: block;
+}
+.validate-msg--success {
+  display: none;
 }
 .input-row--promocode {
   position: relative;

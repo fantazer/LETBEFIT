@@ -367,6 +367,51 @@ $(document).ready(function () {
 	});
 	// review slider === end
 
+	// review slider
+	$('.slider-press').slick({
+		slidesToShow: 6,
+		speed: 800,
+		dots:false,
+		arrows:false,
+		rows:0,
+		responsive: [
+			{
+				breakpoint: 1200,
+					settings: {
+						slidesToShow: 5,
+						slidesToScroll: 1,
+						infinite: false,
+						arrows:false,
+						dots: false,
+
+				}
+			},
+			{
+				breakpoint: 769,
+					settings: {
+						slidesToShow: 4,
+						slidesToScroll: 1,
+						infinite: false,
+						arrows:false,
+						dots: false,
+
+				}
+			},
+			{
+				breakpoint: 640,
+					settings: {
+						slidesToShow: 2.5,
+						slidesToScroll: 1,
+						infinite: false,
+						arrows:false,
+						dots: false,
+
+				}
+			}
+		]
+	});
+	// review slider === end
+
 	// === custom arrow el ===
 	$('.js-control-right').click(function(){
 		$(this).closest(".js-slider-wrap").find(".js-slider").slick('slickNext');
@@ -627,7 +672,7 @@ $(document).ready(function () {
 	// set mark === end
 
 	// countDown
-	if ($('.js-timer').length > 0) {
+	if ($('.js-timer').length > 0)  {
 		var declOfNum = function(n, textType) {
 				n = Math.abs(n) % 100; var n1 = n % 10;
 				if (n > 10 && n < 20) { return textType[2]; }
@@ -684,7 +729,7 @@ $(document).ready(function () {
 	// countDown === end
 
 	// paralax
-	if ($('.paralax-el').length > 0) {
+	if ($('.paralax-el').length > 0 && windowSize>1023) {
 		$(window).scroll(function() {
 
 			$('.paralax-el').each(function(){

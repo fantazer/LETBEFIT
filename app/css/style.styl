@@ -1504,7 +1504,7 @@ program-type(bg,textColor,iconColor)
 .program-consist
 	+below(640px)
 		min-width auto
-		width: 80%
+		width: 100%
 	f()
 	width: 25%
 	min-width 320px
@@ -1918,7 +1918,7 @@ work-step(bgVal,colorVal)
 	size 44px
 	round()
 	bg-full()
-
+	min-width 44px
 .review-head
 	+below(1024px)
 		margin: 0 0 40px 0
@@ -3447,6 +3447,11 @@ work-step(bgVal,colorVal)
 	font-weight: 700
 
 .lk-panel-head
+	+below(640px)
+		.marker
+			order 1
+		.btn-menu-wrap
+			order 2
 	flex(between)
 	fw()
 	grid-gap 20px
@@ -3576,8 +3581,6 @@ work-step(bgVal,colorVal)
 	padding-top: 20px
 	display none
 .history-cont-head
-	+below(640px)
-		padding-left: 30px
 	margin-bottom: 20px
 
 .history-panel
@@ -4060,9 +4063,13 @@ work-step(bgVal,colorVal)
 	left -200px
 	bottom -5%
 .promo-img--2
+	+below(1024px)
+		bottom -15%
 	bottom -25%
 	left 20%
 .promo-img--3
+	+below(1024px)
+		bottom -15%
 	right: 20%
 	bottom -25%
 .promo-img--4
@@ -4123,6 +4130,7 @@ work-step(bgVal,colorVal)
 		font-size: 12px
 // promo === end
 
+//
 .loader-bg
 	position relative
 	overflow: hidden
@@ -4144,3 +4152,27 @@ work-step(bgVal,colorVal)
 		background-position: 100% 100%
 	100%
 		background-position: -100% -100%
+//  === end
+
+// press slider
+.slider-press
+	+below(640px)
+		margin-right: -20px
+.slider-press__el-wrap
+	+below(640px)
+		padding: 35% 10%
+	background: white
+	br(12px)
+	position relative
+	padding: 25% 10%
+.slider-press__el
+	position absolute
+	flex(mid)
+	top 0
+	left 0
+	width: 100%
+	height: 100%
+	padding: 10px
+	img
+		max-width 80%
+// press slider === end

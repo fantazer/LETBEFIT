@@ -357,6 +357,10 @@ mixin modal()
 										.mark-el.js-mark
 											+icon("star","icon mark-el--empty")
 											+icon("star-full","icon mark-el--val")
+						// toggle .validate-el + .validate-el--false || .validate-el--true
+						.g-xs-12.validate-el.validate-el--false
+							.validate-msg--error.msg.bg-stateErrorBG.type-stateError Тект с описанием ошибки
+							.validate-msg--success.msg.bg-stateSuccessBG.type-stateSuccess Тект с успешным действием
 
 					.input-row.input-row--validate
 						textarea(name="text", cols="30", rows="5" class="input" data-placeholder="Комментарий")

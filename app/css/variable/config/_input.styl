@@ -184,7 +184,7 @@
 	position relative
 	.input
 		padding-right: 50px
-	.icon
+	&>.icon
 		position absolute
 		top 20px
 		right: 20px
@@ -197,6 +197,27 @@
 		.icon-validate-true
 			display block!important
 			fill $stateSuccess
+
+.validate-el
+	display none
+	&.validate-el--false
+		display block
+	&.validate-el--true
+		display block
+
+.validate-el--false
+	.validate-msg--error
+		display block
+
+.validate-msg--error
+	display none
+
+.validate-el--true
+	.validate-msg--success
+		display block
+
+.validate-msg--success
+	display none
 
 .input-row--promocode
 	position relative
