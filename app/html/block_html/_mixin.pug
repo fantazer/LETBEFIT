@@ -253,7 +253,7 @@ mixin lk-item(i,type)
             .btn-icon-row.btn-icon-row--left
               +icon("star","icon")
               span Оценить
-mixin history(j,delivered,type)
+mixin history(j,delivered,type,needMark)
   .history.js-slide-wrap
     .history-head
       if(j === 0)
@@ -286,21 +286,22 @@ mixin history(j,delivered,type)
       .history-time 12:00 - 16:00
       .history-location ул.Зеленоградская, 4/7 ул.Зеленоградская, 4/7
       .history-tool
-        .btn--sm.btn--light.js-slide Рацион
+        .btn--sm.btn--text.js-slide Рацион
         if(!delivered)
           .btn-menu-wrap
-            .btn--sm.btn--light.js-history-edit Изменить
+            .btn--sm.btn--text.js-history-edit Изменить
             .btn-menu
               .btn-menu-cont
                 .btn-menu__el Изменить доставку
                 .btn-menu__el Заморозить
                 .btn-menu__el.type--stateError Удалить
         else
-          .btn--sm.btn--mark
-            // toggle class.btn--sm.btn--mark + .disable
-            .btn-icon-row.btn-icon-row--left
-              +icon("star","icon")
-              span Оценить
+          if(needMark != 'clear')
+            .btn--sm.btn--mark
+              // toggle class.btn--sm.btn--mark + .disable
+              .btn-icon-row.btn-icon-row--left
+                +icon("star","icon")
+                span Оценить
     .history-cont.js-slide-cont
       .history-cont-head
         // program consist

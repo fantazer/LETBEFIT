@@ -27,9 +27,15 @@ include block_html/_include.pug
 						// history item
 						.history-list-el
 							.history-wrap
-								.history-date Сб, 24 Сентября
+								.lk-panel-head.mb-12
+									.history-date Сб, 24 Сентября
+									.btn--sm.btn--sm-fix.btn--mobile.btn--mark
+										// toggle class + .disable
+										.btn-icon-row.btn-icon-row--left
+											+icon("star","icon")
+											span Оценить доставку
 								- for (var i=0;i<8;i++)
-									+history(2,true,'needMark')
+									+history(2,true,'needMark','clear')
 						// history item === end
 	+footer()
 include ./block_html/_script.pug

@@ -13,30 +13,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add promo block">
-      <change afterPath="$PROJECT_DIR$/app/img/cooperation-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/cooperation-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/cooperation-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/cooperation-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/cooperation-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/press-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/press-2.png" afterDir="false" />
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add doubt block + press + deliveryMark error msg + img company">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/cooperation.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/cooperation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style-guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style-guide.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_color.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_color.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_input.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_input.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/cooperation.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/cooperation.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/elements.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/elements.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/main.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/circle-person-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/circle-person-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/lk-order-delivered.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-order-delivered.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/lk-order-sort.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-order-sort.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/lk-order.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-order.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/modal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/module/modal/_modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/module/modal/_modal.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lk-order-delivered.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order-delivered.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lk-order-sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order-sort.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lk-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -347,14 +335,10 @@
       <workItem from="1611595254985" duration="747000" />
       <workItem from="1611670441648" duration="12953000" />
       <workItem from="1611737676198" duration="9845000" />
-      <workItem from="1611823315212" duration="9096000" />
-    </task>
-    <task id="LOCAL-00046" summary="fix windows config">
-      <created>1595160805760</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1595160805761</updated>
+      <workItem from="1611823315212" duration="9749000" />
+      <workItem from="1611912149958" duration="682000" />
+      <workItem from="1612171626382" duration="457000" />
+      <workItem from="1612172153477" duration="2671000" />
     </task>
     <task id="LOCAL-00047" summary="fix styles">
       <created>1597054382871</created>
@@ -692,7 +676,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611746827628</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="add doubt block + press + deliveryMark error msg + img company">
+      <created>1611840206235</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1611840206235</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -733,7 +724,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add body event" />
     <MESSAGE value="fix config event" />
     <MESSAGE value="add page about" />
     <MESSAGE value="add modal change program" />
@@ -758,6 +748,7 @@
     <MESSAGE value="edit lk day + drop download" />
     <MESSAGE value="add modal markDelivery + start promo" />
     <MESSAGE value="add promo block" />
-    <option name="LAST_COMMIT_MESSAGE" value="add promo block" />
+    <MESSAGE value="add doubt block + press + deliveryMark error msg + img company" />
+    <option name="LAST_COMMIT_MESSAGE" value="add doubt block + press + deliveryMark error msg + img company" />
   </component>
 </project>

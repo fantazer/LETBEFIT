@@ -350,7 +350,7 @@ slider-create-mobile()
 		width: 100%
 
 .modal-fluid-cont
-	+below(640px)
+	+below(340px)
 		margin-left: -16px
 		margin-right: -16px
 		padding: 16px
@@ -3463,7 +3463,6 @@ work-step(bgVal,colorVal)
 	+below(1024px)
 		padding: 0
 	color $typePrimary
-	margin-bottom: 16px
 	padding: 0 18px
 .history
 	+below(1024px)
@@ -3483,7 +3482,7 @@ work-step(bgVal,colorVal)
 			padding: 12px 48px
 		+below(640px)
 			padding: 16px
-		background #F1F2F6
+		background #F3F8ED
 		padding:10px 18px
 		.history-head
 			+below(640px)
@@ -3550,7 +3549,7 @@ work-step(bgVal,colorVal)
 		width: 45%
 		margin-right: 0
 		text-align: right
-	width: 15%
+	width: 100px
 	margin-right: 10px
 	white-space nowrap
 .history-time
@@ -3558,19 +3557,22 @@ work-step(bgVal,colorVal)
 		width: 100%
 		margin-right: 0
 		margin: 16px 0
-	width: 15%
+	width: 100px
 	margin-right: 10px
 	white-space nowrap
 .history-location
 	+below(768px)
 		width: 100%
 		margin-bottom: 16px
-	width: 215px
+	width: 35%
 	white-space nowrap
 	text-overflow ellipsis
 	overflow hidden
 	margin-right: 10px
 .history-tool
+	+below(640px)
+		justify-content: flex-end
+		width: 100%
 	f()
 	grid-gap 10px
 //.history-edit
