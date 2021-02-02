@@ -13,19 +13,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add doubt block + press + deliveryMark error msg + img company">
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix lk headers list">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/lk-order-delivered.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-order-delivered.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/lk-order-sort.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-order-sort.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/lk-order.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-order.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-order-delivered.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order-delivered.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-order-sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order-sort.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style-min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style-min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,14 +331,9 @@
       <workItem from="1611823315212" duration="9749000" />
       <workItem from="1611912149958" duration="682000" />
       <workItem from="1612171626382" duration="457000" />
-      <workItem from="1612172153477" duration="2671000" />
-    </task>
-    <task id="LOCAL-00047" summary="fix styles">
-      <created>1597054382871</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1597054382871</updated>
+      <workItem from="1612172153477" duration="2940000" />
+      <workItem from="1612180079033" duration="276000" />
+      <workItem from="1612262273582" duration="1787000" />
     </task>
     <task id="LOCAL-00048" summary="fix inputs">
       <created>1597402617566</created>
@@ -683,7 +671,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611840206235</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="fix lk headers list">
+      <created>1612175286235</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1612175286236</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -724,7 +719,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="fix config event" />
     <MESSAGE value="add page about" />
     <MESSAGE value="add modal change program" />
     <MESSAGE value="add tab 21 day" />
@@ -749,6 +743,7 @@
     <MESSAGE value="add modal markDelivery + start promo" />
     <MESSAGE value="add promo block" />
     <MESSAGE value="add doubt block + press + deliveryMark error msg + img company" />
-    <option name="LAST_COMMIT_MESSAGE" value="add doubt block + press + deliveryMark error msg + img company" />
+    <MESSAGE value="fix lk headers list" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix lk headers list" />
   </component>
 </project>

@@ -2483,6 +2483,9 @@ work-step(bgVal,colorVal)
 	f()
 	border-bottom 1px solid $border-color
 .tab--fluid-modal
+	+below(640px)
+		margin-left: -16px
+		margin-right: -16px
 	margin-left -32px
 	margin-right -32px
 	.tab__el
@@ -3148,7 +3151,7 @@ work-step(bgVal,colorVal)
 
 .lk-head-wrap
 	+below(1024px)
-		padding: 24px 0
+		padding-top: 24px
 	padding-top: 64px
 	background: $gradient
 .lk-head-wrap--clear-mobile
@@ -3466,7 +3469,7 @@ work-step(bgVal,colorVal)
 	padding: 0 18px
 .history
 	+below(1024px)
-		padding: 12px 42px 0 42px
+		padding: 0 42px 0 42px
 		margin: 0 -42px
 		br(0)
 	+below(640px)
@@ -3542,16 +3545,27 @@ work-step(bgVal,colorVal)
 		font-size: 28px
 		width: 45%
 	font-weight 700
-	width: 10%
 	margin-right: 10px
+	width: 100px
+	white-space nowrap
+	text-overflow ellipsis
+	overflow hidden
 .history-day
 	+below(768px)
 		width: 45%
 		margin-right: 0
 		text-align: right
-	width: 100px
-	margin-right: 10px
+	+below(640px)
+		width: 100%
+		text-align: left
+		font-size: 12px
+		margin: 0
+	width: 120px
+	margin: 0 10px
 	white-space nowrap
+	text-align center
+	text-overflow ellipsis
+	overflow hidden
 .history-time
 	+below(768px)
 		width: 100%
@@ -3571,7 +3585,6 @@ work-step(bgVal,colorVal)
 	margin-right: 10px
 .history-tool
 	+below(640px)
-		justify-content: flex-end
 		width: 100%
 	f()
 	grid-gap 10px
