@@ -1505,7 +1505,7 @@
                         <div class="btn--md btn--mark btn--full modal-hide">Хорошо</div>
                     </div>
                 </div>
-                <!--Referal true-->
+                <!--Send Review-->
                 <div class="modal modal--mdx" data-modal="sendReview">
                     <div class="modal-close">
                         <svg class="icon">
@@ -1529,6 +1529,89 @@
                             </svg>
                         </div>
                         <div class="btn--md btn--mark btn--full">Отправить</div>
+                    </div>
+                </div>
+                <!-- CallBack-->
+                <div class="modal" data-modal="callback">
+                    <div class="modal-close">
+                        <svg class="icon">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="modal-content">
+                        <div class="type--head type--mdx mb-24">Связаться с нами</div>
+                        <div class="input-row input-row--validate">
+                            <input class="input" type="text" data-placeholder="Ваше имя" />
+                            <div class="input-msg">В данных ошибка</div>
+                            <svg class="icon icon-validate-false">
+                                <use xlink:href="#close"></use>
+                            </svg>
+                            <svg class="icon icon-validate-true">
+                                <use xlink:href="#checked"></use>
+                            </svg>
+                        </div>
+                        <div class="input-row input-row--validate">
+                            <input class="input" type="text" data-placeholder="Телефон" data-mask="8(000)000-00-00" />
+                            <div class="input-msg">В данных ошибка</div>
+                            <svg class="icon icon-validate-false">
+                                <use xlink:href="#close"></use>
+                            </svg>
+                            <svg class="icon icon-validate-true">
+                                <use xlink:href="#checked"></use>
+                            </svg>
+                        </div>
+                        <div class="input-row input-row--validate">
+                            <input class="input" type="text" data-placeholder="E-mail" />
+                            <div class="input-msg">В данных ошибка</div>
+                            <svg class="icon icon-validate-false">
+                                <use xlink:href="#close"></use>
+                            </svg>
+                            <svg class="icon icon-validate-true">
+                                <use xlink:href="#checked"></use>
+                            </svg>
+                        </div>
+                        <div class="input-row input-row--validate">
+                            <textarea class="input" name="text" cols="30" rows="5" data-placeholder="Комментарий"></textarea>
+                            <div class="input-msg">Введённые данные не должны содержать цифры</div>
+                            <svg class="icon icon-validate-false">
+                                <use xlink:href="#close"></use>
+                            </svg>
+                            <svg class="icon icon-validate-true">
+                                <use xlink:href="#checked"></use>
+                            </svg>
+                        </div>
+                        <div class="btn--md btn--mark btn--full mb-24">Отправить</div>
+                        <div class="type--black">Нажимая кнопку “Отправить” я принимаю условия условия
+                            <a href="#" class="type--mark">передачи информации</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Callback True-->
+                <div class="modal" data-modal="callbackTrue">
+                    <div class="modal-close">
+                        <svg class="icon">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="modal-content">
+                        <img class="mb-16 block-mid" src="img/sendMsg.svg" alt="" />
+                        <div class="modal-title type--center">Ваше сообщение
+                            <br>отправлено!</div>
+                        <div class="btn--md btn--light btn--full">Хорошо</div>
+                    </div>
+                </div>
+                <!-- Choose Type Order-->
+                <div class="modal" data-modal="chooseTypeOrder">
+                    <div class="modal-close">
+                        <svg class="icon">
+                            <use xlink:href="#close"></use>
+                        </svg>
+                    </div>
+                    <div class="modal-content">
+                        <div class="type--head type--mdx mb-24">Оформить заказ</div>
+                        <div class="mb-32">Выберите удобный для вас способ. При быстром заказе Вам перезвонит оператор и уточнит все детали.</div>
+                        <div class="btn--md btn--light btn--full mb-16">Быстрый заказ</div>
+                        <div class="btn--md btn--light btn--full">Оформить на сайте</div>
                     </div>
                 </div>
             </div>

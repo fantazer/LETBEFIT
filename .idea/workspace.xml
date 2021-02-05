@@ -13,12 +13,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix lk headers list">
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix lk name days">
+      <change afterPath="$PROJECT_DIR$/app/img/sendMsg.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style-min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style-min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_input.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_input.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/modal.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/order.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/order.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/modal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/module/modal/_modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/module/modal/_modal.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-detox.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-detox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -333,14 +338,11 @@
       <workItem from="1612171626382" duration="457000" />
       <workItem from="1612172153477" duration="2940000" />
       <workItem from="1612180079033" duration="276000" />
-      <workItem from="1612262273582" duration="1787000" />
-    </task>
-    <task id="LOCAL-00048" summary="fix inputs">
-      <created>1597402617566</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1597402617566</updated>
+      <workItem from="1612262273582" duration="2524000" />
+      <workItem from="1612290731328" duration="1747000" />
+      <workItem from="1612340178143" duration="4091000" />
+      <workItem from="1612441970005" duration="1781000" />
+      <workItem from="1612514359713" duration="3135000" />
     </task>
     <task id="LOCAL-00049" summary="fix favicon">
       <created>1599740703517</created>
@@ -678,7 +680,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612175286236</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="fix lk name days">
+      <created>1612264216510</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1612264216511</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -719,7 +728,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add page about" />
     <MESSAGE value="add modal change program" />
     <MESSAGE value="add tab 21 day" />
     <MESSAGE value="fix contract form" />
@@ -744,6 +752,7 @@
     <MESSAGE value="add promo block" />
     <MESSAGE value="add doubt block + press + deliveryMark error msg + img company" />
     <MESSAGE value="fix lk headers list" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix lk headers list" />
+    <MESSAGE value="fix lk name days" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix lk name days" />
   </component>
 </project>
