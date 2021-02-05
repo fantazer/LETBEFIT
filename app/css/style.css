@@ -6670,6 +6670,9 @@ body {
   bottom: 12px;
   left: 20px;
 }
+.program-el__img--sm {
+  height: 200px;
+}
 .program-el__img-val {
   position: absolute;
   color: #fff;

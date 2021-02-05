@@ -64,8 +64,6 @@ include block_html/_include.pug
 								.program-group__el-name 1 день
 								.program-group__el-val 900 Ккал
 				// choose program === end
-
-
 			// program list
 			.main-cont
 				.program-list-wrap
@@ -87,16 +85,28 @@ include block_html/_include.pug
 						// program consist === end
 					.program-list-container
 						.program-list
-							- for (var i=1;i<12;i++)
+							-
+								var items = [
+									{name: "Имунитет", img: "detox-yellow"},
+									{name: "Баланс", img: "detox-orange"},
+									{name: "Энергия", img: "detox-violet"},
+									{name: "Молодость", img: "detox-green"},
+									{name: "Гармония", img: "detox-blue"},
+									{name: "Красота", img: "detox-coral"},
+									{name: "Свежесть", img: "detox-sea"},
+
+								];
+							each item in items
 								.program-el
-									.program-el__img(style="background-image:url('img/detox/detox-" + i + ".jpg')")
+									.program-el__img.program-el__img--sm(style="background-image:url('img/detox/" + item.img + ".jpg')")
 										.program-el__img-val 300 мл
 									.program-el-wrap
 										.program-el__content.program-el__content--flex
-											.type--head.mb-12 Глоток силы
+											.type--head.mb-12 #{item.name}
 											.type--main.type--primary.mb-24 Банан, протеин, апельсин, блепиха
 											.program-el__footer.program-el__footer--clear
 												.type--sm 110 руб.
+
 							.program-banner
 								.program-banner-inner
 									img(src="img/smile/smile-star.png", alt="").program-banner__img
