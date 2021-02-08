@@ -13,12 +13,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add modal + icon soc">
-      <change beforePath="$PROJECT_DIR$/app/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/pack.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/soc-inst.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/soc-inst.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/sprite.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/pack.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/svg/sprite.svg" afterDir="false" />
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix icon">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,14 +336,8 @@
       <workItem from="1612441970005" duration="1781000" />
       <workItem from="1612514359713" duration="4886000" />
       <workItem from="1612527636684" duration="1316000" />
-      <workItem from="1612768014374" duration="4518000" />
-    </task>
-    <task id="LOCAL-00052" summary="add dropdown">
-      <created>1604946095336</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1604946095337</updated>
+      <workItem from="1612768014374" duration="5305000" />
+      <workItem from="1612793736103" duration="54000" />
     </task>
     <task id="LOCAL-00053" summary="add header + footer">
       <created>1605432287369</created>
@@ -684,7 +675,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612770852958</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="fix icon">
+      <created>1612776768668</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1612776768668</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -725,7 +723,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add page lk" />
     <MESSAGE value="add lk desktop" />
     <MESSAGE value="add mobile version lk" />
     <MESSAGE value="deploy lk" />
@@ -750,6 +747,7 @@
     <MESSAGE value="add modals = callback + callbackMsg + choose type. Phone on Order page" />
     <MESSAGE value="fix detox" />
     <MESSAGE value="add modal + icon soc" />
-    <option name="LAST_COMMIT_MESSAGE" value="add modal + icon soc" />
+    <MESSAGE value="fix icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix icon" />
   </component>
 </project>
