@@ -13,16 +13,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix detox">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/elements.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/contact.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/contact.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/elements.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/elements.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/modal.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/modal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/module/modal/_modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/module/modal/_modal.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add modal + icon soc">
+      <change beforePath="$PROJECT_DIR$/app/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/pack.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/svg/soc-inst.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/soc-inst.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/svg/sprite.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/pack.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/pack.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/svg/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/svg/sprite.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -343,14 +339,7 @@
       <workItem from="1612441970005" duration="1781000" />
       <workItem from="1612514359713" duration="4886000" />
       <workItem from="1612527636684" duration="1316000" />
-      <workItem from="1612768014374" duration="2409000" />
-    </task>
-    <task id="LOCAL-00051" summary="add styleguide">
-      <created>1604940418265</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1604940418265</updated>
+      <workItem from="1612768014374" duration="4518000" />
     </task>
     <task id="LOCAL-00052" summary="add dropdown">
       <created>1604946095336</created>
@@ -688,7 +677,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612519620168</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="add modal + icon soc">
+      <created>1612770852957</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1612770852958</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -729,7 +725,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="fix contract form" />
     <MESSAGE value="add page lk" />
     <MESSAGE value="add lk desktop" />
     <MESSAGE value="add mobile version lk" />
@@ -754,6 +749,7 @@
     <MESSAGE value="fix lk name days" />
     <MESSAGE value="add modals = callback + callbackMsg + choose type. Phone on Order page" />
     <MESSAGE value="fix detox" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix detox" />
+    <MESSAGE value="add modal + icon soc" />
+    <option name="LAST_COMMIT_MESSAGE" value="add modal + icon soc" />
   </component>
 </project>
