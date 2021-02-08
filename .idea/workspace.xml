@@ -13,24 +13,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add modals = callback + callbackMsg + choose type. Phone on Order page">
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix detox">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/program-detox.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-detox.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-detox.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-detox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/contact.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/contact.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/elements.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/elements.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/modal.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/modal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/module/modal/_modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/module/modal/_modal.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -350,14 +341,9 @@
       <workItem from="1612290731328" duration="1747000" />
       <workItem from="1612340178143" duration="4091000" />
       <workItem from="1612441970005" duration="1781000" />
-      <workItem from="1612514359713" duration="4059000" />
-    </task>
-    <task id="LOCAL-00050" summary="add cookie msg">
-      <created>1600361283307</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1600361283308</updated>
+      <workItem from="1612514359713" duration="4886000" />
+      <workItem from="1612527636684" duration="1316000" />
+      <workItem from="1612768014374" duration="2409000" />
     </task>
     <task id="LOCAL-00051" summary="add styleguide">
       <created>1604940418265</created>
@@ -695,7 +681,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612518713251</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="fix detox">
+      <created>1612519620168</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1612519620168</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -736,7 +729,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add tab 21 day" />
     <MESSAGE value="fix contract form" />
     <MESSAGE value="add page lk" />
     <MESSAGE value="add lk desktop" />
@@ -761,6 +753,7 @@
     <MESSAGE value="fix lk headers list" />
     <MESSAGE value="fix lk name days" />
     <MESSAGE value="add modals = callback + callbackMsg + choose type. Phone on Order page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add modals = callback + callbackMsg + choose type. Phone on Order page" />
+    <MESSAGE value="fix detox" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix detox" />
   </component>
 </project>
