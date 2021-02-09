@@ -2239,17 +2239,23 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="upload-wrap">
-                                <label class="upload">
-                                    <div class="btn--sm-figure btn--mark">
-                                        <svg class="icon">
-                                            <use xlink:href="#plus"></use>
-                                        </svg>
+                            <div class="cell-row">
+                                <div class="cell-col">
+                                    <div class="validate-msg--error msg bg-stateErrorBG type-stateError js-upload-msg mb-24">Файл не может быть больше, чем 5 мб</div>
+                                    <div class="upload-wrap">
+                                        <div class="upload-list"></div>
+                                        <label class="upload">
+                                            <div class="btn--sm-figure btn--mark">
+                                                <svg class="icon">
+                                                    <use xlink:href="#plus"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="upload__text">Прикрепить файл</div>
+                                            <input class="upload-btn" type="file" />
+                                        </label>
+                                        <!--.upload-descr Формат файлов <span class="type--mark">Jpg</span> <span class="type--mark">Png&#8194;</span> максимальный размер вложения <span class="type--mark">5&nbsp; мб</span>-->
                                     </div>
-                                    <div class="upload__text">Прикрепить файл</div>
-                                    <input class="upload-btn" type="file" />
-                                </label>
-                                <div class="upload-img"></div>
+                                </div>
                             </div>
                         </div>
                         <div class="contract-footer">
@@ -2390,9 +2396,11 @@
                             <svg class="icon">
                                 <use xlink:href="#pay-google"></use>
                             </svg>
-                            <svg class="icon">
-                                <use xlink:href="#pay-halva"></use>
-                            </svg>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use xlink:href="#pay-halva"></use>
+                                </svg>
+                            </a>
                             <svg class="icon">
                                 <use xlink:href="#pay-mir"></use>
                             </svg>

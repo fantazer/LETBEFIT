@@ -2891,6 +2891,73 @@ a:visiter {
     grid-template-columns: 1fr;
   }
 }
+.upload-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.upload {
+  display: flex;
+  transition: all 0.4s;
+}
+@media only screen and (max-width: 640px) {
+  .upload {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.upload:hover {
+  cursor: pointer;
+}
+.upload__text {
+  color: #7eca1d;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 16px;
+}
+.upload-list {
+  width: 100%;
+}
+.upload-list__el {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  grid-gap: 6px;
+  padding: 6px 12px;
+  background: #f1f2f6;
+  width: 100%;
+  whtie-space: nowrap;
+  text-overflow: ellipsis;
+  border-radius: 10px;
+  transition: all 0.4s;
+  font-weight: 700;
+}
+.upload-list__el:hover {
+  cursor: pointer;
+}
+.upload-list__el span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.upload-list__el .icon {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+}
+.upload-list__el:hover {
+  background: #d2d5e2;
+}
+.upload-btn {
+  position: absolute;
+  left: -9999px;
+}
 /* block footer*/
 /*block footer end */
 .title {

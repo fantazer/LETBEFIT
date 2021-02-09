@@ -489,24 +489,24 @@ $(document).ready(function () {
 	// init fancybox === end
 
 
-	// upload btn
+	//upload-btn
 	$(".upload-btn").change(function () { //Если выбрал файл
-		console.log('img');
-		if (this.files && this.files[0]) {
-			$('.upload-img').append('<div class="upload-img__el" onclick="this.parentNode.removeChild(this);"></div>');
-			var currentUpload = $('.upload-img .upload-img__el:last'); //выбираем куда
-			var reader = new FileReader();
-			reader.onload = function(){
-				currentUpload.attr('style', " background-image:url( "+reader.result+ ") ");
-			}
-			reader.readAsDataURL(this.files[0]);
+		//console.log('img');
+
+		if (this.files && this.files[0].size < 655360) {
+			var uploadList = $(this).closest('.upload-wrap').find('.upload-list');
+			uploadList.empty()
+			uploadList.append('<div class="upload-list__el" onclick="this.parentNode.removeChild(this);"><svg class="icon"><use xlink:href="#close"></use></svg><span></span></div>');
+			var currentUpload = $('.upload-list .upload-list__el:last').find('span'); //выбираем куда
+			currentUpload.text(this.files[0].name);
+			$('.js-upload-msg').addClass('validate-msg--error');
+		} else{
+			$('.js-upload-msg').removeClass('validate-msg--error');
 		}
+		console.log(this.files[0].size);
 	});
-	$('.upload-img__el').click(function(){
-		console.log('remove');
-		$(this).remove();
-	});
-	// upload btn === end
+
+	//upload-btn
 	
 	// horizontal scroll
 	if(windowSize>1025){

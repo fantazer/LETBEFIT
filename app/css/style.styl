@@ -1276,14 +1276,13 @@ slider-create-mobile()
 		margin 0 auto
 	f()
 	align-items center
+	grid-gap 16px
 	.icon
-		+below(640px)
-			margin: 10px
 		fill white
 		width: 3.5em
-		margin-right: 16px
 		opacity: .3
 		tr()
+		flex(mid)
 		&:hover
 			opacity: 1
 		&:last-child
@@ -2880,62 +2879,6 @@ work-step(bgVal,colorVal)
 	color $mark
 
 // review === end
-
-// upload
-.upload-wrap
-	f()
-	align-items center
-	fw()
-.upload
-	+below(640px)
-		width: 100%
-		margin-bottom: 10px
-	f()
-	cp()
-	tr(all)
-
-.upload__text
-	color $mark
-	font-weight: 500
-	flex(mid)
-	margin-left: 16px
-.upload-img
-	+below(640px)
-		margin-left: 0
-	flex(mid)
-	margin-left: 24px
-	margin-right: -8px
-.upload-img__el
-	size 44px
-	round()
-	border 1px solid $border-color
-	background-size: cover
-	background-repeat: no-repeat
-	position: relative
-	overflow: hidden
-	margin-right: 8px
-	cp()
-	&:hover
-		&:before
-			content 'X'
-			opacity:1
-	&:before
-		content 'X'
-		position: absolute
-		background: #000000b3
-		width: 100%
-		height: 100%
-		left 0
-		top 0
-		flex(mid)
-		color white
-		opacity:0
-		tr(all)
-.upload-btn
-	position: absolute
-	left -9999px
-//form
-// upload === end
 
 .cell-row
 	display: grid

@@ -532,3 +532,55 @@
 	grid-gap 28px
 	grid-template-columns: repeat(4, 1fr)
 	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+
+// upload
+.upload-wrap
+	f()
+	align-items center
+	fw()
+.upload
+	+below(640px)
+		width: 100%
+		margin-bottom: 10px
+	f()
+	cp()
+	tr(all)
+
+.upload__text
+	color $mark
+	font-weight: 500
+	flex(mid)
+	margin-left: 16px
+.upload-list
+	width: 100%
+.upload-list__el
+	background-size: cover
+	background-repeat: no-repeat
+	position: relative
+	overflow: hidden
+	margin-bottom: 12px
+	f()
+	align-items center
+	grid-gap 6px
+	padding: 6px 12px
+	background: $fieldBackground
+	width: 100%
+	whtie-space nowrap
+	text-overflow ellipsis
+	br(10px)
+	tr()
+	cp()
+	font-weight: 700
+	span
+		overflow: hidden
+		white-space nowrap
+		text-overflow ellipsis
+	.icon
+		size 16px
+		min-width 16px
+	&:hover
+		background: darken($fieldBackground,10)
+.upload-btn
+	position: absolute
+	left -9999px
+// upload === end

@@ -116,13 +116,17 @@ include block_html/_include.pug
 							.cell-col
 								.input-row.input-row--full
 									textarea(name="text", rows="8" class="input" data-placeholder="Сообщение")
-						.upload-wrap
-							label.upload
-								.btn--sm-figure.btn--mark
-									+icon("plus","icon")
-								.upload__text Прикрепить файл
-								input(type="file").upload-btn
-							.upload-img
+						.cell-row
+							.cell-col
+								.validate-msg--error.msg.bg-stateErrorBG.type-stateError.js-upload-msg.mb-24 Файл не может быть больше, чем 5 мб
+								.upload-wrap
+									.upload-list
+									label.upload
+										.btn--sm-figure.btn--mark
+											+icon("plus","icon")
+										.upload__text Прикрепить файл
+										input(type="file").upload-btn
+									//.upload-descr Формат файлов <span class="type--mark">Jpg</span> <span class="type--mark">Png&#8194;</span> максимальный размер вложения <span class="type--mark">5&nbsp; мб</span>
 					.contract-footer
 						.contract-footer__text Нажимая кнопку “Оформить” я принимаю условия условия <a href="#" class="link--mark">передачи информации</a>
 						.btn--md.btn--mark.btn--mobile Оставить отзыв
