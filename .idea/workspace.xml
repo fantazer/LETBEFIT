@@ -13,16 +13,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix increment event">
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix footer payment icon + upload msg">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style-guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style-guide.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_input.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_input.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/retail.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/retail.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/module/footer/_footer.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/module/footer/_footer.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/retail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/retail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/main.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-vegan.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-vegan.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-balance.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-balance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-daily.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-daily.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-diet.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-diet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-everydaily.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-everydaily.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-fish.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-fish.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-light.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-light.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-normal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-normal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-strong.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-strong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-vegan.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-vegan.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -346,14 +355,10 @@
       <workItem from="1612527636684" duration="1316000" />
       <workItem from="1612768014374" duration="5305000" />
       <workItem from="1612793736103" duration="653000" />
-      <workItem from="1612869418591" duration="3124000" />
-    </task>
-    <task id="LOCAL-00054" summary="add construct program">
-      <created>1605554373234</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1605554373235</updated>
+      <workItem from="1612869418591" duration="3936000" />
+      <workItem from="1612955615184" duration="3042000" />
+      <workItem from="1613050414223" duration="618000" />
+      <workItem from="1613061218261" duration="3653000" />
     </task>
     <task id="LOCAL-00055" summary="add construct program">
       <created>1605691008452</created>
@@ -691,7 +696,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612794057149</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="fix footer payment icon + upload msg">
+      <created>1612886487763</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1612886487763</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -732,7 +744,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add mobile version lk" />
     <MESSAGE value="deploy lk" />
     <MESSAGE value="fix page 21 day + fix nav slider" />
     <MESSAGE value="fix review slider + rating + item cards" />
@@ -757,6 +768,7 @@
     <MESSAGE value="add modal + icon soc" />
     <MESSAGE value="fix icon" />
     <MESSAGE value="fix increment event" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix increment event" />
+    <MESSAGE value="fix footer payment icon + upload msg" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix footer payment icon + upload msg" />
   </component>
 </project>

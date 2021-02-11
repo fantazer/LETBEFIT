@@ -1717,6 +1717,20 @@ h1 {
 .type--right {
   text-align: right;
 }
+.type--false {
+  text-decoration: none;
+  position: relative;
+}
+.type--false:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -0.3em;
+  height: 0.12em;
+  width: calc(100% + 0.6em);
+  background: #d00025;
+  opacity: 0.8;
+}
 .title {
   font-weight: 700;
   color: #111;

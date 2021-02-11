@@ -11,18 +11,22 @@ include block_html/_include.pug
 					.program-coast.hidden-on-mobile
 						.program-coast__el
 							.program-coast__title Цена за 6 дней
+							span.type--main.type--false от 7200 руб
 							.program-coast__val от 6000 руб
 						.program-coast__el
 							.program-coast__title Цена за прием
+							span.type--main.type--false от 260 руб
 							.program-coast__val от 180 руб
 					a(href="#program").js-scroll-to.btn--md.btn--white.hidden-on-mobile Выбрать программу
 				.board__img(style="background-image:url('img/slide-person-2.png')")
 	.program-coast.program-coast--dark.visible-on-mobile
 		.program-coast__el
 			.program-coast__title Цена за 6 дней
+			span.type--main.type--false от 7200 руб
 			.program-coast__val от 6000 руб
 		.program-coast__el
 			.program-coast__title Цена за прием
+			span.type--main.type--false от 260 руб
 			.program-coast__val от 180 руб
 	.main-cont.visible-on-mobile
 		a(href="#program").js-scroll-to.btn--md.btn--mark.btn--mobile Выбрать программу
@@ -103,8 +107,12 @@ include block_html/_include.pug
 			.program-banner.program-banner--mobile
 				.program-banner-inner
 					img(src="img/smile/smile-star.png", alt="").program-banner__img
-					.program-banner__cost 180
-					.program-banner__text руб/день
+					.program-banner__cost-wrap
+						.program-banner__cost-wrap__el
+							span.type--md.type--false от 280
+						.program-banner__cost-wrap__el
+							.program-banner__cost 180
+							.program-banner__text руб/день
 					a(href="#order").btn--md.btn--mark.js-scroll-to Заказать
 
 

@@ -2706,6 +2706,20 @@ h1,
 .type--right {
   text-align: right;
 }
+.type--false {
+  text-decoration: none;
+  position: relative;
+}
+.type--false:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -0.3em;
+  height: 0.12em;
+  width: calc(100% + 0.6em);
+  background: #d00025;
+  opacity: 0.8;
+}
 .title {
   font-weight: 700;
   color: #111;
@@ -5228,6 +5242,12 @@ body {
     margin: 0 -8px;
   }
 }
+.slider-main .slider-el-wrap:not(:first-child) {
+  visibility: hidden;
+}
+.slider-main.slick-initialized .slider-el-wrap:not(:first-child) {
+  visibility: visible;
+}
 .number-slide-wrap {
   position: absolute;
   top: 15%;
@@ -7006,7 +7026,7 @@ body {
 .program-banner__img {
   width: 48px;
   height: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 .program-banner__cost {
   font-weight: 700;
@@ -7016,6 +7036,38 @@ body {
   font-weight: 700;
   color: #111;
   margin-bottom: 32px;
+}
+.program-banner__cost-wrap {
+  margin-right: auto;
+}
+@media only screen and (max-width: 760px) {
+  .program-banner__cost-wrap {
+    margin: 0;
+  }
+}
+.program-banner__cost-wrap__el {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media only screen and (max-width: 760px) {
+  .program-banner__cost-wrap__el {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
 }
 .work-step {
   display: grid;
@@ -7834,6 +7886,12 @@ body {
 }
 .contract-total:last-child {
   border: 0;
+}
+.contract-total__val {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 20px;
 }
 .contract-total--clear {
   border-bottom: 0;

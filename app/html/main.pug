@@ -234,8 +234,12 @@ include block_html/_include.pug
 			.program-banner.program-banner--mobile
 				.program-banner-inner
 					img(src="img/smile/smile-star.png", alt="").program-banner__img
-					.program-banner__cost 180
-					.program-banner__text руб/день
+					.program-banner__cost-wrap
+						.program-banner__cost-wrap__el
+							span.type--md.type--false от 280
+						.program-banner__cost-wrap__el
+							.program-banner__cost 180
+							.program-banner__text руб/день
 					a(href="#order").btn--md.btn--mark.js-scroll-to Заказать
 					a(href="#").icon-row
 						span.type--md.type--mark.type--bold Подробнее
@@ -339,7 +343,9 @@ include block_html/_include.pug
 						.contract-total-wrap
 							.contract-total
 								.contract-total__name Extralight
-								.contract-total__val 6300 руб
+								.contract-total__val
+									span.type--secondary.type--false 10300 руб
+									span 6300 руб
 							.contract-total
 								.contract-total__name Итого
 								.contract-total__val.type--mark.type--bold.type--md 6300 руб

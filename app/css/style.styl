@@ -745,9 +745,17 @@ slider-create-mobile()
 		+below(1024px)
 			margin: 0 -8px
 		margin: 0 -14px
+
+.slider-main .slider-el-wrap:not(:first-child)
+	visibility: hidden
+
+.slider-main.slick-initialized .slider-el-wrap:not(:first-child)
+	visibility: visible
+
 // slick === end
 
 // main slider
+
 
 .number-slide-wrap
 	+below(960px)
@@ -1733,7 +1741,7 @@ program-type(bg,textColor,iconColor)
 		width: 100%
 .program-banner__img
 	size 48px
-	margin-bottom: 20px
+	margin-bottom: 16px
 .program-banner__cost
 	@extend .type--xl
 	font-weight 700
@@ -1743,6 +1751,19 @@ program-type(bg,textColor,iconColor)
 	font-weight 700
 	color black
 	margin-bottom: 32px
+
+.program-banner__cost-wrap
+	+below(760px)
+		margin: 0
+	margin-right auto
+
+.program-banner__cost-wrap__el
+	+below(760px)
+		flex(mid)
+		fl()
+	f()
+	align-items center
+
 // program list === end
 
 // work-step
@@ -2258,6 +2279,10 @@ work-step(bgVal,colorVal)
 	padding: 12px 0
 	&:last-child
 		border 0
+
+.contract-total__val
+	f()
+	grid-gap 20px
 
 .contract-total--clear
 	border-bottom 0
