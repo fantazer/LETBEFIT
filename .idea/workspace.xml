@@ -13,13 +13,393 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add false cost">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/retail.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/retail.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/review.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/review.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/review.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/review.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix upload review">
+      <change beforePath="$PROJECT_DIR$/app/img/404.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/404.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/banner-person-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/banner-person-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/banner-ritail.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/banner-ritail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/befit-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/befit-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/befit-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/befit-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/befit-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/befit-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/befit-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/befit-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/blog-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/blog-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/blog-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/blog-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/blog-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/blog-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/blog-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/blog-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/blog-item-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/blog-item-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/bonus-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/bonus-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/circle-food-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/circle-food-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/circle-food-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/circle-food-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/circle-person-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/circle-person-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/cooperation-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/cooperation-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/cooperation-10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/cooperation-10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/cooperation-11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/cooperation-11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/cooperation-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/cooperation-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/cooperation-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/cooperation-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/cooperation-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/cooperation-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/cooperation-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/cooperation-5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/cooperation-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/cooperation-6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/cooperation-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/cooperation-7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/cooperation-8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/cooperation-8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/cooperation-9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/cooperation-9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-blue.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/detox/detox-blue.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-coral.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/detox/detox-coral.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-green.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/detox/detox-green.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-orange.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/detox/detox-orange.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-sea.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/detox/detox-sea.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-violet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/detox/detox-violet.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/detox/detox-yellow.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/detox/detox-yellow.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/girl-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/girl-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/inst-img-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/inst-img-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/inst-img-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/inst-img-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/inst-img-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/inst-img-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/inst-img-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/inst-img-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/inst-item-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/inst-item-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/inst-item-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/inst-item-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/inst-item-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/inst-item-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/inst-item-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/inst-item-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/item-sm-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/item-sm-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/item-sm-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/item-sm-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/item-sm-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/item-sm-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/item-sm-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/item-sm-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/item-sm-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/item-sm-5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/item-sm-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/item-sm-6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/item-sm-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/item-sm-7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/lk-slider-1--lg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/lk-slider-1--lg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/lk-slider-1--sm.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/lk-slider-1--sm.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/lk-slider-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/lk-slider-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/michael.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/michael.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/msg-list.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/msg-list.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/pay-mastercard.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/pay-mastercard.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/pay-visa.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/pay-visa.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/poll.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/poll.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/press-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/press-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/press-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/press-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/promo-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/promo-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/promo-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/promo-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/promo-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/promo-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/promo-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/promo-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/promo-mobile.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/promo-mobile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/sale-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/sale-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/slide-person-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/slide-person-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/slide-person-10.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/slide-person-10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/slide-person-11.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/slide-person-11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/slide-person-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/slide-person-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/slide-person-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/slide-person-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/slide-person-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/slide-person-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/slide-person-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/slide-person-5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/slide-person-6.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/slide-person-6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/slide-person-7.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/slide-person-7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/slide-person-8.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/slide-person-8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/slide-person-9.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/slide-person-9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smi.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smi.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smile/smile-angel.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smile/smile-angel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smile/smile-botanist.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smile/smile-botanist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smile/smile-crazy.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smile/smile-crazy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smile/smile-doctor.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smile/smile-doctor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smile/smile-glasses.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smile/smile-glasses.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smile/smile-happy.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smile/smile-happy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smile/smile-heart-eyes.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smile/smile-heart-eyes.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smile/smile-hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smile/smile-hearts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smile/smile-lazy.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smile/smile-lazy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smile/smile-love.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smile/smile-love.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smile/smile-money.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smile/smile-money.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smile/smile-scare.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smile/smile-scare.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smile/smile-star.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smile/smile-star.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smile/smile-surprise.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smile/smile-surprise.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/smile/smile-tongue.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/smile/smile-tongue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/training.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/training.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/user.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/user.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/video-production.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/video-production.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/img/аnastasia.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/аnastasia.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/404.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/500.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/Tele.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/app-apstore.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/app-google.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/apple.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/arrow-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/arrow-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/arrow-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/arrow-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/bank.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/banner-person-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/banner-ritail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/befit-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/befit-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/befit-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/befit-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/blog-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/blog-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/blog-item-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/bonus-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/calendar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cat-daily.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cat-detox.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cat-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cat-normal.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cat-strong.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cat-veggi.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/chack.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/chat.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cheched.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/circle-food-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/circle-food-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/circle-person-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/close-round.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/close.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/coin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cooperation-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cooperation-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cooperation-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cooperation-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cooperation-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cooperation-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cooperation-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cooperation-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cooperation-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cooperation-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/cooperation-9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/css/sprite.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/delete.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/deliver.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-blue.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-coral.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-green.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-orange.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-sea.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-violet.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/detox/detox-yellow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/dish.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/edit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/energy.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/exit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/filter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/fish.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/folder-menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/food.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/fresh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/gantel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/girl-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/haccp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/bank--blue.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/bank--coral.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/bank--orange.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/bank--pink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/bank--sea.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/bank--swamp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/bank--violet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/bank.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/deliver-shield.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/deliver.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/diet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/digestion--pink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/digestion.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/fish--sea.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/fish.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/fit--pink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/fit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/flour.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/food--gray.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/food-cancel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/food.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/fresh--swamp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/fresh.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/gantel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/hat.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/iron.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/king.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/lite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/mask-time.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/mask.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/meat.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/menu-check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/menu-list.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/milk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/packaging.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/product.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/sale.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/schedule.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/shedule.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/shield--blue.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/shield--coral.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/shield--orange.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/shield--pink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/shield--swamp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/shield--violet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/shield.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/step-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/step-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/step-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/step-check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/step-cup.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/step-food.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/step-money.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/step-phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/step-ticket.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/stopwatch--blue.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/stopwatch--orange.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/stopwatch--pink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/stopwatch--sea.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/stopwatch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/strong--coral.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/strong--pink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/strong--violet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/strong.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/suitcase-time.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/suitcase.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/sweetener.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/wash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/icon/way.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/info.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/inst-img-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/inst-img-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/inst-img-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/inst-img-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/inst-item-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/inst-item-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/inst-item-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/inst-item-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/iron.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/item-sm-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/item-sm-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/item-sm-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/item-sm-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/item-sm-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/item-sm-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/item-sm-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/king.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/like.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/lite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/lk-slider-1--lg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/lk-slider-1--sm.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/lk-slider-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/loader.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/location.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/lock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/logo-symbol.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/mail.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/map.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/mask-time.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/mask.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/menu-check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/menu-list.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/michael.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/money.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/more.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/msg-list.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/navigation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/pack.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/packaging.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/pay-apple.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/pay-halva.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/pay-master.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/pay-mastercard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/pay-mir.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/pay-visa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/pay-visa.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/phone-dark.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/phone.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/play.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/plus-round.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/plus.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/poll.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/press-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/press-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/product.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/profile-round.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/profile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/promo-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/promo-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/promo-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/promo-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/promo-mobile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/question.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/rating.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/reload.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/sale-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/sale.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/sendMsg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/settings.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/share.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/shedule.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/shield.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/slide-person-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/slide-person-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/slide-person-11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/slide-person-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/slide-person-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/slide-person-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/slide-person-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/slide-person-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/slide-person-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/slide-person-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/slide-person-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smile/smile-angel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smile/smile-botanist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smile/smile-crazy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smile/smile-doctor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smile/smile-glasses.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smile/smile-happy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smile/smile-heart-eyes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smile/smile-hearts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smile/smile-lazy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smile/smile-love.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smile/smile-money.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smile/smile-scare.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smile/smile-star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smile/smile-surprise.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/smile/smile-tongue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/snow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/soc-fb.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/soc-intst.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/soc-telegram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/soc-viber.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/soc-vk.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/soc-wp-light.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/soc-wp.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/sprite.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/square.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/squares.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/star-row.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/step-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/step-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/step-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/stop.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/stopwatch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/strong.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/suitcase-time.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/surprise.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/svg/sprite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/time.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/training.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/user.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/video-production.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/view.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/wash.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/way.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/аnastasia.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -348,14 +728,7 @@
       <workItem from="1613061218261" duration="4325000" />
       <workItem from="1613072625353" duration="1086000" />
       <workItem from="1613135971741" duration="3912000" />
-      <workItem from="1613397341575" duration="689000" />
-    </task>
-    <task id="LOCAL-00056" summary="add start mobile version">
-      <created>1606068728657</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1606068728657</updated>
+      <workItem from="1613397341575" duration="2480000" />
     </task>
     <task id="LOCAL-00057" summary="remove sliders">
       <created>1606146957583</created>
@@ -693,7 +1066,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613065370896</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="fix upload review">
+      <created>1613398197341</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1613398197341</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -734,7 +1114,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="fix page 21 day + fix nav slider" />
     <MESSAGE value="fix review slider + rating + item cards" />
     <MESSAGE value="add program page + fix order increment" />
     <MESSAGE value="add start retail" />
@@ -759,6 +1138,7 @@
     <MESSAGE value="fix increment event" />
     <MESSAGE value="fix footer payment icon + upload msg" />
     <MESSAGE value="add false cost" />
-    <option name="LAST_COMMIT_MESSAGE" value="add false cost" />
+    <MESSAGE value="fix upload review" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix upload review" />
   </component>
 </project>
