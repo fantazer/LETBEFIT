@@ -495,7 +495,9 @@ $(document).ready(function () {
 
 		if (this.files && this.files[0].size < 655360) {
 			var uploadList = $(this).closest('.upload-wrap').find('.upload-list');
-			uploadList.empty()
+			if(!$(this).data('group')){
+				uploadList.empty()
+			}
 			uploadList.append('<div class="upload-list__el" onclick="this.parentNode.removeChild(this);"><svg class="icon"><use xlink:href="#close"></use></svg><span></span></div>');
 			var currentUpload = $('.upload-list .upload-list__el:last').find('span'); //выбираем куда
 			currentUpload.text(this.files[0].name);
