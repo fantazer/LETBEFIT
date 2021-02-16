@@ -158,7 +158,6 @@ mixin advant(text="Почему BeFit?")
         .advant__el-text Приготовили и сразу доставляем. Используем технологию Smart-Frost.
   // advant === end
 
-
 mixin item(i,type)
   .program-el
     .program-el__img(style="background-image:url('img/item-sm-" + i + ".jpg')")
@@ -172,6 +171,8 @@ mixin item(i,type)
               .rating__el.active
                 +icon("star-full","icon")
         .rating-val 4.5
+        //.rating--msg Мало оценок
+        // <div class="rating--msg">Мало оценок</div>
     .program-el-wrap
       .program-el__content
         //.program-el__head
