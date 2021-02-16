@@ -1,3 +1,7 @@
+.line
+	width: 100%
+	height: 1px
+
 .block-mid
 	margin 0 auto
 
@@ -169,11 +173,11 @@ pt(size1,size2,size3)
 
 p(size1,size2,size3)
 	.p-{size1}
-		padding unit(size1,px) 0
+		padding unit(size1,px)
 		+below(1024px)
-			padding: unit(size2,px) 0
+			padding: unit(size2,px)
 		+below(640px)
-			padding: unit(size3,px) 0
+			padding: unit(size3,px)
 
 
 for $type,$typeVal in $st
@@ -214,3 +218,36 @@ for $type,$typeVal in $st
 	+below(640px)
 		order 1
 
+.bor-1
+	border 1px solid $border-color
+
+.overflow
+	overflow: hidden
+
+
+// === gap
+$gridGap = (12 12 12),\
+					(16 16 16),\
+					(20 16 16),\
+					(24 16 16),\
+					(32 24 24),\
+
+calcGap(size1,size2,size3)
+	grid-gap (size1 px)
+	+below(1024px)
+		grid-gap (size2 px)
+	+below(640px)
+		grid-gap (size3 px)
+
+for $gridGapItem in $gridGap
+	.gap-{$gridGapItem}
+		calcGap($gridGapItem[0],$gridGapItem[1],$gridGapItem[2])
+// === gap === end
+
+// === gap
+$borderRadius = (12 16 20 24 32)
+
+for $borderRadiusItem in $borderRadius
+	.br-{$borderRadiusItem}
+		border-radius $borderRadiusItem px
+// === gap === end

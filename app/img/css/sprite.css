@@ -8,7 +8,7 @@
     display: inline-block;
     background-image: url("../svg/sprite.svg");
     background-repeat: no-repeat;
-    background-size: 6.4em 196.2em;
+    background-size: 6.4em 199.4em;
 }
 
 .no-svg .icon:before {
@@ -557,8 +557,17 @@
 
 
 
-  .icon.settings:before {
+  .icon.sale:before {
       background-position: 0em -139.9em;
+      width: 3.2em;
+      height: 3.2em;
+  }
+
+
+
+
+  .icon.settings:before {
+      background-position: 0em -143.1em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -567,7 +576,7 @@
 
 
   .icon.share:before {
-      background-position: 0em -142.3em;
+      background-position: 0em -145.5em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -576,7 +585,7 @@
 
 
   .icon.snow:before {
-      background-position: 0em -144.7em;
+      background-position: 0em -147.9em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -585,7 +594,7 @@
 
 
   .icon.soc-fb:before {
-      background-position: 0em -147.1em;
+      background-position: 0em -150.3em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -594,7 +603,7 @@
 
 
   .icon.soc-inst:before {
-      background-position: 0em -149.5em;
+      background-position: 0em -152.7em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -603,7 +612,7 @@
 
 
   .icon.soc-inst-light:before {
-      background-position: 0em -151.9em;
+      background-position: 0em -155.1em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -612,7 +621,7 @@
 
 
   .icon.soc-telegram:before {
-      background-position: 0em -154.3em;
+      background-position: 0em -157.5em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -621,7 +630,7 @@
 
 
   .icon.soc-telegram-light:before {
-      background-position: 0em -156.7em;
+      background-position: 0em -159.9em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -630,7 +639,7 @@
 
 
   .icon.soc-twitter:before {
-      background-position: 0em -159.1em;
+      background-position: 0em -162.3em;
       width: 2.2em;
       height: 1.8em;
   }
@@ -639,7 +648,7 @@
 
 
   .icon.soc-viber:before {
-      background-position: 0em -160.9em;
+      background-position: 0em -164.1em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -648,7 +657,7 @@
 
 
   .icon.soc-vk:before {
-      background-position: 0em -163.3em;
+      background-position: 0em -166.5em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -657,7 +666,7 @@
 
 
   .icon.soc-wp:before {
-      background-position: 0em -165.7em;
+      background-position: 0em -168.9em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -666,7 +675,7 @@
 
 
   .icon.soc-wp-light:before {
-      background-position: 0em -168.1em;
+      background-position: 0em -171.3em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -675,7 +684,7 @@
 
 
   .icon.squares:before {
-      background-position: 0em -170.5em;
+      background-position: 0em -173.7em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -684,7 +693,7 @@
 
 
   .icon.star:before {
-      background-position: 0em -172.9em;
+      background-position: 0em -176.1em;
       width: 4.8em;
       height: 4.8em;
   }
@@ -693,7 +702,7 @@
 
 
   .icon.star-full:before {
-      background-position: 0em -177.7em;
+      background-position: 0em -180.9em;
       width: 4.8em;
       height: 4.8em;
   }
@@ -702,7 +711,7 @@
 
 
   .icon.stop:before {
-      background-position: 0em -182.5em;
+      background-position: 0em -185.7em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -711,7 +720,7 @@
 
 
   .icon.surprise:before {
-      background-position: 0em -184.9em;
+      background-position: 0em -188.1em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -720,7 +729,7 @@
 
 
   .icon.time:before {
-      background-position: 0em -187.3em;
+      background-position: 0em -190.5em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -729,7 +738,7 @@
 
 
   .icon.transport:before {
-      background-position: 0em -189.7em;
+      background-position: 0em -192.9em;
       width: 2.4em;
       height: 2.4em;
   }
@@ -738,7 +747,7 @@
 
 
   .icon.userGroup:before {
-      background-position: 0em -192.1em;
+      background-position: 0em -195.3em;
       width: 2.4em;
       height: 1.7em;
   }
@@ -747,7 +756,7 @@
 
 
   .icon.view:before {
-      background-position: 0em -193.8em;
+      background-position: 0em -197em;
       width: 2.4em;
       height: 2.4em;
   }

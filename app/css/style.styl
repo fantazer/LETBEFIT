@@ -2,9 +2,9 @@
 @import 'rupture'
 @import "variable/_function.styl"
 @import "variable/_ie.styl"
+@import "variable/config/_color.styl"
 @import "variable/_helper.styl"
 @import "variable/_default.styl"
-@import "variable/config/_color.styl"
 @import "variable/config/_typography.styl"
 @import "variable/config/_btn.styl"
 @import "variable/config/_input.styl"
@@ -939,9 +939,7 @@ slider-create-mobile()
 	f()
 	fl()
 	background: white
-	&:hover
-		border 1px solid white
-		box-shadow 0 12px 32px rgba(41, 42, 53, 0.16)
+
 .advant__el-icon
 	+below(768px)
 		width: 48px
@@ -1108,6 +1106,11 @@ slider-create-mobile()
 			background: rgba(255,255,255,0.2)
 		.icon
 			fill white
+.soc-row--gray
+	.soc-row__el
+		background: $grayLight
+		&:hover
+			background: darken($grayLight,10)
 // soc-row === end
 
 // footer
@@ -2241,7 +2244,7 @@ work-step(bgVal,colorVal)
 	right 10px
 .contract-content
 	+below(640px)
-		padding: 20px
+		padding: 16px
 	padding: 48px 48px 32px 48px
 .contract-config-wrap
 	margin-bottom: 16px
@@ -4168,3 +4171,18 @@ work-step(bgVal,colorVal)
 	img
 		max-width 80%
 // press slider === end
+
+.promo-head
+	+below(640px)
+		margin: -16px -16px 16px -16px
+		padding: 24px 16px
+	margin: -48px -48px 48px -48px
+	flex(mid)
+	bg-full()
+	padding: 64px 24px
+
+.promo-info__icon
+	size 56px
+	min-width 56px
+	round()
+	flex(mid)

@@ -519,9 +519,10 @@
 // drop === end
 
 .box
-	padding: 20px
+	padding: 24px
 	br(12px)
 	border 1px solid $border-color
+
 
 .grid-4
 	+below(1024px)
@@ -532,6 +533,17 @@
 	grid-gap 28px
 	grid-template-columns: repeat(4, 1fr)
 	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+
+.grid-3
+	+below(1024px)
+		grid-template-columns: repeat(2, 1fr)
+	+below(640px)
+		grid-template-columns: 1fr
+	display: grid
+	grid-gap 28px
+	grid-template-columns: repeat(3, 1fr)
+	//grid-template-columns: repeat(auto-fill, minmax(12rem,1fr))
+
 
 // upload
 .upload-wrap
