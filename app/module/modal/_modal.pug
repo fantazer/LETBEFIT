@@ -51,7 +51,7 @@ mixin modal()
 				.modal-content
 					.modal-title Перезвоните мне
 					.input-row.input-row--validate
-						input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
+						input(type="text" data-placeholder="Телефон" class="input input-mask--phone")
 						.input-msg В данных ошибка
 						+icon("close","icon icon-validate-false")
 						+icon("checked","icon icon-validate-true")
@@ -64,7 +64,7 @@ mixin modal()
 				.modal-content
 					.modal-title Вход в личный кабинет
 					.input-row.input-row--validate
-						input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
+						input(type="text" data-placeholder="Телефон" class="input input-mask--phone")
 						.input-msg В данных ошибка
 						+icon("close","icon icon-validate-false")
 						+icon("checked","icon icon-validate-true")
@@ -402,7 +402,7 @@ mixin modal()
 					.type--head.type--mdx.mb-32 Добавить карту
 					.input-cont
 						.input-row.input-row--validate
-							input(type="text" data-placeholder="Номер карты" data-mask="0000-0000-0000-0000" class="input")
+							input(type="text" data-placeholder="Номер карты"  class="input input-mask--phone")
 							.input-msg Введённые данные не должны содержать цифры
 							+icon("close","icon icon-validate-false")
 							+icon("checked","icon icon-validate-true")
@@ -419,7 +419,6 @@ mixin modal()
 							+icon("checked","icon icon-validate-true")
 					//remove disable on true validation
 					.btn--md.btn--mark.btn--full.disable Добавить
-
 			//Recommend
 			.modal.modal--mdx(data-modal="recommend")
 				.modal-close
@@ -500,7 +499,7 @@ mixin modal()
 						+icon("close","icon icon-validate-false")
 						+icon("checked","icon icon-validate-true")
 					.input-row.input-row--validate
-						input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
+						input(type="text" data-placeholder="Телефон" class="input input-mask--phone")
 						.input-msg В данных ошибка
 						+icon("close","icon icon-validate-false")
 						+icon("checked","icon icon-validate-true")

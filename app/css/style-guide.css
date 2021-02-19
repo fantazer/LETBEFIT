@@ -159,12 +159,12 @@
 }
 @media only screen and (max-width: 1024px) {
   .p-5 {
-    padding: 5px;
+    padding: 5px 0;
   }
 }
 @media only screen and (max-width: 640px) {
   .p-5 {
-    padding: 5px;
+    padding: 5px 0;
   }
 }
 .mb-12 {
@@ -263,12 +263,12 @@
 }
 @media only screen and (max-width: 1024px) {
   .p-12 {
-    padding: 12px;
+    padding: 12px 0;
   }
 }
 @media only screen and (max-width: 640px) {
   .p-12 {
-    padding: 12px;
+    padding: 12px 0;
   }
 }
 .mb-16 {
@@ -367,12 +367,12 @@
 }
 @media only screen and (max-width: 1024px) {
   .p-16 {
-    padding: 16px;
+    padding: 16px 0;
   }
 }
 @media only screen and (max-width: 640px) {
   .p-16 {
-    padding: 16px;
+    padding: 16px 0;
   }
 }
 .mb-24 {
@@ -471,12 +471,12 @@
 }
 @media only screen and (max-width: 1024px) {
   .p-24 {
-    padding: 16px;
+    padding: 16px 0;
   }
 }
 @media only screen and (max-width: 640px) {
   .p-24 {
-    padding: 16px;
+    padding: 16px 0;
   }
 }
 .mb-32 {
@@ -575,12 +575,12 @@
 }
 @media only screen and (max-width: 1024px) {
   .p-32 {
-    padding: 24px;
+    padding: 24px 0;
   }
 }
 @media only screen and (max-width: 640px) {
   .p-32 {
-    padding: 24px;
+    padding: 24px 0;
   }
 }
 .mb-40 {
@@ -679,12 +679,12 @@
 }
 @media only screen and (max-width: 1024px) {
   .p-40 {
-    padding: 28px;
+    padding: 28px 0;
   }
 }
 @media only screen and (max-width: 640px) {
   .p-40 {
-    padding: 28px;
+    padding: 28px 0;
   }
 }
 .mb-48,
@@ -786,12 +786,12 @@
 }
 @media only screen and (max-width: 1024px) {
   .p-48 {
-    padding: 32px;
+    padding: 32px 0;
   }
 }
 @media only screen and (max-width: 640px) {
   .p-48 {
-    padding: 24px;
+    padding: 24px 0;
   }
 }
 .mb-64 {
@@ -893,12 +893,12 @@
 }
 @media only screen and (max-width: 1024px) {
   .p-64 {
-    padding: 48px;
+    padding: 48px 0;
   }
 }
 @media only screen and (max-width: 640px) {
   .p-64 {
-    padding: 24px;
+    padding: 24px 0;
   }
 }
 .mb-80 {
@@ -997,12 +997,12 @@
 }
 @media only screen and (max-width: 1024px) {
   .p-80 {
-    padding: 64px;
+    padding: 64px 0;
   }
 }
 @media only screen and (max-width: 640px) {
   .p-80 {
-    padding: 32px;
+    padding: 32px 0;
   }
 }
 .mb-100 {
@@ -1101,12 +1101,12 @@
 }
 @media only screen and (max-width: 1024px) {
   .p-100 {
-    padding: 80px;
+    padding: 80px 0;
   }
 }
 @media only screen and (max-width: 640px) {
   .p-100 {
-    padding: 40px;
+    padding: 40px 0;
   }
 }
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -1813,6 +1813,9 @@ h1 {
 }
 .type--bold {
   font-weight: bold;
+}
+.type--500 {
+  font-weight: 500;
 }
 .type--center {
   text-align: center;
@@ -2936,6 +2939,9 @@ a:visiter {
   border: 0 !important;
   background: #fff;
 }
+.dropdown-current--white .icon {
+  fill: #111;
+}
 .dropdown-current__val {
   color: #111;
   white-space: nowrap;
@@ -2987,6 +2993,52 @@ a:visiter {
 .dropdown-menu__el:hover {
   background: #e6f2d6;
   color: #111;
+}
+.dropdown--shrink .dropdown-current {
+  height: 100%;
+}
+@media only screen and (max-width: 640px) {
+  .dropdown--shrink .dropdown-current {
+    padding: 8px 40px 8px 8px !important;
+  }
+}
+.dropdown--shrink .dropdown-menu {
+  width: 420px;
+  max-height: initial;
+  padding: 20px;
+  margin-top: 8px;
+  border-radius: 8px;
+}
+@media only screen and (max-width: 640px) {
+  .dropdown--shrink .dropdown-menu {
+    width: 200px;
+  }
+}
+.dropdown--shrink .dropdown-menu-list {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media only screen and (max-width: 640px) {
+  .dropdown--shrink .dropdown-menu-list {
+    grid-template-columns: 1fr;
+    grid-gap: 12px;
+  }
+}
+.dropdown--shrink .dropdown-menu__el {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0;
+}
+.dropdown--shrink .dropdown-menu__el:hover {
+  background: none;
+  color: #7eca1d;
+}
+.dropdown--fluid {
+  width: auto;
+}
+.dropdown--fluid .dropdown-current {
+  padding-right: 60px;
 }
 .box {
   padding: 24px;

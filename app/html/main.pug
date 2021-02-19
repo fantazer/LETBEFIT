@@ -329,7 +329,7 @@ include block_html/_include.pug
 									+icon("close","icon icon-validate-false")
 									+icon("checked","icon icon-validate-true")
 								.input-row.input-row--validate
-									input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
+									input(type="text" data-placeholder="Телефон" class="input input-mask--phone")
 									.input-msg Введённые данные не должны содержать цифры
 									+icon("close","icon icon-validate-false")
 									+icon("checked","icon icon-validate-true")
@@ -337,7 +337,7 @@ include block_html/_include.pug
 									.btn--md.btn--light.btn--mobile.disable Применить
 						.input-cont.js-switch-cont(data-group="coupone" data-item="isCoupone")
 							.input-row
-								input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
+								input(type="text" data-placeholder="Телефон" class="input input-mask--phone")
 
 						.contract-total-wrap
 							.contract-total
@@ -376,7 +376,7 @@ include block_html/_include.pug
 					.invite-subs-text Оставьте телефон и наш менеджер поможет подобрать рацион
 					.input-btn-cont
 						.input-row.input-row--validate
-							input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
+							input(type="text" data-placeholder="Телефон" class="input input-mask--phone")
 							.input-msg Введённые данные не должны содержать цифры
 							+icon("close","icon icon-validate-false")
 							+icon("checked","icon icon-validate-true")

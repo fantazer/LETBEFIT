@@ -455,7 +455,7 @@ mixin contract(name,bg,img)
                 +icon("close","icon icon-validate-false")
                 +icon("checked","icon icon-validate-true")
               .input-row.input-row--validate
-                input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
+                input(type="text" data-placeholder="Телефон" class="input input-mask--phone")
                 .input-msg Введённые данные не должны содержать цифры
                 +icon("close","icon icon-validate-false")
                 +icon("checked","icon icon-validate-true")
@@ -463,7 +463,7 @@ mixin contract(name,bg,img)
                 .btn--md.btn--light.btn--mobile.disable Применить
           .input-cont.js-switch-cont(data-item="isCoupone")
             .input-row
-              input(type="text" data-placeholder="Телефон" class="input" data-mask="8(000)000-00-00")
+              input(type="text" data-placeholder="Телефон" class="input input-mask--phone")
           .contract-total-wrap
             .contract-total
               .contract-total__name Extralight

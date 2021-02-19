@@ -145,11 +145,28 @@ slider-create-mobile()
 	margin 0
 	animation:  slideInDown  .8s 1 ease-in-out;
 	z-index 200
+	+below(1024px)
+		.nav-wrap
+			display block
 	.header-top-wrap
-		+above(1025px)
-			display none
+		display none
 	.nav-logo
-		display block
+		+below(640px)
+			width: 16px
+			margin-left: -10px
+		flex(mid)
+		margin-right: 8px
+	.nav-list
+		display none
+	.auth-wrap
+		display none
+	.dropdown--shrink
+		.dropdown-current
+			f()
+			align-items center
+	.nav-shrink
+		display flex
+		width: 100%
 // animate top menu === end
 
 // error
@@ -488,14 +505,13 @@ slider-create-mobile()
 	.main-cont
 		position: static
 .nav
+	+below(640px)
+		height: 40px
 	f()
 	height: 72px
 	align-items: stretch
 .nav-logo
-	+below(1440px)
-		display none!important
 	display none
-	transform translateY(15px) translateX(-25px)
 .nav-list
 	flex(between)
 	width: 75%
@@ -654,7 +670,24 @@ slider-create-mobile()
 		margin-right: 18px
 		fill $mark
 
-
+.nav-shrink
+	display none
+	+below(640px)
+		font-size: 12px
+		.dropdown-current>.icon
+			size 12px
+			top calc(50% - 6px)
+.nav-shrink__cost
+	+below(640px)
+		font-size: 12px
+.nav-shrink__get
+	+below(640px)
+		br(0)
+		margin-right: -20px
+		height: 100%
+		font-weight: 400
+		padding: 12px 10px
+		font-size: 12px
 // header === end
 
 // slick

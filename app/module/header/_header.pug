@@ -42,6 +42,35 @@ mixin header()
 				.nav
 					a(href="#").nav-logo
 						img(src="img/logo-symbol.svg", alt="")
+					.nav-shrink
+						.f.f-between.f-grow
+							.dropdown.dropdown--fluid.dropdown--shrink
+								input(type="hidden" name="name" value="0")
+								.dropdown-current.dropdown-current--flat.dropdown-current--white
+									.dropdown-current__val.type--500 Fish 1300
+									+icon("arrow-down","icon")
+								.dropdown-menu
+									.dropdown-menu-list
+										-
+											var items = [
+												'ExtraLight 1300 Ккал',
+												'Light 1300 Ккал',
+												'Normal 1300 Ккал',
+												'Balance 1300 Ккал',
+												'Strong 1300 Ккал',
+												'Veggi 1300 Ккал',
+												'Vegetarian 1300 Ккал',
+												'Pesco 1300 Ккал',
+												'Every Daily 1300 Ккал',
+												'Breakfast 1300 Ккал',
+												'Detox1300 Ккал',
+												'Post 1300 Ккал',
+												];
+										each item in items
+											.dropdown-menu__el.type--500(data-value="#") #{item}
+							.f.f-mid.gap-16
+								.type--main.type--500.nav-shrink__cost от 600 руб
+								a(href="#").btn--sm.btn--mark.nav-shrink__get Заказать
 					ul.nav-list
 						li.nav-list__el.nav-list__el--sub
 							span Программы

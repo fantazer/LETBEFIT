@@ -100,6 +100,39 @@
                         <a class="nav-logo" href="#">
                             <img src="img/logo-symbol.svg" alt="" />
                         </a>
+                        <div class="nav-shrink">
+                            <div class="f f-between f-grow">
+                                <div class="dropdown dropdown--fluid dropdown--shrink">
+                                    <input type="hidden" name="name" value="0" />
+                                    <div class="dropdown-current dropdown-current--flat dropdown-current--white">
+                                        <div class="dropdown-current__val type--500">Fish 1300</div>
+                                        <svg class="icon">
+                                            <use xlink:href="#arrow-down"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-menu-list">
+                                            <div class="dropdown-menu__el type--500" data-value="#">ExtraLight 1300 Ккал</div>
+                                            <div class="dropdown-menu__el type--500" data-value="#">Light 1300 Ккал</div>
+                                            <div class="dropdown-menu__el type--500" data-value="#">Normal 1300 Ккал</div>
+                                            <div class="dropdown-menu__el type--500" data-value="#">Balance 1300 Ккал</div>
+                                            <div class="dropdown-menu__el type--500" data-value="#">Strong 1300 Ккал</div>
+                                            <div class="dropdown-menu__el type--500" data-value="#">Veggi 1300 Ккал</div>
+                                            <div class="dropdown-menu__el type--500" data-value="#">Vegetarian 1300 Ккал</div>
+                                            <div class="dropdown-menu__el type--500" data-value="#">Pesco 1300 Ккал</div>
+                                            <div class="dropdown-menu__el type--500" data-value="#">Every Daily 1300 Ккал</div>
+                                            <div class="dropdown-menu__el type--500" data-value="#">Breakfast 1300 Ккал</div>
+                                            <div class="dropdown-menu__el type--500" data-value="#">Detox1300 Ккал</div>
+                                            <div class="dropdown-menu__el type--500" data-value="#">Post 1300 Ккал</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="f f-mid gap-16">
+                                    <div class="type--main type--500 nav-shrink__cost">от 600 руб</div>
+                                    <a class="btn--sm btn--mark nav-shrink__get" href="#">Заказать</a>
+                                </div>
+                            </div>
+                        </div>
                         <ul class="nav-list">
                             <li class="nav-list__el nav-list__el--sub">
                                 <span>Программы</span>
@@ -1249,7 +1282,7 @@
                                         </svg>
                                     </div>
                                     <div class="input-row input-row--validate">
-                                        <input class="input" type="text" data-placeholder="Телефон" data-mask="8(000)000-00-00" />
+                                        <input class="input input-mask--phone" type="text" data-placeholder="Телефон" />
                                         <div class="input-msg">Введённые данные не должны содержать цифры</div>
                                         <svg class="icon icon-validate-false">
                                             <use xlink:href="#close"></use>
@@ -1265,7 +1298,7 @@
                             </div>
                             <div class="input-cont js-switch-cont" data-item="isCoupone">
                                 <div class="input-row">
-                                    <input class="input" type="text" data-placeholder="Телефон" data-mask="8(000)000-00-00" />
+                                    <input class="input input-mask--phone" type="text" data-placeholder="Телефон" />
                                 </div>
                             </div>
                             <div class="contract-total-wrap">
@@ -2123,7 +2156,7 @@
                     <div class="modal-content">
                         <div class="modal-title">Перезвоните мне</div>
                         <div class="input-row input-row--validate">
-                            <input class="input" type="text" data-placeholder="Телефон" data-mask="8(000)000-00-00" />
+                            <input class="input input-mask--phone" type="text" data-placeholder="Телефон" />
                             <div class="input-msg">В данных ошибка</div>
                             <svg class="icon icon-validate-false">
                                 <use xlink:href="#close"></use>
@@ -2145,7 +2178,7 @@
                     <div class="modal-content">
                         <div class="modal-title">Вход в личный кабинет</div>
                         <div class="input-row input-row--validate">
-                            <input class="input" type="text" data-placeholder="Телефон" data-mask="8(000)000-00-00" />
+                            <input class="input input-mask--phone" type="text" data-placeholder="Телефон" />
                             <div class="input-msg">В данных ошибка</div>
                             <svg class="icon icon-validate-false">
                                 <use xlink:href="#close"></use>
@@ -2843,7 +2876,7 @@
                         <div class="type--head type--mdx mb-32">Добавить карту</div>
                         <div class="input-cont">
                             <div class="input-row input-row--validate">
-                                <input class="input" type="text" data-placeholder="Номер карты" data-mask="0000-0000-0000-0000" />
+                                <input class="input input-mask--phone" type="text" data-placeholder="Номер карты" />
                                 <div class="input-msg">Введённые данные не должны содержать цифры</div>
                                 <svg class="icon icon-validate-false">
                                     <use xlink:href="#close"></use>
@@ -3013,7 +3046,7 @@
                             </svg>
                         </div>
                         <div class="input-row input-row--validate">
-                            <input class="input" type="text" data-placeholder="Телефон" data-mask="8(000)000-00-00" />
+                            <input class="input input-mask--phone" type="text" data-placeholder="Телефон" />
                             <div class="input-msg">В данных ошибка</div>
                             <svg class="icon icon-validate-false">
                                 <use xlink:href="#close"></use>

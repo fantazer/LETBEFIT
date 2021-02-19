@@ -468,6 +468,8 @@
 .dropdown-current--white
 	border 0!important
 	background: white
+	.icon
+		fill black
 
 .dropdown-current__val
 	color black
@@ -516,6 +518,37 @@
 		background: $greenLight
 		color black
 
+.dropdown--shrink
+	.dropdown-current
+		+below(640px)
+			padding: 8px 40px 8px 8px!important
+		height: 100%
+	.dropdown-menu
+		+below(640px)
+			width: 200px
+		width: 420px
+		max-height: initial
+		padding: 20px
+		margin-top: 8px
+		br(8px)
+	.dropdown-menu-list
+		+below(640px)
+			grid-template-columns: 1fr
+			grid-gap 12px
+		display: grid
+		grid-gap 16px
+		grid-template-columns: repeat(2, 1fr)
+	.dropdown-menu__el
+		display inline-block
+		white-space nowrap
+		padding: 0
+		&:hover
+			background: none
+			color $mark
+.dropdown--fluid
+	width: auto
+	.dropdown-current
+		padding-right: 60px
 // drop === end
 
 .box

@@ -742,7 +742,20 @@ $(document).ready(function () {
 	}
 	// paralax === end
 
-
+	var isFieldStart= true;
+	$('.input-mask--phone').mask('+7(000)000-00-00', {
+			onKeyPress: function (cep, event, currentField, options) {
+				//console.log(currentField.val().length);
+				if(cep == '+7(8' && isFieldStart){
+					$('.input-mask--phone').val("+7(")
+					return isFieldStart = false;
+				}
+				if(currentField.val().length<4){
+					isFieldStart = true
+				}
+			},
+		}
+	);
 
 	window.condition = {};
 	window.condition.closeModal = closeModal
