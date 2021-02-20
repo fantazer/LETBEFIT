@@ -1,6 +1,7 @@
 include block_html/_style.pug
 include block_html/_include.pug
 
+
 .page#header
 	+header()
 	.content.content--mark.content--mobile-clear
@@ -91,26 +92,18 @@ include block_html/_include.pug
 														+icon("checked","icon")
 													.style-input-text Я буду питаться с коллегами (-15%)
 									.js-switch-cont.hidden(data-item="isPerson")
-										+incr(1,"incr--single")
+										+incr(2,false,2)
 								.contract-remove.js-contract-remove.mb-16
 									.btn--sm.btn--text-red
 										.btn-icon-row.btn-icon-row--left
 											+icon("delete","icon")
 											span Удалить
 					// choose program type === end
-
-
-
-
-
 					.btn--md.btn--full.btn--dotted.mb-32 Добавить еще программу
-
 					.input-cont.input-cont--list.mb-48
 						+checkbox('Сдавать лотки в переработку')
 						+checkbox('Нужны приборы')
-
 					.type--lg.type--head.mb-32 Доставка
-
 					.input-cont
 						.input-row
 							input(type="text" data-placeholder="Адрес" class="input")

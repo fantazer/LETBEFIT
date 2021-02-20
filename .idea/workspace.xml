@@ -13,76 +13,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix promocode icons">
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix shrink header + phone mask">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/befit.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/befit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog-item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/bonus.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/bonus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/cooperation.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/cooperation.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style-guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style-guide.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/_helper.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/_helper.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/variable/config/_input.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_input.styl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_typography.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/delivery.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/delivery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/error-404.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/error-404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/error-500.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/error-500.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/faq.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/franchise.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/franchise.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_mixin.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/franchise.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/franchise.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/lk-tools.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lk-tools.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/lp-coach.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/lp-coach.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/main.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/html/order.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/order.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/program-corp.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-corp.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/retail.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/retail.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/review.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/review.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-coach.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-coach.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-exceptions.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-exceptions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-order-delivered.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order-delivered.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-order-sort.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order-sort.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-order.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-partners.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-partners.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-tools.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-tools.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lk-training.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lk-training.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lp-coach.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/lp-coach.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/modal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/module/header/_header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/module/header/_header.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/module/modal/_modal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/module/modal/_modal.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/offer.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/offer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/order-present.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/order-present.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/orderTrue.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/orderTrue.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/payment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/poll.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/poll.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/present.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/present.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/production.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/production.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-balance.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-balance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-corp.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-corp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-daily.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-daily.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-detox.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-detox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-diet.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-diet.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-everydaily.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-everydaily.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-fish.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-fish.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-light.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-light.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-normal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-normal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-strong.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-strong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-vegan.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-vegan.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/promocode.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/promocode.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/retail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/retail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/review.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/review.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sale-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/sale-item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/sale-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/sale-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/smi-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/smi-item.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/smi-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/smi-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -418,14 +360,8 @@
       <workItem from="1613493399999" duration="7758000" />
       <workItem from="1613503821572" duration="206000" />
       <workItem from="1613548707433" duration="4022000" />
-      <workItem from="1613737007717" duration="9644000" />
-    </task>
-    <task id="LOCAL-00061" summary="add page program">
-      <created>1606655578346</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1606655578346</updated>
+      <workItem from="1613737007717" duration="10453000" />
+      <workItem from="1613809722067" duration="3008000" />
     </task>
     <task id="LOCAL-00062" summary="upload version">
       <created>1606747649783</created>
@@ -763,7 +699,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613737722629</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="fix shrink header + phone mask">
+      <created>1613751283557</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1613751283557</updated>
+    </task>
+    <option name="localTasksCounter" value="111" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -804,7 +747,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="fix scroll in retail" />
     <MESSAGE value="add page orderTrue" />
     <MESSAGE value="add page program-corporation" />
     <MESSAGE value="add page lk-training" />
@@ -829,6 +771,7 @@
     <MESSAGE value="add msg for rating" />
     <MESSAGE value="add page + promocode + bonus + fix befit" />
     <MESSAGE value="fix promocode icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix promocode icons" />
+    <MESSAGE value="fix shrink header + phone mask" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix shrink header + phone mask" />
   </component>
 </project>

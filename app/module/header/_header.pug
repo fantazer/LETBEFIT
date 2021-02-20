@@ -1,6 +1,6 @@
 mixin header()
 	//block header
-	.header
+	.header.js-header
 		.header-top-wrap
 			.main-cont
 				.header-top
@@ -69,7 +69,7 @@ mixin header()
 										each item in items
 											.dropdown-menu__el.type--500(data-value="#") #{item}
 							.f.f-mid.gap-16
-								.type--main.type--500.nav-shrink__cost от 600 руб
+								.type--main.type--500.type--nowrap.nav-shrink__cost от 600 руб
 								a(href="#").btn--sm.btn--mark.nav-shrink__get Заказать
 					ul.nav-list
 						li.nav-list__el.nav-list__el--sub

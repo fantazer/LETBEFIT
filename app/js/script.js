@@ -31,8 +31,6 @@ $(document).ready(function () {
 		modalState.isMofdalShow = true;
 	};
 
-	//openModal()
-
 	var closeModal = function () {
 		$('.modal-layer').removeClass('modal-layer-show');
 		$('body').css({
@@ -62,7 +60,6 @@ $(document).ready(function () {
 		});
 		var modalHeightCont = $(window).height();
 		$('.modal-filter').height(modalHeightCont);
-
 	};
 
 	$('.modal-get').click(function () {
@@ -74,15 +71,18 @@ $(document).ready(function () {
 		closeModal();
 	});
 
+	$(document).on('keyup',function(e){
+		e.key === 'Escape' ? closeModal() : ''
+	})
+
 	$('.modal-wrap').click(function(e){
 		e.target.className === 'modal-wrap' ? closeModal() : false
 	});
-
 	//modals===end
 
 	// fix top-menu
 	(function () {
-		var head = $('.header');
+		var head = $('.js-header');
 		var heightHeader = head.height();
 		var doc = document.documentElement;
 		var w = window;
@@ -127,7 +127,6 @@ $(document).ready(function () {
 		head.removeClass('shrink');
 	}
 	// fix top-menu === end
-
 
 	// toggle single
 	body.on('click','.js-toggle',function(){
@@ -464,7 +463,6 @@ $(document).ready(function () {
 	$('.js-copy').click(function(){
 		$(this).addClass('active')
 		var valueCode = $(this).find('.js-copy-val')
-		//$("body").append(valueCode);
 		valueCode.select()
 		document.execCommand("copy");
 	});
@@ -488,11 +486,9 @@ $(document).ready(function () {
 	$('.fancybox').fancybox();
 	// init fancybox === end
 
-
 	//upload-btn
 	$(".upload-btn").change(function () { //Если выбрал файл
 		//console.log('img');
-
 		if (this.files && this.files[0].size < 655360) {
 			var uploadList = $(this).closest('.upload-wrap').find('.upload-list');
 			if(!$(this).data('group')){
@@ -507,7 +503,6 @@ $(document).ready(function () {
 		}
 		console.log(this.files[0].size);
 	});
-
 	//upload-btn
 	
 	// horizontal scroll
@@ -547,7 +542,6 @@ $(document).ready(function () {
 	});
 	// edit history === end
 
-
 	// chart
 	$(".chart").circleProgress({
 		animation: true,
@@ -565,45 +559,24 @@ $(document).ready(function () {
 		$(this).closest('.history-list-el').find('.history-wrap').slideToggle()
 	})
 	// history panel slideToggle === end
-	
-	
-	// incr
-	var incrEl= {}
-		 $('body').on('click', '.incr__nav', function (e) {
-	 incrEl.parent = $(this).closest(".incr");
-	 incrEl.value = parseInt($(this).closest(".incr").find('.incr__val span').html());
-	 incrEl.state = $(this).closest(".incr").find('.incr__val span')
-	});
-		 $('body').on('click', '.incr__minus', function (e) {
-	 --incrEl.value;
-	 if(incrEl.parent.hasClass("incr--one")){
-		 incrEl.value = incrEl.value < 1 ? 1 : incrEl.value
-	 }
-	 incrEl.value = incrEl.value < 1 ? 0 : incrEl.value
-	 incrEl.state.html(incrEl.value);
-	});
-		 $('body').on('click', '.incr__plus', function (e) {
-	 ++incrEl.value;
-	 incrEl.value = incrEl.value > 100 ? 100 : incrEl.value;
-	 incrEl.state.html(incrEl.value);
-	});
-		 $('body').on('click', '.incr--single .incr__nav', function (e) {
-	 var parrent = $(this).closest(".incr--single")
-	 if(!parrent.hasClass('incr--one')){
-		if(incrEl.value){
-		 parrent.addClass('incr--single-active');
-		}else{
-		 parrent.removeClass('incr--single-active');
-		}
-	 }else{
-		if(incrEl.value>1){
-		 parrent.addClass('incr--single-active');
-		}else{
-		 parrent.removeClass('incr--single-active');
-		}
-	 }
-	});
 
+	// incr
+	var incrEl = {}
+	$('body').on('click', '.incr__nav', function (e) {
+		incrEl.parent = $(this).closest(".incr");
+		incrEl.value = parseInt(incrEl.parent.find('.incr__val span').html());
+		incrEl.state = incrEl.parent.find('.incr__val span')
+		incrEl.min = incrEl.parent.data('min')*1 || 0
+	});
+	$('body').on('click', '.incr__minus', function (e) {
+		incrEl.value = incrEl.value <= incrEl.min ? incrEl.min : --incrEl.value
+		incrEl.state.html(incrEl.value);
+	});
+	$('body').on('click', '.incr__plus', function (e) {
+		++incrEl.value;
+		incrEl.value = incrEl.value > 100 ? 100 : incrEl.value;
+		incrEl.state.html(incrEl.value);
+	});
 	// incr === end
 
 	// rating size
@@ -724,13 +697,11 @@ $(document).ready(function () {
 			makeTimer();
 		}, 1000);
 	}
-
 	// countDown === end
 
 	// paralax
 	if ($('.paralax-el').length > 0 && windowSize>1023) {
 		$(window).scroll(function() {
-
 			$('.paralax-el').each(function(){
 				var depth = - $(window).scrollTop() / $(this).data('depth')*1;
 				//depth = depth || 40
@@ -760,7 +731,5 @@ $(document).ready(function () {
 	window.condition = {};
 	window.condition.closeModal = closeModal
 	window.condition.initModal = initModal
-	
-	
 
 });

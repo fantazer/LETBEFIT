@@ -1837,6 +1837,9 @@ h1 {
   background: #d00025;
   opacity: 0.8;
 }
+.type--nowrap {
+  white-space: nowrap;
+}
 .title {
   font-weight: 700;
   color: #111;
@@ -2999,7 +3002,13 @@ a:visiter {
 }
 @media only screen and (max-width: 640px) {
   .dropdown--shrink .dropdown-current {
-    padding: 8px 40px 8px 8px !important;
+    padding: 8px 20px 8px 8px !important;
+  }
+  .dropdown--shrink .dropdown-current>.icon {
+    width: 12px;
+    height: 12px;
+    top: calc(50% - 6px);
+    right: 6px;
   }
 }
 .dropdown--shrink .dropdown-menu {

@@ -521,7 +521,11 @@
 .dropdown--shrink
 	.dropdown-current
 		+below(640px)
-			padding: 8px 40px 8px 8px!important
+			padding: 8px 20px 8px 8px!important
+			&>.icon
+				size 12px
+				top calc(50% - 6px)
+				right: 6px
 		height: 100%
 	.dropdown-menu
 		+below(640px)

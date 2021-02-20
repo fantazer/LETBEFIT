@@ -26,16 +26,6 @@ mixin radio(text,group,checked,disable)
         .icon-radio
       .style-input-text=text
 
-mixin incr(state,className='')
-  .incr(class= state ? className  +' incr--one' : className )
-    .incr__minus.incr__nav
-      +icon("minus","icon")
-    .incr__val
-      span=state ? 1 : 0
-      .incr__val-coner
-    .incr__plus.incr__nav
-      +icon("plus","icon")
-
 mixin faq(type)
   // faq
   .faq-wrap
@@ -374,16 +364,15 @@ mixin lk-nav-mobile()
           .icon-row
             +icon(item.icon,"icon icon--right")
             span #{item.name}
-mixin incr(state,className='')
-  .incr(class= state ? className  +' incr--one' : className )
+mixin incr(state,className, min)
+  .incr(class= className data-min=min)
     .incr__minus.incr__nav
       +icon("minus","icon")
     .incr__val
-      span=state ? 1 : 0
+      span=state ? state : 0
       .incr__val-coner
     .incr__plus.incr__nav
       +icon("plus","icon")
-
 
 mixin programList(program)
   .program-list-container
