@@ -145,10 +145,26 @@ include block_html/_include.pug
 									.dropdown-menu__el(data-value="2") Через день
 
 					.type--lg.type--head.mb-24 Оплата
-					.tab.mb-24.js-tick-cont
+					.tab.mb-32.js-tick-cont
 						.tab__el.js-tick.active Наличными
 						.tab__el.js-tick Картой
 						.tab__el.js-tick Apple Pay
+
+					.input-cont
+						.input-row
+							label.check-el.js-switch(data-item="isCoupon")
+								.style-label.style-label--checkbox
+									input(type="checkbox" ).style-input
+									.style-input-element
+										+icon("checked","icon")
+									.style-input-text У меня есть купон
+					.input-cont.hidden.js-switch-cont(data-item="isCoupon")
+						.input-cont
+							.input-row.input-row--validate
+								input(type="text" data-placeholder="Номер купона" class="input input-mask--phone")
+								.input-msg В данных ошибка
+								+icon("close","icon icon-validate-false")
+								+icon("checked","icon icon-validate-true")
 
 					.contract-total-wrap.mb-32
 						.contract-total

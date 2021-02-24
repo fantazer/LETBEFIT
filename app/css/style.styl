@@ -255,6 +255,7 @@ slider-create-mobile()
 		height: 100%
 		//overflow-y scroll
 		width: calc(100% - 40px)
+		padding: 20px
 	+below(340px)
 		padding: 24px 16px
 	margin: 60px auto
@@ -348,8 +349,19 @@ slider-create-mobile()
 
 //  modal template
 .modal-partner-img
+	+below(640px)
+		margin -20px -20px 20px -20px
 	bg-full()
 	padding: 35% 10%
+	margin -32px -32px 24px -32px
+	border-radius 16px 16px 0 0
+
+
+.modal-sale-img
+	+below(640px)
+		margin -20px -20px 20px -20px
+	bg-full()
+	padding: 28% 10%
 	margin -32px -32px 24px -32px
 	border-radius 16px 16px 0 0
 
@@ -363,15 +375,19 @@ slider-create-mobile()
 	border-top 1px solid $border-color
 	flex(between)
 	grid-gap 12px
+
 .modal-partner-footer__info
 	+below(640px)
 		width: 100%
 
 .modal-fluid-cont
+	+below(640px)
+		margin-left: -20px
+		margin-right: -20px
+		padding: 20px
 	+below(340px)
 		margin-left: -16px
 		margin-right: -16px
-		padding: 16px
 	padding: 24px 32px
 	margin-left: -32px
 	margin-right: -32px
@@ -2550,8 +2566,8 @@ work-step(bgVal,colorVal)
 	border-bottom 1px solid $border-color
 .tab--fluid-modal
 	+below(640px)
-		margin-left: -16px
-		margin-right: -16px
+		margin-left: -20px
+		margin-right: -20px
 	margin-left -32px
 	margin-right -32px
 	.tab__el
@@ -2955,7 +2971,7 @@ work-step(bgVal,colorVal)
 		padding: 25% 10%
 		min-height 250px
 	padding: 15% 10%
-
+	bg-full()
 .sale-descr
 	+below(1024px)
 		padding: 40px
@@ -2963,7 +2979,6 @@ work-step(bgVal,colorVal)
 	+below(768px)
 		padding: 20px
 	background: white
-	margin-top: -10%
 	center(1072px,0px)
 	padding: 110px
 // sale-item === end
@@ -3093,12 +3108,14 @@ work-step(bgVal,colorVal)
 	&:last-child
 		margin-right: 0
 .program-register
+	+below(640px)
+		margin-bottom: -20px
 	margin-bottom: -32px
 .program-register-row
 	+below(640px)
 		padding: 12px 24px
-		margin-left: -32px
-		margin-right: -32px
+		margin-left: -20px
+		margin-right: -20px
 	f()
 	align-items center
 	padding: 12px 32px

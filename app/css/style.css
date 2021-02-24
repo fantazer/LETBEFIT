@@ -4749,6 +4749,7 @@ body {
   .modal-content {
     height: 100%;
     width: calc(100% - 40px);
+    padding: 20px;
   }
 }
 @media only screen and (max-width: 340px) {
@@ -4869,6 +4870,24 @@ body {
   margin: -32px -32px 24px -32px;
   border-radius: 16px 16px 0 0;
 }
+@media only screen and (max-width: 640px) {
+  .modal-partner-img {
+    margin: -20px -20px 20px -20px;
+  }
+}
+.modal-sale-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 28% 10%;
+  margin: -32px -32px 24px -32px;
+  border-radius: 16px 16px 0 0;
+}
+@media only screen and (max-width: 640px) {
+  .modal-sale-img {
+    margin: -20px -20px 20px -20px;
+  }
+}
 .modal-partner-footer {
   padding-top: 30px;
   margin-top: 24px;
@@ -4903,11 +4922,17 @@ body {
   margin-left: -32px;
   margin-right: -32px;
 }
+@media only screen and (max-width: 640px) {
+  .modal-fluid-cont {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px;
+  }
+}
 @media only screen and (max-width: 340px) {
   .modal-fluid-cont {
     margin-left: -16px;
     margin-right: -16px;
-    padding: 16px;
   }
 }
 .header {
@@ -8570,8 +8595,8 @@ body {
 }
 @media only screen and (max-width: 640px) {
   .tab--fluid-modal {
-    margin-left: -16px;
-    margin-right: -16px;
+    margin-left: -20px;
+    margin-right: -20px;
   }
 }
 .tab--fluid-modal .tab__el {
@@ -9159,6 +9184,9 @@ body {
 }
 .offer-full-page {
   padding: 15% 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 @media only screen and (max-width: 768px) {
   .offer-full-page {
@@ -9168,7 +9196,6 @@ body {
 }
 .sale-descr {
   background: #fff;
-  margin-top: -10%;
   *zoom: 1;
   width: auto;
   max-width: 1072px;
@@ -9405,6 +9432,11 @@ body {
 .program-register {
   margin-bottom: -32px;
 }
+@media only screen and (max-width: 640px) {
+  .program-register {
+    margin-bottom: -20px;
+  }
+}
 .program-register-row {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9423,8 +9455,8 @@ body {
 @media only screen and (max-width: 640px) {
   .program-register-row {
     padding: 12px 24px;
-    margin-left: -32px;
-    margin-right: -32px;
+    margin-left: -20px;
+    margin-right: -20px;
   }
 }
 .program-register-row:hover {
