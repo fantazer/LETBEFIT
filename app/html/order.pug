@@ -159,12 +159,14 @@ include block_html/_include.pug
 										+icon("checked","icon")
 									.style-input-text У меня есть купон
 					.input-cont.hidden.js-switch-cont(data-item="isCoupon")
-						.input-cont
+						.input-cont.input-cont--two
 							.input-row.input-row--validate
-								input(type="text" data-placeholder="Номер купона" class="input input-mask--phone")
-								.input-msg В данных ошибка
+								input(type="text" data-placeholder="Номер купона" class="input")
+								.input-msg Купон не подходит
 								+icon("close","icon icon-validate-false")
 								+icon("checked","icon icon-validate-true")
+							.input-row
+								.btn--md.btn--light.btn--mobile.disable Применить
 
 					.contract-total-wrap.mb-32
 						.contract-total
