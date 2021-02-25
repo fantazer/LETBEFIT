@@ -13,10 +13,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="add sale-item modal + promocode field in order form + sale-item page head banner">
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix coupon field">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/order.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/order.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/main.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/script-min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script-min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -359,14 +363,8 @@
       <workItem from="1613993476480" duration="2160000" />
       <workItem from="1614088907301" duration="1113000" />
       <workItem from="1614156331920" duration="4129000" />
-      <workItem from="1614162363876" duration="807000" />
-    </task>
-    <task id="LOCAL-00064" summary="add modals:&#10;- enter&#10;- getName&#10;- trueReview&#10;- location&#10;- locationMobile&#10;- removeProgram">
-      <created>1607086797145</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1607086797150</updated>
+      <workItem from="1614162363876" duration="9996000" />
+      <workItem from="1614244308604" duration="835000" />
     </task>
     <task id="LOCAL-00065" summary="add blog item">
       <created>1607450275517</created>
@@ -704,7 +702,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614159659559</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="fix coupon field">
+      <created>1614163270150</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1614163270150</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -745,7 +750,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add page lk-training" />
     <MESSAGE value="add page smi + poll + what is befit" />
     <MESSAGE value="add filter in lk-exclude" />
     <MESSAGE value="add new modals" />
@@ -770,6 +774,7 @@
     <MESSAGE value="fix shrink header + phone mask" />
     <MESSAGE value="fix incr + add toggle class .js-header" />
     <MESSAGE value="add sale-item modal + promocode field in order form + sale-item page head banner" />
-    <option name="LAST_COMMIT_MESSAGE" value="add sale-item modal + promocode field in order form + sale-item page head banner" />
+    <MESSAGE value="fix coupon field" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix coupon field" />
   </component>
 </project>

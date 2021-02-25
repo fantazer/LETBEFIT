@@ -191,8 +191,8 @@ gulp.task('watch', () => {
 });
 
 gulp.task('pug', function() {
-		gulp.src(['app/html/**/*.pug','app/module/**/*.pug',])
-		//gulp.src(['app/html/order.pug','app/html/block_html/*.pug',])
+		//gulp.src(['app/html/**/*.pug','app/module/**/*.pug',])
+		gulp.src(['app/html/main.pug','app/html/block_html/*.pug',])
 		//gulp.src(['app/html/lk-*.pug','app/module/**/*.pug',])
 		//gulp.src(['app/html/elements.pug','app/html/contact.pug','app/module/**/*.pug'])
 		/*gulp.src([

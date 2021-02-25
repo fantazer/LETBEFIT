@@ -713,10 +713,12 @@ $(document).ready(function () {
 	}
 	// paralax === end
 
+	// phone mask
+
+	// phone mask === end
 	var isFieldStart= true;
-	$('.input-mask--phone').mask('+7(000)000-00-00', {
+	var phoneMaskOption = {
 			onKeyPress: function (cep, event, currentField, options) {
-				//console.log(currentField.val().length);
 				if(cep == '+7(8' && isFieldStart){
 					$('.input-mask--phone').val("+7(")
 					return isFieldStart = false;
@@ -724,9 +726,14 @@ $(document).ready(function () {
 				if(currentField.val().length<4){
 					isFieldStart = true
 				}
-			},
+			}
 		}
-	);
+	$('.input-mask--phone').bind('paste', function(e) {
+		$(this).unmask()
+  	var data = e.originalEvent.clipboardData.getData('Text');
+   	$(this).val(data.replace(new RegExp('\\+7\\(|8\\(', 'g'),"")).mask('+7(000)000-00-00', phoneMaskOption);
+	});
+	$('.input-mask--phone').mask('+7(000)000-00-00',phoneMaskOption);
 
 	window.condition = {};
 	window.condition.closeModal = closeModal
