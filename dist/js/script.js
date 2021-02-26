@@ -316,8 +316,7 @@ $(document).ready(function () {
 		speed: 800,
 		dots:false,
 		arrows:false,
-		rows:0,
-		//fade:true
+		fade:true
 	});
 	// main slider === end
 
@@ -714,8 +713,6 @@ $(document).ready(function () {
 	// paralax === end
 
 	// phone mask
-
-	// phone mask === end
 	var isFieldStart= true;
 	var phoneMaskOption = {
 			onKeyPress: function (cep, event, currentField, options) {
@@ -734,6 +731,8 @@ $(document).ready(function () {
    	$(this).val(data.replace(new RegExp('\\+7\\(|8\\(', 'g'),"")).mask('+7(000)000-00-00', phoneMaskOption);
 	});
 	$('.input-mask--phone').mask('+7(000)000-00-00',phoneMaskOption);
+	// phone mask === end
+
 
 	window.condition = {};
 	window.condition.closeModal = closeModal

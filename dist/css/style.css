@@ -9735,11 +9735,23 @@ body {
 }
 .slider-lk .slider-el-wrap {
   position: relative;
+  -webkit-transform: scale(0.9, 0.9);
+      -ms-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+  transition: all 0.8s;
 }
 .slider-lk .btn--white {
   position: absolute;
   left: 32px;
   bottom: 32px;
+}
+.slider-lk .slick-active {
+  overflow: hidden;
+}
+.slider-lk .slick-active .slider-el-wrap {
+  -webkit-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+          transform: scale(1, 1);
 }
 .slider-lk__el {
   border-radius: 8px;
