@@ -81,51 +81,20 @@ $(document).ready(function () {
 	//modals===end
 
 	// fix top-menu
-	(function () {
-		var head = $('.js-header');
-		var heightHeader = head.height();
-		var doc = document.documentElement;
-		var w = window;
-		var prevScroll = w.scrollY || doc.scrollTop;
-		var curScroll;
-		var direction = 0;
-		var prevDirection = 0;
-		var checkScroll = function () {
-			curScroll = w.scrollY || doc.scrollTop;
-			if (curScroll > prevScroll) {
-				direction = 2;
-			} else if (curScroll < prevScroll) {
-				direction = 1;
-			} 
-			if(curScroll < heightHeader){
-				$('body').css('paddingTop', 0);
-				head.removeClass('shrink')
-			}
-			if (direction !== prevDirection) {
-				toggleHeader(direction, curScroll);
-			}
-			prevScroll = curScroll;
-		}
-		var toggleHeader = function(direction, curScroll) {
-			if (direction === 2 && curScroll > heightHeader) {
-				prevDirection = direction;
-				$('body').css('paddingTop', 0);
-				head.removeClass('shrink');
-			} else if (direction === 1) {
-				$('body').css('paddingTop', heightHeader);
+	var shrinkHeader = 150;
+	var head = $('.header');
+	var heightHeader = head.height();
+	$(window).scroll(function() {
+		var scroll = $(this).scrollTop();
+		if ( scroll >= shrinkHeader ) {
+				$('body').css('paddingTop',heightHeader);
 				head.addClass('shrink');
-				prevDirection = direction;
 			}
-		};
-		$(window).scroll(function () {
-			checkScroll()
-		});
-	})()
-
-	var clearShrink = function(){
-		$('body').css('paddingTop',0);
-		head.removeClass('shrink');
-	}
+			else {
+					$('body').css('paddingTop',0);
+					head.removeClass('shrink');
+			}
+	});
 	// fix top-menu === end
 
 	// toggle single

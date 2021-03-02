@@ -559,18 +559,23 @@ slider-create-mobile()
 			opacity: 1
 			transform translateY(0)
 			transition opacity .6s, transform .6s
+			z-index 110
+			visibility visible
 .drop-menu-wrap
-	position absolute
 	top 100%
 	width: 100%
 	background: white
-	z-index 110
+	z-index -1
 	padding: 32px 0 48px 0
 	border-top 1px solid $border-color
 	box-shadow: 0 4px 8px rgba(102, 130, 185, 0.12);
-	left -9999px
 	opacity: 0
 	transform translateY(-10px)
+	position absolute
+	left -9999px
+
+
+
 .drop-menu
 	f()
 	justify-content space-between
@@ -2878,13 +2883,17 @@ work-step(bgVal,colorVal)
 	+below(768px)
 		min-height: 165px
 		padding: 20px
+	+below(640px)
+		flex(mid)
+		fl()
 	padding: 36px 48px
 	color white
 	position relative
 	br(12px)
 .offer-title
 	+below(640px)
-		width: 50%
+		width: 100%
+		text-align center
 		line-height: 1.2
 	@extend .type--lg
 	font-weight 700
@@ -2894,7 +2903,10 @@ work-step(bgVal,colorVal)
 .offer-img
 	+below(640px)
 		right: 0
-		padding 20% 23%
+		padding 45% 25%
+		position: initial
+		margin: 20px 0 -20px 0
+		width: 100%
 	background-size cover
 	background-repeat no-repeat
 	background-position center bottom
