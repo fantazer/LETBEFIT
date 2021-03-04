@@ -80,9 +80,10 @@ $(document).ready(function () {
 	});
 	//modals===end
 
+
 	// fix top-menu
 	var shrinkHeader = 150;
-	var head = $('.header');
+	var head = $('.js-header');
 	var heightHeader = head.height();
 	$(window).scroll(function() {
 		var scroll = $(this).scrollTop();
@@ -660,10 +661,11 @@ $(document).ready(function () {
 
 			$('.timer-dot').toggleClass('hideOpacity')
 		}
-
-		setInterval(function () {
-			makeTimer();
-		}, 1000);
+		if(days*1>0){
+			setInterval(function () {
+				makeTimer();
+			}, 1000);
+		}
 	}
 	// countDown === end
 
