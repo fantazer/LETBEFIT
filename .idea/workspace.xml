@@ -13,11 +13,30 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix deploys bugs">
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix header menu on scroll">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/main.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/style-guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style-guide.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_color.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_color.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-balance.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-balance.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-daily.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-daily.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-detox.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-detox.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-everydaily.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-everydaily.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-fish.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-fish.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-light.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-light.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-normal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-normal.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-strong.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-strong.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/program-vegan.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-vegan.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-balance.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-balance.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-daily.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-daily.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-detox.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-detox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-everydaily.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-everydaily.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-fish.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-fish.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-light.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-light.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-normal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-normal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-strong.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-strong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/program-vegan.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-vegan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -368,14 +387,8 @@
       <workItem from="1614610926556" duration="632000" />
       <workItem from="1614679096976" duration="6877000" />
       <workItem from="1614694306214" duration="17000" />
-      <workItem from="1614846064058" duration="735000" />
-    </task>
-    <task id="LOCAL-00069" summary="add body event">
-      <created>1607687797083</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1607687797083</updated>
+      <workItem from="1614846064058" duration="1477000" />
+      <workItem from="1614866011294" duration="2176000" />
     </task>
     <task id="LOCAL-00070" summary="fix config event">
       <created>1607764283292</created>
@@ -713,7 +726,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614687375245</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="fix header menu on scroll">
+      <created>1614846834688</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1614846834688</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -754,7 +774,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add modal markDelivery + start promo" />
     <MESSAGE value="add promo block" />
     <MESSAGE value="add doubt block + press + deliveryMark error msg + img company" />
     <MESSAGE value="fix lk headers list" />
@@ -779,6 +798,7 @@
     <MESSAGE value="fix slider lk animation" />
     <MESSAGE value="reload img" />
     <MESSAGE value="fix deploys bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix deploys bugs" />
+    <MESSAGE value="fix header menu on scroll" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix header menu on scroll" />
   </component>
 </project>

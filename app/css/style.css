@@ -892,13 +892,13 @@
   fill: #a9d96b;
 }
 .bg-greenLight {
-  background: #e6f2d6;
+  background: #f3f8ed;
 }
 .type-greenLight {
-  color: #e6f2d6;
+  color: #f3f8ed;
 }
 .icon-greenLight {
-  fill: #e6f2d6;
+  fill: #f3f8ed;
 }
 .bg-grayPrimary {
   background: #565762;
@@ -1189,7 +1189,7 @@
   color: #fff;
 }
 .el--greenLight {
-  background-color: #e6f2d6;
+  background-color: #f3f8ed;
   color: #a9d96b;
 }
 .el--greenLight:hover,
@@ -3336,18 +3336,18 @@ a:visiter {
 }
 .btn--light:hover,
 .btn--light.active {
-  background: #e6f2d6;
+  background: #f3f8ed;
   border: 1px solid #7eca1d;
   color: #7eca1d;
 }
 .btn--light.active {
-  background: #e6f2d6;
+  background: #f3f8ed;
   border: 1px solid #7eca1d;
   color: #7eca1d;
 }
 .btn--light:active:before {
   content: '';
-  border: 2px solid #e6f2d6;
+  border: 2px solid #f3f8ed;
 }
 .btn--light.disable {
   pointer-events: none;
@@ -3365,12 +3365,12 @@ a:visiter {
   fill: #7eca1d;
 }
 .btn--text:hover {
-  background: #e6f2d6;
+  background: #f3f8ed;
   color: #7eca1d;
 }
 .btn--text:active:before {
   content: '';
-  border: 2px solid #e6f2d6;
+  border: 2px solid #f3f8ed;
 }
 .btn--text-red {
   border: 0;
@@ -4071,7 +4071,7 @@ a:visiter {
   font-weight: 700;
 }
 .switch-btn--green {
-  background: #e6f2d6;
+  background: #f3f8ed;
 }
 .switch-btn--green .switch-btn__val {
   color: #7eca1d;
@@ -4179,7 +4179,7 @@ a:visiter {
   border: 0;
 }
 .dropdown-menu__el:hover {
-  background: #e6f2d6;
+  background: #f3f8ed;
   color: #111;
 }
 .dropdown--shrink .dropdown-current {
@@ -7411,7 +7411,7 @@ body {
   color: #768668;
 }
 .work-step--green .work-step__el {
-  background: #e6f2d6;
+  background: #f3f8ed;
   border: 0;
 }
 .work-step--green .work-step__el-title {
@@ -7916,7 +7916,7 @@ body {
   -webkit-flex-flow: column;
       -ms-flex-flow: column;
           flex-flow: column;
-  background: #e6f2d6;
+  background: #f3f8ed;
   color: #65a217;
   font-weight: 700;
   transition: all 0.4s;
@@ -8175,7 +8175,7 @@ body {
 }
 .contract-config__el.active {
   border: 1px solid #7eca1d;
-  background-color: #e6f2d6;
+  background-color: #f3f8ed;
 }
 .contract-config__el:hover {
   border: 1px solid #7eca1d;
@@ -9539,7 +9539,7 @@ body {
   cursor: pointer;
 }
 .size__el:hover {
-  background: #e6f2d6;
+  background: #f3f8ed;
 }
 .size__el:first-child {
   border-radius: 32px 0 0 32px;
@@ -10829,7 +10829,7 @@ body {
   cursor: pointer;
 }
 .filter-list__el:hover {
-  background: #e6f2d6;
+  background: #f3f8ed;
 }
 .filter-result {
   display: -webkit-flex;

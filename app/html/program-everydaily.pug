@@ -27,14 +27,30 @@ include block_html/_include.pug
 	.main-cont.visible-on-mobile
 		a(href="#").js-scroll-to.btn--md.btn--mark.btn--mobile Заказать
 	.content
-		.main-cont-md
-			.invite-subs
-				.invite-subs-img
-					img(src="img/circle-food-2.png", alt="")
-				.invite-subs-info
-					.type--head.type--md.mb-24 Наша цель — помочь сотням людей сэкономить время и силы на пути к здоровому образу жизни, систематичному питанию и отличному самочувствию
-					.text
-						p Попробуйте программу EveryDaily от компании BeFit! Каждый день наш курьер привозит свежие блюда к вам в офис
+		.section-sm
+			.main-cont-sm.text
+				.type--lgx.type--head.type--center.mb-24 Вкусно, как дома
+				.type--md.type--black.type--center Наша цель — помочь сотням людей сэкономить время и силы на пути к здоровому образу жизни, систематичному питанию и отличному самочувствию. Попробуйте программу EveryDaily от компании BeFit! Каждый день наш курьер привозит свежие блюда к вам в офис
+		// step work
+		.section-sm
+			.main-cont
+				.work-step.work-step--violet
+					.work-step__el
+						.work-step__el-icon
+							img(src="img/icon/stopwatch--violet.svg", alt="")
+						.work-step__el-title Экономия времени
+						.work-step__el-text Выбирайте удобное время для доставки, избавьтесь от изнурительных походов в магазин и мытья посуды
+					.work-step__el
+						.work-step__el-icon
+							img(src="img/icon/fresh--violet.svg", alt="")
+						.work-step__el-title Баланс здоровья
+						.work-step__el-text Не используем красители, усилители вкуса, консерванты и другую химию
+					.work-step__el
+						.work-step__el-icon
+							img(src="img/icon/bank--violet.svg", alt="")
+						.work-step__el-title Это выгодно
+						.work-step__el-text Один приём пищи стоит от 169. Дешевле, чем в кафе и ресторане и быстрее, чем готовка дома
+		// step work === end
 
 		// program constructor
 		.program-main-wrap#program
