@@ -173,7 +173,7 @@ pt(size1,size2,size3)
 
 p(size1,size2,size3)
 	.p-{size1}
-		padding unit(size1,px)
+		padding unit(size1,px) 0
 		+below(1024px)
 			padding: unit(size2,px) 0
 		+below(640px)
@@ -234,11 +234,11 @@ $gridGap = (12 12 12),\
 					(32 24 24),\
 
 calcGap(size1,size2,size3)
-	grid-gap (size1 px)
+	gap(size1 px)
 	+below(1024px)
-		grid-gap (size2 px)
+		gap(size2 px)
 	+below(640px)
-		grid-gap (size3 px)
+		gap(size3 px)
 
 for $gridGapItem in $gridGap
 	.gap-{$gridGapItem}

@@ -24,7 +24,7 @@ $(document).ready(function () {
 		// other browser
 		return false;
 	}
-	if (detectIE() <= 14 && detectIE()) {
+	if (detectIE() <= 10 && detectIE()) {
 		$('body').empty();
 		$('body').prepend('' +
 			'<div class="old-browser">' +

@@ -13,29 +13,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="fix header menu on scroll">
+    <list default="true" id="33fc4985-0812-4917-a972-022b8742b981" name="Default" comment="edit program description">
+      <change afterPath="$PROJECT_DIR$/app/html/game.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/game/basket.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/game/bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/game/food-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/game/food-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/game/food-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/game/food-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/game/giftbox.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/game/score.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style-guide.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style-guide.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_color.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_color.styl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/program-balance.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-balance.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/program-daily.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-daily.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/program-detox.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-detox.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/program-everydaily.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-everydaily.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/program-fish.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-fish.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/program-light.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-light.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/program-normal.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-normal.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/program-strong.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-strong.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/html/program-vegan.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/program-vegan.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-balance.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-balance.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-daily.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-daily.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-detox.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-detox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-everydaily.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-everydaily.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-fish.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-fish.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-light.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-light.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-normal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-normal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-strong.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-strong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/program-vegan.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/program-vegan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/style.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/variable/_function.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/_function.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/variable/_helper.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/_helper.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_btn.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/variable/config/_input.styl" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/variable/config/_input.styl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/html/block_html/_const.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/html/block_html/_const.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/add-on.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/add-on.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style-min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style-min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/program-corp.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/program-corp.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,18 +83,21 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="add_unversioned_files" value="true" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/img/game" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PROJECT\WORK\LETBEFIT\app\img\game" />
       <recent name="E:\PROJECT\WORK\LETBEFIT\app\img" />
       <recent name="E:\PROJECT\WORK\LETBEFIT\app\img\svg" />
       <recent name="E:\PROJECT\WORK\LETBEFIT\app\img\icon" />
       <recent name="E:\PROJECT\WORK\LETBEFIT\app\html" />
-      <recent name="E:\PROJECT\WORK\LETBEFIT\app\bower" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PROJECT\WORK\LETBEFIT\app\img" />
     </key>
   </component>
   <component name="RunManager" selected="Gulp.js.default">
@@ -388,14 +393,14 @@
       <workItem from="1614679096976" duration="6877000" />
       <workItem from="1614694306214" duration="17000" />
       <workItem from="1614846064058" duration="1477000" />
-      <workItem from="1614866011294" duration="2176000" />
-    </task>
-    <task id="LOCAL-00070" summary="fix config event">
-      <created>1607764283292</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1607764283293</updated>
+      <workItem from="1614866011294" duration="2896000" />
+      <workItem from="1614871509465" duration="610000" />
+      <workItem from="1614931489112" duration="28000" />
+      <workItem from="1614943346398" duration="8364000" />
+      <workItem from="1615235688375" duration="462000" />
+      <workItem from="1615273178150" duration="1205000" />
+      <workItem from="1615296503251" duration="27000" />
+      <workItem from="1615300971756" duration="6180000" />
     </task>
     <task id="LOCAL-00071" summary="fix config event">
       <created>1607952636445</created>
@@ -733,7 +738,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614846834688</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="edit program description">
+      <created>1614868307287</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1614868307287</updated>
+    </task>
+    <option name="localTasksCounter" value="120" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -774,7 +786,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="add promo block" />
     <MESSAGE value="add doubt block + press + deliveryMark error msg + img company" />
     <MESSAGE value="fix lk headers list" />
     <MESSAGE value="fix lk name days" />
@@ -799,6 +810,7 @@
     <MESSAGE value="reload img" />
     <MESSAGE value="fix deploys bugs" />
     <MESSAGE value="fix header menu on scroll" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix header menu on scroll" />
+    <MESSAGE value="edit program description" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit program description" />
   </component>
 </project>
