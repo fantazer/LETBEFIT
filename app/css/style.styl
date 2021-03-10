@@ -3194,7 +3194,7 @@ work-step(bgVal,colorVal)
 
 .lk-head-wrap
 	+below(1024px)
-		padding-top: 24px
+		padding: 32px 0 20px 0
 	padding-top: 64px
 	background: $gradient
 .lk-head-wrap--clear-mobile
@@ -3240,9 +3240,10 @@ work-step(bgVal,colorVal)
 	font-weight: 700
 	line-height: 1
 	margin-bottom: 8px
+
 .lk-bonus
 	+below(640px)
-		margin-bottom: 24px
+		margin-bottom: 10px
 
 .lk-bonus-cont
 	+below(640px)
@@ -3372,16 +3373,19 @@ work-step(bgVal,colorVal)
 
 
 .lk-empty
+	+below(640px)
+		padding: 20px
 	border 1px solid $border-color
 	flex(mid)
 	padding: 34px
 	br(8px)
+	fl()
 .lk-empty--lg
-	padding: 20%
+	padding: 10%
 
 .lk-empty__info
 	flex(mid)
-	grid-gap 24px
+	gap(24px)
 
 .lk-empty__info--col
 	flex-flow column
@@ -3440,8 +3444,10 @@ work-step(bgVal,colorVal)
 .lk-day
 	+below(1024px)
 		margin-bottom: 0
+		margin-left: -42px
+	+below(640px)
+		margin-left: -24px
 	margin-bottom: 20px
-
 .marker
 	white-space nowrap
 	overflow auto

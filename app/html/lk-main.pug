@@ -4,6 +4,7 @@ include block_html/_include.pug
 .page#header
 	+header()
 	.content.content--clear-top
+
 		+lk-nav-mobile()
 		.lk
 			.lk-head-wrap
@@ -75,10 +76,11 @@ include block_html/_include.pug
 										+lk-item(i)
 						//remove hidden for empty state
 						.lk-empty.mb-64.hidden
-							.lk-empty__info
+							.lk-empty__info.mb-16
 								img(src="img/icon/food--gray.svg", alt="")
 								span.type--md.type--secondary У Вас еще нет заказов
-
+							.f.f-mid
+								.btn--md.btn--mark Заказать
 						// options
 						.type--lg.type--head.mb-48 Опции
 						.switch-row.mb-24.js-switch(data-group="Oneness" data-item="isOneness")
